@@ -3,7 +3,7 @@ namespace Tetris\Adwords\Request\Read;
 
 use Tetris\Adwords\Client;
 
-class TransientRequest
+class TransientReadRequest
 {
     private $fieldMap;
     private $client;

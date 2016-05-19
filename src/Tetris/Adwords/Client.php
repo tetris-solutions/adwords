@@ -6,7 +6,7 @@ use AdWordsUser;
 use CustomerService;
 use Customer;
 use stdClass;
-use Tetris\Adwords\Request\Read\TransientRequest as ReadRequest;
+use Tetris\Adwords\Request\Read\TransientReadRequest;
 use Tetris\Adwords\Request\Write\UpdateRequest;
 use Tetris\Adwords\Request\Write\InsertRequest;
 
@@ -68,11 +68,11 @@ class Client extends AdWordsUser
 
     /**
      * @param array $fieldMap
-     * @return ReadRequest
+     * @return TransientReadRequest
      */
-    function select(array $fieldMap): ReadRequest
+    function select(array $fieldMap): TransientReadRequest
     {
-        return Request::select($this, $fieldMap);
+        return new TransientReadRequest($this, $fieldMap);
     }
 
     /**
@@ -82,7 +82,7 @@ class Client extends AdWordsUser
      */
     function update(string $className, $serviceName = null): UpdateRequest
     {
-        return Request::update($this, $className, $serviceName);
+        return new UpdateRequest($this, $className, $serviceName);
     }
 
     /**
@@ -91,6 +91,6 @@ class Client extends AdWordsUser
      */
     function insert(array $values): InsertRequest
     {
-        return Request::insert($this, $values);
+        return new InsertRequest($this, $values);
     }
 }
