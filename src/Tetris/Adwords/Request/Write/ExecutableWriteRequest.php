@@ -36,7 +36,7 @@ class ExecutableWriteRequest extends Request
         );
     }
 
-    protected function returning(array $fieldMap)
+    function returning(array $fieldMap)
     {
         $entityOperationClass = $this->className . 'Operation';
 
