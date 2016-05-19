@@ -20,10 +20,10 @@ abstract class AdwordsObjectParser
         return self::stripSingleValueFromArray($array[$singleKey]);
     }
 
-    private static function readFieldFromAdpeekObjectIntoArray(string $inputField, string $outputField, $object, array &$array)
+    private static function writeField(string $inputField, string $outputField, $inputObject, array &$outputArray)
     {
-        $input = $object;
-        $output = &$array;
+        $input = $inputObject;
+        $output = &$outputArray;
 
         if ($input instanceof Campaign) {
             switch ($inputField) {
@@ -35,15 +35,15 @@ abstract class AdwordsObjectParser
                 case 'BudgetStatus':
                 case 'IsBudgetExplicitlyShared':
                 case 'DeliveryMethod':
-                    if (!isset($array['budget'])) {
-                        $array['budget'] = [];
+                    if (!isset($outputArray['budget'])) {
+                        $outputArray['budget'] = [];
                     }
 
                     if ($inputField !== 'BudgetId') {
                         $inputField = str_replace('Budget', '', $inputField);
                     }
 
-                    $output = &$array['budget'];
+                    $output = &$outputArray['budget'];
                     $input = $input->budget;
 
                     break;
@@ -54,16 +54,16 @@ abstract class AdwordsObjectParser
     }
 
     /**
-     * @param array $fields
+     * @param array $fieldMap
      * @param ManagedCustomer|Campaign|Budget $adwordsObject
      * @return array|mixed
      */
-    static function readFieldsFromAdwordsObject($fields, $adwordsObject)
+    static function readFieldsFromAdwordsObject(array $fieldMap, $adwordsObject)
     {
         $array = [];
 
-        foreach ($fields as $adwordsKey => $userKey) {
-            self::readFieldFromAdpeekObjectIntoArray($adwordsKey, $userKey, $adwordsObject, $array);
+        foreach ($fieldMap as $adwordsKey => $userKey) {
+            self::writeField($adwordsKey, $userKey, $adwordsObject, $array);
         }
 
         return self::stripSingleValueFromArray($array);
@@ -90,5 +90,31 @@ abstract class AdwordsObjectParser
                 return $input->{$camelCaseField};
 
         }
+    }
+
+    static function readFieldsFromArrayIntoAdwordsObject(string $className, array $fields)
+    {
+        $entity = new $className();
+
+        foreach ($fields as $field => $value) {
+            $field = lcfirst($field);
+
+            if (!property_exists($entity, $field)) continue;
+
+            switch ($field) {
+                case 'budget':
+                    $entity->budget = new Budget($value);
+                    break;
+                case 'amount':
+                    $micro = round($value, 2) * 10 ** 6;
+                    $entity->amount = new Money((int)$micro);
+                    break;
+                default:
+                    $entity->{$field} = $value;
+                    break;
+            }
+        }
+
+        return $entity;
     }
 }

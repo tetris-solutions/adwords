@@ -16,18 +16,18 @@ abstract class ReadRequest extends Request implements ReadInterface
     protected $selector;
 
     /**
-     * @var array $fields
+     * @var array $fieldMap
      */
-    protected $fields;
+    protected $fieldMap;
 
-    function __construct(Client $client, string $className, array $fields, $serviceName = null)
+    function __construct(Client $client, string $className, array $fieldMap, $serviceName = null)
     {
-        parent::__construct($client, $className);
+        $this->client = $client;
+        $this->className = $className;
         $this->init($serviceName);
-
         $this->selector = new Selector();
-        $this->setFields($fields);
-        $this->selector->fields = array_keys($this->fields);
+        $this->fieldMap = self::normalizeFieldMaps($fieldMap);
+        $this->selector->fields = array_keys($this->fieldMap);
         $this->selector->predicates = [];
     }
 
@@ -41,14 +41,5 @@ abstract class ReadRequest extends Request implements ReadInterface
             is_array($value) ? $value : [$value]
         );
         return $this;
-    }
-
-    private function setFields(array $fields)
-    {
-        $isAssocArray = array_keys($fields) !== range(0, count($fields) - 1);
-
-        $this->fields = $isAssocArray
-            ? $fields
-            : array_combine($fields, $fields);
     }
 }

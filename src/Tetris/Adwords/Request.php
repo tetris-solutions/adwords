@@ -4,6 +4,8 @@ namespace Tetris\Adwords;
 
 use Money;
 use Tetris\Adwords\Request\Read\TransientRequest as ReadRequest;
+use Tetris\Adwords\Request\Write\InsertRequest;
+use Tetris\Adwords\Request\Write\UpdateRequest;
 
 abstract class Request
 {
@@ -13,32 +15,47 @@ abstract class Request
     protected $client;
 
     /**
-     * @var string $className
+     * @var string|null $className
      */
     protected $className;
 
-    function __construct(Client $client, string $className)
+    /**
+     * @var array $fieldMap
+     */
+    protected $fieldMap;
+
+    static function select(Client $client, array $fieldMap): ReadRequest
     {
-        $this->client = $client;
-        $this->className = $className;
+        return new ReadRequest($client, $fieldMap);
     }
 
-    static function select(Client $client, array $fields): ReadRequest
+    /**
+     * insert([Name => 'Something terribly misguided'])->into(Campaign)->returning(['Id'])
+     * @param Client $client
+     * @param array $values
+     * @return InsertRequest
+     */
+    static function insert(Client $client, array $values): InsertRequest
     {
-        return new ReadRequest($client, $fields);
+        return new InsertRequest($client, $values);
     }
 
-    static function insert(Client $client, array $entity)
+    /**
+     * update(Campaign)->set([Id => 1234, Name => 'The previous name was clearly wrong'])->returning(['Name'])
+     * @param Client $client
+     * @param string $className
+     * @param string|null $serviceName
+     * @return UpdateRequest
+     */
+    static function update(Client $client, string $className, $serviceName = null): UpdateRequest
     {
-        /**
-         * insert([Name => 'Something terribly misguided'])->into(Campaign)->returning(['Id'])
-         */
+        return new UpdateRequest($client, $className, $serviceName);
     }
 
-    static function update(Client $client, string $className, string $serviceName)
+    protected static function normalizeFieldMaps(array $fieldMap): array
     {
-        /**
-         * update(Campaign)->set([Name => 'The previous name was clearly wrong'])->where(id, 1234)->returning(['Name'])
-         */
+        return array_keys($fieldMap) !== range(0, count($fieldMap) - 1)
+            ? $fieldMap
+            : array_combine($fieldMap, $fieldMap);
     }
 }

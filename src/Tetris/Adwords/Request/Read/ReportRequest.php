@@ -58,7 +58,7 @@ class ReportRequest extends ReadRequest
     {
         $map = [];
 
-        foreach ($this->fields as $adwordsKey => $userKey) {
+        foreach ($this->fieldMap as $adwordsKey => $userKey) {
             $map[$userKey] = AdwordsObjectParser::getNormalizedField($adwordsKey, $attributes);
         }
 

@@ -64,8 +64,8 @@ class Client extends AdWordsUser
         return isset(self::$config[$key]) ? self::$config[$key] : NULL;
     }
 
-    function select(array $fields): ReadRequest
+    function select(array $fieldMap): ReadRequest
     {
-        return Request::select($this, $fields);
+        return Request::select($this, $fieldMap);
     }
 }

@@ -5,13 +5,13 @@ use Tetris\Adwords\Client;
 
 class TransientRequest
 {
-    private $fields;
+    private $fieldMap;
     private $client;
 
-    function __construct(Client $client, array $fields)
+    function __construct(Client $client, array $fieldMap)
     {
         $this->client = $client;
-        $this->fields = $fields;
+        $this->fieldMap = $fieldMap;
     }
 
     /**
@@ -24,9 +24,9 @@ class TransientRequest
         $isAllUpperCase = strtoupper($className) === $className;
 
         if ($isAllUpperCase) {
-            return new ReportRequest($this->client, $className, $this->fields);
+            return new ReportRequest($this->client, $className, $this->fieldMap);
         } else {
-            return new GetRequest($this->client, $className, $this->fields, $serviceName);
+            return new GetRequest($this->client, $className, $this->fieldMap, $serviceName);
         }
     }
 }

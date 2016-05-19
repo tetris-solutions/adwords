@@ -44,7 +44,7 @@ class GetRequest extends ReadRequest
          * @var ManagedCustomer|Campaign|Budget $adwordsObject
          */
         foreach ($result->entries as $adwordsObject) {
-            $ls[] = AdwordsObjectParser::readFieldsFromAdwordsObject($this->fields, $adwordsObject);
+            $ls[] = AdwordsObjectParser::readFieldsFromAdwordsObject($this->fieldMap, $adwordsObject);
         }
 
         return $ls;
