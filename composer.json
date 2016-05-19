@@ -1,0 +1,18 @@
+{
+  "name": "tetris/adwords",
+  "description": "Adwords interface",
+  "require": {
+    "googleads/googleads-php-lib": "^9.0"
+  },
+  "authors": [
+    {
+      "name": "Christian Amaral",
+      "email": "darthcas@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Tetris\\Adwords\\": "Tetris/Adwords/"
+    }
+  }
+}
