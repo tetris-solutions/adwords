@@ -17,11 +17,11 @@ class Client extends AdWordsUser
     /**
      * @var Customer
      */
-    private $customer;
+    protected $customer;
     /**
      * @var string $tetrisAccount
      */
-    private $tetrisAccount;
+    protected $tetrisAccount;
 
     function __construct(string $tetrisAccount, stdClass $token)
     {
