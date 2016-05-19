@@ -2,7 +2,6 @@
 
 namespace Tetris\Adwords;
 
-use Tetris\Adwords\Client;
 use Money;
 use Tetris\Adwords\Request\Read\TransientRequest as ReadRequest;
 
