@@ -2,6 +2,7 @@
 
 namespace Tetris\Adwords\Request\Read;
 
+use Tetris\Adwords\AdwordsObjectParser;
 use Tetris\Adwords\Request\ReadRequest;
 use ReportUtils;
 use ReportDefinition;
@@ -58,10 +59,10 @@ class ReportRequest extends ReadRequest
         $map = [];
 
         foreach ($this->fields as $adwordsKey => $userKey) {
-            $map[$userKey] = self::getNormalizedField($adwordsKey, $attributes);
+            $map[$userKey] = AdwordsObjectParser::getNormalizedField($adwordsKey, $attributes);
         }
 
-        return self::stripSingleValueFromArray($map);
+        return AdwordsObjectParser::stripSingleValueFromArray($map);
     }
 
     function fetchOne()

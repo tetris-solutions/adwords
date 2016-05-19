@@ -28,42 +28,17 @@ abstract class Request
         return new ReadRequest($client, $fields);
     }
 
-    protected static function stripSingleValueFromArray($array)
+    static function insert(Client $client, array $entity)
     {
-        if (!is_array($array) || count($array) > 1) {
-            return $array;
-        }
-
-        $singleKey = array_keys($array)[0];
-
-        return self::stripSingleValueFromArray($array[$singleKey]);
+        /**
+         * insert([Name => 'Something terribly misguided'])->into(Campaign)->returning(['Id'])
+         */
     }
 
-    protected static function getNormalizedField($field, $input)
+    static function update(Client $client, string $className, string $serviceName)
     {
-        $camelCaseField = lcfirst($field);
-
-        if (!property_exists($input, $camelCaseField)) {
-            return NULL;
-        }
-
-        switch (ucfirst($field)) {
-            case 'Bid':
-            case 'BidCeiling':
-            case 'Cost':
-            case 'Amount':
-                $microAmount = $input->{$camelCaseField} instanceof Money
-                    ? $input->{$camelCaseField}->microAmount
-                    : $input->{$camelCaseField};
-                return (int)$microAmount / (10 ** 6);
-            default:
-                return $input->{$camelCaseField};
-
-        }
-    }
-
-    protected static function isAssociativeArray($arr): bool
-    {
-        return array_keys($arr) !== range(0, count($arr) - 1);
+        /**
+         * update(Campaign)->set([Name => 'The previous name was clearly wrong'])->where(id, 1234)->returning(['Name'])
+         */
     }
 }

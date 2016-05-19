@@ -45,7 +45,9 @@ abstract class ReadRequest extends Request implements ReadInterface
 
     private function setFields(array $fields)
     {
-        $this->fields = self::isAssociativeArray($fields)
+        $isAssocArray = array_keys($fields) !== range(0, count($fields) - 1);
+
+        $this->fields = $isAssocArray
             ? $fields
             : array_combine($fields, $fields);
     }

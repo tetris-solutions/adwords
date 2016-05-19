@@ -49,7 +49,7 @@ class Client extends AdWordsUser
      *  - CLIENT_ID
      *  - CLIENT_SECRET
      * Required for reports:
-     *  - GOOGLEADS_LIB_UTILS_DIR - which should look like: vendor/googleads/googleads-php-lib/src/Google/Api/Ads/AdWords/Util/v201603
+     *  - GOOGLEADS_LIB_UTILS_DIR - which should probably look like: /path/to/vendor/googleads/googleads-php-lib/src/Google/Api/Ads/AdWords/Util/v201603
      * @param array $map
      */
     static function setup(array $map)
