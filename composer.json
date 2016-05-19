@@ -1,7 +1,11 @@
 {
   "name": "tetris/adwords",
   "description": "Adwords interface",
+  "homepage": "https://github.com/tetris-solutions/adwords",
+  "type": "library",
+  "license": "MIT",
   "require": {
+    "php": ">=7.0.0",
     "googleads/googleads-php-lib": "^9.0"
   },
   "authors": [
