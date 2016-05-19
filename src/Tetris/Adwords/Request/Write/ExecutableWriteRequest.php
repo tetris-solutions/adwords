@@ -25,6 +25,8 @@ class ExecutableWriteRequest extends Request
      */
     protected $service;
 
+    private $result;
+
     function __construct(Client $client, string $operator, string $className, array $values, $serviceName = null)
     {
         $this->client = $client;
@@ -38,6 +40,15 @@ class ExecutableWriteRequest extends Request
 
     function returning(array $fieldMap)
     {
+        if (empty($this->result)) {
+            $this->execute();
+        }
+
+        return AdwordsObjectParser::readFieldsFromAdwordsObject(self::normalizeFieldMaps($fieldMap), $this->result->value);
+    }
+
+    function execute()
+    {
         $entityOperationClass = $this->className . 'Operation';
 
         /**
@@ -47,8 +58,6 @@ class ExecutableWriteRequest extends Request
         $operation->operand = AdwordsObjectParser::readFieldsFromArrayIntoAdwordsObject($this->className, $this->values);
         $operation->operator = $this->operator;
 
-        $result = $this->service->mutate([$operation]);
-
-        return AdwordsObjectParser::readFieldsFromAdwordsObject(self::normalizeFieldMaps($fieldMap), $result->value);
+        $this->result = $this->service->mutate([$operation]);
     }
 }

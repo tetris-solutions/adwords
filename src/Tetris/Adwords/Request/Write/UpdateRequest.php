@@ -18,7 +18,7 @@ class UpdateRequest extends WriteRequest
         $this->serviceName = $serviceName;
     }
 
-    function set(array $values): self
+    function set(array $values): ExecutableWriteRequest
     {
         return new ExecutableWriteRequest($this->client, 'SET', $this->className, $values, $this->serviceName);
     }
