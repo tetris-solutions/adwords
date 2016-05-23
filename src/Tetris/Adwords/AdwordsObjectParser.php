@@ -6,6 +6,7 @@ use Campaign;
 use ManagedCustomer;
 use Budget;
 use Money;
+use Nayjest\StrCaseConverter\Str;
 
 abstract class AdwordsObjectParser
 {
@@ -97,7 +98,7 @@ abstract class AdwordsObjectParser
         $entity = new $className();
 
         foreach ($fields as $field => $value) {
-            $field = lcfirst($field);
+            $field = lcfirst(Str::toCamelCase($field));
 
             if (!property_exists($entity, $field)) continue;
 

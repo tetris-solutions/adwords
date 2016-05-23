@@ -6,7 +6,8 @@
   "license": "MIT",
   "require": {
     "php": ">=7.0.0",
-    "googleads/googleads-php-lib": "^9.0"
+    "googleads/googleads-php-lib": "^9.0",
+    "nayjest/str-case-converter": "^1.0"
   },
   "authors": [
     {

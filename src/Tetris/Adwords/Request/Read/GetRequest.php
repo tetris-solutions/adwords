@@ -2,6 +2,8 @@
 
 namespace Tetris\Adwords\Request\Read;
 
+use DateTime;
+
 use Campaign;
 use Budget;
 use ManagedCustomer;
@@ -64,5 +66,10 @@ class GetRequest extends ReadRequest
     function fetchAll(): array
     {
         return $this->fetch();
+    }
+
+    function during(DateTime $start, DateTime $end)
+    {
+        throw new \Exception('Filtering by date range is not supported by regular Service.get() requests');
     }
 }
