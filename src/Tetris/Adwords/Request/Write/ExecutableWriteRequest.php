@@ -44,7 +44,10 @@ class ExecutableWriteRequest extends Request
             $this->execute();
         }
 
-        return AdwordsObjectParser::readFieldsFromAdwordsObject(self::normalizeFieldMaps($fieldMap), $this->result->value);
+        return AdwordsObjectParser::readFieldsFromAdwordsObject(
+            self::normalizeFieldMaps($fieldMap),
+            $this->result->value[0]
+        );
     }
 
     function execute()
