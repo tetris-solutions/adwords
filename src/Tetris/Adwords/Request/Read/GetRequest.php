@@ -68,7 +68,7 @@ class GetRequest extends ReadRequest
         return $this->fetch();
     }
 
-    function during(DateTime $start, DateTime $end)
+    function during(DateTime $start, DateTime $end): ReadInterface
     {
         throw new \Exception('Filtering by date range is not supported by regular Service.get() requests');
     }

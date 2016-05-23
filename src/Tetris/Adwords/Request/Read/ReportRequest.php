@@ -27,7 +27,7 @@ class ReportRequest extends ReadRequest
         $this->client->LoadService('ReportDefinitionService');
     }
 
-    function during(DateTime $start, DateTime $end)
+    function during(DateTime $start, DateTime $end): ReadInterface
     {
         $this->selector->dateRange = new DateRange($start->format('Ymd'), $end->format('Ymd'));
         return $this;
