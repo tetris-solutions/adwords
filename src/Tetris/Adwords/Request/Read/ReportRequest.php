@@ -67,7 +67,13 @@ class ReportRequest extends ReadRequest
 
     function fetchOne()
     {
-        $attributes = $this->fetch()->table->row->{'@attributes'};
+        $result = $this->fetch();
+
+        if (empty($result->table->row->{'@attributes'})) {
+            throw new \Exception('Could not load report result');
+        }
+
+        $attributes = $result->table->row->{'@attributes'};
 
         return $this->readFieldsFromXmlObject($attributes);
     }
