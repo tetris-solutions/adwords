@@ -107,8 +107,8 @@ abstract class AdwordsObjectParser
                     $entity->budget = new Budget($value);
                     break;
                 case 'amount':
-                    $micro = round($value, 2) * 10 ** 6;
-                    $entity->amount = new Money((int)$micro);
+                    $micro = intval(floor($value * 100) * 10 ** 4);
+                    $entity->amount = new Money($micro);
                     break;
                 default:
                     $entity->{$field} = $value;
