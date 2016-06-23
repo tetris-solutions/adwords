@@ -2,6 +2,8 @@
 
 namespace Tetris\Adwords;
 
+use AdGroupAd;
+use TextAd;
 use Campaign;
 use ManagedCustomer;
 use Budget;
@@ -48,6 +50,60 @@ abstract class AdwordsObjectParser
                     $input = $input->budget;
 
                     break;
+            }
+        }
+
+        if ($input instanceof AdGroupAd) {
+            $directAttributes = [
+                'AdGroupAdDisapprovalReasons',
+                'AdGroupAdTrademarkDisapproved',
+                'AdGroupCreativeApprovalStatus',
+                'AdGroupId',
+                'AdType',
+                'BaseAdGroupId',
+                'BaseCampaignId',
+                'Labels',
+                'Status'
+            ];
+            $experimentAttributes = [
+                'ExperimentDataStatus',
+                'ExperimentDeltaStatus',
+                'ExperimentId'
+            ];
+
+            $isAdAttribute = !in_array($inputField, $directAttributes);
+            $isExperimentAttribute = in_array($inputField, $experimentAttributes);
+
+            if ($inputField === 'TemplateOriginAdId') {
+                $inputField = 'OriginAdId';
+            } else {
+                $removablePrefixes = [
+                    'AdGroupAd',
+                    'AdGroupCreative',
+                    'Ad',
+                    'Creative',
+                    'CallOnlyAd',
+                    'RichMediaAd',
+                    'TemplateAd'
+                ];
+
+                foreach ($removablePrefixes as $prefix) {
+                    if (strpos($inputField, $prefix) === 0) {
+                        $inputField = str_replace($prefix, '', $inputField);
+                        break;
+                    }
+                }
+            }
+
+            if ($isExperimentAttribute) {
+                if (!isset($outputArray['experiment'])) {
+                    $outputArray['experiment'] = [];
+                }
+
+                $input = $input->experimentData;
+                $output = &$outputArray['experiment'];
+            } else if ($isAdAttribute) {
+                $input = $input->ad;
             }
         }
 
