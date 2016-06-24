@@ -1,0 +1,2032 @@
+{
+  "AccountLabelService": {
+    "LabelId": [
+      "id"
+    ],
+    "LabelName": [
+      "name"
+    ]
+  },
+  "AdCustomizerFeedService": {
+    "FeedAttributes": [
+      "feedAttributes"
+    ],
+    "FeedId": [
+      "feedId"
+    ],
+    "FeedName": [
+      "feedName"
+    ],
+    "FeedStatus": [
+      "feedStatus"
+    ]
+  },
+  "AdGroupAdService": {
+    "AdGroupAdDisapprovalReasons": [
+      "disapprovalReasons"
+    ],
+    "AdGroupAdTrademarkDisapproved": [
+      "trademarkDisapproved"
+    ],
+    "AdGroupCreativeApprovalStatus": [
+      "approvalStatus"
+    ],
+    "AdGroupId": [
+      "adGroupId"
+    ],
+    "AdType": [
+      "ad",
+      "type"
+    ],
+    "AdvertisingId": [
+      "ad",
+      "templateElements",
+      "fields",
+      "fieldMedia",
+      "advertisingId"
+    ],
+    "BaseAdGroupId": [
+      "baseAdGroupId"
+    ],
+    "BaseCampaignId": [
+      "baseCampaignId"
+    ],
+    "BusinessName": [
+      "ad",
+      "businessName"
+    ],
+    "CallOnlyAdBusinessName": [
+      "ad",
+      "businessName"
+    ],
+    "CallOnlyAdCallTracked": [
+      "ad",
+      "callTracked"
+    ],
+    "CallOnlyAdConversionTypeId": [
+      "ad",
+      "conversionTypeId"
+    ],
+    "CallOnlyAdCountryCode": [
+      "ad",
+      "countryCode"
+    ],
+    "CallOnlyAdDescription1": [
+      "ad",
+      "description1"
+    ],
+    "CallOnlyAdDescription2": [
+      "ad",
+      "description2"
+    ],
+    "CallOnlyAdDisableCallConversion": [
+      "ad",
+      "disableCallConversion"
+    ],
+    "CallOnlyAdPhoneNumber": [
+      "ad",
+      "phoneNumber"
+    ],
+    "CallOnlyAdPhoneNumberVerificationUrl": [
+      "ad",
+      "phoneNumberVerificationUrl"
+    ],
+    "CreationTime": [
+      "ad",
+      "image",
+      "creationTimeentries",
+      "ad",
+      "templateElements",
+      "fields",
+      "fieldMedia",
+      "creationTime"
+    ],
+    "CreativeFinalAppUrls": [
+      "ad",
+      "finalAppUrls"
+    ],
+    "CreativeFinalMobileUrls": [
+      "ad",
+      "finalMobileUrls"
+    ],
+    "CreativeFinalUrls": [
+      "ad",
+      "finalUrls"
+    ],
+    "CreativeTrackingUrlTemplate": [
+      "ad",
+      "trackingUrlTemplate"
+    ],
+    "CreativeUrlCustomParameters": [
+      "ad",
+      "urlCustomParameters"
+    ],
+    "Description": [
+      "ad",
+      "description"
+    ],
+    "Description1": [
+      "ad",
+      "description1"
+    ],
+    "Description2": [
+      "ad",
+      "description2"
+    ],
+    "DevicePreference": [
+      "ad",
+      "devicePreference"
+    ],
+    "Dimensions": [
+      "ad",
+      "image",
+      "dimensionsentries",
+      "ad",
+      "templateElements",
+      "fields",
+      "fieldMedia",
+      "dimensions"
+    ],
+    "DisplayUrl": [
+      "ad",
+      "displayUrl"
+    ],
+    "ExpandingDirections": [
+      "ad",
+      "expandingDirections"
+    ],
+    "ExperimentDataStatus": [
+      "experimentData",
+      "experimentDataStatus"
+    ],
+    "ExperimentDeltaStatus": [
+      "experimentData",
+      "experimentDeltaStatus"
+    ],
+    "ExperimentId": [
+      "experimentData",
+      "experimentId"
+    ],
+    "FileSize": [
+      "ad",
+      "image",
+      "fileSizeentries",
+      "ad",
+      "templateElements",
+      "fields",
+      "fieldMedia",
+      "fileSize"
+    ],
+    "Headline": [
+      "ad",
+      "headline"
+    ],
+    "HeadlinePart1": [
+      "ad",
+      "headlinePart1"
+    ],
+    "HeadlinePart2": [
+      "ad",
+      "headlinePart2"
+    ],
+    "Height": [
+      "ad",
+      "dimensions",
+      "height"
+    ],
+    "Id": [
+      "ad",
+      "id"
+    ],
+    "ImageCreativeName": [
+      "ad",
+      "name"
+    ],
+    "IndustryStandardCommercialIdentifier": [
+      "ad",
+      "templateElements",
+      "fields",
+      "fieldMedia",
+      "industryStandardCommercialIdentifier"
+    ],
+    "IsCookieTargeted": [
+      "ad",
+      "isCookieTargeted"
+    ],
+    "IsTagged": [
+      "ad",
+      "isTagged"
+    ],
+    "IsUserInterestTargeted": [
+      "ad",
+      "isUserInterestTargeted"
+    ],
+    "Labels": [
+      "labels"
+    ],
+    "LongHeadline": [
+      "ad",
+      "longHeadline"
+    ],
+    "MediaId": [
+      "ad",
+      "image",
+      "mediaIdentries",
+      "ad",
+      "templateElements",
+      "fields",
+      "fieldMedia",
+      "mediaId"
+    ],
+    "MimeType": [
+      "ad",
+      "image",
+      "mimeTypeentries",
+      "ad",
+      "templateElements",
+      "fields",
+      "fieldMedia",
+      "mimeType"
+    ],
+    "Path1": [
+      "ad",
+      "path1"
+    ],
+    "Path2": [
+      "ad",
+      "path2"
+    ],
+    "ReadyToPlayOnTheWeb": [
+      "ad",
+      "templateElements",
+      "fields",
+      "fieldMedia",
+      "readyToPlayOnTheWeb"
+    ],
+    "ReferenceId": [
+      "ad",
+      "image",
+      "referenceIdentries",
+      "ad",
+      "templateElements",
+      "fields",
+      "fieldMedia",
+      "referenceId"
+    ],
+    "RichMediaAdCertifiedVendorFormatId": [
+      "ad",
+      "certifiedVendorFormatId"
+    ],
+    "RichMediaAdDuration": [
+      "ad",
+      "adDuration"
+    ],
+    "RichMediaAdImpressionBeaconUrl": [
+      "ad",
+      "impressionBeaconUrl"
+    ],
+    "RichMediaAdName": [
+      "ad",
+      "name"
+    ],
+    "RichMediaAdSnippet": [
+      "ad",
+      "snippet"
+    ],
+    "RichMediaAdSourceUrl": [
+      "ad",
+      "sourceUrl"
+    ],
+    "RichMediaAdType": [
+      "ad",
+      "richMediaAdType"
+    ],
+    "ShortHeadline": [
+      "ad",
+      "shortHeadline"
+    ],
+    "SourceUrl": [
+      "ad",
+      "image",
+      "sourceUrlentries",
+      "ad",
+      "templateElements",
+      "fields",
+      "fieldMedia",
+      "sourceUrl"
+    ],
+    "Status": [
+      "status"
+    ],
+    "TemplateAdDuration": [
+      "ad",
+      "duration"
+    ],
+    "TemplateAdName": [
+      "ad",
+      "name"
+    ],
+    "TemplateAdUnionId": [
+      "ad",
+      "adUnionId"
+    ],
+    "TemplateElementFieldName": [
+      "ad",
+      "templateElements",
+      "fields",
+      "name"
+    ],
+    "TemplateElementFieldText": [
+      "ad",
+      "templateElements",
+      "fields",
+      "fieldText"
+    ],
+    "TemplateElementFieldType": [
+      "ad",
+      "templateElements",
+      "fields",
+      "type"
+    ],
+    "TemplateId": [
+      "ad",
+      "templateId"
+    ],
+    "TemplateOriginAdId": [
+      "ad",
+      "originAdId"
+    ],
+    "Trademarks": [
+      "trademarks"
+    ],
+    "UniqueName": [
+      "ad",
+      "templateElements",
+      "uniqueName"
+    ],
+    "Url": [
+      "ad",
+      "url"
+    ],
+    "Urls": [
+      "ad",
+      "image",
+      "urlsentries",
+      "ad",
+      "templateElements",
+      "fields",
+      "fieldMedia",
+      "urls"
+    ],
+    "VideoTypes": [
+      "ad",
+      "videoTypes"
+    ],
+    "Width": [
+      "ad",
+      "dimensions",
+      "width"
+    ],
+    "YouTubeVideoIdString": [
+      "ad",
+      "templateElements",
+      "fields",
+      "fieldMedia",
+      "youTubeVideoIdString"
+    ]
+  },
+  "AdGroupBidModifierService": {
+    "AdGroupId": [
+      "adGroupId"
+    ],
+    "BaseAdGroupId": [
+      "baseAdGroupId"
+    ],
+    "BidModifier": [
+      "bidModifier"
+    ],
+    "BidModifierSource": [
+      "bidModifierSource"
+    ],
+    "CampaignId": [
+      "campaignId"
+    ],
+    "CriteriaType": [
+      "criterion",
+      "type"
+    ],
+    "Id": [
+      "criterion",
+      "id"
+    ],
+    "PlatformName": [
+      "criterion",
+      "platformName"
+    ]
+  },
+  "AdGroupCriterionService": {
+    "AdGroupId": [
+      "adGroupId"
+    ],
+    "AgeRangeType": [
+      "criterion",
+      "ageRangeType"
+    ],
+    "AppId": [
+      "criterion",
+      "appId"
+    ],
+    "AppPaymentModelType": [
+      "criterion",
+      "appPaymentModelType"
+    ],
+    "ApprovalStatus": [
+      "approvalStatus"
+    ],
+    "BaseAdGroupId": [
+      "baseAdGroupId"
+    ],
+    "BaseCampaignId": [
+      "baseCampaignId"
+    ],
+    "BidModifier": [
+      "bidModifier"
+    ],
+    "BidType": [
+      "biddingStrategyConfiguration",
+      "biddingScheme",
+      "bidType"
+    ],
+    "BiddingStrategyId": [
+      "biddingStrategyConfiguration",
+      "biddingStrategyId"
+    ],
+    "BiddingStrategyName": [
+      "biddingStrategyConfiguration",
+      "biddingStrategyName"
+    ],
+    "BiddingStrategySource": [
+      "biddingStrategyConfiguration",
+      "biddingStrategySource"
+    ],
+    "BiddingStrategyType": [
+      "biddingStrategyConfiguration",
+      "biddingStrategyType"
+    ],
+    "CaseValue": [
+      "criterion",
+      "caseValue"
+    ],
+    "ChannelId": [
+      "criterion",
+      "channelId"
+    ],
+    "ChannelName": [
+      "criterion",
+      "channelName"
+    ],
+    "CpcBid": [
+      "biddingStrategyConfiguration",
+      "bids",
+      "bid"
+    ],
+    "CpcBidSource": [
+      "biddingStrategyConfiguration",
+      "bids",
+      "cpcBidSource"
+    ],
+    "CpmBid": [
+      "biddingStrategyConfiguration",
+      "bids",
+      "bid"
+    ],
+    "CpmBidSource": [
+      "biddingStrategyConfiguration",
+      "bids",
+      "cpmBidSource"
+    ],
+    "CriteriaCoverage": [
+      "criterion",
+      "criteriaCoverage"
+    ],
+    "CriteriaSamples": [
+      "criterion",
+      "criteriaSamples"
+    ],
+    "CriteriaType": [
+      "criterion",
+      "type"
+    ],
+    "CriterionUse": [
+      "criterionUse"
+    ],
+    "DestinationUrl": [
+      "destinationUrl"
+    ],
+    "DisapprovalReasons": [
+      "disapprovalReasons"
+    ],
+    "DisplayName": [
+      "criterion",
+      "displayName"
+    ],
+    "EnhancedCpcEnabled": [
+      "biddingStrategyConfiguration",
+      "biddingScheme",
+      "enhancedCpcEnabled"
+    ],
+    "ExperimentBidMultiplier": [
+      "experimentData",
+      "experimentBidMultiplier"
+    ],
+    "ExperimentDataStatus": [
+      "experimentData",
+      "experimentDataStatus"
+    ],
+    "ExperimentDeltaStatus": [
+      "experimentData",
+      "experimentDeltaStatus"
+    ],
+    "ExperimentId": [
+      "experimentData",
+      "experimentId"
+    ],
+    "FinalAppUrls": [
+      "finalAppUrls"
+    ],
+    "FinalMobileUrls": [
+      "finalMobileUrls"
+    ],
+    "FinalUrls": [
+      "finalUrls"
+    ],
+    "FirstPageCpc": [
+      "firstPageCpc"
+    ],
+    "FirstPositionCpc": [
+      "firstPositionCpc"
+    ],
+    "GenderType": [
+      "criterion",
+      "genderType"
+    ],
+    "Id": [
+      "criterion",
+      "id"
+    ],
+    "KeywordMatchType": [
+      "criterion",
+      "matchType"
+    ],
+    "KeywordText": [
+      "criterion",
+      "text"
+    ],
+    "Labels": [
+      "labels"
+    ],
+    "MobileAppCategoryId": [
+      "criterion",
+      "mobileAppCategoryId"
+    ],
+    "Parameter": [
+      "criterion",
+      "parameter"
+    ],
+    "ParentCriterionId": [
+      "criterion",
+      "parentCriterionId"
+    ],
+    "ParentType": [
+      "criterion",
+      "parentType"
+    ],
+    "PartitionType": [
+      "criterion",
+      "partitionType"
+    ],
+    "Path": [
+      "criterion",
+      "path"
+    ],
+    "PlacementUrl": [
+      "criterion",
+      "url"
+    ],
+    "QualityScore": [
+      "qualityInfo",
+      "qualityScore"
+    ],
+    "Status": [
+      "userStatus"
+    ],
+    "SystemServingStatus": [
+      "systemServingStatus"
+    ],
+    "TopOfPageCpc": [
+      "topOfPageCpc"
+    ],
+    "TrackingUrlTemplate": [
+      "trackingUrlTemplate"
+    ],
+    "UrlCustomParameters": [
+      "urlCustomParameters"
+    ],
+    "UserInterestId": [
+      "criterion",
+      "userInterestId"
+    ],
+    "UserInterestName": [
+      "criterion",
+      "userInterestName"
+    ],
+    "UserInterestParentId": [
+      "criterion",
+      "userInterestParentId"
+    ],
+    "UserListEligibleForDisplay": [
+      "criterion",
+      "userListEligibleForDisplay"
+    ],
+    "UserListEligibleForSearch": [
+      "criterion",
+      "userListEligibleForSearch"
+    ],
+    "UserListId": [
+      "criterion",
+      "userListId"
+    ],
+    "UserListMembershipStatus": [
+      "criterion",
+      "userListMembershipStatus"
+    ],
+    "UserListName": [
+      "criterion",
+      "userListName"
+    ],
+    "VerticalId": [
+      "criterion",
+      "verticalId"
+    ],
+    "VerticalParentId": [
+      "criterion",
+      "verticalParentId"
+    ],
+    "VideoId": [
+      "criterion",
+      "videoId"
+    ],
+    "VideoName": [
+      "criterion",
+      "videoName"
+    ]
+  },
+  "AdGroupExtensionSettingService": {
+    "AdGroupId": [
+      "adGroupId"
+    ],
+    "ExtensionType": [
+      "extensionType"
+    ],
+    "Extensions": [
+      "extensionSetting",
+      "extensions"
+    ],
+    "PlatformRestrictions": [
+      "extensionSetting",
+      "platformRestrictions"
+    ]
+  },
+  "AdGroupFeedService": {
+    "AdGroupId": [
+      "adGroupId"
+    ],
+    "BaseAdGroupId": [
+      "baseAdGroupId"
+    ],
+    "BaseCampaignId": [
+      "baseCampaignId"
+    ],
+    "FeedId": [
+      "feedId"
+    ],
+    "MatchingFunction": [
+      "matchingFunction"
+    ],
+    "PlaceholderTypes": [
+      "placeholderTypes"
+    ],
+    "Status": [
+      "status"
+    ]
+  },
+  "AdGroupService": {
+    "BaseAdGroupId": [
+      "baseAdGroupId"
+    ],
+    "BaseCampaignId": [
+      "baseCampaignId"
+    ],
+    "BidType": [
+      "biddingStrategyConfiguration",
+      "biddingScheme",
+      "bidType"
+    ],
+    "BiddingStrategyId": [
+      "biddingStrategyConfiguration",
+      "biddingStrategyId"
+    ],
+    "BiddingStrategyName": [
+      "biddingStrategyConfiguration",
+      "biddingStrategyName"
+    ],
+    "BiddingStrategySource": [
+      "biddingStrategyConfiguration",
+      "biddingStrategySource"
+    ],
+    "BiddingStrategyType": [
+      "biddingStrategyConfiguration",
+      "biddingStrategyType"
+    ],
+    "CampaignId": [
+      "campaignId"
+    ],
+    "CampaignName": [
+      "campaignName"
+    ],
+    "ContentBidCriterionTypeGroup": [
+      "contentBidCriterionTypeGroup"
+    ],
+    "CpcBid": [
+      "biddingStrategyConfiguration",
+      "bids",
+      "bid"
+    ],
+    "CpmBid": [
+      "biddingStrategyConfiguration",
+      "bids",
+      "bid"
+    ],
+    "EnhancedCpcEnabled": [
+      "biddingStrategyConfiguration",
+      "biddingScheme",
+      "enhancedCpcEnabled"
+    ],
+    "ExperimentDataStatus": [
+      "experimentData",
+      "experimentDataStatus"
+    ],
+    "ExperimentDeltaStatus": [
+      "experimentData",
+      "experimentDeltaStatus"
+    ],
+    "ExperimentId": [
+      "experimentData",
+      "experimentId"
+    ],
+    "Id": [
+      "id"
+    ],
+    "Labels": [
+      "labels"
+    ],
+    "MaxContentCpcMultiplier": [
+      "experimentData",
+      "experimentBidMultipliers",
+      "maxContentCpcMultiplier"
+    ],
+    "MaxCpcMultiplier": [
+      "experimentData",
+      "experimentBidMultipliers",
+      "maxCpcMultiplier"
+    ],
+    "MaxCpmMultiplier": [
+      "experimentData",
+      "experimentBidMultipliers",
+      "maxCpmMultiplier"
+    ],
+    "Name": [
+      "name"
+    ],
+    "Settings": [
+      "settings"
+    ],
+    "Status": [
+      "status"
+    ],
+    "TargetCpa": [
+      "biddingStrategyConfiguration",
+      "biddingScheme",
+      "targetCpa"
+    ],
+    "TargetCpaBid": [
+      "biddingStrategyConfiguration",
+      "bids",
+      "bid"
+    ],
+    "TargetCpaBidSource": [
+      "biddingStrategyConfiguration",
+      "bids",
+      "bidSource"
+    ],
+    "TrackingUrlTemplate": [
+      "trackingUrlTemplate"
+    ],
+    "UrlCustomParameters": [
+      "urlCustomParameters"
+    ]
+  },
+  "AdParamService": {
+    "AdGroupId": [
+      "adGroupId"
+    ],
+    "CriterionId": [
+      "criterionId"
+    ],
+    "InsertionText": [
+      "insertionText"
+    ],
+    "ParamIndex": [
+      "paramIndex"
+    ]
+  },
+  "AdwordsUserListService": {
+    "AccessReason": [
+      "accessReason"
+    ],
+    "AccountUserListStatus": [
+      "accountUserListStatus"
+    ],
+    "ConversionTypes": [
+      "conversionTypes"
+    ],
+    "DateSpecificListEndDate": [
+      "endDate"
+    ],
+    "DateSpecificListRule": [
+      "rule"
+    ],
+    "DateSpecificListStartDate": [
+      "startDate"
+    ],
+    "Description": [
+      "description"
+    ],
+    "ExpressionListRule": [
+      "rule"
+    ],
+    "Id": [
+      "id"
+    ],
+    "IntegrationCode": [
+      "integrationCode"
+    ],
+    "IsEligibleForDisplay": [
+      "isEligibleForDisplay"
+    ],
+    "IsEligibleForSearch": [
+      "isEligibleForSearch"
+    ],
+    "IsReadOnly": [
+      "isReadOnly"
+    ],
+    "ListType": [
+      "listType"
+    ],
+    "MembershipLifeSpan": [
+      "membershipLifeSpan"
+    ],
+    "Name": [
+      "name"
+    ],
+    "Rules": [
+      "rules"
+    ],
+    "SeedListSize": [
+      "seedListSize"
+    ],
+    "SeedUserListDescription": [
+      "seedUserListDescription"
+    ],
+    "SeedUserListId": [
+      "seedUserListId"
+    ],
+    "SeedUserListName": [
+      "seedUserListName"
+    ],
+    "SeedUserListStatus": [
+      "seedUserListStatus"
+    ],
+    "Size": [
+      "size"
+    ],
+    "SizeForSearch": [
+      "sizeForSearch"
+    ],
+    "SizeRange": [
+      "sizeRange"
+    ],
+    "SizeRangeForSearch": [
+      "sizeRangeForSearch"
+    ],
+    "Status": [
+      "status"
+    ]
+  },
+  "BatchJobService": {
+    "DownloadUrl": [
+      "downloadUrl"
+    ],
+    "Id": [
+      "id"
+    ],
+    "ProcessingErrors": [
+      "processingErrors"
+    ],
+    "ProgressStats": [
+      "progressStats"
+    ],
+    "Status": [
+      "status"
+    ]
+  },
+  "BiddingStrategyService": {
+    "BiddingScheme": [
+      "biddingScheme"
+    ],
+    "Id": [
+      "id"
+    ],
+    "Name": [
+      "name"
+    ],
+    "Status": [
+      "status"
+    ],
+    "SystemStatus": [
+      "systemStatus"
+    ],
+    "Type": [
+      "type"
+    ]
+  },
+  "BudgetOrderService": {
+    "BillingAccountId": [
+      "billingAccountId"
+    ],
+    "BillingAccountName": [
+      "billingAccountName"
+    ],
+    "BudgetOrderName": [
+      "budgetOrderName"
+    ],
+    "EndDateTime": [
+      "endDateTime"
+    ],
+    "Id": [
+      "id"
+    ],
+    "LastRequest": [
+      "lastRequest"
+    ],
+    "PoNumber": [
+      "poNumber"
+    ],
+    "PrimaryBillingId": [
+      "primaryBillingId"
+    ],
+    "SecondaryBillingId": [
+      "secondaryBillingId"
+    ],
+    "SpendingLimit": [
+      "spendingLimit"
+    ],
+    "StartDateTime": [
+      "startDateTime"
+    ]
+  },
+  "BudgetService": {
+    "Amount": [
+      "amount"
+    ],
+    "BudgetId": [
+      "budgetId"
+    ],
+    "BudgetName": [
+      "name"
+    ],
+    "BudgetReferenceCount": [
+      "referenceCount"
+    ],
+    "BudgetStatus": [
+      "status"
+    ],
+    "DeliveryMethod": [
+      "deliveryMethod"
+    ],
+    "IsBudgetExplicitlyShared": [
+      "isExplicitlyShared"
+    ]
+  },
+  "CampaignCriterionService": {
+    "Address": [
+      "criterion",
+      "address"
+    ],
+    "AgeRangeType": [
+      "criterion",
+      "ageRangeType"
+    ],
+    "AppId": [
+      "criterion",
+      "appId"
+    ],
+    "BaseCampaignId": [
+      "baseCampaignId"
+    ],
+    "BidModifier": [
+      "bidModifier"
+    ],
+    "CampaignId": [
+      "campaignId"
+    ],
+    "CarrierCountryCode": [
+      "criterion",
+      "countryCode"
+    ],
+    "CarrierName": [
+      "criterion",
+      "name"
+    ],
+    "ChannelId": [
+      "criterion",
+      "channelId"
+    ],
+    "ChannelName": [
+      "criterion",
+      "channelName"
+    ],
+    "ContentLabelType": [
+      "criterion",
+      "contentLabelType"
+    ],
+    "CriteriaType": [
+      "criterion",
+      "type"
+    ],
+    "DayOfWeek": [
+      "criterion",
+      "dayOfWeek"
+    ],
+    "DeviceName": [
+      "criterion",
+      "deviceName"
+    ],
+    "DeviceType": [
+      "criterion",
+      "deviceType"
+    ],
+    "Dimensions": [
+      "criterion",
+      "dimensions"
+    ],
+    "DisplayName": [
+      "criterion",
+      "displayName"
+    ],
+    "DisplayType": [
+      "criterion",
+      "displayType"
+    ],
+    "EndHour": [
+      "criterion",
+      "endHour"
+    ],
+    "EndMinute": [
+      "criterion",
+      "endMinute"
+    ],
+    "FeedId": [
+      "criterion",
+      "feedId"
+    ],
+    "GenderType": [
+      "criterion",
+      "genderType"
+    ],
+    "GeoPoint": [
+      "criterion",
+      "geoPoint"
+    ],
+    "Id": [
+      "criterion",
+      "id"
+    ],
+    "IpAddress": [
+      "criterion",
+      "ipAddress"
+    ],
+    "IsNegative": [
+      "isNegative"
+    ],
+    "KeywordMatchType": [
+      "criterion",
+      "matchType"
+    ],
+    "KeywordText": [
+      "criterion",
+      "text"
+    ],
+    "LanguageCode": [
+      "criterion",
+      "code"
+    ],
+    "LanguageName": [
+      "criterion",
+      "name"
+    ],
+    "LocationName": [
+      "criterion",
+      "locationName"
+    ],
+    "ManufacturerName": [
+      "criterion",
+      "manufacturerName"
+    ],
+    "MatchingFunction": [
+      "criterion",
+      "matchingFunction"
+    ],
+    "MobileAppCategoryId": [
+      "criterion",
+      "mobileAppCategoryId"
+    ],
+    "OperatingSystemName": [
+      "criterion",
+      "name"
+    ],
+    "OperatorType": [
+      "criterion",
+      "operatorType"
+    ],
+    "OsMajorVersion": [
+      "criterion",
+      "osMajorVersion"
+    ],
+    "OsMinorVersion": [
+      "criterion",
+      "osMinorVersion"
+    ],
+    "Parameter": [
+      "criterion",
+      "parameter"
+    ],
+    "ParentLocations": [
+      "criterion",
+      "parentLocations"
+    ],
+    "ParentType": [
+      "criterion",
+      "parentType"
+    ],
+    "Path": [
+      "criterion",
+      "path"
+    ],
+    "PlacementUrl": [
+      "criterion",
+      "url"
+    ],
+    "PlatformName": [
+      "criterion",
+      "platformName"
+    ],
+    "RadiusDistanceUnits": [
+      "criterion",
+      "radiusDistanceUnits"
+    ],
+    "RadiusInUnits": [
+      "criterion",
+      "radiusInUnits"
+    ],
+    "StartHour": [
+      "criterion",
+      "startHour"
+    ],
+    "StartMinute": [
+      "criterion",
+      "startMinute"
+    ],
+    "TargetingStatus": [
+      "criterion",
+      "targetingStatus"
+    ],
+    "UserInterestId": [
+      "criterion",
+      "userInterestId"
+    ],
+    "UserInterestName": [
+      "criterion",
+      "userInterestName"
+    ],
+    "UserInterestParentId": [
+      "criterion",
+      "userInterestParentId"
+    ],
+    "UserListEligibleForDisplay": [
+      "criterion",
+      "userListEligibleForDisplay"
+    ],
+    "UserListEligibleForSearch": [
+      "criterion",
+      "userListEligibleForSearch"
+    ],
+    "UserListId": [
+      "criterion",
+      "userListId"
+    ],
+    "UserListMembershipStatus": [
+      "criterion",
+      "userListMembershipStatus"
+    ],
+    "UserListName": [
+      "criterion",
+      "userListName"
+    ],
+    "VerticalId": [
+      "criterion",
+      "verticalId"
+    ],
+    "VerticalParentId": [
+      "criterion",
+      "verticalParentId"
+    ],
+    "VideoId": [
+      "criterion",
+      "videoId"
+    ],
+    "VideoName": [
+      "criterion",
+      "videoName"
+    ]
+  },
+  "CampaignExtensionSettingService": {
+    "CampaignId": [
+      "campaignId"
+    ],
+    "ExtensionType": [
+      "extensionType"
+    ],
+    "Extensions": [
+      "extensionSetting",
+      "extensions"
+    ],
+    "PlatformRestrictions": [
+      "extensionSetting",
+      "platformRestrictions"
+    ]
+  },
+  "CampaignFeedService": {
+    "BaseCampaignId": [
+      "baseCampaignId"
+    ],
+    "CampaignId": [
+      "campaignId"
+    ],
+    "FeedId": [
+      "feedId"
+    ],
+    "MatchingFunction": [
+      "matchingFunction"
+    ],
+    "PlaceholderTypes": [
+      "placeholderTypes"
+    ],
+    "Status": [
+      "status"
+    ]
+  },
+  "CampaignService": {
+    "AdServingOptimizationStatus": [
+      "adServingOptimizationStatus"
+    ],
+    "AdvertisingChannelSubType": [
+      "advertisingChannelSubType"
+    ],
+    "AdvertisingChannelType": [
+      "advertisingChannelType"
+    ],
+    "Amount": [
+      "budget",
+      "amount"
+    ],
+    "BaseCampaignId": [
+      "baseCampaignId"
+    ],
+    "BidCeiling": [
+      "biddingStrategyConfiguration",
+      "biddingScheme",
+      "bidCeiling"
+    ],
+    "BidType": [
+      "biddingStrategyConfiguration",
+      "biddingScheme",
+      "bidType"
+    ],
+    "BiddingStrategyId": [
+      "biddingStrategyConfiguration",
+      "biddingStrategyId"
+    ],
+    "BiddingStrategyName": [
+      "biddingStrategyConfiguration",
+      "biddingStrategyName"
+    ],
+    "BiddingStrategyType": [
+      "biddingStrategyConfiguration",
+      "biddingStrategyType"
+    ],
+    "BudgetId": [
+      "budget",
+      "budgetId"
+    ],
+    "BudgetName": [
+      "budget",
+      "name"
+    ],
+    "BudgetReferenceCount": [
+      "budget",
+      "referenceCount"
+    ],
+    "BudgetStatus": [
+      "budget",
+      "status"
+    ],
+    "CampaignTrialType": [
+      "campaignTrialType"
+    ],
+    "DeliveryMethod": [
+      "budget",
+      "deliveryMethod"
+    ],
+    "Eligible": [
+      "conversionOptimizerEligibility",
+      "eligible"
+    ],
+    "EndDate": [
+      "endDate"
+    ],
+    "EnhancedCpcEnabled": [
+      "biddingStrategyConfiguration",
+      "biddingScheme",
+      "enhancedCpcEnabled"
+    ],
+    "FrequencyCapMaxImpressions": [
+      "frequencyCap",
+      "impressions"
+    ],
+    "Id": [
+      "id"
+    ],
+    "IsBudgetExplicitlyShared": [
+      "budget",
+      "isExplicitlyShared"
+    ],
+    "Labels": [
+      "labels"
+    ],
+    "Level": [
+      "frequencyCap",
+      "level"
+    ],
+    "Name": [
+      "name"
+    ],
+    "PricingMode": [
+      "biddingStrategyConfiguration",
+      "biddingScheme",
+      "pricingMode"
+    ],
+    "RejectionReasons": [
+      "conversionOptimizerEligibility",
+      "rejectionReasons"
+    ],
+    "ServingStatus": [
+      "servingStatus"
+    ],
+    "Settings": [
+      "settings"
+    ],
+    "StartDate": [
+      "startDate"
+    ],
+    "Status": [
+      "status"
+    ],
+    "TargetContentNetwork": [
+      "networkSetting",
+      "targetContentNetwork"
+    ],
+    "TargetCpa": [
+      "biddingStrategyConfiguration",
+      "biddingScheme",
+      "targetCpa"
+    ],
+    "TargetCpaMaxCpcBidCeiling": [
+      "biddingStrategyConfiguration",
+      "biddingScheme",
+      "maxCpcBidCeiling"
+    ],
+    "TargetCpaMaxCpcBidFloor": [
+      "biddingStrategyConfiguration",
+      "biddingScheme",
+      "maxCpcBidFloor"
+    ],
+    "TargetGoogleSearch": [
+      "networkSetting",
+      "targetGoogleSearch"
+    ],
+    "TargetPartnerSearchNetwork": [
+      "networkSetting",
+      "targetPartnerSearchNetwork"
+    ],
+    "TargetRoas": [
+      "biddingStrategyConfiguration",
+      "biddingScheme",
+      "targetRoas"
+    ],
+    "TargetRoasBidCeiling": [
+      "biddingStrategyConfiguration",
+      "biddingScheme",
+      "bidCeiling"
+    ],
+    "TargetRoasBidFloor": [
+      "biddingStrategyConfiguration",
+      "biddingScheme",
+      "bidFloor"
+    ],
+    "TargetSearchNetwork": [
+      "networkSetting",
+      "targetSearchNetwork"
+    ],
+    "TargetSpendBidCeiling": [
+      "biddingStrategyConfiguration",
+      "biddingScheme",
+      "bidCeiling"
+    ],
+    "TargetSpendSpendTarget": [
+      "biddingStrategyConfiguration",
+      "biddingScheme",
+      "spendTarget"
+    ],
+    "TimeUnit": [
+      "frequencyCap",
+      "timeUnit"
+    ],
+    "TrackingUrlTemplate": [
+      "trackingUrlTemplate"
+    ],
+    "UrlCustomParameters": [
+      "urlCustomParameters"
+    ],
+    "VanityPharmaDisplayUrlMode": [
+      "vanityPharma",
+      "vanityPharmaDisplayUrlMode"
+    ],
+    "VanityPharmaText": [
+      "vanityPharma",
+      "vanityPharmaText"
+    ]
+  },
+  "CampaignSharedSetService": {
+    "CampaignId": [
+      "campaignId"
+    ],
+    "CampaignName": [
+      "campaignName"
+    ],
+    "SharedSetId": [
+      "sharedSetId"
+    ],
+    "SharedSetName": [
+      "sharedSetName"
+    ],
+    "SharedSetType": [
+      "sharedSetType"
+    ],
+    "Status": [
+      "status"
+    ]
+  },
+  "ConversionTrackerService": {
+    "AlwaysUseDefaultRevenueValue": [
+      "alwaysUseDefaultRevenueValue"
+    ],
+    "AppId": [
+      "appId"
+    ],
+    "AppPlatform": [
+      "appPlatform"
+    ],
+    "AppPostbackUrl": [
+      "appPostbackUrl"
+    ],
+    "BackgroundColor": [
+      "backgroundColor"
+    ],
+    "Category": [
+      "category"
+    ],
+    "ConversionPageLanguage": [
+      "conversionPageLanguage"
+    ],
+    "ConversionTypeOwnerCustomerId": [
+      "conversionTypeOwnerCustomerId"
+    ],
+    "CountingType": [
+      "countingType"
+    ],
+    "CtcLookbackWindow": [
+      "ctcLookbackWindow"
+    ],
+    "DefaultRevenueCurrencyCode": [
+      "defaultRevenueCurrencyCode"
+    ],
+    "DefaultRevenueValue": [
+      "defaultRevenueValue"
+    ],
+    "ExcludeFromBidding": [
+      "excludeFromBidding"
+    ],
+    "Id": [
+      "id"
+    ],
+    "LastReceivedRequestTime": [
+      "lastReceivedRequestTime"
+    ],
+    "MostRecentConversionDate": [
+      "mostRecentConversionDate"
+    ],
+    "Name": [
+      "name"
+    ],
+    "OriginalConversionTypeId": [
+      "originalConversionTypeId"
+    ],
+    "PhoneCallDuration": [
+      "phoneCallDuration"
+    ],
+    "Status": [
+      "status"
+    ],
+    "TextFormat": [
+      "textFormat"
+    ],
+    "TrackingCodeType": [
+      "trackingCodeType"
+    ],
+    "ViewthroughLookbackWindow": [
+      "viewthroughLookbackWindow"
+    ],
+    "WebsitePhoneCallDuration": [
+      "phoneCallDuration"
+    ]
+  },
+  "CustomerExtensionSettingService": {
+    "ExtensionType": [
+      "extensionType"
+    ],
+    "Extensions": [
+      "extensionSetting",
+      "extensions"
+    ],
+    "PlatformRestrictions": [
+      "extensionSetting",
+      "platformRestrictions"
+    ]
+  },
+  "CustomerFeedService": {
+    "FeedId": [
+      "feedId"
+    ],
+    "MatchingFunction": [
+      "matchingFunction"
+    ],
+    "PlaceholderTypes": [
+      "placeholderTypes"
+    ],
+    "Status": [
+      "status"
+    ]
+  },
+  "DraftAsyncErrorService": {
+    "AsyncError": [
+      "asyncError"
+    ],
+    "BaseAdGroupId": [
+      "baseAdGroupId"
+    ],
+    "BaseCampaignId": [
+      "baseCampaignId"
+    ],
+    "DraftAdGroupId": [
+      "draftAdGroupId"
+    ],
+    "DraftCampaignId": [
+      "draftCampaignId"
+    ],
+    "DraftId": [
+      "draftId"
+    ]
+  },
+  "DraftService": {
+    "BaseCampaignId": [
+      "baseCampaignId"
+    ],
+    "DraftCampaignId": [
+      "draftCampaignId"
+    ],
+    "DraftId": [
+      "draftId"
+    ],
+    "DraftName": [
+      "draftName"
+    ],
+    "DraftStatus": [
+      "draftStatus"
+    ],
+    "HasRunningTrial": [
+      "hasRunningTrial"
+    ]
+  },
+  "ExperimentService": {
+    "AdGroupAdsCount": [
+      "experimentSummaryStats",
+      "adGroupAdsCount"
+    ],
+    "AdGroupCriteriaCount": [
+      "experimentSummaryStats",
+      "adGroupCriteriaCount"
+    ],
+    "AdGroupsCount": [
+      "experimentSummaryStats",
+      "adGroupsCount"
+    ],
+    "CampaignId": [
+      "campaignId"
+    ],
+    "ControlId": [
+      "controlId"
+    ],
+    "EndDateTime": [
+      "endDateTime"
+    ],
+    "Id": [
+      "id"
+    ],
+    "LastModifiedDateTime": [
+      "lastModifiedDateTime"
+    ],
+    "Name": [
+      "name"
+    ],
+    "QueryPercentage": [
+      "queryPercentage"
+    ],
+    "ServingStatus": [
+      "servingStatus"
+    ],
+    "StartDateTime": [
+      "startDateTime"
+    ],
+    "Status": [
+      "status"
+    ]
+  },
+  "FeedItemService": {
+    "AttributeValues": [
+      "attributeValues"
+    ],
+    "DevicePreference": [
+      "devicePreference"
+    ],
+    "EndTime": [
+      "endTime"
+    ],
+    "FeedId": [
+      "feedId"
+    ],
+    "FeedItemId": [
+      "feedItemId"
+    ],
+    "GeoTargetingCriterionId": [
+      "keywordTargeting",
+      "id"
+    ],
+    "GeoTargetingDisplayType": [
+      "geoTargeting",
+      "displayType"
+    ],
+    "GeoTargetingLocationName": [
+      "geoTargeting",
+      "locationName"
+    ],
+    "GeoTargetingParentLocations": [
+      "geoTargeting",
+      "parentLocations"
+    ],
+    "GeoTargetingStatus": [
+      "geoTargeting",
+      "targetingStatus"
+    ],
+    "KeywordMatchType": [
+      "keywordTargeting",
+      "matchType"
+    ],
+    "KeywordTargetingCriterionId": [
+      "keywordTargeting",
+      "id"
+    ],
+    "KeywordText": [
+      "keywordTargeting",
+      "text"
+    ],
+    "PolicyData": [
+      "policyData"
+    ],
+    "Scheduling": [
+      "scheduling"
+    ],
+    "StartTime": [
+      "startTime"
+    ],
+    "Status": [
+      "status"
+    ],
+    "TargetingAdGroupId": [
+      "adGroupTargeting",
+      "TargetingAdGroupId"
+    ],
+    "TargetingCampaignId": [
+      "campaignTargeting",
+      "TargetingCampaignId"
+    ],
+    "UrlCustomParameters": [
+      "urlCustomParameters"
+    ]
+  },
+  "FeedMappingService": {
+    "AttributeFieldMappings": [
+      "attributeFieldMappings"
+    ],
+    "CriterionType": [
+      "criterionType"
+    ],
+    "FeedId": [
+      "feedId"
+    ],
+    "FeedMappingId": [
+      "feedMappingId"
+    ],
+    "PlaceholderType": [
+      "placeholderType"
+    ],
+    "Status": [
+      "status"
+    ]
+  },
+  "FeedService": {
+    "Attributes": [
+      "attributes"
+    ],
+    "FeedStatus": [
+      "status"
+    ],
+    "Id": [
+      "id"
+    ],
+    "Name": [
+      "name"
+    ],
+    "Origin": [
+      "origin"
+    ],
+    "SystemFeedGenerationData": [
+      "systemFeedGenerationData"
+    ]
+  },
+  "LabelService": {
+    "LabelAttribute": [
+      "attribute"
+    ],
+    "LabelId": [
+      "id"
+    ],
+    "LabelName": [
+      "name"
+    ],
+    "LabelStatus": [
+      "status"
+    ]
+  },
+  "LocationCriterionService": {
+    "CanonicalName": [],
+    "Reach": []
+  },
+  "ManagedCustomerService": {
+    "AccountLabels": [
+      "accountLabels"
+    ],
+    "CanManageClients": [
+      "canManageClients"
+    ],
+    "CompanyName": [
+      "companyName"
+    ],
+    "CurrencyCode": [
+      "currencyCode"
+    ],
+    "CustomerId": [
+      "customerId"
+    ],
+    "DateTimeZone": [
+      "dateTimeZone"
+    ],
+    "Name": [
+      "name"
+    ],
+    "TestAccount": [
+      "testAccount"
+    ]
+  },
+  "MediaService": {
+    "AdvertisingId": [
+      "advertisingId"
+    ],
+    "CreationTime": [
+      "creationTime"
+    ],
+    "Dimensions": [
+      "dimensions"
+    ],
+    "DurationMillis": [
+      "durationMillis"
+    ],
+    "FileSize": [
+      "fileSize"
+    ],
+    "IndustryStandardCommercialIdentifier": [
+      "industryStandardCommercialIdentifier"
+    ],
+    "MediaId": [
+      "mediaId"
+    ],
+    "MimeType": [
+      "mimeType"
+    ],
+    "Name": [
+      "name"
+    ],
+    "ReadyToPlayOnTheWeb": [
+      "readyToPlayOnTheWeb"
+    ],
+    "ReferenceId": [
+      "referenceId"
+    ],
+    "SourceUrl": [
+      "sourceUrl"
+    ],
+    "StreamingUrl": [
+      "streamingUrl"
+    ],
+    "Type": [
+      "type"
+    ],
+    "Urls": [
+      "urls"
+    ],
+    "YouTubeVideoIdString": [
+      "youTubeVideoIdString"
+    ]
+  },
+  "SharedCriterionService": {
+    "AppId": [
+      "criterion",
+      "appId"
+    ],
+    "ChannelId": [
+      "criterion",
+      "channelId"
+    ],
+    "ChannelName": [
+      "criterion",
+      "channelName"
+    ],
+    "CriteriaType": [
+      "criterion",
+      "type"
+    ],
+    "DisplayName": [
+      "criterion",
+      "displayName"
+    ],
+    "Id": [
+      "criterion",
+      "id"
+    ],
+    "KeywordMatchType": [
+      "criterion",
+      "matchType"
+    ],
+    "KeywordText": [
+      "criterion",
+      "text"
+    ],
+    "Negative": [
+      "negative"
+    ],
+    "PlacementUrl": [
+      "criterion",
+      "url"
+    ],
+    "SharedSetId": [
+      "sharedSetId"
+    ],
+    "VideoId": [
+      "criterion",
+      "videoId"
+    ],
+    "VideoName": [
+      "criterion",
+      "videoName"
+    ]
+  },
+  "SharedSetService": {
+    "MemberCount": [
+      "memberCount"
+    ],
+    "Name": [
+      "name"
+    ],
+    "ReferenceCount": [
+      "referenceCount"
+    ],
+    "SharedSetId": [
+      "sharedSetId"
+    ],
+    "Status": [
+      "status"
+    ],
+    "Type": [
+      "type"
+    ]
+  },
+  "TrialAsyncErrorService": {
+    "AsyncError": [
+      "asyncError"
+    ],
+    "BaseAdGroupId": [
+      "baseAdGroupId"
+    ],
+    "BaseCampaignId": [
+      "baseCampaignId"
+    ],
+    "TrialAdGroupId": [
+      "trialAdGroupId"
+    ],
+    "TrialCampaignId": [
+      "trialCampaignId"
+    ],
+    "TrialId": [
+      "trialId"
+    ]
+  },
+  "TrialService": {
+    "BaseCampaignId": [
+      "baseCampaignId"
+    ],
+    "DraftId": [
+      "draftId"
+    ],
+    "EndDate": [
+      "endDate"
+    ],
+    "Id": [
+      "id"
+    ],
+    "Name": [
+      "name"
+    ],
+    "StartDate": [
+      "startDate"
+    ],
+    "Status": [
+      "status"
+    ],
+    "TrafficSplitPercent": [
+      "trafficSplitPercent"
+    ],
+    "TrialCampaignId": [
+      "trialCampaignId"
+    ]
+  }
+}

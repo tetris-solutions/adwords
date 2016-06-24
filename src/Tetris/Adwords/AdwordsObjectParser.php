@@ -2,6 +2,7 @@
 
 namespace Tetris\Adwords;
 
+use AdGroupCriterion;
 use AdGroupAd;
 use TextAd;
 use Campaign;
@@ -105,6 +106,17 @@ abstract class AdwordsObjectParser
             } else if ($isAdAttribute) {
                 $input = $input->ad;
             }
+        }
+
+        if ($input instanceof AdGroupCriterion) {
+            $directAttributes = [
+                "AdGroupId",
+                "CriterionUse",
+                "Labels",
+                "BaseCampaignId",
+                "BaseAdGroupId",
+                "Status",
+                "SystemServingStatus", "ApprovalStatus", "DisapprovalReasons", "DestinationUrl", "FirstPageCpc", "TopOfPageCpc", "FirstPositionCpc", "BidModifier", "FinalUrls", "FinalMobileUrls", "FinalAppUrls", "TrackingUrlTemplate", "UrlCustomParameters"];
         }
 
         $output[$outputField] = self::getNormalizedField($inputField, $input);
