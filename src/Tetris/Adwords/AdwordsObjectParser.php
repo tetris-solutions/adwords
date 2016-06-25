@@ -24,102 +24,48 @@ abstract class AdwordsObjectParser
         return self::stripSingleValueFromArray($array[$singleKey]);
     }
 
-    private static function writeField(string $inputField, string $outputField, $inputObject, array &$outputArray)
+    private static function getMappings(): array
     {
-        $input = $inputObject;
-        $output = &$outputArray;
+        return json_decode(file_get_contents(__DIR__ . '/mappings.json'), true);
+    }
 
-        if ($input instanceof Campaign) {
-            switch ($inputField) {
-                // budget fields
-                case 'Amount':
-                case 'BudgetId':
-                case 'BudgetName':
-                case 'BudgetReferenceCount':
-                case 'BudgetStatus':
-                case 'IsBudgetExplicitlyShared':
-                case 'DeliveryMethod':
-                    if (!isset($outputArray['budget'])) {
-                        $outputArray['budget'] = [];
-                    }
+    private static function getField($object, string $field)
+    {
+        $mapping = self::getMappings();
+        $className = get_class($object);
+        $guessedServiceName = $className . 'Service';
 
-                    if ($inputField !== 'BudgetId') {
-                        $inputField = str_replace('Budget', '', $inputField);
-                    }
+        $diveIntoPath = function (array $path) use ($object) {
+            $pointer = $object;
+            foreach ($path as $part) {
+                if (!isset($pointer->{$part})) throw new \Exception('not found field');
 
-                    $output = &$outputArray['budget'];
-                    $input = $input->budget;
+                $pointer = $pointer->{$part};
+            }
 
-                    break;
+            return $pointer;
+        };
+
+        if (isset($mapping[$guessedServiceName][$field])) {
+            try {
+                return $diveIntoPath($mapping[$guessedServiceName][$field]);
+            } catch (\Throwable $e) {
             }
         }
 
-        if ($input instanceof AdGroupAd) {
-            $directAttributes = [
-                'AdGroupAdDisapprovalReasons',
-                'AdGroupAdTrademarkDisapproved',
-                'AdGroupCreativeApprovalStatus',
-                'AdGroupId',
-                'AdType',
-                'BaseAdGroupId',
-                'BaseCampaignId',
-                'Labels',
-                'Status'
-            ];
-            $experimentAttributes = [
-                'ExperimentDataStatus',
-                'ExperimentDeltaStatus',
-                'ExperimentId'
-            ];
+        foreach ($mapping as $service) {
+            foreach ($service as $name => $path) {
+                if ($name !== $field) continue;
 
-            $isAdAttribute = !in_array($inputField, $directAttributes);
-            $isExperimentAttribute = in_array($inputField, $experimentAttributes);
+                try {
+                    return $diveIntoPath($path);
+                } catch (\Throwable $e) {
 
-            if ($inputField === 'TemplateOriginAdId') {
-                $inputField = 'OriginAdId';
-            } else {
-                $removablePrefixes = [
-                    'AdGroupAd',
-                    'AdGroupCreative',
-                    'Ad',
-                    'Creative',
-                    'CallOnlyAd',
-                    'RichMediaAd',
-                    'TemplateAd'
-                ];
-
-                foreach ($removablePrefixes as $prefix) {
-                    if (strpos($inputField, $prefix) === 0) {
-                        $inputField = str_replace($prefix, '', $inputField);
-                        break;
-                    }
                 }
             }
-
-            if ($isExperimentAttribute) {
-                if (!isset($outputArray['experiment'])) {
-                    $outputArray['experiment'] = [];
-                }
-
-                $input = $input->experimentData;
-                $output = &$outputArray['experiment'];
-            } else if ($isAdAttribute) {
-                $input = $input->ad;
-            }
         }
 
-        if ($input instanceof AdGroupCriterion) {
-            $directAttributes = [
-                "AdGroupId",
-                "CriterionUse",
-                "Labels",
-                "BaseCampaignId",
-                "BaseAdGroupId",
-                "Status",
-                "SystemServingStatus", "ApprovalStatus", "DisapprovalReasons", "DestinationUrl", "FirstPageCpc", "TopOfPageCpc", "FirstPositionCpc", "BidModifier", "FinalUrls", "FinalMobileUrls", "FinalAppUrls", "TrackingUrlTemplate", "UrlCustomParameters"];
-        }
-
-        $output[$outputField] = self::getNormalizedField($inputField, $input);
+        throw new \Exception("Could not find field '{$field}' in a instance of {$className}");
     }
 
     /**
@@ -132,7 +78,11 @@ abstract class AdwordsObjectParser
         $array = [];
 
         foreach ($fieldMap as $adwordsKey => $userKey) {
-            self::writeField($adwordsKey, $userKey, $adwordsObject, $array);
+            try {
+                $array[$userKey] = self::getField($adwordsObject, $adwordsKey);
+            } catch (\Throwable $e) {
+                $array[$userKey] = NULL;
+            }
         }
 
         return self::stripSingleValueFromArray($array);
