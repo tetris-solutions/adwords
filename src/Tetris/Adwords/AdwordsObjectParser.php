@@ -29,38 +29,60 @@ abstract class AdwordsObjectParser
         return json_decode(file_get_contents(__DIR__ . '/mappings.json'), true);
     }
 
+    private static function convertField(string $field, $value)
+    {
+        if ($value instanceof Money) {
+            return intval($value->microAmount) / (10 ** 6);
+        }
+
+        switch (ucfirst($field)) {
+            case 'Bid':
+            case 'BidCeiling':
+            case 'Cost':
+            case 'Amount':
+                return (int)$value / (10 ** 6);
+            default:
+                return $value;
+        }
+    }
+
+    private static function getPathFromObject(array $path, $object)
+    {
+        $pointer = $object;
+        $field = '';
+
+        foreach ($path as $part) {
+            if (!isset($pointer->{$part})) {
+                throw new \Exception('not found field');
+            }
+
+            $field = $part;
+            $pointer = $pointer->{$part};
+        }
+
+        return self::convertField($field, $pointer);
+    }
+
     private static function getField($object, string $field)
     {
         $mapping = self::getMappings();
         $className = get_class($object);
         $guessedServiceName = $className . 'Service';
 
-        $diveIntoPath = function (array $path) use ($object) {
-            $pointer = $object;
-            foreach ($path as $part) {
-                if (!isset($pointer->{$part})) throw new \Exception('not found field');
-
-                $pointer = $pointer->{$part};
-            }
-
-            return $pointer;
-        };
-
         if (isset($mapping[$guessedServiceName][$field])) {
             try {
-                return $diveIntoPath($mapping[$guessedServiceName][$field]);
+                return self::getPathFromObject($mapping[$guessedServiceName][$field], $object);
             } catch (\Throwable $e) {
             }
         }
 
         foreach ($mapping as $service) {
             foreach ($service as $name => $path) {
-                if ($name !== $field) continue;
-
-                try {
-                    return $diveIntoPath($path);
-                } catch (\Throwable $e) {
-
+                if ($name === $field) {
+                    try {
+                        return self::getPathFromObject($path, $object);
+                    } catch (\Throwable $e) {
+                    }
                 }
             }
         }
@@ -96,19 +118,7 @@ abstract class AdwordsObjectParser
             return NULL;
         }
 
-        switch (ucfirst($field)) {
-            case 'Bid':
-            case 'BidCeiling':
-            case 'Cost':
-            case 'Amount':
-                $microAmount = $input->{$camelCaseField} instanceof Money
-                    ? $input->{$camelCaseField}->microAmount
-                    : $input->{$camelCaseField};
-                return (int)$microAmount / (10 ** 6);
-            default:
-                return $input->{$camelCaseField};
-
-        }
+        return self::convertField($field, $input->{$camelCaseField});
     }
 
     static function readFieldsFromArrayIntoAdwordsObject(string $className, array $fields)
