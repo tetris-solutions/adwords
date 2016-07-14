@@ -2,9 +2,6 @@
 
 namespace Tetris\Adwords;
 
-use AdGroupCriterion;
-use AdGroupAd;
-use TextAd;
 use Campaign;
 use ManagedCustomer;
 use Budget;

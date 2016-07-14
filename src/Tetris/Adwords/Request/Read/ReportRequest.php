@@ -33,7 +33,7 @@ class ReportRequest extends ReadRequest
         return $this;
     }
 
-    private function fetch(): stdClass
+    private function fetch(): array
     {
         $report = new ReportDefinition();
         $report->selector = $this->selector;
@@ -47,7 +47,17 @@ class ReportRequest extends ReadRequest
 
         $result = json_decode($json);
 
-        return $result;
+        if (empty($result->table->row)) {
+            throw new \Exception('Could not load report result');
+        }
+
+        $rows = is_array($result->table->row)
+            ? $result->table->row
+            : [$result->table->row];
+
+        return array_map(function (stdClass $row) {
+            return $this->readFieldsFromXmlObject($row);
+        }, $rows);
     }
 
     /**
@@ -67,19 +77,11 @@ class ReportRequest extends ReadRequest
 
     function fetchOne()
     {
-        $result = $this->fetch();
-
-        if (empty($result->table->row->{'@attributes'})) {
-            throw new \Exception('Could not load report result');
-        }
-
-        $attributes = $result->table->row->{'@attributes'};
-
-        return $this->readFieldsFromXmlObject($attributes);
+        return $this->fetch()[0];
     }
 
     function fetchAll(): array
     {
-        throw new \Exception('Not implemented');
+        return $this->fetch();
     }
 }
