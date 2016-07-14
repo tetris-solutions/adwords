@@ -56,7 +56,7 @@ class ReportRequest extends ReadRequest
             : [$result->table->row];
 
         return array_map(function (stdClass $row) {
-            return $this->readFieldsFromXmlObject($row);
+            return $this->readFieldsFromXmlObject($row->{'@attributes'});
         }, $rows);
     }
 
