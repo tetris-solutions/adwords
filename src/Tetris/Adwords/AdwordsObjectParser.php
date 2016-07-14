@@ -112,6 +112,7 @@ abstract class AdwordsObjectParser
         $camelCaseField = lcfirst($field);
 
         if (!property_exists($input, $camelCaseField)) {
+            // @todo use mappings
             return NULL;
         }
 
