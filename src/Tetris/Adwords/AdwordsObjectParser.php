@@ -10,6 +10,9 @@ use Nayjest\StrCaseConverter\Str;
 
 abstract class AdwordsObjectParser
 {
+    protected static $mappings = null;
+    protected static $reportMappings = null;
+
     static function stripSingleValueFromArray($array)
     {
         if (!is_array($array) || count($array) > 1) {
@@ -21,9 +24,20 @@ abstract class AdwordsObjectParser
         return self::stripSingleValueFromArray($array[$singleKey]);
     }
 
+    private static function getReportMappings(): array
+    {
+        if (empty(self::$reportMappings)) {
+            self::$reportMappings = json_decode(file_get_contents(__DIR__ . '/report-mappings.json'), true);
+        }
+        return self::$reportMappings;
+    }
+
     private static function getMappings(): array
     {
-        return json_decode(file_get_contents(__DIR__ . '/mappings.json'), true);
+        if (empty(self::$mappings)) {
+            self::$mappings = json_decode(file_get_contents(__DIR__ . '/mappings.json'), true);
+        }
+        return self::$mappings;
     }
 
     private static function convertField(string $field, $value)
@@ -107,16 +121,24 @@ abstract class AdwordsObjectParser
         return self::stripSingleValueFromArray($array);
     }
 
-    static function getNormalizedField($field, $input)
+    static function normalizeReportObject($reportName, $fields, $inputObject)
     {
-        $camelCaseField = lcfirst($field);
+        $map = [];
+        $reportMappings = self::getReportMappings();
 
-        if (!property_exists($input, $camelCaseField)) {
-            // @todo use mappings
-            return NULL;
+        foreach ($fields as $field => $userKey) {
+            if (isset($reportMappings[$reportName][$field])) {
+                $fieldRealName = $reportMappings[$reportName][$field];
+            } else {
+                $fieldRealName = lcfirst($field);
+            }
+
+            $map[$userKey] = property_exists($inputObject, $fieldRealName)
+                ? self::convertField($field, $inputObject->{$fieldRealName})
+                : NULL;
         }
 
-        return self::convertField($field, $input->{$camelCaseField});
+        return AdwordsObjectParser::stripSingleValueFromArray($map);
     }
 
     static function readFieldsFromArrayIntoAdwordsObject(string $className, array $fields)

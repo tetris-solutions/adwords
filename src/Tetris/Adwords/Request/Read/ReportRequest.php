@@ -56,23 +56,8 @@ class ReportRequest extends ReadRequest
             : [$result->table->row];
 
         return array_map(function (stdClass $row) {
-            return $this->readFieldsFromXmlObject($row->{'@attributes'});
+            return AdwordsObjectParser::normalizeReportObject($this->className, $this->fieldMap, $row->{'@attributes'});
         }, $rows);
-    }
-
-    /**
-     * @param stdClass $attributes
-     * @return array|mixed
-     */
-    private function readFieldsFromXmlObject($attributes)
-    {
-        $map = [];
-
-        foreach ($this->fieldMap as $adwordsKey => $userKey) {
-            $map[$userKey] = AdwordsObjectParser::getNormalizedField($adwordsKey, $attributes);
-        }
-
-        return AdwordsObjectParser::stripSingleValueFromArray($map);
     }
 
     function fetchOne()
