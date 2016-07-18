@@ -1,0 +1,3803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src='extract-report-attributes.js'></script>
+</head>
+<body>
+<table class="function param bad-table responsive">
+    <thead>
+    <tr>
+        <th colspan="2">ACCOUNT_PERFORMANCE_REPORT</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <h3 id="accountcurrencycode"><code>AccountCurrencyCode</code></h3></td>
+        <td>
+            <p>The currency of the Customer account.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>String</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Currency</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>currency</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Attribute</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="accountdescriptivename"><code>AccountDescriptiveName</code></h3></td>
+        <td>
+            <p>The descriptive name of the Customer account.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>String</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Account</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>account</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Attribute</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="accounttimezoneid"><code>AccountTimeZoneId</code></h3></td>
+        <td>
+            <p>Name of the timezone selected for the Customer account. For example: "(GMT-05:00) Eastern Time". This
+                field does not reflect the current state of daylight saving time for the timezone.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>String</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Time zone</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>timeZone</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Attribute</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="activeviewcpm"><code>ActiveViewCpm</code></h3></td>
+        <td>
+            <p>Average cost of viewable impressions (ActiveViewImpressions).</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Money</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Active View avg. CPM</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>activeViewAvgCPM</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="activeviewctr"><code>ActiveViewCtr</code></h3></td>
+        <td>
+            <p>How often people clicked your ad after it became viewable.
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Active View viewable CTR</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>activeViewViewableCTR</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="activeviewimpressions"><code>ActiveViewImpressions</code></h3></td>
+        <td>
+            <p>How often your ad has become viewable on a Display Network site.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Long</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Active View viewable impressions</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>activeViewViewableImpressions</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="activeviewmeasurability"><code>ActiveViewMeasurability</code></h3></td>
+        <td>
+            <p>The ratio of impressions that could be measured by Active View over the number of served impressions.
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Active View measurable impr. / impr.</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>activeViewMeasurableImprImpr</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="activeviewmeasurablecost"><code>ActiveViewMeasurableCost</code></h3></td>
+        <td>
+            <p>The cost of the impressions you received that were measurable by Active View.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Money</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Active View measurable cost</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>activeViewMeasurableCost</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="activeviewmeasurableimpressions"><code>ActiveViewMeasurableImpressions</code></h3></td>
+        <td>
+            <p>The number of times your ads are appearing on placements in positions where they can be seen.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Long</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Active View measurable impr.</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>activeViewMeasurableImpr</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="activeviewviewability"><code>ActiveViewViewability</code></h3></td>
+        <td>
+            <p>The percentage of time when your ad appeared on an Active View enabled site (measurable impressions) and
+                was viewable (viewable impressions).
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Active View viewable impr. / measurable impr.</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>activeViewViewableImprMeasurableImpr</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="adnetworktype1"><code>AdNetworkType1</code></h3></td>
+        <td>
+            <p>First level network type.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>AdNetworkType1</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Network</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>network</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Segment</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Predicate values / display values</p>
+                <div class="devsite-table-wrapper">
+                    <table class="nested responsive exw-collapsed-content" style="display: none;">
+                        <tbody>
+                        <tr>
+                            <td><code><span>UNKNOWN</span></code></td>
+                            <td>unknown</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>SEARCH</span></code></td>
+                            <td>Search Network</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>CONTENT</span></code></td>
+                            <td>Display Network</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>YOUTUBE_SEARCH</span></code></td>
+                            <td>YouTube Search</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>YOUTUBE_WATCH</span></code></td>
+                            <td>YouTube Videos</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="adnetworktype2"><code>AdNetworkType2</code></h3></td>
+        <td>
+            <p>Second level network type (includes search partners).</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>AdNetworkType2</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Network (with search partners)</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>networkWithSearchPartners</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Segment</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Predicate values / display values</p>
+                <div class="devsite-table-wrapper">
+                    <table class="nested responsive exw-collapsed-content" style="display: none;">
+                        <tbody>
+                        <tr>
+                            <td><code><span>UNKNOWN</span></code></td>
+                            <td>unknown</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>SEARCH</span></code></td>
+                            <td>Google search</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>SEARCH_PARTNERS</span></code></td>
+                            <td>Search partners</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>CONTENT</span></code></td>
+                            <td>Display Network</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>YOUTUBE_SEARCH</span></code></td>
+                            <td>YouTube Search</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>YOUTUBE_WATCH</span></code></td>
+                            <td>YouTube Videos</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="allconversionrate"><code>AllConversionRate</code></h3></td>
+        <td>
+            <p>AllConversions divided by total clicks that can be conversion-tracked. This is how often a click on your
+                ad resulted in a conversion. Percentage returned as "x.xx%".
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>All conv. rate</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>allConvRate</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>HourOfDay</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="allconversions"><code>AllConversions</code></h3></td>
+        <td>
+            <p>Best estimate of the total number of conversions that AdWords drives. Includes website, cross-device, and
+                phone call conversions.
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>All conv.</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>allConv</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>HourOfDay</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="allconversionvalue"><code>AllConversionValue</code></h3></td>
+        <td>
+            <p>The total value of all of your conversions, including those that are estimated.
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>All conv. value</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>allConvValue</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>HourOfDay</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="averagecost"><code>AverageCost</code></h3></td>
+        <td>
+            <p>The average amount you pay per interaction. This amount is the total cost of your ads divided by the
+                total number of interactions.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Money</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Avg. Cost</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>avgCost</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="averagecpc"><code>AverageCpc</code></h3></td>
+        <td>
+            <p>The total cost of all clicks divided by the total number of clicks received.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Money</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Avg. CPC</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>avgCPC</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="averagecpe"><code>AverageCpe</code></h3></td>
+        <td>
+            <p>The average amount that you’ve been charged for an ad engagement. This amount is the total cost of all ad
+                engagements divided by the total number of ad engagements.
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Avg. CPE</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>avgCPE</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="averagecpm"><code>AverageCpm</code></h3></td>
+        <td>
+            <p>Average Cost-per-thousand impressions (CPM).</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Money</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Avg. CPM</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>avgCPM</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="averagecpv"><code>AverageCpv</code></h3></td>
+        <td>
+            <p>The average amount you pay each time someone views your ad. The average CPV is defined by the total cost
+                of all ad views divided by the number of views.
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Avg. CPV</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>avgCPV</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="averageposition"><code>AveragePosition</code></h3></td>
+        <td>
+            <p>Your ad's position relative to those of other advertisers.
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Avg. position</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>avgPosition</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="canmanageclients"><code>CanManageClients</code></h3></td>
+        <td>
+            <p>Indicates if the account is an MCC account (true) or a regular AdWords account (false).</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Enum</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Can manage clients</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>canManageClients</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Attribute</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Predicate values / display values</p>
+                <div class="devsite-table-wrapper">
+                    <table class="nested responsive exw-collapsed-content" style="display: none;">
+                        <tbody>
+                        <tr>
+                            <td><code><span>TRUE</span></code></td>
+                            <td>true</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>FALSE</span></code></td>
+                            <td>false</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="clickconversionrate"><code>ClickConversionRate</code></h3></td>
+        <td>
+            <p>The number of converted clicks divided by your total clicks that can be tracked to a conversion. This is
+                how often a click on your ad resulted in a conversion. Percentage returned as "x.xx%".
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Click conversion rate</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>clickConversionRate</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="clicks"><code>Clicks</code></h3></td>
+        <td>
+            <p>The number of clicks.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Long</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Clicks</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>clicks</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="clicktype"><code>ClickType</code></h3></td>
+        <td>
+            <p>The Impressions field will reflect how often the ad was served with that click type available. Since ads
+                can serve with multiple click types displayed, impressions may be double counted and the totals may not
+                be accurate.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>ClickType</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Click type</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>clickType</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Segment</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>False</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Predicate values / display values</p>
+                <div class="devsite-table-wrapper">
+                    <table class="nested responsive exw-collapsed-content" style="display: none;">
+                        <tbody>
+                        <tr>
+                            <td><code><span>URL_CLICKS</span></code></td>
+                            <td>Headline</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>CALLS</span></code></td>
+                            <td>Phone calls</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>OTHER</span></code></td>
+                            <td>Other</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>PRODUCT_EXTENSION_CLICKS</span></code></td>
+                            <td>Product plusbox offer</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>SITELINKS</span></code></td>
+                            <td>Sitelink</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>PRODUCT_LISTING_AD_CLICKS</span></code></td>
+                            <td>Shopping ad - Standard</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>GET_DIRECTIONS</span></code></td>
+                            <td>Driving direction</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>OFFER_PRINTS</span></code></td>
+                            <td>Print offer</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>BREADCRUMBS</span></code></td>
+                            <td>Breadcrumbs</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>CALL_TRACKING</span></code></td>
+                            <td>Manually dialed phone calls</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>MOBILE_CALL_TRACKING</span></code></td>
+                            <td>Mobile phone calls</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>LOCATION_EXPANSION</span></code></td>
+                            <td>Get location details</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>STORE_LOCATOR</span></code></td>
+                            <td>Show nearby locations</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>TABLE_EXTENSION</span></code></td>
+                            <td>Table Extension</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>VIDEO_WEBSITE_CLICKS</span></code></td>
+                            <td>Website</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>VIDEO_CALL_TO_ACTION_CLICKS</span></code></td>
+                            <td>Call-to-Action overlay</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>VIDEO_APP_STORE_CLICKS</span></code></td>
+                            <td>App store</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>VIDEO_CARD_ACTION_HEADLINE_CLICKS</span></code></td>
+                            <td>Cards</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>VIDEO_END_CAP_CLICKS</span></code></td>
+                            <td>End cap</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>CLICK_ON_ENGAGEMENT_AD</span></code></td>
+                            <td>Click on engagement ad</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>LOCATION_FORMAT_MAP</span></code></td>
+                            <td>Map</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>LOCATION_FORMAT_LANDING_PAGE</span></code></td>
+                            <td>Go to landing page</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>LOCATION_FORMAT_STORE_INFO</span></code></td>
+                            <td>Go to store info</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>LOCATION_FORMAT_DIRECTIONS</span></code></td>
+                            <td>Directions</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>LOCATION_FORMAT_CALL</span></code></td>
+                            <td>Call</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>LOCATION_FORMAT_TEXT</span></code></td>
+                            <td>Text</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>LOCATION_FORMAT_IMAGE</span></code></td>
+                            <td>Image(s)</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>BROADBAND_PLAN</span></code></td>
+                            <td>Broadband Plan</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>UNKNOWN</span></code></td>
+                            <td>unknown</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>AllConversionRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AllConversionValue</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AllConversions</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ContentBudgetLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ContentImpressionShare</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ContentRankLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>CostPerAllConversion</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>CrossDeviceConversions</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Engagements</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchBudgetLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchExactMatchImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchImpressionShare</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchRankLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ValuePerAllConversion</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="contentbudgetlostimpressionshare"><code>ContentBudgetLostImpressionShare</code></h3></td>
+        <td>
+            <p>The estimated percent of times that your ad was eligible to show on the Display Network but didn't
+                because your budget was too low. A percentage returned as "xx.xx%", or the special value "&gt; 90%".
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Content Lost IS (budget)</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>contentLostISBudget</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="contentimpressionshare"><code>ContentImpressionShare</code></h3></td>
+        <td>
+            <p>The impressions you’ve received on the Display Network divided by the estimated number of impressions you
+                were eligible to receive. A percentage returned as "xx.xx%", or the special value "&lt; 10%".
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Content Impr. share</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>contentImprShare</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="contentranklostimpressionshare"><code>ContentRankLostImpressionShare</code></h3></td>
+        <td>
+            <p>The estimated percentage of impressions on the Display Network that your ads didn't receive due to poor
+                Ad Rank. A percentage returned as "xx.xx%", or the special value "&gt; 90%".
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Content Lost IS (rank)</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>contentLostISRank</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="conversioncategoryname"><code>ConversionCategoryName</code></h3></td>
+        <td>
+            <p>A category that describes the action the user will take to complete a conversion. Prevents
+                zero-conversion rows from being returned. Values: "Download", "Lead", "Purchase/Sale", "Signup", "View
+                of a key page", and "Other".</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>String</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Conversion category</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>conversionCategory</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Segment</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>False</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewCpm</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewCtr</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewImpressions</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewMeasurability</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewMeasurableCost</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewMeasurableImpressions</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewViewability</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AverageCost</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AverageCpc</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AverageCpe</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AverageCpm</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AverageCpv</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AveragePosition</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ClickConversionRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Clicks</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ContentBudgetLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ContentImpressionShare</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ContentRankLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConvertedClicks</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Cost</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>CostPerConvertedClick</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Ctr</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>EngagementRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Engagements</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Impressions</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>InteractionRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>InteractionTypes</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Interactions</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>InvalidClickRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>InvalidClicks</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchBudgetLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchExactMatchImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchImpressionShare</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchRankLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ValuePerConvertedClick</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>VideoViewRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>VideoViews</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="conversionrate"><code>ConversionRate</code></h3></td>
+        <td>
+            <p>The number of conversions divided by total clicks that can be tracked to conversions. Percentage returned
+                as "x.xx%".
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Conv. rate</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>convRate</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="conversions"><code>Conversions</code></h3></td>
+        <td>
+            <p>The number of conversions for all conversion actions that you have opted into optimization.
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Conversions</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>conversions</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="conversiontrackerid"><code>ConversionTrackerId</code></h3></td>
+        <td>
+            <p>ID of the conversion tracker.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Long</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Conversion Tracker Id</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>conversionTrackerId</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Segment</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>False</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewCpm</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewCtr</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewImpressions</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewMeasurability</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewMeasurableCost</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewMeasurableImpressions</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewViewability</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AverageCost</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AverageCpc</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AverageCpe</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AverageCpm</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AverageCpv</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AveragePosition</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ClickConversionRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Clicks</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ContentBudgetLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ContentImpressionShare</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ContentRankLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConvertedClicks</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Cost</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>CostPerConvertedClick</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Ctr</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>EngagementRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Engagements</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Impressions</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>InteractionRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>InteractionTypes</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Interactions</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>InvalidClickRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>InvalidClicks</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchBudgetLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchExactMatchImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchImpressionShare</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchRankLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ValuePerConvertedClick</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>VideoViewRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>VideoViews</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="conversiontypename"><code>ConversionTypeName</code></h3></td>
+        <td>
+            <p>The name of the conversion type. Prevents zero-conversion rows from being returned.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>String</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Conversion name</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>conversionName</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Segment</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>False</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewCpm</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewCtr</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewImpressions</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewMeasurability</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewMeasurableCost</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewMeasurableImpressions</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ActiveViewViewability</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AverageCost</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AverageCpc</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AverageCpe</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AverageCpm</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AverageCpv</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AveragePosition</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ClickConversionRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Clicks</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ContentBudgetLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ContentImpressionShare</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ContentRankLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConvertedClicks</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Cost</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>CostPerConvertedClick</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Ctr</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>EngagementRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Engagements</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Impressions</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>InteractionRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>InteractionTypes</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Interactions</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>InvalidClickRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>InvalidClicks</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchBudgetLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchExactMatchImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchImpressionShare</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchRankLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ValuePerConvertedClick</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>VideoViewRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>VideoViews</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="conversionvalue"><code>ConversionValue</code></h3></td>
+        <td>
+            <p>The sum of conversion values for all conversions.
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Total conv. value</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>totalConvValue</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="convertedclicks"><code>ConvertedClicks</code></h3></td>
+        <td>
+            <p>The number of clicks that converted within your chosen conversion window.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Long</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Converted clicks</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>convertedClicks</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="cost"><code>Cost</code></h3></td>
+        <td>
+            <p>The sum of your cost-per-click (CPC) and cost-per-thousand impressions (CPM) costs during this
+                period.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Money</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Cost</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>cost</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="costperallconversion"><code>CostPerAllConversion</code></h3></td>
+        <td>
+            <p>Total cost divided by all conversions.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Money</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Cost / all conv.</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>costAllConv</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>HourOfDay</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="costperconversion"><code>CostPerConversion</code></h3></td>
+        <td>
+            <p>Total cost divided by total ConversionValue.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Money</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Cost / conv.</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>costConv</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="costperconvertedclick"><code>CostPerConvertedClick</code></h3></td>
+        <td>
+            <p>Cost divided by your total converted clicks.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Money</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Cost / converted click</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>costConvertedClick</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="crossdeviceconversions"><code>CrossDeviceConversions</code></h3></td>
+        <td>
+            <p>Conversions from when a customer clicks on an AdWords ad on one device, then converts on a different
+                device or browser. Cross-device conversions are already included in your AllConversions column.
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Cross-device conv.</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>crossDeviceConv</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>HourOfDay</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="ctr"><code>Ctr</code></h3></td>
+        <td>
+            <p>The number of clicks your ad receives (Clicks) divided by the number of times your ad is shown
+                (Impressions). Percentage returned as "x.xx%".
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>CTR</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>ctr</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="customerdescriptivename"><code>CustomerDescriptiveName</code></h3></td>
+        <td>
+            <p>The descriptive name of the Customer.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>String</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Client name</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>clientName</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Attribute</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="date"><code>Date</code></h3></td>
+        <td>
+            <p>The date formatted as yyyy-MM-dd.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Date</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Day</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>day</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Segment</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="dayofweek"><code>DayOfWeek</code></h3></td>
+        <td>
+            <p>The name of the day of the week, e.g., "Monday".</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>DayOfWeek</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Day of week</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>dayOfWeek</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Segment</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Predicate values / display values</p>
+                <div class="devsite-table-wrapper">
+                    <table class="nested responsive exw-collapsed-content" style="display: none;">
+                        <tbody>
+                        <tr>
+                            <td><code><span>MONDAY</span></code></td>
+                            <td>Monday</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>TUESDAY</span></code></td>
+                            <td>Tuesday</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>WEDNESDAY</span></code></td>
+                            <td>Wednesday</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>THURSDAY</span></code></td>
+                            <td>Thursday</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>FRIDAY</span></code></td>
+                            <td>Friday</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>SATURDAY</span></code></td>
+                            <td>Saturday</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>SUNDAY</span></code></td>
+                            <td>Sunday</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="device"><code>Device</code></h3></td>
+        <td>
+            <p>Device type where the impression was shown.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>DeviceType</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Device</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>device</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Segment</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Predicate values / display values</p>
+                <div class="devsite-table-wrapper">
+                    <table class="nested responsive exw-collapsed-content" style="display: none;">
+                        <tbody>
+                        <tr>
+                            <td><code><span>UNKNOWN</span></code></td>
+                            <td>Other</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>DESKTOP</span></code></td>
+                            <td>Computers</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>HIGH_END_MOBILE</span></code></td>
+                            <td>Mobile devices with full browsers</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>TABLET</span></code></td>
+                            <td>Tablets with full browsers</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="engagementrate"><code>EngagementRate</code></h3></td>
+        <td>
+            <p>How often people engage with your ad after it's shown to them. This is the number of ad expansions
+                divided by the number of times your ad is shown. Percentage returned as "x.xx%".
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Engagement rate</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>engagementRate</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="engagements"><code>Engagements</code></h3></td>
+        <td>
+            <p>The number of engagements. An engagement occurs when a viewer expands your Lightbox ad. Also, in the
+                future, other ad types may support engagement metrics.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Long</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Engagements</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>engagements</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="externalcustomerid"><code>ExternalCustomerId</code></h3></td>
+        <td>
+            <p>The Customer ID.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Long</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Customer ID</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>customerID</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Attribute</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="hourofday"><code>HourOfDay</code></h3></td>
+        <td>
+            <p>The hour of day as a number between 0 and 23, inclusive.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Integer</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Hour of day</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>hourOfDay</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Segment</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>False</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>AllConversionRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AllConversionValue</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AllConversions</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>CostPerAllConversion</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>CrossDeviceConversions</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>InvalidClickRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>InvalidClicks</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ValuePerAllConversion</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="impressions"><code>Impressions</code></h3></td>
+        <td>
+            <p>Count of how often your ad has appeared on a search results page or website on the Google Network.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Long</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Impressions</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>impressions</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="interactionrate"><code>InteractionRate</code></h3></td>
+        <td>
+            <p>How often people interact with your ad after it is shown to them. This is the number of interactions
+                divided by the number of times your ad is shown. Percentage returned as "x.xx%".
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Interaction Rate</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>interactionRate</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="interactions"><code>Interactions</code></h3></td>
+        <td>
+            <p>The number of interactions. An interaction is the main user action associated with an ad format—clicks
+                for text and shopping ads, views for video ads, and so on.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Long</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Interactions</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>interactions</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="interactiontypes"><code>InteractionTypes</code></h3></td>
+        <td>
+            <p>The types of interactions that are reflected in the Interactions, InteractionRate, and AverageCost
+                columns.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>EnumSet</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Interaction Types</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>interactionTypes</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="invalidclickrate"><code>InvalidClickRate</code></h3></td>
+        <td>
+            <p>The percentage ("x.xx%") of clicks filtered out of your total number of clicks (filtered + non-filtered
+                clicks) during the reporting period.
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Invalid click rate</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>invalidClickRate</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>HourOfDay</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="invalidclicks"><code>InvalidClicks</code></h3></td>
+        <td>
+            <p>Number of clicks Google considers illegitimate and doesn't charge you for.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Long</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Invalid clicks</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>invalidClicks</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>HourOfDay</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="isautotaggingenabled"><code>IsAutoTaggingEnabled</code></h3></td>
+        <td>
+            <p>Indicates if auto tagging is enabled on the account.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Enum</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Auto tagging enabled</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>autoTaggingEnabled</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Attribute</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Predicate values / display values</p>
+                <div class="devsite-table-wrapper">
+                    <table class="nested responsive exw-collapsed-content" style="display: none;">
+                        <tbody>
+                        <tr>
+                            <td><code><span>TRUE</span></code></td>
+                            <td>true</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>FALSE</span></code></td>
+                            <td>false</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="istestaccount"><code>IsTestAccount</code></h3></td>
+        <td>
+            <p>Indicates if the account is a test account.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Enum</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Test account</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>testAccount</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Attribute</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Predicate values / display values</p>
+                <div class="devsite-table-wrapper">
+                    <table class="nested responsive exw-collapsed-content" style="display: none;">
+                        <tbody>
+                        <tr>
+                            <td><code><span>TRUE</span></code></td>
+                            <td>true</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>FALSE</span></code></td>
+                            <td>false</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="month"><code>Month</code></h3></td>
+        <td>
+            <p>The first day of the month, formatted as yyyy-MM-dd.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>String</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Month</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>month</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Segment</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="monthofyear"><code>MonthOfYear</code></h3></td>
+        <td>
+            <p>The name of the month of the year, e.g., "December".</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>MonthOfYear</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Month of Year</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>monthOfYear</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Segment</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Predicate values / display values</p>
+                <div class="devsite-table-wrapper">
+                    <table class="nested responsive exw-collapsed-content" style="display: none;">
+                        <tbody>
+                        <tr>
+                            <td><code><span>JANUARY</span></code></td>
+                            <td>January</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>FEBRUARY</span></code></td>
+                            <td>February</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>MARCH</span></code></td>
+                            <td>March</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>APRIL</span></code></td>
+                            <td>April</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>MAY</span></code></td>
+                            <td>May</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>JUNE</span></code></td>
+                            <td>June</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>JULY</span></code></td>
+                            <td>July</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>AUGUST</span></code></td>
+                            <td>August</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>SEPTEMBER</span></code></td>
+                            <td>September</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>OCTOBER</span></code></td>
+                            <td>October</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>NOVEMBER</span></code></td>
+                            <td>November</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>DECEMBER</span></code></td>
+                            <td>December</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="primarycompanyname"><code>PrimaryCompanyName</code></h3></td>
+        <td>
+            <p>Company name of the account.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>String</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Company name</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>companyName</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Attribute</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="quarter"><code>Quarter</code></h3></td>
+        <td>
+            <p>The first day of the quarter, formatted as yyyy-MM-dd. Uses the calendar year for quarters, e.g., the
+                second quarter of 2014 starts on 2014-04-01.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>String</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Quarter</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>quarter</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Segment</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="searchbudgetlostimpressionshare"><code>SearchBudgetLostImpressionShare</code></h3></td>
+        <td>
+            <p>The estimated percent of times that your ad was eligible to show on the Search Network but didn't because
+                your budget was too low. A percentage returned as "xx.xx%", or the special value "&gt; 90%".
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Search Lost IS (budget)</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>searchLostISBudget</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="searchexactmatchimpressionshare"><code>SearchExactMatchImpressionShare</code></h3></td>
+        <td>
+            <p>The impressions you've received divided by the estimated number of impressions you were eligible to
+                receive on the Search Network for search terms that matched your keywords exactly (or were close
+                variants of your keyword). A percentage returned as "xx.xx%", or the special value "&lt; 10%".
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Search Exact match IS</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>searchExactMatchIS</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="searchimpressionshare"><code>SearchImpressionShare</code></h3></td>
+        <td>
+            <p>The impressions you've received on the Search Network divided by the estimated number of impressions you
+                were eligible to receive. A percentage returned as "xx.xx%", or the special value "&lt; 10%".
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Search Impr. share</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>searchImprShare</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="searchranklostimpressionshare"><code>SearchRankLostImpressionShare</code></h3></td>
+        <td>
+            <p>The estimated percentage of impressions on the Search Network that your ads didn't receive due to poor Ad
+                Rank. A percentage returned as "xx.xx%", or the special value "&gt; 90%".
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Search Lost IS (rank)</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>searchLostISRank</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="slot"><code>Slot</code></h3></td>
+        <td>
+            <p>The position of the Ad.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Slot</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Top vs. Other</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>topVsOther</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Segment</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Predicate values / display values</p>
+                <div class="devsite-table-wrapper">
+                    <table class="nested responsive exw-collapsed-content" style="display: none;">
+                        <tbody>
+                        <tr>
+                            <td><code><span>SearchRhs</span></code></td>
+                            <td>Google search: Side</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>SearchTop</span></code></td>
+                            <td>Google search: Top</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>SearchOther</span></code></td>
+                            <td>Google search: Other</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>Content</span></code></td>
+                            <td>Google Display Network</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>AfsTop</span></code></td>
+                            <td>Search partners: Top</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>AfsOther</span></code></td>
+                            <td>Search partners: Other</td>
+                        </tr>
+                        <tr>
+                            <td><code><span>Unknown</span></code></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>AllConversionRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AllConversionValue</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>AllConversions</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ContentBudgetLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ContentImpressionShare</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ContentRankLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>CostPerAllConversion</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>CrossDeviceConversions</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>HourOfDay</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>InvalidClickRate</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>InvalidClicks</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchBudgetLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchExactMatchImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchImpressionShare</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>SearchRankLostImpressionShare</code>
+                </div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ValuePerAllConversion</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="valueperallconversion"><code>ValuePerAllConversion</code></h3></td>
+        <td>
+            <p>The value, on average, of all conversions.
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Value / all conv.</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>valueAllConv</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>HourOfDay</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="valueperconversion"><code>ValuePerConversion</code></h3></td>
+        <td>
+            <p>The total value of your conversions divided by the total number of converted clicks.
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Value / conv.</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>valueConv</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="valueperconvertedclick"><code>ValuePerConvertedClick</code></h3></td>
+        <td>
+            <p>The total value of all conversions divided by the total number of converted clicks.
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Value / converted click</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>valueConvertedClick</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="videoviewrate"><code>VideoViewRate</code></h3></td>
+        <td>
+            <p>The number of views your TrueView video ad receives divided by its number of impressions, including
+                thumbnail impressions for TrueView in-display ads. Percentage returned as "x.xx%".
+                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
+                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
+                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
+                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
+                <code>WHERE</code> clause.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Double</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>View rate</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>viewRate</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="videoviews"><code>VideoViews</code></h3></td>
+        <td>
+            <p>The number of times your video ads were viewed.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Long</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Views</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>views</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+                <p class="showalways">Not compatible with the following fields:</p>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
+                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="viewthroughconversions"><code>ViewThroughConversions</code></h3></td>
+        <td>
+            <p>The total number of view-through conversions. These happen when a customer sees an image or rich media
+                ad, then later completes a conversion on your site without interacting with (e.g. clicking on) another
+                ad.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Long</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>View-through conv.</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>viewThroughConv</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Metric</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="week"><code>Week</code></h3></td>
+        <td>
+            <p>The date for the Monday of the week, formatted as yyyy-MM-dd.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>String</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Week</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>week</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Segment</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3 id="year"><code>Year</code></h3></td>
+        <td>
+            <p>The year, formatted as yyyy.</p>
+            <div class="devsite-table-wrapper">
+                <table class="nested responsive">
+                    <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td><code><span>Integer</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Display Name</td>
+                        <td>Year</td>
+                    </tr>
+                    <tr>
+                        <td>XML Attribute</td>
+                        <td><code><span>year</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Behavior</td>
+                        <td><code><span>Segment</span></code></td>
+                    </tr>
+                    <tr>
+                        <td>Filterable</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Supports Zero Impressions</td>
+                        <td>True</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
