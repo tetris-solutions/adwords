@@ -1,1646 +1,2056 @@
 {
   "CAMPAIGN_PERFORMANCE_REPORT": {
     "AccountCurrencyCode": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Currency",
       "XMLAttribute": "currency",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AccountDescriptiveName": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Account",
       "XMLAttribute": "account",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AccountTimeZoneId": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Time zone",
       "XMLAttribute": "timeZone",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ActiveViewCpm": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Active View avg. CPM",
       "XMLAttribute": "activeViewAvgCPM",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ActiveViewCtr": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Active View viewable CTR",
       "XMLAttribute": "activeViewViewableCTR",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ActiveViewImpressions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Active View viewable impressions",
       "XMLAttribute": "activeViewViewableImpressions",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ActiveViewMeasurability": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Active View measurable impr. / impr.",
       "XMLAttribute": "activeViewMeasurableImprImpr",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ActiveViewMeasurableCost": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Active View measurable cost",
       "XMLAttribute": "activeViewMeasurableCost",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ActiveViewMeasurableImpressions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Active View measurable impr.",
       "XMLAttribute": "activeViewMeasurableImpr",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ActiveViewViewability": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Active View viewable impr. / measurable impr.",
       "XMLAttribute": "activeViewViewableImprMeasurableImpr",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AdNetworkType1": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "AdNetworkType1",
       "DisplayName": "Network",
       "XMLAttribute": "network",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AdNetworkType2": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "AdNetworkType2",
       "DisplayName": "Network (with search partners)",
       "XMLAttribute": "networkWithSearchPartners",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AdvertiserExperimentSegmentationBin": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "AdvertiserExperimentSegmentationBin",
       "DisplayName": "ACE split",
       "XMLAttribute": "aCESplit",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AdvertisingChannelSubType": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "AdvertisingChannelSubType",
       "DisplayName": "Advertising Sub Channel",
       "XMLAttribute": "advertisingSubChannel",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AdvertisingChannelType": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "AdvertisingChannelType",
       "DisplayName": "Advertising Channel",
       "XMLAttribute": "advertisingChannel",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AllConversionRate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "All conv. rate",
       "XMLAttribute": "allConvRate",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AllConversions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "All conv.",
       "XMLAttribute": "allConv",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AllConversionValue": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "All conv. value",
       "XMLAttribute": "allConvValue",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Amount": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Budget",
       "XMLAttribute": "budget",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AverageCost": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Avg. Cost",
       "XMLAttribute": "avgCost",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AverageCpc": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Avg. CPC",
       "XMLAttribute": "avgCPC",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AverageCpe": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Avg. CPE",
       "XMLAttribute": "avgCPE",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AverageCpm": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Avg. CPM",
       "XMLAttribute": "avgCPM",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AverageCpv": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Avg. CPV",
       "XMLAttribute": "avgCPV",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AverageFrequency": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Avg. impr. freq. per cookie",
       "XMLAttribute": "avgImprFreqPerCookie",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AveragePageviews": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Pages / session",
       "XMLAttribute": "pagesSession",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AveragePosition": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Avg. position",
       "XMLAttribute": "avgPosition",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AverageTimeOnSite": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Avg. session duration (seconds)",
       "XMLAttribute": "avgSessionDurationSeconds",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "BaseCampaignId": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Base Campaign ID",
       "XMLAttribute": "baseCampaignID",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "BiddingStrategyId": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Bid Strategy ID",
       "XMLAttribute": "bidStrategyID",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "BiddingStrategyName": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Bid Strategy Name",
       "XMLAttribute": "bidStrategyName",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "BiddingStrategyType": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "BiddingStrategyType",
       "DisplayName": "Bid Strategy Type",
       "XMLAttribute": "bidStrategyType",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "BidType": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "BidType",
       "DisplayName": "Conversion optimizer bid type",
       "XMLAttribute": "conversionOptimizerBidType",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "BounceRate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Bounce rate",
       "XMLAttribute": "bounceRate",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "BudgetId": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Budget ID",
       "XMLAttribute": "budgetID",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CampaignId": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Campaign ID",
       "XMLAttribute": "campaignID",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CampaignMobileBidModifier": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Mobile bid adj.",
       "XMLAttribute": "mobileBidAdj",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CampaignName": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Campaign",
       "XMLAttribute": "campaign",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CampaignStatus": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "CampaignStatus",
       "DisplayName": "Campaign state",
       "XMLAttribute": "campaignState",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CampaignTrialType": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "CampaignTrialType",
       "DisplayName": "Campaign Trial Type",
       "XMLAttribute": "campaignTrialType",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ClickAssistedConversions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Click Assisted Conv.",
       "XMLAttribute": "clickAssistedConv",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ClickAssistedConversionsOverLastClickConversions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Click Assisted Conv. / Last Click Conv.",
       "XMLAttribute": "clickAssistedConvLastClickConv",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ClickAssistedConversionValue": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Click Assisted Conv. Value",
       "XMLAttribute": "clickAssistedConvValue",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ClickConversionRate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Click conversion rate",
       "XMLAttribute": "clickConversionRate",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ClickConversionRateSignificance": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "SignificanceData",
       "DisplayName": "Click conversion rate ACE indicator",
       "XMLAttribute": "clickConversionRateACEIndicator",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Clicks": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Clicks",
       "XMLAttribute": "clicks",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ClickSignificance": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "SignificanceData",
       "DisplayName": "Clicks ACE indicator",
       "XMLAttribute": "clicksACEIndicator",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ClickType": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "ClickType",
       "DisplayName": "Click type",
       "XMLAttribute": "clickType",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "False"
+      "Filterable": true,
+      "SupportsZeroImpressions": false
     },
     "ContentBudgetLostImpressionShare": {
+      "SpecialValue": true,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Content Lost IS (budget)",
       "XMLAttribute": "contentLostISBudget",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ContentImpressionShare": {
+      "SpecialValue": true,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Content Impr. share",
       "XMLAttribute": "contentImprShare",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ContentRankLostImpressionShare": {
+      "SpecialValue": true,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Content Lost IS (rank)",
       "XMLAttribute": "contentLostISRank",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ConversionCategoryName": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Conversion category",
       "XMLAttribute": "conversionCategory",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "False"
+      "Filterable": true,
+      "SupportsZeroImpressions": false
     },
     "ConversionRate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Conv. rate",
       "XMLAttribute": "convRate",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Conversions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Conversions",
       "XMLAttribute": "conversions",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ConversionTrackerId": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Conversion Tracker Id",
       "XMLAttribute": "conversionTrackerId",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "False"
+      "Filterable": true,
+      "SupportsZeroImpressions": false
     },
     "ConversionTypeName": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Conversion name",
       "XMLAttribute": "conversionName",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "False"
+      "Filterable": true,
+      "SupportsZeroImpressions": false
     },
     "ConversionValue": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Total conv. value",
       "XMLAttribute": "totalConvValue",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ConvertedClicks": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Converted clicks",
       "XMLAttribute": "convertedClicks",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ConvertedClicksSignificance": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "SignificanceData",
       "DisplayName": "Converted clicks ACE indicator",
       "XMLAttribute": "convertedClicksACEIndicator",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Cost": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Cost",
       "XMLAttribute": "cost",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CostPerAllConversion": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Cost / all conv.",
       "XMLAttribute": "costAllConv",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CostPerConversion": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Cost / conv.",
       "XMLAttribute": "costConv",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CostPerConvertedClick": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Cost / converted click",
       "XMLAttribute": "costConvertedClick",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CostPerConvertedClickSignificance": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "SignificanceData",
       "DisplayName": "Cost/converted click ACE indicator",
       "XMLAttribute": "costConvertedClickACEIndicator",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CostSignificance": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "SignificanceData",
       "DisplayName": "Cost ACE indicator",
       "XMLAttribute": "costACEIndicator",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CpcSignificance": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "SignificanceData",
       "DisplayName": "CPC ACE indicator",
       "XMLAttribute": "cPCACEIndicator",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CpmSignificance": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "SignificanceData",
       "DisplayName": "CPM ACE indicator",
       "XMLAttribute": "cPMACEIndicator",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CrossDeviceConversions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Cross-device conv.",
       "XMLAttribute": "crossDeviceConv",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Ctr": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "CTR",
       "XMLAttribute": "ctr",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CtrSignificance": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "SignificanceData",
       "DisplayName": "CTR ACE indicator",
       "XMLAttribute": "cTRACEIndicator",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CustomerDescriptiveName": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Client name",
       "XMLAttribute": "clientName",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Date": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Date",
       "DisplayName": "Day",
       "XMLAttribute": "day",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "DayOfWeek": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "DayOfWeek",
       "DisplayName": "Day of week",
       "XMLAttribute": "dayOfWeek",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Device": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "DeviceType",
       "DisplayName": "Device",
       "XMLAttribute": "device",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "EndDate": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Date",
       "DisplayName": "End date",
       "XMLAttribute": "endDate",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "EngagementRate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Engagement rate",
       "XMLAttribute": "engagementRate",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Engagements": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Engagements",
       "XMLAttribute": "engagements",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "EnhancedCpcEnabled": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Enum",
       "DisplayName": "Enhanced CPC enabled",
       "XMLAttribute": "enhancedCPCEnabled",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "EnhancedCpvEnabled": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Enum",
       "DisplayName": "Enhanced CPV enabled",
       "XMLAttribute": "enhancedCPVEnabled",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ExternalCustomerId": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Customer ID",
       "XMLAttribute": "customerID",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "GmailForwards": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Gmail forwards",
       "XMLAttribute": "gmailForwards",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "GmailSaves": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Gmail saves",
       "XMLAttribute": "gmailSaves",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "GmailSecondaryClicks": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Gmail clicks to website",
       "XMLAttribute": "gmailClicksToWebsite",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "HourOfDay": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Integer",
       "DisplayName": "Hour of day",
       "XMLAttribute": "hourOfDay",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "False"
+      "Filterable": true,
+      "SupportsZeroImpressions": false
     },
     "ImpressionAssistedConversions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Impr. Assisted Conv.",
       "XMLAttribute": "imprAssistedConv",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ImpressionAssistedConversionsOverLastClickConversions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Impr. Assisted Conv. / Last Click Conv.",
       "XMLAttribute": "imprAssistedConvLastClickConv",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ImpressionAssistedConversionValue": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Impr. Assisted Conv. Value",
       "XMLAttribute": "imprAssistedConvValue",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ImpressionReach": {
+      "SpecialValue": true,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Unique cookies",
       "XMLAttribute": "uniqueCookies",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Impressions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Impressions",
       "XMLAttribute": "impressions",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ImpressionSignificance": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "SignificanceData",
       "DisplayName": "Impressions ACE indicator",
       "XMLAttribute": "impressionsACEIndicator",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "InteractionRate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Interaction Rate",
       "XMLAttribute": "interactionRate",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Interactions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Interactions",
       "XMLAttribute": "interactions",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "InteractionTypes": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "EnumSet",
       "DisplayName": "Interaction Types",
       "XMLAttribute": "interactionTypes",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "InvalidClickRate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Invalid click rate",
       "XMLAttribute": "invalidClickRate",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "InvalidClicks": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Invalid clicks",
       "XMLAttribute": "invalidClicks",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "IsBudgetExplicitlyShared": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Enum",
       "DisplayName": "Budget explicitly shared",
       "XMLAttribute": "budgetExplicitlyShared",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "LabelIds": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "List",
       "DisplayName": "Label IDs",
       "XMLAttribute": "labelIDs",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Labels": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "List",
       "DisplayName": "Labels",
       "XMLAttribute": "labels",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Month": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Month",
       "XMLAttribute": "month",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "MonthOfYear": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "MonthOfYear",
       "DisplayName": "Month of Year",
       "XMLAttribute": "monthOfYear",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "NumOfflineImpressions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Phone impressions",
       "XMLAttribute": "phoneImpressions",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "NumOfflineInteractions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Phone calls",
       "XMLAttribute": "phoneCalls",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "OfflineInteractionRate": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "PTR",
       "XMLAttribute": "ptr",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "PercentNewVisitors": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "% new sessions",
       "XMLAttribute": "newSessions",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Period": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "BudgetPeriod",
       "DisplayName": "Budget period",
       "XMLAttribute": "budgetPeriod",
       "Behavior": "Attribute",
-      "Filterable": "False",
-      "SupportsZeroImpressions": "True"
+      "Filterable": false,
+      "SupportsZeroImpressions": true
     },
     "PositionSignificance": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "SignificanceData",
       "DisplayName": "Position ACE indicator",
       "XMLAttribute": "positionACEIndicator",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "PrimaryCompanyName": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Company name",
       "XMLAttribute": "companyName",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Quarter": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Quarter",
       "XMLAttribute": "quarter",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "RelativeCtr": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Relative CTR",
       "XMLAttribute": "relativeCTR",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "SearchBudgetLostImpressionShare": {
+      "SpecialValue": true,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Search Lost IS (budget)",
       "XMLAttribute": "searchLostISBudget",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "SearchExactMatchImpressionShare": {
+      "SpecialValue": true,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Search Exact match IS",
       "XMLAttribute": "searchExactMatchIS",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "SearchImpressionShare": {
+      "SpecialValue": true,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Search Impr. share",
       "XMLAttribute": "searchImprShare",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "SearchRankLostImpressionShare": {
+      "SpecialValue": true,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Search Lost IS (rank)",
       "XMLAttribute": "searchLostISRank",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ServingStatus": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "ServingStatus",
       "DisplayName": "Campaign serving status",
       "XMLAttribute": "campaignServingStatus",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Slot": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Slot",
       "DisplayName": "Top vs. Other",
       "XMLAttribute": "topVsOther",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "StartDate": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Date",
       "DisplayName": "Start date",
       "XMLAttribute": "startDate",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "TrackingUrlTemplate": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Tracking template",
       "XMLAttribute": "trackingTemplate",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "UrlCustomParameters": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "CustomParameters",
       "DisplayName": "Custom parameter",
       "XMLAttribute": "customParameter",
       "Behavior": "Attribute",
-      "Filterable": "False",
-      "SupportsZeroImpressions": "True"
+      "Filterable": false,
+      "SupportsZeroImpressions": true
     },
     "ValuePerAllConversion": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Value / all conv.",
       "XMLAttribute": "valueAllConv",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ValuePerConversion": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Value / conv.",
       "XMLAttribute": "valueConv",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ValuePerConvertedClick": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Value / converted click",
       "XMLAttribute": "valueConvertedClick",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "VideoQuartile100Rate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Video played to 100%",
       "XMLAttribute": "videoPlayedTo100",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "VideoQuartile25Rate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Video played to 25%",
       "XMLAttribute": "videoPlayedTo25",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "VideoQuartile50Rate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Video played to 50%",
       "XMLAttribute": "videoPlayedTo50",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "VideoQuartile75Rate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Video played to 75%",
       "XMLAttribute": "videoPlayedTo75",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "VideoViewRate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "View rate",
       "XMLAttribute": "viewRate",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "VideoViews": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Views",
       "XMLAttribute": "views",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ViewThroughConversions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "View-through conv.",
       "XMLAttribute": "viewThroughConv",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ViewThroughConversionsSignificance": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "SignificanceData",
       "DisplayName": "View-through conv. ACE indicator",
       "XMLAttribute": "viewThroughConvACEIndicator",
       "Behavior": "Metric",
-      "Filterable": "False",
-      "SupportsZeroImpressions": "True"
+      "Filterable": false,
+      "SupportsZeroImpressions": true
     },
     "Week": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Week",
       "XMLAttribute": "week",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Year": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Integer",
       "DisplayName": "Year",
       "XMLAttribute": "year",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     }
   },
   "ACCOUNT_PERFORMANCE_REPORT": {
     "AccountCurrencyCode": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Currency",
       "XMLAttribute": "currency",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AccountDescriptiveName": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Account",
       "XMLAttribute": "account",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AccountTimeZoneId": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Time zone",
       "XMLAttribute": "timeZone",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ActiveViewCpm": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Active View avg. CPM",
       "XMLAttribute": "activeViewAvgCPM",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ActiveViewCtr": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Active View viewable CTR",
       "XMLAttribute": "activeViewViewableCTR",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ActiveViewImpressions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Active View viewable impressions",
       "XMLAttribute": "activeViewViewableImpressions",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ActiveViewMeasurability": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Active View measurable impr. / impr.",
       "XMLAttribute": "activeViewMeasurableImprImpr",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ActiveViewMeasurableCost": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Active View measurable cost",
       "XMLAttribute": "activeViewMeasurableCost",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ActiveViewMeasurableImpressions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Active View measurable impr.",
       "XMLAttribute": "activeViewMeasurableImpr",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ActiveViewViewability": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Active View viewable impr. / measurable impr.",
       "XMLAttribute": "activeViewViewableImprMeasurableImpr",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AdNetworkType1": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "AdNetworkType1",
       "DisplayName": "Network",
       "XMLAttribute": "network",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AdNetworkType2": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "AdNetworkType2",
       "DisplayName": "Network (with search partners)",
       "XMLAttribute": "networkWithSearchPartners",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AllConversionRate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "All conv. rate",
       "XMLAttribute": "allConvRate",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AllConversions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "All conv.",
       "XMLAttribute": "allConv",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AllConversionValue": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "All conv. value",
       "XMLAttribute": "allConvValue",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AverageCost": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Avg. Cost",
       "XMLAttribute": "avgCost",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AverageCpc": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Avg. CPC",
       "XMLAttribute": "avgCPC",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AverageCpe": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Avg. CPE",
       "XMLAttribute": "avgCPE",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AverageCpm": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Avg. CPM",
       "XMLAttribute": "avgCPM",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AverageCpv": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Avg. CPV",
       "XMLAttribute": "avgCPV",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "AveragePosition": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Avg. position",
       "XMLAttribute": "avgPosition",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CanManageClients": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Enum",
       "DisplayName": "Can manage clients",
       "XMLAttribute": "canManageClients",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ClickConversionRate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Click conversion rate",
       "XMLAttribute": "clickConversionRate",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Clicks": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Clicks",
       "XMLAttribute": "clicks",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ClickType": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "ClickType",
       "DisplayName": "Click type",
       "XMLAttribute": "clickType",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "False"
+      "Filterable": true,
+      "SupportsZeroImpressions": false
     },
     "ContentBudgetLostImpressionShare": {
+      "SpecialValue": true,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Content Lost IS (budget)",
       "XMLAttribute": "contentLostISBudget",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ContentImpressionShare": {
+      "SpecialValue": true,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Content Impr. share",
       "XMLAttribute": "contentImprShare",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ContentRankLostImpressionShare": {
+      "SpecialValue": true,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Content Lost IS (rank)",
       "XMLAttribute": "contentLostISRank",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ConversionCategoryName": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Conversion category",
       "XMLAttribute": "conversionCategory",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "False"
+      "Filterable": true,
+      "SupportsZeroImpressions": false
     },
     "ConversionRate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Conv. rate",
       "XMLAttribute": "convRate",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Conversions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Conversions",
       "XMLAttribute": "conversions",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ConversionTrackerId": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Conversion Tracker Id",
       "XMLAttribute": "conversionTrackerId",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "False"
+      "Filterable": true,
+      "SupportsZeroImpressions": false
     },
     "ConversionTypeName": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Conversion name",
       "XMLAttribute": "conversionName",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "False"
+      "Filterable": true,
+      "SupportsZeroImpressions": false
     },
     "ConversionValue": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Total conv. value",
       "XMLAttribute": "totalConvValue",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ConvertedClicks": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Converted clicks",
       "XMLAttribute": "convertedClicks",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Cost": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Cost",
       "XMLAttribute": "cost",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CostPerAllConversion": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Cost / all conv.",
       "XMLAttribute": "costAllConv",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CostPerConversion": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Cost / conv.",
       "XMLAttribute": "costConv",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CostPerConvertedClick": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Money",
       "DisplayName": "Cost / converted click",
       "XMLAttribute": "costConvertedClick",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CrossDeviceConversions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Cross-device conv.",
       "XMLAttribute": "crossDeviceConv",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Ctr": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "CTR",
       "XMLAttribute": "ctr",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "CustomerDescriptiveName": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Client name",
       "XMLAttribute": "clientName",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Date": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Date",
       "DisplayName": "Day",
       "XMLAttribute": "day",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "DayOfWeek": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "DayOfWeek",
       "DisplayName": "Day of week",
       "XMLAttribute": "dayOfWeek",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Device": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "DeviceType",
       "DisplayName": "Device",
       "XMLAttribute": "device",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "EngagementRate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Engagement rate",
       "XMLAttribute": "engagementRate",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Engagements": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Engagements",
       "XMLAttribute": "engagements",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ExternalCustomerId": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Customer ID",
       "XMLAttribute": "customerID",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "HourOfDay": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Integer",
       "DisplayName": "Hour of day",
       "XMLAttribute": "hourOfDay",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "False"
+      "Filterable": true,
+      "SupportsZeroImpressions": false
     },
     "Impressions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Impressions",
       "XMLAttribute": "impressions",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "InteractionRate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Interaction Rate",
       "XMLAttribute": "interactionRate",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Interactions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Interactions",
       "XMLAttribute": "interactions",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "InteractionTypes": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "EnumSet",
       "DisplayName": "Interaction Types",
       "XMLAttribute": "interactionTypes",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "InvalidClickRate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Invalid click rate",
       "XMLAttribute": "invalidClickRate",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "InvalidClicks": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Invalid clicks",
       "XMLAttribute": "invalidClicks",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "IsAutoTaggingEnabled": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Enum",
       "DisplayName": "Auto tagging enabled",
       "XMLAttribute": "autoTaggingEnabled",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "IsTestAccount": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Enum",
       "DisplayName": "Test account",
       "XMLAttribute": "testAccount",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Month": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Month",
       "XMLAttribute": "month",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "MonthOfYear": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "MonthOfYear",
       "DisplayName": "Month of Year",
       "XMLAttribute": "monthOfYear",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "PrimaryCompanyName": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Company name",
       "XMLAttribute": "companyName",
       "Behavior": "Attribute",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Quarter": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Quarter",
       "XMLAttribute": "quarter",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "SearchBudgetLostImpressionShare": {
+      "SpecialValue": true,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Search Lost IS (budget)",
       "XMLAttribute": "searchLostISBudget",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "SearchExactMatchImpressionShare": {
+      "SpecialValue": true,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Search Exact match IS",
       "XMLAttribute": "searchExactMatchIS",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "SearchImpressionShare": {
+      "SpecialValue": true,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Search Impr. share",
       "XMLAttribute": "searchImprShare",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "SearchRankLostImpressionShare": {
+      "SpecialValue": true,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "Search Lost IS (rank)",
       "XMLAttribute": "searchLostISRank",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Slot": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Slot",
       "DisplayName": "Top vs. Other",
       "XMLAttribute": "topVsOther",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ValuePerAllConversion": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Value / all conv.",
       "XMLAttribute": "valueAllConv",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ValuePerConversion": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Value / conv.",
       "XMLAttribute": "valueConv",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ValuePerConvertedClick": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Double",
       "DisplayName": "Value / converted click",
       "XMLAttribute": "valueConvertedClick",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "VideoViewRate": {
+      "SpecialValue": false,
+      "Percentage": true,
       "Type": "Double",
       "DisplayName": "View rate",
       "XMLAttribute": "viewRate",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "VideoViews": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "Views",
       "XMLAttribute": "views",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "ViewThroughConversions": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Long",
       "DisplayName": "View-through conv.",
       "XMLAttribute": "viewThroughConv",
       "Behavior": "Metric",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Week": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "String",
       "DisplayName": "Week",
       "XMLAttribute": "week",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     },
     "Year": {
+      "SpecialValue": false,
+      "Percentage": false,
       "Type": "Integer",
       "DisplayName": "Year",
       "XMLAttribute": "year",
       "Behavior": "Segment",
-      "Filterable": "True",
-      "SupportsZeroImpressions": "True"
+      "Filterable": true,
+      "SupportsZeroImpressions": true
     }
   }
 }

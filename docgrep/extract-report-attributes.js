@@ -21,17 +21,34 @@ window.onload = function () {
          */
         const tr = tbody.rows[i]
         const name = contentOf(tr.cells[0])
-        const tds = tr.cells[1].querySelector('table').querySelectorAll('td:first-child')
+        const fieldTds = tr.cells[1]
+            .querySelector('table')
+            .querySelectorAll('td:first-child')
 
-        for (let j = 0; j < tds.length; j++) {
+        const description = contentOf(tr.cells[1].querySelector('p'))
+        const field = attributes[name] = {
+            SpecialValue: description.includes('or the special value'),
+            Percentage: description.includes('.xx%')
+        }
+
+        for (let j = 0; j < fieldTds.length; j++) {
             /**
              * @type {HTMLTableCellElement}
              */
-            const cell = tds[j]
+            const cell = fieldTds[j]
             const property = contentOf(cell).replace(/\W/g, '')
+            const value = contentOf(cell.nextElementSibling)
+            const lowerCasevalue = value.toLowerCase()
 
-            attributes[name] = attributes[name] || {}
-            attributes[name][property] = contentOf(cell.nextElementSibling)
+            field[property] = value
+
+            if (lowerCasevalue === 'true') {
+                field[property] = true
+            }
+
+            if (lowerCasevalue === 'false') {
+                field[property] = false
+            }
         }
     }
 
