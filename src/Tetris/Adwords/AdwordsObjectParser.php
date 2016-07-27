@@ -128,7 +128,7 @@ abstract class AdwordsObjectParser
 
         foreach ($fields as $field => $userKey) {
             if (isset($reportMappings[$reportName][$field])) {
-                $fieldRealName = $reportMappings[$reportName][$field];
+                $fieldRealName = $reportMappings[$reportName][$field]['XMLAttribute'];
             } else {
                 $fieldRealName = lcfirst($field);
             }

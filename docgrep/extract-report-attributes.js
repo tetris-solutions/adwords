@@ -21,15 +21,17 @@ window.onload = function () {
          */
         const tr = tbody.rows[i]
         const name = contentOf(tr.cells[0])
-        const tds = tr.cells[1].querySelectorAll('td')
+        const tds = tr.cells[1].querySelector('table').querySelectorAll('td:first-child')
+
         for (let j = 0; j < tds.length; j++) {
             /**
              * @type {HTMLTableCellElement}
              */
             const cell = tds[j]
-            if (contentOf(cell) === 'XML Attribute') {
-                attributes[name] = contentOf(cell.nextElementSibling)
-            }
+            const property = contentOf(cell).replace(/\W/g, '')
+
+            attributes[name] = attributes[name] || {}
+            attributes[name][property] = contentOf(cell.nextElementSibling)
         }
     }
 
