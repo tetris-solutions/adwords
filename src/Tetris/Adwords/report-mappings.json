@@ -350,6 +350,16 @@
       "Filterable": true,
       "SupportsZeroImpressions": true
     },
+    "CampaignDesktopBidModifier": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Double",
+      "DisplayName": "Desktop bid adj.",
+      "XMLAttribute": "desktopBidAdj",
+      "Behavior": "Attribute",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
     "CampaignId": {
       "SpecialValue": false,
       "Percentage": false,
@@ -390,6 +400,16 @@
       "Filterable": true,
       "SupportsZeroImpressions": true
     },
+    "CampaignTabletBidModifier": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Double",
+      "DisplayName": "Tablet bid adj.",
+      "XMLAttribute": "tabletBidAdj",
+      "Behavior": "Attribute",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
     "CampaignTrialType": {
       "SpecialValue": false,
       "Percentage": false,
@@ -426,26 +446,6 @@
       "Type": "Double",
       "DisplayName": "Click Assisted Conv. Value",
       "XMLAttribute": "clickAssistedConvValue",
-      "Behavior": "Metric",
-      "Filterable": true,
-      "SupportsZeroImpressions": true
-    },
-    "ClickConversionRate": {
-      "SpecialValue": false,
-      "Percentage": true,
-      "Type": "Double",
-      "DisplayName": "Click conversion rate",
-      "XMLAttribute": "clickConversionRate",
-      "Behavior": "Metric",
-      "Filterable": true,
-      "SupportsZeroImpressions": true
-    },
-    "ClickConversionRateSignificance": {
-      "SpecialValue": false,
-      "Percentage": false,
-      "Type": "SignificanceData",
-      "DisplayName": "Click conversion rate ACE indicator",
-      "XMLAttribute": "clickConversionRateACEIndicator",
       "Behavior": "Metric",
       "Filterable": true,
       "SupportsZeroImpressions": true
@@ -570,26 +570,6 @@
       "Filterable": true,
       "SupportsZeroImpressions": true
     },
-    "ConvertedClicks": {
-      "SpecialValue": false,
-      "Percentage": false,
-      "Type": "Long",
-      "DisplayName": "Converted clicks",
-      "XMLAttribute": "convertedClicks",
-      "Behavior": "Metric",
-      "Filterable": true,
-      "SupportsZeroImpressions": true
-    },
-    "ConvertedClicksSignificance": {
-      "SpecialValue": false,
-      "Percentage": false,
-      "Type": "SignificanceData",
-      "DisplayName": "Converted clicks ACE indicator",
-      "XMLAttribute": "convertedClicksACEIndicator",
-      "Behavior": "Metric",
-      "Filterable": true,
-      "SupportsZeroImpressions": true
-    },
     "Cost": {
       "SpecialValue": false,
       "Percentage": false,
@@ -616,26 +596,6 @@
       "Type": "Money",
       "DisplayName": "Cost / conv.",
       "XMLAttribute": "costConv",
-      "Behavior": "Metric",
-      "Filterable": true,
-      "SupportsZeroImpressions": true
-    },
-    "CostPerConvertedClick": {
-      "SpecialValue": false,
-      "Percentage": false,
-      "Type": "Money",
-      "DisplayName": "Cost / converted click",
-      "XMLAttribute": "costConvertedClick",
-      "Behavior": "Metric",
-      "Filterable": true,
-      "SupportsZeroImpressions": true
-    },
-    "CostPerConvertedClickSignificance": {
-      "SpecialValue": false,
-      "Percentage": false,
-      "Type": "SignificanceData",
-      "DisplayName": "Cost/converted click ACE indicator",
-      "XMLAttribute": "costConvertedClickACEIndicator",
       "Behavior": "Metric",
       "Filterable": true,
       "SupportsZeroImpressions": true
@@ -1200,16 +1160,6 @@
       "Filterable": true,
       "SupportsZeroImpressions": true
     },
-    "ValuePerConvertedClick": {
-      "SpecialValue": false,
-      "Percentage": false,
-      "Type": "Double",
-      "DisplayName": "Value / converted click",
-      "XMLAttribute": "valueConvertedClick",
-      "Behavior": "Metric",
-      "Filterable": true,
-      "SupportsZeroImpressions": true
-    },
     "VideoQuartile100Rate": {
       "SpecialValue": false,
       "Percentage": true,
@@ -1532,16 +1482,6 @@
       "Filterable": true,
       "SupportsZeroImpressions": true
     },
-    "ClickConversionRate": {
-      "SpecialValue": false,
-      "Percentage": true,
-      "Type": "Double",
-      "DisplayName": "Click conversion rate",
-      "XMLAttribute": "clickConversionRate",
-      "Behavior": "Metric",
-      "Filterable": true,
-      "SupportsZeroImpressions": true
-    },
     "Clicks": {
       "SpecialValue": false,
       "Percentage": false,
@@ -1652,16 +1592,6 @@
       "Filterable": true,
       "SupportsZeroImpressions": true
     },
-    "ConvertedClicks": {
-      "SpecialValue": false,
-      "Percentage": false,
-      "Type": "Long",
-      "DisplayName": "Converted clicks",
-      "XMLAttribute": "convertedClicks",
-      "Behavior": "Metric",
-      "Filterable": true,
-      "SupportsZeroImpressions": true
-    },
     "Cost": {
       "SpecialValue": false,
       "Percentage": false,
@@ -1688,16 +1618,6 @@
       "Type": "Money",
       "DisplayName": "Cost / conv.",
       "XMLAttribute": "costConv",
-      "Behavior": "Metric",
-      "Filterable": true,
-      "SupportsZeroImpressions": true
-    },
-    "CostPerConvertedClick": {
-      "SpecialValue": false,
-      "Percentage": false,
-      "Type": "Money",
-      "DisplayName": "Cost / converted click",
-      "XMLAttribute": "costConvertedClick",
       "Behavior": "Metric",
       "Filterable": true,
       "SupportsZeroImpressions": true
@@ -1988,16 +1908,6 @@
       "Type": "Double",
       "DisplayName": "Value / conv.",
       "XMLAttribute": "valueConv",
-      "Behavior": "Metric",
-      "Filterable": true,
-      "SupportsZeroImpressions": true
-    },
-    "ValuePerConvertedClick": {
-      "SpecialValue": false,
-      "Percentage": false,
-      "Type": "Double",
-      "DisplayName": "Value / converted click",
-      "XMLAttribute": "valueConvertedClick",
       "Behavior": "Metric",
       "Filterable": true,
       "SupportsZeroImpressions": true

@@ -621,7 +621,6 @@
             </div>
             <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>HourOfDay</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
             </div>
@@ -670,7 +669,6 @@
             </div>
             <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>HourOfDay</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
             </div>
@@ -718,7 +716,6 @@
             </div>
             <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>HourOfDay</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
             </div>
@@ -1056,55 +1053,6 @@
     </tr>
     <tr>
         <td>
-            <h3 id="clickconversionrate"><code>ClickConversionRate</code></h3></td>
-        <td>
-            <p>The number of converted clicks divided by your total clicks that can be tracked to a conversion. This is
-                how often a click on your ad resulted in a conversion. Percentage returned as "x.xx%".
-                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
-                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
-                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
-                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
-                <code>WHERE</code> clause.</p>
-            <div class="devsite-table-wrapper">
-                <table class="nested responsive">
-                    <tbody>
-                    <tr>
-                        <td>Type</td>
-                        <td><code><span>Double</span></code></td>
-                    </tr>
-                    <tr>
-                        <td>Display Name</td>
-                        <td>Click conversion rate</td>
-                    </tr>
-                    <tr>
-                        <td>XML Attribute</td>
-                        <td><code><span>clickConversionRate</span></code></td>
-                    </tr>
-                    <tr>
-                        <td>Behavior</td>
-                        <td><code><span>Metric</span></code></td>
-                    </tr>
-                    <tr>
-                        <td>Filterable</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>Supports Zero Impressions</td>
-                        <td>True</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
-                <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
-                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
-                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
             <h3 id="clicks"><code>Clicks</code></h3></td>
         <td>
             <p>The number of clicks.</p>
@@ -1241,6 +1189,10 @@
                             <td>Show nearby locations</td>
                         </tr>
                         <tr>
+                            <td><code><span>APP_DEEPLINK</span></code></td>
+                            <td>App engagement ad deep link</td>
+                        </tr>
+                        <tr>
                             <td><code><span>TABLE_EXTENSION</span></code></td>
                             <td>Table Extension</td>
                         </tr>
@@ -1301,6 +1253,10 @@
                             <td>Broadband Plan</td>
                         </tr>
                         <tr>
+                            <td><code><span>WIRELESS_PLAN</span></code></td>
+                            <td>Wireless Plan</td>
+                        </tr>
+                        <tr>
                             <td><code><span>UNKNOWN</span></code></td>
                             <td>unknown</td>
                         </tr>
@@ -1310,16 +1266,11 @@
             </div>
             <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content" style="display: none;"><code>AllConversionRate</code></div>
-                <div class="exw-collapsed-content" style="display: none;"><code>AllConversionValue</code></div>
-                <div class="exw-collapsed-content" style="display: none;"><code>AllConversions</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>ContentBudgetLostImpressionShare</code>
                 </div>
                 <div class="exw-collapsed-content" style="display: none;"><code>ContentImpressionShare</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>ContentRankLostImpressionShare</code>
                 </div>
-                <div class="exw-collapsed-content" style="display: none;"><code>CostPerAllConversion</code></div>
-                <div class="exw-collapsed-content" style="display: none;"><code>CrossDeviceConversions</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Engagements</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>SearchBudgetLostImpressionShare</code>
                 </div>
@@ -1328,7 +1279,6 @@
                 <div class="exw-collapsed-content" style="display: none;"><code>SearchImpressionShare</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>SearchRankLostImpressionShare</code>
                 </div>
-                <div class="exw-collapsed-content" style="display: none;"><code>ValuePerAllConversion</code></div>
             </div>
         </td>
     </tr>
@@ -1538,16 +1488,13 @@
                 <div class="exw-collapsed-content" style="display: none;"><code>AverageCpm</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>AverageCpv</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>AveragePosition</code></div>
-                <div class="exw-collapsed-content" style="display: none;"><code>ClickConversionRate</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Clicks</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>ContentBudgetLostImpressionShare</code>
                 </div>
                 <div class="exw-collapsed-content" style="display: none;"><code>ContentImpressionShare</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>ContentRankLostImpressionShare</code>
                 </div>
-                <div class="exw-collapsed-content" style="display: none;"><code>ConvertedClicks</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Cost</code></div>
-                <div class="exw-collapsed-content" style="display: none;"><code>CostPerConvertedClick</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Ctr</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>EngagementRate</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Engagements</code></div>
@@ -1564,7 +1511,6 @@
                 <div class="exw-collapsed-content" style="display: none;"><code>SearchImpressionShare</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>SearchRankLostImpressionShare</code>
                 </div>
-                <div class="exw-collapsed-content" style="display: none;"><code>ValuePerConvertedClick</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>VideoViewRate</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>VideoViews</code></div>
             </div>
@@ -1706,16 +1652,13 @@
                 <div class="exw-collapsed-content" style="display: none;"><code>AverageCpm</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>AverageCpv</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>AveragePosition</code></div>
-                <div class="exw-collapsed-content" style="display: none;"><code>ClickConversionRate</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Clicks</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>ContentBudgetLostImpressionShare</code>
                 </div>
                 <div class="exw-collapsed-content" style="display: none;"><code>ContentImpressionShare</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>ContentRankLostImpressionShare</code>
                 </div>
-                <div class="exw-collapsed-content" style="display: none;"><code>ConvertedClicks</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Cost</code></div>
-                <div class="exw-collapsed-content" style="display: none;"><code>CostPerConvertedClick</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Ctr</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>EngagementRate</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Engagements</code></div>
@@ -1732,7 +1675,6 @@
                 <div class="exw-collapsed-content" style="display: none;"><code>SearchImpressionShare</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>SearchRankLostImpressionShare</code>
                 </div>
-                <div class="exw-collapsed-content" style="display: none;"><code>ValuePerConvertedClick</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>VideoViewRate</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>VideoViews</code></div>
             </div>
@@ -1789,16 +1731,13 @@
                 <div class="exw-collapsed-content" style="display: none;"><code>AverageCpm</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>AverageCpv</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>AveragePosition</code></div>
-                <div class="exw-collapsed-content" style="display: none;"><code>ClickConversionRate</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Clicks</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>ContentBudgetLostImpressionShare</code>
                 </div>
                 <div class="exw-collapsed-content" style="display: none;"><code>ContentImpressionShare</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>ContentRankLostImpressionShare</code>
                 </div>
-                <div class="exw-collapsed-content" style="display: none;"><code>ConvertedClicks</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Cost</code></div>
-                <div class="exw-collapsed-content" style="display: none;"><code>CostPerConvertedClick</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Ctr</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>EngagementRate</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Engagements</code></div>
@@ -1815,7 +1754,6 @@
                 <div class="exw-collapsed-content" style="display: none;"><code>SearchImpressionShare</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>SearchRankLostImpressionShare</code>
                 </div>
-                <div class="exw-collapsed-content" style="display: none;"><code>ValuePerConvertedClick</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>VideoViewRate</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>VideoViews</code></div>
             </div>
@@ -1860,49 +1798,6 @@
                     </tr>
                     </tbody>
                 </table>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <h3 id="convertedclicks"><code>ConvertedClicks</code></h3></td>
-        <td>
-            <p>The number of clicks that converted within your chosen conversion window.</p>
-            <div class="devsite-table-wrapper">
-                <table class="nested responsive">
-                    <tbody>
-                    <tr>
-                        <td>Type</td>
-                        <td><code><span>Long</span></code></td>
-                    </tr>
-                    <tr>
-                        <td>Display Name</td>
-                        <td>Converted clicks</td>
-                    </tr>
-                    <tr>
-                        <td>XML Attribute</td>
-                        <td><code><span>convertedClicks</span></code></td>
-                    </tr>
-                    <tr>
-                        <td>Behavior</td>
-                        <td><code><span>Metric</span></code></td>
-                    </tr>
-                    <tr>
-                        <td>Filterable</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>Supports Zero Impressions</td>
-                        <td>True</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
-                <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
-                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
-                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
             </div>
         </td>
     </tr>
@@ -1987,7 +1882,6 @@
             </div>
             <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>HourOfDay</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
             </div>
@@ -1997,7 +1891,7 @@
         <td>
             <h3 id="costperconversion"><code>CostPerConversion</code></h3></td>
         <td>
-            <p>Total cost divided by total ConversionValue.</p>
+            <p>The Cost attributable to conversion-tracked clicks divided by the number of conversions</p>
             <div class="devsite-table-wrapper">
                 <table class="nested responsive">
                     <tbody>
@@ -2027,49 +1921,6 @@
                     </tr>
                     </tbody>
                 </table>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <h3 id="costperconvertedclick"><code>CostPerConvertedClick</code></h3></td>
-        <td>
-            <p>Cost divided by your total converted clicks.</p>
-            <div class="devsite-table-wrapper">
-                <table class="nested responsive">
-                    <tbody>
-                    <tr>
-                        <td>Type</td>
-                        <td><code><span>Money</span></code></td>
-                    </tr>
-                    <tr>
-                        <td>Display Name</td>
-                        <td>Cost / converted click</td>
-                    </tr>
-                    <tr>
-                        <td>XML Attribute</td>
-                        <td><code><span>costConvertedClick</span></code></td>
-                    </tr>
-                    <tr>
-                        <td>Behavior</td>
-                        <td><code><span>Metric</span></code></td>
-                    </tr>
-                    <tr>
-                        <td>Filterable</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>Supports Zero Impressions</td>
-                        <td>True</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
-                <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
-                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
-                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
             </div>
         </td>
     </tr>
@@ -2116,7 +1967,6 @@
             </div>
             <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>HourOfDay</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
             </div>
@@ -3496,7 +3346,6 @@
             </div>
             <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content" style="display: none;"><code>ClickType</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>HourOfDay</code></div>
                 <div class="exw-collapsed-content" style="display: none;"><code>Slot</code></div>
             </div>
@@ -3506,7 +3355,7 @@
         <td>
             <h3 id="valueperconversion"><code>ValuePerConversion</code></h3></td>
         <td>
-            <p>The total value of your conversions divided by the total number of converted clicks.
+            <p>The total value of your conversions divided by the total number of conversions.
                 To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
                 with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
                 also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
@@ -3541,54 +3390,6 @@
                     </tr>
                     </tbody>
                 </table>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <h3 id="valueperconvertedclick"><code>ValuePerConvertedClick</code></h3></td>
-        <td>
-            <p>The total value of all conversions divided by the total number of converted clicks.
-                To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
-                with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
-                also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
-                <em>Only</em> the operators <code>&lt;</code> and <code>&gt;</code> are allowed in the
-                <code>WHERE</code> clause.</p>
-            <div class="devsite-table-wrapper">
-                <table class="nested responsive">
-                    <tbody>
-                    <tr>
-                        <td>Type</td>
-                        <td><code><span>Double</span></code></td>
-                    </tr>
-                    <tr>
-                        <td>Display Name</td>
-                        <td>Value / converted click</td>
-                    </tr>
-                    <tr>
-                        <td>XML Attribute</td>
-                        <td><code><span>valueConvertedClick</span></code></td>
-                    </tr>
-                    <tr>
-                        <td>Behavior</td>
-                        <td><code><span>Metric</span></code></td>
-                    </tr>
-                    <tr>
-                        <td>Filterable</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>Supports Zero Impressions</td>
-                        <td>True</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
-                <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content" style="display: none;"><code>ConversionCategoryName</code></div>
-                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTrackerId</code></div>
-                <div class="exw-collapsed-content" style="display: none;"><code>ConversionTypeName</code></div>
             </div>
         </td>
     </tr>
