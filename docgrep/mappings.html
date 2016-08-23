@@ -32,15 +32,13 @@
              */
             function parseTr(tr) {
                 const fieldName = tr.childNodes[1].textContent.trim()
-                const path = tr.childNodes[tr.childNodes.length - 2]
-                        .textContent
+                const cleanStr = str => str.trim().replace(/\W/g, '')
+                const path = tr.cells[tr.cells.length - 1]
+                        .innerText
                         .trim()
-                        .split('.')
-                        .map(function (str) {
-                            return str.trim().replace(/\W/g, '')
-                        })
-
-                path.shift()
+                        .split('\n')
+                        .map(line => line.split('.').map(cleanStr).slice(1))
+                
                 service[fieldName] = path
             }
 

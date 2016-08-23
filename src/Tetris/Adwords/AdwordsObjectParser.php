@@ -2,6 +2,8 @@
 
 namespace Tetris\Adwords;
 
+use Exception;
+use stdClass;
 use Campaign;
 use ManagedCustomer;
 use Budget;
@@ -40,7 +42,7 @@ abstract class AdwordsObjectParser
         return self::$mappings;
     }
 
-    private static function convertField(string $field, $value)
+    private static function convertField($field, $value)
     {
         if ($value instanceof Money) {
             return intval($value->microAmount) / (10 ** 6);
@@ -57,21 +59,41 @@ abstract class AdwordsObjectParser
         }
     }
 
-    private static function getPathFromObject(array $path, $object)
-    {
+    private static function insertValue (array $path, $object, &$values) {
         $pointer = $object;
-        $field = '';
 
-        foreach ($path as $part) {
+        foreach ($path as $index => $part) {
             if (!isset($pointer->{$part})) {
-                throw new \Exception('not found field');
+                return;
             }
 
-            $field = $part;
             $pointer = $pointer->{$part};
+            $isLastPart = $index === count($path) - 1;
+
+            if (is_array($pointer) && !$isLastPart) {
+                $remainingPath = array_slice($path, $index + 1);
+
+                foreach ($pointer as $item) {
+                    self::insertValue($remainingPath, $item, $values);
+                }
+            }
         }
 
-        return self::convertField($field, $pointer);
+        $values[] = $pointer;
+    }
+
+    private static function getValueFromPath(array $path, $object)
+    {
+        $pointer = $object;
+        $values = [];
+
+        self::insertValue($path, $object, $values);
+
+        if (empty($values)) {
+            throw new Exception('Could not find field');
+        }
+
+        return count($values) > 1 ? $values : $values[0];  
     }
 
     private static function getField($object, string $field)
@@ -79,26 +101,64 @@ abstract class AdwordsObjectParser
         $mapping = self::getMappings();
         $className = get_class($object);
         $guessedServiceName = $className . 'Service';
-
+        
         if (isset($mapping[$guessedServiceName][$field])) {
-            try {
-                return self::getPathFromObject($mapping[$guessedServiceName][$field], $object);
-            } catch (\Throwable $e) {
+            foreach ($mapping[$guessedServiceName][$field] as $path) {
+                try {
+                    return self::getValueFromPath($mapping[$guessedServiceName][$field], $object);
+                } catch (\Throwable $e) {
+                }
             }
         }
 
         foreach ($mapping as $service) {
-            foreach ($service as $name => $path) {
-                if ($name === $field) {
-                    try {
-                        return self::getPathFromObject($path, $object);
-                    } catch (\Throwable $e) {
+            foreach ($service as $name => $paths) {
+                foreach ($paths as $path) {
+                    if ($name === $field) {
+                        try {
+                            return self::getValueFromPath($path, $object);
+                        } catch (\Throwable $e) {
+                        }
                     }
                 }
             }
         }
 
         throw new \Exception("Could not find field '{$field}' in a instance of {$className}");
+    }
+
+    private static function normalizeAdwordsObject ($input)
+    {
+        if (is_scalar($input)) {
+            return $input;
+        }
+
+        if (is_array($input)) {
+            $parsedArray = [];
+            
+            foreach ($input as $index => $value) {
+                $parsedArray[$index] = self::normalizeAdwordsObject(
+                    self::convertField(null, $value)
+                );
+            }
+
+            return $parsedArray;
+        }
+        
+        if (is_object($input)) {
+            $parsedObject = new stdClass;
+            $ls = get_object_vars($input);
+            
+            foreach ($ls as $key => $value) {
+                $parsedObject->{$key} = self::normalizeAdwordsObject(
+                    self::convertField($key, $value)
+                );
+            }
+
+            return $parsedObject;
+        }
+
+        return NULL;
     }
 
     /**
@@ -109,10 +169,11 @@ abstract class AdwordsObjectParser
     static function readFieldsFromAdwordsObject(array $fieldMap, $adwordsObject)
     {
         $array = [];
-
+        $input = self::normalizeAdwordsObject($adwordsObject);
+        
         foreach ($fieldMap as $adwordsKey => $userKey) {
             try {
-                $array[$userKey] = self::getField($adwordsObject, $adwordsKey);
+                $array[$userKey] = self::getField($input, $adwordsKey);
             } catch (\Throwable $e) {
                 $array[$userKey] = NULL;
             }
