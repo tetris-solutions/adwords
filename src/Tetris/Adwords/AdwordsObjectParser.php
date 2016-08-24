@@ -179,7 +179,13 @@ abstract class AdwordsObjectParser
             }
         }
 
-        return self::stripSingleValueFromArray($array);
+        $result = self::stripSingleValueFromArray($array);
+
+        if (is_array($result)) {
+            $result['__source__'] = $input;
+        }
+
+        return $result;
     }
 
     static function normalizeReportObject($reportName, $fields, $inputObject)
