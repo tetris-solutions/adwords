@@ -49,7 +49,7 @@ class ReportRequest extends ReadRequest
         $result = json_decode($json);
 
         if (empty($result->table->row)) {
-            throw new NullReportException($report);
+            throw new NullReportException($report, $result);
         }
 
         $rows = is_array($result->table->row)
