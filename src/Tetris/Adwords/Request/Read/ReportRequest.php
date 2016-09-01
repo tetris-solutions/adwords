@@ -2,6 +2,7 @@
 
 namespace Tetris\Adwords\Request\Read;
 
+use Tetris\Adwords\Exceptions\NullReportException;
 use Tetris\Adwords\AdwordsObjectParser;
 use Tetris\Adwords\Request\ReadRequest;
 use ReportUtils;
@@ -48,7 +49,7 @@ class ReportRequest extends ReadRequest
         $result = json_decode($json);
 
         if (empty($result->table->row)) {
-            throw new \Exception('Could not load report result');
+            throw new NullReportException($report);
         }
 
         $rows = is_array($result->table->row)
