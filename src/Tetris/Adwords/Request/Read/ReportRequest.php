@@ -61,12 +61,12 @@ class ReportRequest extends ReadRequest
         }, $rows);
     }
 
-    function fetchOne()
+    function fetchOne($keepSourceObject = FALSE)
     {
         return $this->fetch()[0];
     }
 
-    function fetchAll(): array
+    function fetchAll($keepSourceObject = FALSE): array
     {
         return $this->fetch();
     }
