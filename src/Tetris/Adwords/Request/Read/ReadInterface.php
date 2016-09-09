@@ -6,9 +6,9 @@ use DateTime;
 
 interface ReadInterface
 {
-    function fetchOne();
+    function fetchOne($keepSourceObject = FALSE);
 
-    function fetchAll(): array;
+    function fetchAll($keepSourceObject = FALSE): array;
 
     function where(string $field, $value, $operator = 'EQUALS'): self;
 
