@@ -33,7 +33,7 @@ class GetRequest extends ReadRequest
         );
     }
 
-    private function fetch(): array
+    private function fetch(bool $keepSourceObject): array
     {
         /**
          * @var CampaignPage|BudgetPage|ManagedCustomerPage $result
@@ -46,15 +46,15 @@ class GetRequest extends ReadRequest
          * @var ManagedCustomer|Campaign|Budget $adwordsObject
          */
         foreach ($result->entries as $adwordsObject) {
-            $ls[] = AdwordsObjectParser::readFieldsFromAdwordsObject($this->fieldMap, $adwordsObject);
+            $ls[] = AdwordsObjectParser::readFieldsFromAdwordsObject($this->fieldMap, $adwordsObject, $keepSourceObject);
         }
 
         return $ls;
     }
 
-    function fetchOne()
+    function fetchOne($keepSourceObject = FALSE)
     {
-        $ls = $this->fetch();
+        $ls = $this->fetch($keepSourceObject);
 
         if (empty($ls)) {
             throw new \Exception('Not found', 404);
@@ -63,9 +63,9 @@ class GetRequest extends ReadRequest
         return $ls[0];
     }
 
-    function fetchAll(): array
+    function fetchAll($keepSourceObject = FALSE): array
     {
-        return $this->fetch();
+        return $this->fetch($keepSourceObject);
     }
 
     function during(DateTime $start, DateTime $end): ReadInterface

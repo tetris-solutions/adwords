@@ -166,7 +166,7 @@ abstract class AdwordsObjectParser
      * @param ManagedCustomer|Campaign|Budget $adwordsObject
      * @return array|mixed
      */
-    static function readFieldsFromAdwordsObject(array $fieldMap, $adwordsObject)
+    static function readFieldsFromAdwordsObject(array $fieldMap, $adwordsObject, $keepSourceObject = FALSE)
     {
         $array = [];
         $input = self::normalizeAdwordsObject($adwordsObject);
@@ -181,7 +181,7 @@ abstract class AdwordsObjectParser
 
         $result = self::stripSingleValueFromArray($array);
 
-        if (is_array($result)) {
+        if ($keepSourceObject && is_array($result)) {
             $result['__source__'] = $input;
         }
 
