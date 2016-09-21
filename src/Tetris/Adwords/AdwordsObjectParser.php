@@ -42,24 +42,17 @@ abstract class AdwordsObjectParser
         return self::$mappings;
     }
 
-    private static function convertField($field, $value)
+    private static function convertField($value)
     {
         if ($value instanceof Money) {
             return intval($value->microAmount) / (10 ** 6);
         }
 
-        switch (ucfirst($field)) {
-            case 'Bid':
-            case 'BidCeiling':
-            case 'Cost':
-            case 'Amount':
-                return (int)$value / (10 ** 6);
-            default:
-                return $value;
-        }
+        return $value;
     }
 
-    private static function insertValue (array $path, $object, &$values) {
+    private static function insertValue(array $path, $object, &$values)
+    {
         $pointer = $object;
 
         foreach ($path as $index => $part) {
@@ -84,7 +77,6 @@ abstract class AdwordsObjectParser
 
     private static function getValueFromPath(array $path, $object)
     {
-        $pointer = $object;
         $values = [];
 
         self::insertValue($path, $object, $values);
@@ -93,7 +85,7 @@ abstract class AdwordsObjectParser
             throw new Exception('Could not find field');
         }
 
-        return count($values) > 1 ? $values : $values[0];  
+        return count($values) > 1 ? $values : $values[0];
     }
 
     private static function getField($object, string $field)
@@ -101,7 +93,7 @@ abstract class AdwordsObjectParser
         $mapping = self::getMappings();
         $className = get_class($object);
         $guessedServiceName = $className . 'Service';
-        
+
         if (isset($mapping[$guessedServiceName][$field])) {
             foreach ($mapping[$guessedServiceName][$field] as $path) {
                 try {
@@ -127,7 +119,7 @@ abstract class AdwordsObjectParser
         throw new \Exception("Could not find field '{$field}' in a instance of {$className}");
     }
 
-    private static function normalizeAdwordsObject ($input)
+    private static function normalizeAdwordsObject($input)
     {
         if (is_scalar($input)) {
             return $input;
@@ -135,23 +127,23 @@ abstract class AdwordsObjectParser
 
         if (is_array($input)) {
             $parsedArray = [];
-            
+
             foreach ($input as $index => $value) {
                 $parsedArray[$index] = self::normalizeAdwordsObject(
-                    self::convertField(null, $value)
+                    $value instanceof Money ? intval($value->microAmount) / (10 ** 6) : $value
                 );
             }
 
             return $parsedArray;
         }
-        
+
         if (is_object($input)) {
             $parsedObject = new stdClass;
             $ls = get_object_vars($input);
-            
+
             foreach ($ls as $key => $value) {
                 $parsedObject->{$key} = self::normalizeAdwordsObject(
-                    self::convertField($key, $value)
+                    $value instanceof Money ? intval($value->microAmount) / (10 ** 6) : $value
                 );
             }
 
@@ -170,7 +162,7 @@ abstract class AdwordsObjectParser
     {
         $array = [];
         $input = self::normalizeAdwordsObject($adwordsObject);
-        
+
         foreach ($fieldMap as $adwordsKey => $userKey) {
             try {
                 $array[$userKey] = self::getField($input, $adwordsKey);
@@ -194,15 +186,20 @@ abstract class AdwordsObjectParser
         $reportMappings = self::getReportMappings();
 
         foreach ($fields as $field => $userKey) {
-            if (isset($reportMappings[$reportName][$field])) {
-                $fieldRealName = $reportMappings[$reportName][$field]['XMLAttribute'];
-            } else {
-                $fieldRealName = lcfirst($field);
+            $fieldRealName = isset($reportMappings[$reportName][$field]['XMLAttribute'])
+                ? $reportMappings[$reportName][$field]['XMLAttribute']
+                : NULL;
+
+            if ($fieldRealName === NULL || !property_exists($inputObject, $fieldRealName)) {
+                $map[$userKey] = NULL;
+                continue;
             }
 
-            $map[$userKey] = property_exists($inputObject, $fieldRealName)
-                ? self::convertField($field, $inputObject->{$fieldRealName})
-                : NULL;
+            $type = $reportMappings[$reportName][$field]['Type'];
+
+            $map[$userKey] = $type === 'Money'
+                ? intval($inputObject->{$fieldRealName}) / (10 ** 6)
+                : $inputObject->{$fieldRealName};
         }
 
         return AdwordsObjectParser::stripSingleValueFromArray($map);
