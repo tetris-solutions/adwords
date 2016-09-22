@@ -1211,6 +1211,438 @@
       "SupportsZeroImpressions": true
     }
   },
+  "BUDGET_PERFORMANCE_REPORT": {
+    "AccountDescriptiveName": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "String",
+      "DisplayName": "Account",
+      "XMLAttribute": "account",
+      "Behavior": "Attribute",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "AllConversionRate": {
+      "SpecialValue": false,
+      "Percentage": true,
+      "Type": "Double",
+      "DisplayName": "All conv. rate",
+      "XMLAttribute": "allConvRate",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "AllConversions": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Double",
+      "DisplayName": "All conv.",
+      "XMLAttribute": "allConv",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "AllConversionValue": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Double",
+      "DisplayName": "All conv. value",
+      "XMLAttribute": "allConvValue",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "Amount": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Money",
+      "DisplayName": "Budget",
+      "XMLAttribute": "budget",
+      "Behavior": "Attribute",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "AssociatedCampaignId": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Long",
+      "DisplayName": "Campaign ID",
+      "XMLAttribute": "campaignID",
+      "Behavior": "Segment",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "AssociatedCampaignName": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "String",
+      "DisplayName": "Campaign",
+      "XMLAttribute": "campaign",
+      "Behavior": "Segment",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "AssociatedCampaignStatus": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "CampaignStatus",
+      "DisplayName": "Campaign state",
+      "XMLAttribute": "campaignState",
+      "Behavior": "Segment",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "AverageCost": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Money",
+      "DisplayName": "Avg. Cost",
+      "XMLAttribute": "avgCost",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "AverageCpc": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Money",
+      "DisplayName": "Avg. CPC",
+      "XMLAttribute": "avgCPC",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "AverageCpe": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Double",
+      "DisplayName": "Avg. CPE",
+      "XMLAttribute": "avgCPE",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "AverageCpm": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Money",
+      "DisplayName": "Avg. CPM",
+      "XMLAttribute": "avgCPM",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "AverageCpv": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Double",
+      "DisplayName": "Avg. CPV",
+      "XMLAttribute": "avgCPV",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "AveragePosition": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Double",
+      "DisplayName": "Avg. position",
+      "XMLAttribute": "avgPosition",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "BudgetCampaignAssociationStatus": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "BudgetCampaignAssociationStatus",
+      "DisplayName": "Budget usage",
+      "XMLAttribute": "budgetUsage",
+      "Behavior": "Segment",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "BudgetId": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Long",
+      "DisplayName": "Budget ID",
+      "XMLAttribute": "budgetID",
+      "Behavior": "Attribute",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "BudgetName": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "String",
+      "DisplayName": "Budget Name",
+      "XMLAttribute": "budgetName",
+      "Behavior": "Attribute",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "BudgetReferenceCount": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Integer",
+      "DisplayName": "# Campaigns",
+      "XMLAttribute": "campaigns",
+      "Behavior": "Attribute",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "BudgetStatus": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "BudgetStatus",
+      "DisplayName": "Budget state",
+      "XMLAttribute": "budgetState",
+      "Behavior": "Attribute",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "Clicks": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Long",
+      "DisplayName": "Clicks",
+      "XMLAttribute": "clicks",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "ConversionRate": {
+      "SpecialValue": false,
+      "Percentage": true,
+      "Type": "Double",
+      "DisplayName": "Conv. rate",
+      "XMLAttribute": "convRate",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "Conversions": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Double",
+      "DisplayName": "Conversions",
+      "XMLAttribute": "conversions",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "ConversionValue": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Double",
+      "DisplayName": "Total conv. value",
+      "XMLAttribute": "totalConvValue",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "Cost": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Money",
+      "DisplayName": "Cost",
+      "XMLAttribute": "cost",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "CostPerAllConversion": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Money",
+      "DisplayName": "Cost / all conv.",
+      "XMLAttribute": "costAllConv",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "CostPerConversion": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Money",
+      "DisplayName": "Cost / conv.",
+      "XMLAttribute": "costConv",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "CrossDeviceConversions": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Double",
+      "DisplayName": "Cross-device conv.",
+      "XMLAttribute": "crossDeviceConv",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "Ctr": {
+      "SpecialValue": false,
+      "Percentage": true,
+      "Type": "Double",
+      "DisplayName": "CTR",
+      "XMLAttribute": "ctr",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "DeliveryMethod": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "BudgetDeliveryMethod",
+      "DisplayName": "Delivery method",
+      "XMLAttribute": "deliveryMethod",
+      "Behavior": "Attribute",
+      "Filterable": false,
+      "SupportsZeroImpressions": true
+    },
+    "EngagementRate": {
+      "SpecialValue": false,
+      "Percentage": true,
+      "Type": "Double",
+      "DisplayName": "Engagement rate",
+      "XMLAttribute": "engagementRate",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "Engagements": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Long",
+      "DisplayName": "Engagements",
+      "XMLAttribute": "engagements",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "ExternalCustomerId": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Long",
+      "DisplayName": "Customer ID",
+      "XMLAttribute": "customerID",
+      "Behavior": "Attribute",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "Impressions": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Long",
+      "DisplayName": "Impressions",
+      "XMLAttribute": "impressions",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "InteractionRate": {
+      "SpecialValue": false,
+      "Percentage": true,
+      "Type": "Double",
+      "DisplayName": "Interaction Rate",
+      "XMLAttribute": "interactionRate",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "Interactions": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Long",
+      "DisplayName": "Interactions",
+      "XMLAttribute": "interactions",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "InteractionTypes": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "EnumSet",
+      "DisplayName": "Interaction Types",
+      "XMLAttribute": "interactionTypes",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "IsBudgetExplicitlyShared": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Enum",
+      "DisplayName": "Explicitly shared",
+      "XMLAttribute": "explicitlyShared",
+      "Behavior": "Attribute",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "Period": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "BudgetPeriod",
+      "DisplayName": "Budget period",
+      "XMLAttribute": "budgetPeriod",
+      "Behavior": "Attribute",
+      "Filterable": false,
+      "SupportsZeroImpressions": true
+    },
+    "ValuePerAllConversion": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Double",
+      "DisplayName": "Value / all conv.",
+      "XMLAttribute": "valueAllConv",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "ValuePerConversion": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Double",
+      "DisplayName": "Value / conv.",
+      "XMLAttribute": "valueConv",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "VideoViewRate": {
+      "SpecialValue": false,
+      "Percentage": true,
+      "Type": "Double",
+      "DisplayName": "View rate",
+      "XMLAttribute": "viewRate",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "VideoViews": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Long",
+      "DisplayName": "Views",
+      "XMLAttribute": "views",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    },
+    "ViewThroughConversions": {
+      "SpecialValue": false,
+      "Percentage": false,
+      "Type": "Long",
+      "DisplayName": "View-through conv.",
+      "XMLAttribute": "viewThroughConv",
+      "Behavior": "Metric",
+      "Filterable": true,
+      "SupportsZeroImpressions": true
+    }
+  },
   "AD_PERFORMANCE_REPORT": {
     "AccountCurrencyCode": {
       "SpecialValue": false,
