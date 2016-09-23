@@ -14,6 +14,9 @@ abstract class AdwordsObjectParser
 {
     protected static $mappings = null;
     protected static $reportMappings = null;
+    protected static $overrideType = [
+        'AverageCpv' => 'Money'
+    ];
 
     static function stripSingleValueFromArray($array)
     {
@@ -196,6 +199,10 @@ abstract class AdwordsObjectParser
             }
 
             $type = $reportMappings[$reportName][$field]['Type'];
+
+            if (isset(self::$overrideType[$field])) {
+                $type = self::$overrideType[$field];
+            }
 
             $map[$userKey] = $type === 'Money'
                 ? intval($inputObject->{$fieldRealName}) / (10 ** 6)
