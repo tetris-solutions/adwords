@@ -10,6 +10,7 @@ use ReportDefinition;
 use DateTime;
 use DateRange;
 use stdClass;
+use Paging;
 
 class ReportRequest extends ReadRequest
 {
@@ -18,8 +19,6 @@ class ReportRequest extends ReadRequest
         if (!class_exists('ReportDefinition', false)) {
 
             $googleAdsUtilsDir = $this->client->getConfig('GOOGLEADS_LIB_UTILS_DIR');
-
-            // '/../../../../vendor/googleads/googleads-php-lib/src/Google/Api/Ads/AdWords/Util/v201603';
 
             require_once $googleAdsUtilsDir . '/ReportUtils.php';
             require_once $googleAdsUtilsDir . '/ReportClasses.php';
@@ -38,6 +37,11 @@ class ReportRequest extends ReadRequest
     {
         $report = new ReportDefinition();
         $report->selector = $this->selector;
+
+        if (!$report->selector->paging) {
+            $report->selector->paging = new Paging(0, 1000);
+        }
+
         $report->reportName = "{$this->className} #" . uniqid();
         $report->reportType = $this->className;
         $report->dateRangeType = 'CUSTOM_DATE';

@@ -7,6 +7,7 @@ use Tetris\Adwords\Request\Read\ReadInterface;
 use Tetris\Adwords\Client;
 use Selector;
 use Predicate;
+use Paging;
 
 abstract class ReadRequest extends Request implements ReadInterface
 {
@@ -40,6 +41,12 @@ abstract class ReadRequest extends Request implements ReadInterface
             $operator,
             is_array($value) ? $value : [$value]
         );
+        return $this;
+    }
+
+    function limit(int $count, $offset = 0): ReadInterface
+    {
+        $this->selector->paging = new Paging($offset, $count);
         return $this;
     }
 }

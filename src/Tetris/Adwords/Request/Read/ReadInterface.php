@@ -12,5 +12,7 @@ interface ReadInterface
 
     function where(string $field, $value, $operator = 'EQUALS'): self;
 
+    function limit(int $count, $offset = 0): self;
+
     function during(DateTime $start, DateTime $end): self;
 }
