@@ -33,16 +33,15 @@ class ReportRequest extends ReadRequest
         return $this;
     }
 
+    function limit(int $count, $offset = 0): ReadInterface
+    {
+        throw new \Exception('Paging is not supported for reports', 500);
+    }
+
     private function fetch(): array
     {
         $report = new ReportDefinition();
-
-        if (empty($this->selector->paging)) {
-            $this->limit(500);
-        }
-
         $report->selector = $this->selector;
-
         $report->reportName = "{$this->className} #" . uniqid();
         $report->reportType = $this->className;
         $report->dateRangeType = 'CUSTOM_DATE';

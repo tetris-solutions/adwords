@@ -34,6 +34,12 @@ class GetRequest extends ReadRequest
         );
     }
 
+    function limit(int $count, $offset = 0): ReadInterface
+    {
+        $this->selector->paging = new Paging($offset, $count);
+        return $this;
+    }
+
     private function fetch(bool $keepSourceObject): array
     {
         if (empty($this->selector->paging)) {

@@ -43,10 +43,4 @@ abstract class ReadRequest extends Request implements ReadInterface
         );
         return $this;
     }
-
-    function limit(int $count, $offset = 0): ReadInterface
-    {
-        $this->selector->paging = new Paging($offset, $count);
-        return $this;
-    }
 }
