@@ -36,11 +36,12 @@ class ReportRequest extends ReadRequest
     private function fetch(): array
     {
         $report = new ReportDefinition();
-        $report->selector = $this->selector;
 
-        if (!$report->selector->paging) {
-            $report->selector->paging = new Paging(0, 1000);
+        if (empty($this->selector->paging)) {
+            $this->limit(500);
         }
+
+        $report->selector = $this->selector;
 
         $report->reportName = "{$this->className} #" . uniqid();
         $report->reportType = $this->className;

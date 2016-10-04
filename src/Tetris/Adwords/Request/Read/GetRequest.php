@@ -3,6 +3,7 @@
 namespace Tetris\Adwords\Request\Read;
 
 use DateTime;
+use Paging;
 
 use Campaign;
 use Budget;
@@ -35,6 +36,9 @@ class GetRequest extends ReadRequest
 
     private function fetch(bool $keepSourceObject): array
     {
+        if (empty($this->selector->paging)) {
+            $this->limit(500);
+        }
         /**
          * @var CampaignPage|BudgetPage|ManagedCustomerPage $result
          */
