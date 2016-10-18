@@ -8,6 +8,7 @@ use Campaign;
 use ManagedCustomer;
 use Budget;
 use Money;
+use Bid;
 use Nayjest\StrCaseConverter\Str;
 
 abstract class AdwordsObjectParser
@@ -17,6 +18,19 @@ abstract class AdwordsObjectParser
     protected static $overrideType = [
         'AverageCpv' => 'Money'
     ];
+
+    private static function cast($value)
+    {
+        if ($value instanceof Money) {
+            return intval($value->microAmount) / (10 ** 6);
+        }
+
+        if ($value instanceof Bid) {
+            return self::cast($value->amount);
+        }
+
+        return $value;
+    }
 
     static function stripSingleValueFromArray($array)
     {
@@ -43,15 +57,6 @@ abstract class AdwordsObjectParser
             self::$mappings = json_decode(file_get_contents(__DIR__ . '/mappings.json'), true);
         }
         return self::$mappings;
-    }
-
-    private static function convertField($value)
-    {
-        if ($value instanceof Money) {
-            return intval($value->microAmount) / (10 ** 6);
-        }
-
-        return $value;
     }
 
     private static function insertValue(array $path, $object, &$values)
@@ -133,7 +138,7 @@ abstract class AdwordsObjectParser
 
             foreach ($input as $index => $value) {
                 $parsedArray[$index] = self::normalizeAdwordsObject(
-                    $value instanceof Money ? intval($value->microAmount) / (10 ** 6) : $value
+                    self::cast($value)
                 );
             }
 
@@ -146,7 +151,7 @@ abstract class AdwordsObjectParser
 
             foreach ($ls as $key => $value) {
                 $parsedObject->{$key} = self::normalizeAdwordsObject(
-                    $value instanceof Money ? intval($value->microAmount) / (10 ** 6) : $value
+                    self::cast($value)
                 );
             }
 
@@ -204,7 +209,7 @@ abstract class AdwordsObjectParser
                 $type = self::$overrideType[$field];
             }
 
-            $map[$userKey] = $type === 'Money'
+            $map[$userKey] = ($type === 'Money' || $type === 'Bid')
                 ? intval($inputObject->{$fieldRealName}) / (10 ** 6)
                 : $inputObject->{$fieldRealName};
         }
