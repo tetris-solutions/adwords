@@ -47,7 +47,9 @@ class ReportRequest extends ReadRequest
         $report->dateRangeType = 'CUSTOM_DATE';
         $report->downloadFormat = 'XML';
 
-        $xml = simplexml_load_string(ReportUtils::DownloadReport($report, null, $this->client));
+        $downloader = new ReportUtils();
+
+        $xml = simplexml_load_string($downloader->DownloadReport($report, null, $this->client));
         $json = json_encode($xml);
 
         $result = json_decode($json);

@@ -12,6 +12,7 @@ use Tetris\Adwords\Request\Write\InsertRequest;
 
 class Client extends AdWordsUser
 {
+    const version = 'v201609';
     /**
      * @var array $config
      */
@@ -40,7 +41,7 @@ class Client extends AdWordsUser
          * @var CustomerService $customerSvc
          */
         $customerSvc = $this->GetService('CustomerService');
-        $this->customer = $customerSvc->get();
+        $this->customer = $customerSvc->getCustomers()[0];
 
         $this->SetClientCustomerId($this->customer->customerId);
     }
