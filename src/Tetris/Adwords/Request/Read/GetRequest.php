@@ -50,6 +50,10 @@ class GetRequest extends ReadRequest
          */
         $result = $this->service->get($this->selector);
 
+        if (empty($result->entries)) {
+            return [];
+        }
+
         $ls = [];
 
         /**
