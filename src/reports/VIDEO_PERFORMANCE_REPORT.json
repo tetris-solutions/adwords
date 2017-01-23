@@ -82,7 +82,7 @@
   "AverageCpm": {
     "SpecialValue": false,
     "Percentage": false,
-    "Type": "Double",
+    "Type": "Money",
     "DisplayName": "Avg. CPM",
     "XMLAttribute": "avgCPM",
     "Behavior": "Metric",
@@ -92,7 +92,7 @@
   "AverageCpv": {
     "SpecialValue": false,
     "Percentage": false,
-    "Type": "Double",
+    "Type": "Money",
     "DisplayName": "Avg. CPV",
     "XMLAttribute": "avgCPV",
     "Behavior": "Metric",
