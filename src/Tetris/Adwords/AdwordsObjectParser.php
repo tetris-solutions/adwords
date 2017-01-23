@@ -43,14 +43,6 @@ abstract class AdwordsObjectParser
         return self::stripSingleValueFromArray($array[$singleKey]);
     }
 
-    private static function getReportMappings(): array
-    {
-        if (empty(self::$reportMappings)) {
-            self::$reportMappings = json_decode(file_get_contents(__DIR__ . '/report-mappings.json'), true);
-        }
-        return self::$reportMappings;
-    }
-
     private static function getMappings(): array
     {
         if (empty(self::$mappings)) {
@@ -191,11 +183,11 @@ abstract class AdwordsObjectParser
     static function normalizeReportObject($reportName, $fields, $inputObject)
     {
         $map = [];
-        $reportMappings = self::getReportMappings();
+        $report = ReportMap::get($reportName);
 
         foreach ($fields as $field => $userKey) {
-            $fieldRealName = isset($reportMappings[$reportName][$field]['XMLAttribute'])
-                ? $reportMappings[$reportName][$field]['XMLAttribute']
+            $fieldRealName = isset($report[$field]['XMLAttribute'])
+                ? $report[$field]['XMLAttribute']
                 : NULL;
 
             if ($fieldRealName === NULL || !property_exists($inputObject, $fieldRealName)) {
@@ -203,7 +195,7 @@ abstract class AdwordsObjectParser
                 continue;
             }
 
-            $type = $reportMappings[$reportName][$field]['Type'];
+            $type = $report[$field]['Type'];
 
             if (isset(self::$overrideType[$field])) {
                 $type = self::$overrideType[$field];
