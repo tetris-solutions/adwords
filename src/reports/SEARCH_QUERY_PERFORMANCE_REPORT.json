@@ -32,6 +32,18 @@
   "AdFormat": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "TEXT": "text",
+      "IMAGE": "image",
+      "DYNAMIC_IMAGE": "dynamic_image",
+      "FLASH": "flash",
+      "VIDEO": "video",
+      "HTML": "html",
+      "AUDIO": "audio",
+      "COMPOSITE": "composite",
+      "PRINT": "print"
+    },
     "Type": "AdFormat",
     "DisplayName": "Ad type",
     "XMLAttribute": "adType",
@@ -62,6 +74,12 @@
   "AdGroupStatus": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "ENABLED": "enabled",
+      "PAUSED": "paused",
+      "REMOVED": "removed"
+    },
     "Type": "AdGroupStatus",
     "DisplayName": "Ad group state",
     "XMLAttribute": "adGroupState",
@@ -72,6 +90,13 @@
   "AdNetworkType1": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "SEARCH": "Search Network",
+      "CONTENT": "Display Network",
+      "YOUTUBE_SEARCH": "YouTube Search",
+      "YOUTUBE_WATCH": "YouTube Videos"
+    },
     "Type": "AdNetworkType1",
     "DisplayName": "Network",
     "XMLAttribute": "network",
@@ -82,6 +107,14 @@
   "AdNetworkType2": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "SEARCH": "Google search",
+      "SEARCH_PARTNERS": "Search partners",
+      "CONTENT": "Display Network",
+      "YOUTUBE_SEARCH": "YouTube Search",
+      "YOUTUBE_WATCH": "YouTube Videos"
+    },
     "Type": "AdNetworkType2",
     "DisplayName": "Network (with search partners)",
     "XMLAttribute": "networkWithSearchPartners",
@@ -202,6 +235,12 @@
   "CampaignStatus": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "ENABLED": "enabled",
+      "PAUSED": "paused",
+      "REMOVED": "removed"
+    },
     "Type": "CampaignStatus",
     "DisplayName": "Campaign state",
     "XMLAttribute": "campaignState",
@@ -362,6 +401,15 @@
   "DayOfWeek": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "MONDAY": "Monday",
+      "TUESDAY": "Tuesday",
+      "WEDNESDAY": "Wednesday",
+      "THURSDAY": "Thursday",
+      "FRIDAY": "Friday",
+      "SATURDAY": "Saturday",
+      "SUNDAY": "Sunday"
+    },
     "Type": "DayOfWeek",
     "DisplayName": "Day of week",
     "XMLAttribute": "dayOfWeek",
@@ -382,6 +430,12 @@
   "Device": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "Other",
+      "DESKTOP": "Computers",
+      "HIGH_END_MOBILE": "Mobile devices with full browsers",
+      "TABLET": "Tablets with full browsers"
+    },
     "Type": "DeviceType",
     "DisplayName": "Device",
     "XMLAttribute": "device",
@@ -412,6 +466,30 @@
   "ExternalConversionSource": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "Other",
+      "WEBPAGE": "Website",
+      "ANALYTICS": "Analytics",
+      "UPLOAD": "Import from clicks",
+      "AD_CALL_METRICS": "Calls from ads",
+      "OFFERS": "Offers",
+      "ENGAGEMENT": "Engagement ads",
+      "WEBSITE_CALL_METRICS": "Calls from website",
+      "STORE_VISITS": "Store visits",
+      "ANDROID_IN_APP": "Android in-app action",
+      "ANDROID_DOWNLOAD": "Android app install (from Google Play)",
+      "IOS_IN_APP": "iOS in-app action",
+      "IOS_FIRST_OPEN": "iOS app install (first open)",
+      "APP_UNSPECIFIED": "Mobile app",
+      "ANDROID_FIRST_OPEN": "Android app install (first open)",
+      "UPLOAD_CALLS": "Import from calls",
+      "FIREBASE": "Firebase",
+      "CLICK_TO_CALL": "Phone number clicks",
+      "SALESFORCE": "Salesforce.com",
+      "STORE_SALES_CRM": "Store sales (data partner)",
+      "STORE_SALES_PAYMENT_NETWORK": "Store sales (payment network)",
+      "GOOGLE_PLAY": "Google Play"
+    },
     "Type": "ExternalConversionSource",
     "DisplayName": "Conversion source",
     "XMLAttribute": "conversionSource",
@@ -512,6 +590,20 @@
   "MonthOfYear": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "JANUARY": "January",
+      "FEBRUARY": "February",
+      "MARCH": "March",
+      "APRIL": "April",
+      "MAY": "May",
+      "JUNE": "June",
+      "JULY": "July",
+      "AUGUST": "August",
+      "SEPTEMBER": "September",
+      "OCTOBER": "October",
+      "NOVEMBER": "November",
+      "DECEMBER": "December"
+    },
     "Type": "MonthOfYear",
     "DisplayName": "Month of Year",
     "XMLAttribute": "monthOfYear",
@@ -552,6 +644,15 @@
   "QueryMatchTypeWithVariant": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "AUTO": "auto",
+      "BROAD": "broad",
+      "EXACT": "exact",
+      "EXPANDED": "broad",
+      "PHRASE": "phrase",
+      "NEAR_EXACT": "exact (close variant)",
+      "NEAR_PHRASE": "phrase (close variant)"
+    },
     "Type": "QueryMatchTypeWithVariant",
     "DisplayName": "Match type",
     "XMLAttribute": "matchType",

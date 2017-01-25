@@ -122,6 +122,12 @@
   "AdGroupStatus": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "ENABLED": "enabled",
+      "PAUSED": "paused",
+      "REMOVED": "removed"
+    },
     "Type": "AdGroupStatus",
     "DisplayName": "Ad group state",
     "XMLAttribute": "adGroupState",
@@ -132,6 +138,13 @@
   "AdNetworkType1": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "SEARCH": "Search Network",
+      "CONTENT": "Display Network",
+      "YOUTUBE_SEARCH": "YouTube Search",
+      "YOUTUBE_WATCH": "YouTube Videos"
+    },
     "Type": "AdNetworkType1",
     "DisplayName": "Network",
     "XMLAttribute": "network",
@@ -142,6 +155,14 @@
   "AdNetworkType2": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "SEARCH": "Google search",
+      "SEARCH_PARTNERS": "Search partners",
+      "CONTENT": "Display Network",
+      "YOUTUBE_SEARCH": "YouTube Search",
+      "YOUTUBE_WATCH": "YouTube Videos"
+    },
     "Type": "AdNetworkType2",
     "DisplayName": "Network (with search partners)",
     "XMLAttribute": "networkWithSearchPartners",
@@ -272,6 +293,9 @@
   "BidType": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "TARGET_CPA": "target cpa"
+    },
     "Type": "BidType",
     "DisplayName": "Conversion optimizer bid type",
     "XMLAttribute": "conversionOptimizerBidType",
@@ -302,6 +326,12 @@
   "CampaignStatus": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "ENABLED": "enabled",
+      "PAUSED": "paused",
+      "REMOVED": "removed"
+    },
     "Type": "CampaignStatus",
     "DisplayName": "Campaign state",
     "XMLAttribute": "campaignState",
@@ -322,6 +352,40 @@
   "ClickType": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "URL_CLICKS": "Headline",
+      "CALLS": "Phone calls",
+      "OTHER": "Other",
+      "PRODUCT_EXTENSION_CLICKS": "Product plusbox offer",
+      "SITELINKS": "Sitelink",
+      "PRODUCT_LISTING_AD_CLICKS": "Shopping ad - Standard",
+      "GET_DIRECTIONS": "Driving direction",
+      "OFFER_PRINTS": "Print offer",
+      "BREADCRUMBS": "Breadcrumbs",
+      "CALL_TRACKING": "Manually dialed phone calls",
+      "MOBILE_CALL_TRACKING": "Mobile phone calls",
+      "LOCATION_EXPANSION": "Get location details",
+      "STORE_LOCATOR": "Show nearby locations",
+      "APP_DEEPLINK": "App engagement ad deep link",
+      "TABLE_EXTENSION": "Table Extension",
+      "VIDEO_WEBSITE_CLICKS": "Website",
+      "VIDEO_CALL_TO_ACTION_CLICKS": "Call-to-Action overlay",
+      "VIDEO_APP_STORE_CLICKS": "App store",
+      "VIDEO_CARD_ACTION_HEADLINE_CLICKS": "Cards",
+      "VIDEO_END_CAP_CLICKS": "End cap",
+      "CLICK_ON_ENGAGEMENT_AD": "Click on engagement ad",
+      "LOCATION_FORMAT_MAP": "Map",
+      "LOCATION_FORMAT_LANDING_PAGE": "Go to landing page",
+      "LOCATION_FORMAT_STORE_INFO": "Go to store info",
+      "LOCATION_FORMAT_DIRECTIONS": "Directions",
+      "LOCATION_FORMAT_CALL": "Call",
+      "LOCATION_FORMAT_TEXT": "Text",
+      "LOCATION_FORMAT_IMAGE": "Image(s)",
+      "BROADBAND_PLAN": "Broadband Plan",
+      "WIRELESS_PLAN": "Wireless Plan",
+      "VISUAL_SITELINKS": "Visual Sitelinks",
+      "UNKNOWN": "unknown"
+    },
     "Type": "ClickType",
     "DisplayName": "Click type",
     "XMLAttribute": "clickType",
@@ -432,6 +496,12 @@
   "CpcBidSource": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "ADGROUP": "ad groups",
+      "CRITERION": "ad group criteria",
+      "ADGROUP_BIDDING_STRATEGY": "ad group bidding strategy",
+      "CAMPAIGN_BIDDING_STRATEGY": "campaign bidding strategy"
+    },
     "Type": "BidSource",
     "DisplayName": "Max CPC source",
     "XMLAttribute": "maxCPCSource",
@@ -452,6 +522,12 @@
   "CpmBidSource": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "ADGROUP": "ad groups",
+      "CRITERION": "ad group criteria",
+      "ADGROUP_BIDDING_STRATEGY": "ad group bidding strategy",
+      "CAMPAIGN_BIDDING_STRATEGY": "campaign bidding strategy"
+    },
     "Type": "BidSource",
     "DisplayName": "Max CPM Source",
     "XMLAttribute": "maxCPMSource",
@@ -522,6 +598,15 @@
   "DayOfWeek": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "MONDAY": "Monday",
+      "TUESDAY": "Tuesday",
+      "WEDNESDAY": "Wednesday",
+      "THURSDAY": "Thursday",
+      "FRIDAY": "Friday",
+      "SATURDAY": "Saturday",
+      "SUNDAY": "Sunday"
+    },
     "Type": "DayOfWeek",
     "DisplayName": "Day of week",
     "XMLAttribute": "dayOfWeek",
@@ -532,6 +617,12 @@
   "Device": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "Other",
+      "DESKTOP": "Computers",
+      "HIGH_END_MOBILE": "Mobile devices with full browsers",
+      "TABLET": "Tablets with full browsers"
+    },
     "Type": "DeviceType",
     "DisplayName": "Device",
     "XMLAttribute": "device",
@@ -562,6 +653,30 @@
   "ExternalConversionSource": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "Other",
+      "WEBPAGE": "Website",
+      "ANALYTICS": "Analytics",
+      "UPLOAD": "Import from clicks",
+      "AD_CALL_METRICS": "Calls from ads",
+      "OFFERS": "Offers",
+      "ENGAGEMENT": "Engagement ads",
+      "WEBSITE_CALL_METRICS": "Calls from website",
+      "STORE_VISITS": "Store visits",
+      "ANDROID_IN_APP": "Android in-app action",
+      "ANDROID_DOWNLOAD": "Android app install (from Google Play)",
+      "IOS_IN_APP": "iOS in-app action",
+      "IOS_FIRST_OPEN": "iOS app install (first open)",
+      "APP_UNSPECIFIED": "Mobile app",
+      "ANDROID_FIRST_OPEN": "Android app install (first open)",
+      "UPLOAD_CALLS": "Import from calls",
+      "FIREBASE": "Firebase",
+      "CLICK_TO_CALL": "Phone number clicks",
+      "SALESFORCE": "Salesforce.com",
+      "STORE_SALES_CRM": "Store sales (data partner)",
+      "STORE_SALES_PAYMENT_NETWORK": "Store sales (payment network)",
+      "GOOGLE_PLAY": "Google Play"
+    },
     "Type": "ExternalConversionSource",
     "DisplayName": "Conversion source",
     "XMLAttribute": "conversionSource",
@@ -692,6 +807,10 @@
   "IsNegative": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "TRUE": "true",
+      "FALSE": "false"
+    },
     "Type": "Enum",
     "DisplayName": "Is negative",
     "XMLAttribute": "isNegative",
@@ -702,6 +821,10 @@
   "IsRestrict": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "TRUE": "true",
+      "FALSE": "false"
+    },
     "Type": "Enum",
     "DisplayName": "Is restricting",
     "XMLAttribute": "isRestricting",
@@ -722,6 +845,20 @@
   "MonthOfYear": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "JANUARY": "January",
+      "FEBRUARY": "February",
+      "MARCH": "March",
+      "APRIL": "April",
+      "MAY": "May",
+      "JUNE": "June",
+      "JULY": "July",
+      "AUGUST": "August",
+      "SEPTEMBER": "September",
+      "OCTOBER": "October",
+      "NOVEMBER": "November",
+      "DECEMBER": "December"
+    },
     "Type": "MonthOfYear",
     "DisplayName": "Month of Year",
     "XMLAttribute": "monthOfYear",
@@ -752,6 +889,15 @@
   "Slot": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "SearchRhs": "Google search: Side",
+      "SearchTop": "Google search: Top",
+      "SearchOther": "Google search: Other",
+      "Content": "Google Display Network",
+      "AfsTop": "Search partners: Top",
+      "AfsOther": "Search partners: Other",
+      "Unknown": ""
+    },
     "Type": "Slot",
     "DisplayName": "Top vs. Other",
     "XMLAttribute": "topVsOther",
@@ -762,6 +908,11 @@
   "Status": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "ENABLED": "enabled",
+      "REMOVED": "removed",
+      "PAUSED": "paused"
+    },
     "Type": "UserStatus",
     "DisplayName": "Audience state",
     "XMLAttribute": "audienceState",

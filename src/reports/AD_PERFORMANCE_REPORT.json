@@ -142,6 +142,12 @@
   "AdGroupStatus": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "ENABLED": "enabled",
+      "PAUSED": "paused",
+      "REMOVED": "removed"
+    },
     "Type": "AdGroupStatus",
     "DisplayName": "Ad group state",
     "XMLAttribute": "adGroupState",
@@ -152,6 +158,13 @@
   "AdNetworkType1": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "SEARCH": "Search Network",
+      "CONTENT": "Display Network",
+      "YOUTUBE_SEARCH": "YouTube Search",
+      "YOUTUBE_WATCH": "YouTube Videos"
+    },
     "Type": "AdNetworkType1",
     "DisplayName": "Network",
     "XMLAttribute": "network",
@@ -162,6 +175,14 @@
   "AdNetworkType2": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "SEARCH": "Google search",
+      "SEARCH_PARTNERS": "Search partners",
+      "CONTENT": "Display Network",
+      "YOUTUBE_SEARCH": "YouTube Search",
+      "YOUTUBE_WATCH": "YouTube Videos"
+    },
     "Type": "AdNetworkType2",
     "DisplayName": "Network (with search partners)",
     "XMLAttribute": "networkWithSearchPartners",
@@ -172,6 +193,19 @@
   "AdType": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "DEPRECATED_AD": "Other",
+      "IMAGE_AD": "Image ad",
+      "PRODUCT_AD": "Shopping ad",
+      "TEMPLATE_AD": "Display ad",
+      "TEXT_AD": "Text ad",
+      "THIRD_PARTY_REDIRECT_AD": "Third party ad",
+      "DYNAMIC_SEARCH_AD": "Dynamic search ad",
+      "CALL_ONLY_AD": "Call only ad",
+      "EXPANDED_TEXT_AD": "Expanded text ad",
+      "RESPONSIVE_DISPLAY_AD": "Responsive display ad",
+      "UNKNOWN": "unknown"
+    },
     "Type": "Type",
     "DisplayName": "Ad type",
     "XMLAttribute": "adType",
@@ -182,6 +216,11 @@
   "AdvertiserExperimentSegmentationBin": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "OUTSIDE_OF_EXPERIMENT": "outside experiment",
+      "CONTROL": "control",
+      "EXPERIMENT": "experiment"
+    },
     "Type": "AdvertiserExperimentSegmentationBin",
     "DisplayName": "ACE split",
     "XMLAttribute": "aCESplit",
@@ -372,6 +411,12 @@
   "CampaignStatus": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "ENABLED": "enabled",
+      "PAUSED": "paused",
+      "REMOVED": "removed"
+    },
     "Type": "CampaignStatus",
     "DisplayName": "Campaign state",
     "XMLAttribute": "campaignState",
@@ -432,6 +477,39 @@
   "ClickType": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "URL_CLICKS": "Headline",
+      "CALLS": "Phone calls",
+      "OTHER": "Other",
+      "PRODUCT_EXTENSION_CLICKS": "Product plusbox offer",
+      "SITELINKS": "Sitelink",
+      "PRODUCT_LISTING_AD_CLICKS": "Shopping ad - Standard",
+      "GET_DIRECTIONS": "Driving direction",
+      "OFFER_PRINTS": "Print offer",
+      "BREADCRUMBS": "Breadcrumbs",
+      "CALL_TRACKING": "Manually dialed phone calls",
+      "MOBILE_CALL_TRACKING": "Mobile phone calls",
+      "LOCATION_EXPANSION": "Get location details",
+      "STORE_LOCATOR": "Show nearby locations",
+      "APP_DEEPLINK": "App engagement ad deep link",
+      "TABLE_EXTENSION": "Table Extension",
+      "VIDEO_WEBSITE_CLICKS": "Website",
+      "VIDEO_CALL_TO_ACTION_CLICKS": "Call-to-Action overlay",
+      "VIDEO_APP_STORE_CLICKS": "App store",
+      "VIDEO_CARD_ACTION_HEADLINE_CLICKS": "Cards",
+      "VIDEO_END_CAP_CLICKS": "End cap",
+      "CLICK_ON_ENGAGEMENT_AD": "Click on engagement ad",
+      "LOCATION_FORMAT_MAP": "Map",
+      "LOCATION_FORMAT_LANDING_PAGE": "Go to landing page",
+      "LOCATION_FORMAT_STORE_INFO": "Go to store info",
+      "LOCATION_FORMAT_DIRECTIONS": "Directions",
+      "LOCATION_FORMAT_CALL": "Call",
+      "LOCATION_FORMAT_TEXT": "Text",
+      "LOCATION_FORMAT_IMAGE": "Image(s)",
+      "BROADBAND_PLAN": "Broadband Plan",
+      "WIRELESS_PLAN": "Wireless Plan",
+      "UNKNOWN": "unknown"
+    },
     "Type": "ClickType",
     "DisplayName": "Click type",
     "XMLAttribute": "clickType",
@@ -562,6 +640,14 @@
   "CreativeApprovalStatus": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "APPROVED": "approved",
+      "FAMILY_SAFE": "approved",
+      "NON_FAMILY_SAFE": "approved (non family)",
+      "PORN": "approved (adult)",
+      "UNCHECKED": "pending review",
+      "DISAPPROVED": "disapproved"
+    },
     "Type": "ApprovalStatus",
     "DisplayName": "Ad Approval Status",
     "XMLAttribute": "adApprovalStatus",
@@ -642,6 +728,38 @@
   "CriterionType": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "AD_SCHEDULE": "Ad Schedule",
+      "AGE_RANGE": "Age",
+      "APP_PAYMENT_MODEL": "App Payment Model",
+      "CARRIER": "Carrier",
+      "CONTENT_LABEL": "Content Label",
+      "CUSTOM_AFFINITY": "Custom Affinity",
+      "GENDER": "Gender",
+      "LOCATION_GROUPS": "Location Groups",
+      "IP_BLOCK": "IP Block",
+      "KEYWORD": "Keyword",
+      "LANGUAGE": "Language",
+      "LOCATION": "Location",
+      "MOBILE_APPLICATION": "Mobile Application",
+      "MOBILE_APP_CATEGORY": "Mobile App Category",
+      "MOBILE_DEVICE": "Mobile Device",
+      "OPERATING_SYSTEM_VERSION": "Operating System Version",
+      "PARENT": "Parental status",
+      "PLACEMENT": "Placement",
+      "PLATFORM": "Platform",
+      "PREFERRED_CONTENT": "Preferred Content",
+      "PRODUCT_PARTITION": "Product Partition",
+      "PRODUCT_SCOPE": "Product Scope",
+      "PROXIMITY": "Proximity",
+      "USER_INTEREST": "User Interest",
+      "USER_LIST": "User List",
+      "VERTICAL": "Vertical",
+      "WEBPAGE": "Webpage",
+      "YOUTUBE_CHANNEL": "YouTube Channel",
+      "YOUTUBE_VIDEO": "YouTube Video"
+    },
     "Type": "ApiCriterionType",
     "DisplayName": "Criteria Type",
     "XMLAttribute": "criteriaType",
@@ -702,6 +820,15 @@
   "DayOfWeek": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "MONDAY": "Monday",
+      "TUESDAY": "Tuesday",
+      "WEDNESDAY": "Wednesday",
+      "THURSDAY": "Thursday",
+      "FRIDAY": "Friday",
+      "SATURDAY": "Saturday",
+      "SUNDAY": "Sunday"
+    },
     "Type": "DayOfWeek",
     "DisplayName": "Day of week",
     "XMLAttribute": "dayOfWeek",
@@ -742,6 +869,12 @@
   "Device": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "Other",
+      "DESKTOP": "Computers",
+      "HIGH_END_MOBILE": "Mobile devices with full browsers",
+      "TABLET": "Tablets with full browsers"
+    },
     "Type": "DeviceType",
     "DisplayName": "Device",
     "XMLAttribute": "device",
@@ -992,6 +1125,10 @@
   "IsNegative": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "TRUE": "true",
+      "FALSE": "false"
+    },
     "Type": "Enum",
     "DisplayName": "Is negative",
     "XMLAttribute": "isNegative",
@@ -1042,6 +1179,20 @@
   "MonthOfYear": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "JANUARY": "January",
+      "FEBRUARY": "February",
+      "MARCH": "March",
+      "APRIL": "April",
+      "MAY": "May",
+      "JUNE": "June",
+      "JULY": "July",
+      "AUGUST": "August",
+      "SEPTEMBER": "September",
+      "OCTOBER": "October",
+      "NOVEMBER": "November",
+      "DECEMBER": "December"
+    },
     "Type": "MonthOfYear",
     "DisplayName": "Month of Year",
     "XMLAttribute": "monthOfYear",
@@ -1122,6 +1273,15 @@
   "Slot": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "SearchRhs": "Google search: Side",
+      "SearchTop": "Google search: Top",
+      "SearchOther": "Google search: Other",
+      "Content": "Google Display Network",
+      "AfsTop": "Search partners: Top",
+      "AfsOther": "Search partners: Other",
+      "Unknown": ""
+    },
     "Type": "Slot",
     "DisplayName": "Top vs. Other",
     "XMLAttribute": "topVsOther",
@@ -1132,6 +1292,11 @@
   "Status": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "ENABLED": "enabled",
+      "PAUSED": "paused",
+      "DISABLED": "disabled"
+    },
     "Type": "Status",
     "DisplayName": "Ad state",
     "XMLAttribute": "adState",

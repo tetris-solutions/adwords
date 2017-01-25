@@ -102,6 +102,13 @@
   "AdNetworkType1": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "SEARCH": "Search Network",
+      "CONTENT": "Display Network",
+      "YOUTUBE_SEARCH": "YouTube Search",
+      "YOUTUBE_WATCH": "YouTube Videos"
+    },
     "Type": "AdNetworkType1",
     "DisplayName": "Network",
     "XMLAttribute": "network",
@@ -112,6 +119,14 @@
   "AdNetworkType2": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "SEARCH": "Google search",
+      "SEARCH_PARTNERS": "Search partners",
+      "CONTENT": "Display Network",
+      "YOUTUBE_SEARCH": "YouTube Search",
+      "YOUTUBE_WATCH": "YouTube Videos"
+    },
     "Type": "AdNetworkType2",
     "DisplayName": "Network (with search partners)",
     "XMLAttribute": "networkWithSearchPartners",
@@ -122,6 +137,11 @@
   "AdvertiserExperimentSegmentationBin": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "OUTSIDE_OF_EXPERIMENT": "outside experiment",
+      "CONTROL": "control",
+      "EXPERIMENT": "experiment"
+    },
     "Type": "AdvertiserExperimentSegmentationBin",
     "DisplayName": "ACE split",
     "XMLAttribute": "aCESplit",
@@ -132,6 +152,14 @@
   "AdvertisingChannelSubType": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "Unknown",
+      "SEARCH_MOBILE_APP": "Search Mobile App",
+      "DISPLAY_MOBILE_APP": "Display Mobile App",
+      "SEARCH_EXPRESS": "Search Express",
+      "DISPLAY_EXPRESS": "Display Express",
+      "UNIVERSAL_APP_CAMPAIGN": "Universal App Campaign"
+    },
     "Type": "AdvertisingChannelSubType",
     "DisplayName": "Advertising Sub Channel",
     "XMLAttribute": "advertisingSubChannel",
@@ -142,6 +170,14 @@
   "AdvertisingChannelType": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "Unknown",
+      "SEARCH": "Search",
+      "DISPLAY": "Display",
+      "SHOPPING": "Shopping",
+      "VIDEO": "Video",
+      "MULTI_CHANNEL": "Multi Channel"
+    },
     "Type": "AdvertisingChannelType",
     "DisplayName": "Advertising Channel",
     "XMLAttribute": "advertisingChannel",
@@ -312,6 +348,21 @@
   "BiddingStrategyType": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "BUDGET_OPTIMIZER": "auto",
+      "CONVERSION_OPTIMIZER": "max/target cpa",
+      "MANUAL_CPC": "cpc",
+      "MANUAL_CPV": "cpv",
+      "MANUAL_CPM": "cpm",
+      "PAGE_ONE_PROMOTED": "Target search page location",
+      "TARGET_SPEND": "Maximize clicks",
+      "ENHANCED_CPC": "Enhanced CPC",
+      "TARGET_CPA": "Target CPA",
+      "TARGET_ROAS": "Target ROAS",
+      "TARGET_OUTRANK_SHARE": "Target Outranking Share",
+      "NONE": "None",
+      "UNKNOWN": "unknown"
+    },
     "Type": "BiddingStrategyType",
     "DisplayName": "Bid Strategy Type",
     "XMLAttribute": "bidStrategyType",
@@ -322,6 +373,9 @@
   "BidType": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "TARGET_CPA": "target cpa"
+    },
     "Type": "BidType",
     "DisplayName": "Conversion optimizer bid type",
     "XMLAttribute": "conversionOptimizerBidType",
@@ -392,6 +446,12 @@
   "CampaignStatus": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "ENABLED": "enabled",
+      "PAUSED": "paused",
+      "REMOVED": "removed"
+    },
     "Type": "CampaignStatus",
     "DisplayName": "Campaign state",
     "XMLAttribute": "campaignState",
@@ -412,6 +472,12 @@
   "CampaignTrialType": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "BASE": "base campaign",
+      "DRAFT": "draft campaign",
+      "TRIAL": "trial campaign"
+    },
     "Type": "CampaignTrialType",
     "DisplayName": "Campaign Trial Type",
     "XMLAttribute": "campaignTrialType",
@@ -472,6 +538,39 @@
   "ClickType": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "URL_CLICKS": "Headline",
+      "CALLS": "Phone calls",
+      "OTHER": "Other",
+      "PRODUCT_EXTENSION_CLICKS": "Product plusbox offer",
+      "SITELINKS": "Sitelink",
+      "PRODUCT_LISTING_AD_CLICKS": "Shopping ad - Standard",
+      "GET_DIRECTIONS": "Driving direction",
+      "OFFER_PRINTS": "Print offer",
+      "BREADCRUMBS": "Breadcrumbs",
+      "CALL_TRACKING": "Manually dialed phone calls",
+      "MOBILE_CALL_TRACKING": "Mobile phone calls",
+      "LOCATION_EXPANSION": "Get location details",
+      "STORE_LOCATOR": "Show nearby locations",
+      "APP_DEEPLINK": "App engagement ad deep link",
+      "TABLE_EXTENSION": "Table Extension",
+      "VIDEO_WEBSITE_CLICKS": "Website",
+      "VIDEO_CALL_TO_ACTION_CLICKS": "Call-to-Action overlay",
+      "VIDEO_APP_STORE_CLICKS": "App store",
+      "VIDEO_CARD_ACTION_HEADLINE_CLICKS": "Cards",
+      "VIDEO_END_CAP_CLICKS": "End cap",
+      "CLICK_ON_ENGAGEMENT_AD": "Click on engagement ad",
+      "LOCATION_FORMAT_MAP": "Map",
+      "LOCATION_FORMAT_LANDING_PAGE": "Go to landing page",
+      "LOCATION_FORMAT_STORE_INFO": "Go to store info",
+      "LOCATION_FORMAT_DIRECTIONS": "Directions",
+      "LOCATION_FORMAT_CALL": "Call",
+      "LOCATION_FORMAT_TEXT": "Text",
+      "LOCATION_FORMAT_IMAGE": "Image(s)",
+      "BROADBAND_PLAN": "Broadband Plan",
+      "WIRELESS_PLAN": "Wireless Plan",
+      "UNKNOWN": "unknown"
+    },
     "Type": "ClickType",
     "DisplayName": "Click type",
     "XMLAttribute": "clickType",
@@ -682,6 +781,15 @@
   "DayOfWeek": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "MONDAY": "Monday",
+      "TUESDAY": "Tuesday",
+      "WEDNESDAY": "Wednesday",
+      "THURSDAY": "Thursday",
+      "FRIDAY": "Friday",
+      "SATURDAY": "Saturday",
+      "SUNDAY": "Sunday"
+    },
     "Type": "DayOfWeek",
     "DisplayName": "Day of week",
     "XMLAttribute": "dayOfWeek",
@@ -692,6 +800,12 @@
   "Device": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "Other",
+      "DESKTOP": "Computers",
+      "HIGH_END_MOBILE": "Mobile devices with full browsers",
+      "TABLET": "Tablets with full browsers"
+    },
     "Type": "DeviceType",
     "DisplayName": "Device",
     "XMLAttribute": "device",
@@ -732,6 +846,10 @@
   "EnhancedCpcEnabled": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "TRUE": "true",
+      "FALSE": "false"
+    },
     "Type": "Enum",
     "DisplayName": "Enhanced CPC enabled",
     "XMLAttribute": "enhancedCPCEnabled",
@@ -742,6 +860,10 @@
   "EnhancedCpvEnabled": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "TRUE": "true",
+      "FALSE": "false"
+    },
     "Type": "Enum",
     "DisplayName": "Enhanced CPV enabled",
     "XMLAttribute": "enhancedCPVEnabled",
@@ -912,6 +1034,10 @@
   "IsBudgetExplicitlyShared": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "TRUE": "true",
+      "FALSE": "false"
+    },
     "Type": "Enum",
     "DisplayName": "Budget explicitly shared",
     "XMLAttribute": "budgetExplicitlyShared",
@@ -952,6 +1078,20 @@
   "MonthOfYear": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "JANUARY": "January",
+      "FEBRUARY": "February",
+      "MARCH": "March",
+      "APRIL": "April",
+      "MAY": "May",
+      "JUNE": "June",
+      "JULY": "July",
+      "AUGUST": "August",
+      "SEPTEMBER": "September",
+      "OCTOBER": "October",
+      "NOVEMBER": "November",
+      "DECEMBER": "December"
+    },
     "Type": "MonthOfYear",
     "DisplayName": "Month of Year",
     "XMLAttribute": "monthOfYear",
@@ -1092,6 +1232,13 @@
   "ServingStatus": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "SERVING": "eligible",
+      "NONE": "none",
+      "ENDED": "ended",
+      "PENDING": "pending",
+      "SUSPENDED": "suspended"
+    },
     "Type": "ServingStatus",
     "DisplayName": "Campaign serving status",
     "XMLAttribute": "campaignServingStatus",
@@ -1102,6 +1249,15 @@
   "Slot": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "SearchRhs": "Google search: Side",
+      "SearchTop": "Google search: Top",
+      "SearchOther": "Google search: Other",
+      "Content": "Google Display Network",
+      "AfsTop": "Search partners: Top",
+      "AfsOther": "Search partners: Other",
+      "Unknown": ""
+    },
     "Type": "Slot",
     "DisplayName": "Top vs. Other",
     "XMLAttribute": "topVsOther",

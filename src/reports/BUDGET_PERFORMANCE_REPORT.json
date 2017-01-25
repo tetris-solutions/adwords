@@ -72,6 +72,12 @@
   "AssociatedCampaignStatus": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "ENABLED": "enabled",
+      "PAUSED": "paused",
+      "REMOVED": "removed",
+      "UNKNOWN": "unknown"
+    },
     "Type": "CampaignStatus",
     "DisplayName": "Campaign state",
     "XMLAttribute": "campaignState",
@@ -142,6 +148,11 @@
   "BudgetCampaignAssociationStatus": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "ENABLED": "Enabled",
+      "REMOVED": "Removed",
+      "UNKNOWN": "unknown"
+    },
     "Type": "BudgetCampaignAssociationStatus",
     "DisplayName": "Budget usage",
     "XMLAttribute": "budgetUsage",
@@ -182,6 +193,11 @@
   "BudgetStatus": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "ENABLED": "Enabled",
+      "REMOVED": "Removed",
+      "UNKNOWN": "unknown"
+    },
     "Type": "BudgetStatus",
     "DisplayName": "Budget state",
     "XMLAttribute": "budgetState",
@@ -362,6 +378,10 @@
   "IsBudgetExplicitlyShared": {
     "SpecialValue": false,
     "Percentage": false,
+    "PredicateValues": {
+      "TRUE": "true",
+      "FALSE": "false"
+    },
     "Type": "Enum",
     "DisplayName": "Explicitly shared",
     "XMLAttribute": "explicitlyShared",

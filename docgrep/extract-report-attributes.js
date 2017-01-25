@@ -3,25 +3,19 @@ window.onload = function () {
         return node.innerText.trim()
     }
 
+    function list(ls) {
+        return Array.prototype.slice.call(ls)
+    }
+
     const attributes = {}
+
     /**
      *
-     * @type {HTMLTableElement}
+     * @param {HTMLTableRowElement} tr
      */
-    const table = document.querySelector('table')
-    /**
-     *
-     * @type {HTMLTableSectionElement}
-     */
-    const tbody = table.tBodies[0]
-    for (let i = 0; i < tbody.rows.length; i++) {
-        /**
-         *
-         * @type {HTMLTableRowElement}
-         */
-        const tr = tbody.rows[i]
+    function parseTr(tr) {
         const name = contentOf(tr.cells[0])
-        const fieldTds = tr.cells[1]
+        const fieldProperties = tr.cells[1]
             .querySelector('table')
             .querySelectorAll('td:first-child')
 
@@ -31,11 +25,30 @@ window.onload = function () {
             Percentage: description.includes('.xx%')
         }
 
-        for (let j = 0; j < fieldTds.length; j++) {
-            /**
-             * @type {HTMLTableCellElement}
-             */
-            const cell = fieldTds[j]
+        const showAlways = tr.cells[1].querySelector('.showalways')
+
+        /**
+         *
+         * @param {HTMLTableRowElement} predicateTr
+         */
+        function parsePredicateValue(predicateTr) {
+            field.PredicateValues[contentOf(predicateTr.cells[0])] = contentOf(predicateTr.cells[1])
+        }
+
+        if (
+            showAlways &&
+            contentOf(showAlways).includes('Predicate values') &&
+            showAlways.nextElementSibling.classList.contains('devsite-table-wrapper')
+        ) {
+            field.PredicateValues = {}
+            list(showAlways.nextElementSibling.querySelectorAll('tr')).forEach(parsePredicateValue)
+        }
+
+        /**
+         *
+         * @param {HTMLTableCellElement} cell
+         */
+        function parseProperty(cell) {
             const property = contentOf(cell).replace(/\W/g, '')
             const value = contentOf(cell.nextElementSibling)
             const lowerCasevalue = value.toLowerCase()
@@ -50,7 +63,24 @@ window.onload = function () {
                 field[property] = false
             }
         }
+
+        list(fieldProperties).forEach(parseProperty)
     }
 
-    console.log(JSON.stringify(attributes, null, 2))
+
+    /**
+     *
+     * @type {HTMLTableElement}
+     */
+    const table = document.querySelector('table')
+
+    list(table.tBodies[0].rows).forEach(parseTr)
+
+    const textArea = document.createElement('textarea')
+
+    textArea.value = JSON.stringify(attributes, null, 2)
+    textArea.style.width = '100vw'
+    textArea.style.height = '70vh'
+
+    document.body.insertBefore(textArea, document.body.firstChild)
 }
