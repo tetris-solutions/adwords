@@ -233,24 +233,6 @@
         "expandingDirections"
       ]
     ],
-    "ExperimentDataStatus": [
-      [
-        "experimentData",
-        "experimentDataStatus"
-      ]
-    ],
-    "ExperimentDeltaStatus": [
-      [
-        "experimentData",
-        "experimentDeltaStatus"
-      ]
-    ],
-    "ExperimentId": [
-      [
-        "experimentData",
-        "experimentId"
-      ]
-    ],
     "FileSize": [
       [
         "ad",
@@ -791,30 +773,6 @@
         "enhancedCpcEnabled"
       ]
     ],
-    "ExperimentBidMultiplier": [
-      [
-        "experimentData",
-        "experimentBidMultiplier"
-      ]
-    ],
-    "ExperimentDataStatus": [
-      [
-        "experimentData",
-        "experimentDataStatus"
-      ]
-    ],
-    "ExperimentDeltaStatus": [
-      [
-        "experimentData",
-        "experimentDeltaStatus"
-      ]
-    ],
-    "ExperimentId": [
-      [
-        "experimentData",
-        "experimentId"
-      ]
-    ],
     "FinalAppUrls": [
       [
         "finalAppUrls"
@@ -1154,24 +1112,6 @@
         "enhancedCpcEnabled"
       ]
     ],
-    "ExperimentDataStatus": [
-      [
-        "experimentData",
-        "experimentDataStatus"
-      ]
-    ],
-    "ExperimentDeltaStatus": [
-      [
-        "experimentData",
-        "experimentDeltaStatus"
-      ]
-    ],
-    "ExperimentId": [
-      [
-        "experimentData",
-        "experimentId"
-      ]
-    ],
     "Id": [
       [
         "id"
@@ -1180,27 +1120,6 @@
     "Labels": [
       [
         "labels"
-      ]
-    ],
-    "MaxContentCpcMultiplier": [
-      [
-        "experimentData",
-        "experimentBidMultipliers",
-        "maxContentCpcMultiplier"
-      ]
-    ],
-    "MaxCpcMultiplier": [
-      [
-        "experimentData",
-        "experimentBidMultipliers",
-        "maxCpcMultiplier"
-      ]
-    ],
-    "MaxCpmMultiplier": [
-      [
-        "experimentData",
-        "experimentBidMultipliers",
-        "maxCpmMultiplier"
       ]
     ],
     "Name": [
@@ -1523,6 +1442,11 @@
       [
         "startDateTime"
       ]
+    ],
+    "TotalAdjustments": [
+      [
+        "totalAdjustments"
+      ]
     ]
   },
   "BudgetService": {
@@ -1589,6 +1513,11 @@
     "BidModifier": [
       [
         "bidModifier"
+      ]
+    ],
+    "CampaignCriterionStatus": [
+      [
+        "campaignCriterionStatus"
       ]
     ],
     "CampaignId": [
@@ -2140,6 +2069,11 @@
         "rejectionReasons"
       ]
     ],
+    "SelectiveOptimization": [
+      [
+        "selectiveOptimization"
+      ]
+    ],
     "ServingStatus": [
       [
         "servingStatus"
@@ -2322,6 +2256,11 @@
         "appPostbackUrl"
       ]
     ],
+    "AttributionModelType": [
+      [
+        "attributionModelType"
+      ]
+    ],
     "BackgroundColor": [
       [
         "backgroundColor"
@@ -2350,6 +2289,11 @@
     "CtcLookbackWindow": [
       [
         "ctcLookbackWindow"
+      ]
+    ],
+    "DataDrivenModelStatus": [
+      [
+        "dataDrivenModelStatus"
       ]
     ],
     "DefaultRevenueCurrencyCode": [
@@ -2528,76 +2472,6 @@
       ]
     ]
   },
-  "ExperimentService": {
-    "AdGroupAdsCount": [
-      [
-        "experimentSummaryStats",
-        "adGroupAdsCount"
-      ]
-    ],
-    "AdGroupCriteriaCount": [
-      [
-        "experimentSummaryStats",
-        "adGroupCriteriaCount"
-      ]
-    ],
-    "AdGroupsCount": [
-      [
-        "experimentSummaryStats",
-        "adGroupsCount"
-      ]
-    ],
-    "CampaignId": [
-      [
-        "campaignId"
-      ]
-    ],
-    "ControlId": [
-      [
-        "controlId"
-      ]
-    ],
-    "EndDateTime": [
-      [
-        "endDateTime"
-      ]
-    ],
-    "Id": [
-      [
-        "id"
-      ]
-    ],
-    "LastModifiedDateTime": [
-      [
-        "lastModifiedDateTime"
-      ]
-    ],
-    "Name": [
-      [
-        "name"
-      ]
-    ],
-    "QueryPercentage": [
-      [
-        "queryPercentage"
-      ]
-    ],
-    "ServingStatus": [
-      [
-        "servingStatus"
-      ]
-    ],
-    "StartDateTime": [
-      [
-        "startDateTime"
-      ]
-    ],
-    "Status": [
-      [
-        "status"
-      ]
-    ]
-  },
   "FeedItemService": {
     "AttributeValues": [
       [
@@ -2646,6 +2520,12 @@
       [
         "geoTargeting",
         "parentLocations"
+      ]
+    ],
+    "GeoTargetingRestriction": [
+      [
+        "geoTargetingRestriction",
+        "geoRestriction"
       ]
     ],
     "GeoTargetingStatus": [
@@ -2798,10 +2678,14 @@
   },
   "LocationCriterionService": {
     "CanonicalName": [
-      []
+      [
+        "canonicalName"
+      ]
     ],
     "Reach": [
-      []
+      [
+        "reach"
+      ]
     ]
   },
   "ManagedCustomerService": {
@@ -2813,11 +2697,6 @@
     "CanManageClients": [
       [
         "canManageClients"
-      ]
-    ],
-    "CompanyName": [
-      [
-        "companyName"
       ]
     ],
     "CurrencyCode": [
