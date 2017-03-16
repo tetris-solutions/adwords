@@ -25,7 +25,7 @@ window.onload = function () {
             Percentage: description.includes('.xx%')
         }
 
-        const showAlways = tr.cells[1].querySelector('.showalways')
+        const showAlways = list(tr.cells[1].querySelectorAll('.showalways'))
 
         /**
          *
@@ -35,14 +35,44 @@ window.onload = function () {
             field.PredicateValues[contentOf(predicateTr.cells[0])] = contentOf(predicateTr.cells[1])
         }
 
-        if (
-            showAlways &&
-            contentOf(showAlways).includes('Predicate values') &&
-            showAlways.nextElementSibling.classList.contains('devsite-table-wrapper')
-        ) {
-            field.PredicateValues = {}
-            list(showAlways.nextElementSibling.querySelectorAll('tr')).forEach(parsePredicateValue)
+        /**
+         * @param {HTMLParagraphElement} title
+         * @return {Array} denied fields
+         */
+        function parseIncompatibleFields(title) {
+            const deniedFields = []
+            /**
+             *
+             * @type {Element}
+             */
+            let el = title.nextElementSibling
+
+            while (el && el.className.includes('exw-collapsed-content')) {
+                deniedFields.push(contentOf(el))
+
+                el = el.nextElementSibling
+            }
+
+            return deniedFields
         }
+
+        const isListOf = (titleEl, str) => contentOf(titleEl).includes(str)
+
+        showAlways.forEach(listTitle => {
+            if (
+                isListOf(listTitle, 'Predicate values') &&
+                listTitle.nextElementSibling.classList.contains('devsite-table-wrapper')
+            ) {
+                field.PredicateValues = {}
+
+                list(listTitle.nextElementSibling.querySelectorAll('tr'))
+                    .forEach(parsePredicateValue)
+            } else if (isListOf(listTitle, 'Not compatible with the following fields')) {
+                const d = parseIncompatibleFields(listTitle)
+
+                if (d.length) field.IncompatibleFields = d
+            }
+        })
 
         /**
          *
