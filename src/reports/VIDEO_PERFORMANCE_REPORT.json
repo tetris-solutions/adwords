@@ -103,7 +103,11 @@
   "AverageCpm": {
     "SpecialValue": false,
     "Percentage": false,
-    "Type": "Money",
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTypeName"
+    ],
+    "Type": "Double",
     "DisplayName": "Avg. CPM",
     "XMLAttribute": "avgCPM",
     "Behavior": "Metric",
@@ -113,7 +117,11 @@
   "AverageCpv": {
     "SpecialValue": false,
     "Percentage": false,
-    "Type": "Money",
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTypeName"
+    ],
+    "Type": "Double",
     "DisplayName": "Avg. CPV",
     "XMLAttribute": "avgCPV",
     "Behavior": "Metric",
@@ -159,6 +167,10 @@
   "Clicks": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTypeName"
+    ],
     "Type": "Long",
     "DisplayName": "Clicks",
     "XMLAttribute": "clicks",
@@ -202,6 +214,9 @@
       "WIRELESS_PLAN": "Wireless Plan",
       "UNKNOWN": "unknown"
     },
+    "IncompatibleFields": [
+      "Engagements"
+    ],
     "Type": "ClickType",
     "DisplayName": "Click type",
     "XMLAttribute": "clickType",
@@ -212,6 +227,25 @@
   "ConversionCategoryName": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "AverageCpm",
+      "AverageCpv",
+      "Clicks",
+      "ConversionRate",
+      "Conversions",
+      "Cost",
+      "CostPerConversion",
+      "Ctr",
+      "EngagementRate",
+      "Engagements",
+      "Impressions",
+      "VideoQuartile100Rate",
+      "VideoQuartile25Rate",
+      "VideoQuartile50Rate",
+      "VideoQuartile75Rate",
+      "VideoViewRate",
+      "VideoViews"
+    ],
     "Type": "String",
     "DisplayName": "Conversion category",
     "XMLAttribute": "conversionCategory",
@@ -242,6 +276,25 @@
   "ConversionTypeName": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "AverageCpm",
+      "AverageCpv",
+      "Clicks",
+      "ConversionRate",
+      "Conversions",
+      "Cost",
+      "CostPerConversion",
+      "Ctr",
+      "EngagementRate",
+      "Engagements",
+      "Impressions",
+      "VideoQuartile100Rate",
+      "VideoQuartile25Rate",
+      "VideoQuartile50Rate",
+      "VideoQuartile75Rate",
+      "VideoViewRate",
+      "VideoViews"
+    ],
     "Type": "String",
     "DisplayName": "Conversion name",
     "XMLAttribute": "conversionName",
@@ -262,6 +315,10 @@
   "Cost": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTypeName"
+    ],
     "Type": "Money",
     "DisplayName": "Cost",
     "XMLAttribute": "cost",
@@ -307,6 +364,10 @@
   "Ctr": {
     "SpecialValue": false,
     "Percentage": true,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTypeName"
+    ],
     "Type": "Double",
     "DisplayName": "CTR",
     "XMLAttribute": "ctr",
@@ -372,6 +433,10 @@
   "EngagementRate": {
     "SpecialValue": false,
     "Percentage": true,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTypeName"
+    ],
     "Type": "Double",
     "DisplayName": "Engagement rate",
     "XMLAttribute": "engagementRate",
@@ -382,6 +447,11 @@
   "Engagements": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ClickType",
+      "ConversionCategoryName",
+      "ConversionTypeName"
+    ],
     "Type": "Long",
     "DisplayName": "Engagements",
     "XMLAttribute": "engagements",
@@ -402,6 +472,10 @@
   "Impressions": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTypeName"
+    ],
     "Type": "Long",
     "DisplayName": "Impressions",
     "XMLAttribute": "impressions",
@@ -496,6 +570,10 @@
   "VideoQuartile100Rate": {
     "SpecialValue": false,
     "Percentage": true,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTypeName"
+    ],
     "Type": "Double",
     "DisplayName": "Video played to 100%",
     "XMLAttribute": "videoPlayedTo100",
@@ -506,6 +584,10 @@
   "VideoQuartile25Rate": {
     "SpecialValue": false,
     "Percentage": true,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTypeName"
+    ],
     "Type": "Double",
     "DisplayName": "Video played to 25%",
     "XMLAttribute": "videoPlayedTo25",
@@ -516,6 +598,10 @@
   "VideoQuartile50Rate": {
     "SpecialValue": false,
     "Percentage": true,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTypeName"
+    ],
     "Type": "Double",
     "DisplayName": "Video played to 50%",
     "XMLAttribute": "videoPlayedTo50",
@@ -526,6 +612,10 @@
   "VideoQuartile75Rate": {
     "SpecialValue": false,
     "Percentage": true,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTypeName"
+    ],
     "Type": "Double",
     "DisplayName": "Video played to 75%",
     "XMLAttribute": "videoPlayedTo75",
@@ -546,6 +636,10 @@
   "VideoViewRate": {
     "SpecialValue": false,
     "Percentage": true,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTypeName"
+    ],
     "Type": "Double",
     "DisplayName": "View rate",
     "XMLAttribute": "viewRate",
@@ -556,6 +650,10 @@
   "VideoViews": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTypeName"
+    ],
     "Type": "Long",
     "DisplayName": "Views",
     "XMLAttribute": "views",

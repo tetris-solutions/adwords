@@ -32,6 +32,12 @@
   "ActiveViewCpm": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Money",
     "DisplayName": "Active View avg. CPM",
     "XMLAttribute": "activeViewAvgCPM",
@@ -42,6 +48,12 @@
   "ActiveViewCtr": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Double",
     "DisplayName": "Active View viewable CTR",
     "XMLAttribute": "activeViewViewableCTR",
@@ -52,6 +64,12 @@
   "ActiveViewImpressions": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Long",
     "DisplayName": "Active View viewable impressions",
     "XMLAttribute": "activeViewViewableImpressions",
@@ -62,6 +80,12 @@
   "ActiveViewMeasurability": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Double",
     "DisplayName": "Active View measurable impr. / impr.",
     "XMLAttribute": "activeViewMeasurableImprImpr",
@@ -72,6 +96,12 @@
   "ActiveViewMeasurableCost": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Money",
     "DisplayName": "Active View measurable cost",
     "XMLAttribute": "activeViewMeasurableCost",
@@ -82,6 +112,12 @@
   "ActiveViewMeasurableImpressions": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Long",
     "DisplayName": "Active View measurable impr.",
     "XMLAttribute": "activeViewMeasurableImpr",
@@ -92,6 +128,12 @@
   "ActiveViewViewability": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Double",
     "DisplayName": "Active View viewable impr. / measurable impr.",
     "XMLAttribute": "activeViewViewableImprMeasurableImpr",
@@ -173,6 +215,9 @@
   "AllConversionRate": {
     "SpecialValue": false,
     "Percentage": true,
+    "IncompatibleFields": [
+      "Slot"
+    ],
     "Type": "Double",
     "DisplayName": "All conv. rate",
     "XMLAttribute": "allConvRate",
@@ -183,6 +228,9 @@
   "AllConversions": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "Slot"
+    ],
     "Type": "Double",
     "DisplayName": "All conv.",
     "XMLAttribute": "allConv",
@@ -193,6 +241,9 @@
   "AllConversionValue": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "Slot"
+    ],
     "Type": "Double",
     "DisplayName": "All conv. value",
     "XMLAttribute": "allConvValue",
@@ -203,6 +254,12 @@
   "AverageCost": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Money",
     "DisplayName": "Avg. Cost",
     "XMLAttribute": "avgCost",
@@ -213,6 +270,12 @@
   "AverageCpc": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Money",
     "DisplayName": "Avg. CPC",
     "XMLAttribute": "avgCPC",
@@ -223,6 +286,13 @@
   "AverageCpe": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ClickType",
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Double",
     "DisplayName": "Avg. CPE",
     "XMLAttribute": "avgCPE",
@@ -233,6 +303,12 @@
   "AverageCpm": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Money",
     "DisplayName": "Avg. CPM",
     "XMLAttribute": "avgCPM",
@@ -243,6 +319,13 @@
   "AverageCpv": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ClickType",
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Double",
     "DisplayName": "Avg. CPV",
     "XMLAttribute": "avgCPV",
@@ -253,6 +336,12 @@
   "AveragePosition": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Double",
     "DisplayName": "Avg. position",
     "XMLAttribute": "avgPosition",
@@ -342,6 +431,12 @@
   "Clicks": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Long",
     "DisplayName": "Clicks",
     "XMLAttribute": "clicks",
@@ -386,6 +481,18 @@
       "VISUAL_SITELINKS": "Visual Sitelinks",
       "UNKNOWN": "unknown"
     },
+    "IncompatibleFields": [
+      "AverageCpe",
+      "AverageCpv",
+      "EngagementRate",
+      "Engagements",
+      "VideoQuartile100Rate",
+      "VideoQuartile25Rate",
+      "VideoQuartile50Rate",
+      "VideoQuartile75Rate",
+      "VideoViewRate",
+      "VideoViews"
+    ],
     "Type": "ClickType",
     "DisplayName": "Click type",
     "XMLAttribute": "clickType",
@@ -396,6 +503,36 @@
   "ConversionCategoryName": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ActiveViewCpm",
+      "ActiveViewCtr",
+      "ActiveViewImpressions",
+      "ActiveViewMeasurability",
+      "ActiveViewMeasurableCost",
+      "ActiveViewMeasurableImpressions",
+      "ActiveViewViewability",
+      "AverageCost",
+      "AverageCpc",
+      "AverageCpe",
+      "AverageCpm",
+      "AverageCpv",
+      "AveragePosition",
+      "Clicks",
+      "Cost",
+      "Ctr",
+      "EngagementRate",
+      "Engagements",
+      "Impressions",
+      "InteractionRate",
+      "InteractionTypes",
+      "Interactions",
+      "VideoQuartile100Rate",
+      "VideoQuartile25Rate",
+      "VideoQuartile50Rate",
+      "VideoQuartile75Rate",
+      "VideoViewRate",
+      "VideoViews"
+    ],
     "Type": "String",
     "DisplayName": "Conversion category",
     "XMLAttribute": "conversionCategory",
@@ -426,6 +563,36 @@
   "ConversionTrackerId": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ActiveViewCpm",
+      "ActiveViewCtr",
+      "ActiveViewImpressions",
+      "ActiveViewMeasurability",
+      "ActiveViewMeasurableCost",
+      "ActiveViewMeasurableImpressions",
+      "ActiveViewViewability",
+      "AverageCost",
+      "AverageCpc",
+      "AverageCpe",
+      "AverageCpm",
+      "AverageCpv",
+      "AveragePosition",
+      "Clicks",
+      "Cost",
+      "Ctr",
+      "EngagementRate",
+      "Engagements",
+      "Impressions",
+      "InteractionRate",
+      "InteractionTypes",
+      "Interactions",
+      "VideoQuartile100Rate",
+      "VideoQuartile25Rate",
+      "VideoQuartile50Rate",
+      "VideoQuartile75Rate",
+      "VideoViewRate",
+      "VideoViews"
+    ],
     "Type": "Long",
     "DisplayName": "Conversion Tracker Id",
     "XMLAttribute": "conversionTrackerId",
@@ -436,6 +603,36 @@
   "ConversionTypeName": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ActiveViewCpm",
+      "ActiveViewCtr",
+      "ActiveViewImpressions",
+      "ActiveViewMeasurability",
+      "ActiveViewMeasurableCost",
+      "ActiveViewMeasurableImpressions",
+      "ActiveViewViewability",
+      "AverageCost",
+      "AverageCpc",
+      "AverageCpe",
+      "AverageCpm",
+      "AverageCpv",
+      "AveragePosition",
+      "Clicks",
+      "Cost",
+      "Ctr",
+      "EngagementRate",
+      "Engagements",
+      "Impressions",
+      "InteractionRate",
+      "InteractionTypes",
+      "Interactions",
+      "VideoQuartile100Rate",
+      "VideoQuartile25Rate",
+      "VideoQuartile50Rate",
+      "VideoQuartile75Rate",
+      "VideoViewRate",
+      "VideoViews"
+    ],
     "Type": "String",
     "DisplayName": "Conversion name",
     "XMLAttribute": "conversionName",
@@ -456,6 +653,12 @@
   "Cost": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Money",
     "DisplayName": "Cost",
     "XMLAttribute": "cost",
@@ -466,6 +669,9 @@
   "CostPerAllConversion": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "Slot"
+    ],
     "Type": "Money",
     "DisplayName": "Cost / all conv.",
     "XMLAttribute": "costAllConv",
@@ -558,6 +764,9 @@
   "CrossDeviceConversions": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "Slot"
+    ],
     "Type": "Double",
     "DisplayName": "Cross-device conv.",
     "XMLAttribute": "crossDeviceConv",
@@ -568,6 +777,12 @@
   "Ctr": {
     "SpecialValue": false,
     "Percentage": true,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Double",
     "DisplayName": "CTR",
     "XMLAttribute": "ctr",
@@ -633,6 +848,13 @@
   "EngagementRate": {
     "SpecialValue": false,
     "Percentage": true,
+    "IncompatibleFields": [
+      "ClickType",
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Double",
     "DisplayName": "Engagement rate",
     "XMLAttribute": "engagementRate",
@@ -643,6 +865,13 @@
   "Engagements": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ClickType",
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Long",
     "DisplayName": "Engagements",
     "XMLAttribute": "engagements",
@@ -677,6 +906,38 @@
       "STORE_SALES_PAYMENT_NETWORK": "Store sales (payment network)",
       "GOOGLE_PLAY": "Google Play"
     },
+    "IncompatibleFields": [
+      "ActiveViewCpm",
+      "ActiveViewCtr",
+      "ActiveViewImpressions",
+      "ActiveViewMeasurability",
+      "ActiveViewMeasurableCost",
+      "ActiveViewMeasurableImpressions",
+      "ActiveViewViewability",
+      "AverageCost",
+      "AverageCpc",
+      "AverageCpe",
+      "AverageCpm",
+      "AverageCpv",
+      "AveragePosition",
+      "Clicks",
+      "Cost",
+      "CostPerConversion",
+      "Ctr",
+      "EngagementRate",
+      "Engagements",
+      "Impressions",
+      "InteractionRate",
+      "InteractionTypes",
+      "Interactions",
+      "ValuePerConversion",
+      "VideoQuartile100Rate",
+      "VideoQuartile25Rate",
+      "VideoQuartile50Rate",
+      "VideoQuartile75Rate",
+      "VideoViewRate",
+      "VideoViews"
+    ],
     "Type": "ExternalConversionSource",
     "DisplayName": "Conversion source",
     "XMLAttribute": "conversionSource",
@@ -767,6 +1028,12 @@
   "Impressions": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Long",
     "DisplayName": "Impressions",
     "XMLAttribute": "impressions",
@@ -777,6 +1044,12 @@
   "InteractionRate": {
     "SpecialValue": false,
     "Percentage": true,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Double",
     "DisplayName": "Interaction Rate",
     "XMLAttribute": "interactionRate",
@@ -787,6 +1060,12 @@
   "Interactions": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Long",
     "DisplayName": "Interactions",
     "XMLAttribute": "interactions",
@@ -797,6 +1076,12 @@
   "InteractionTypes": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "EnumSet",
     "DisplayName": "Interaction Types",
     "XMLAttribute": "interactionTypes",
@@ -898,6 +1183,14 @@
       "AfsOther": "Search partners: Other",
       "Unknown": ""
     },
+    "IncompatibleFields": [
+      "AllConversionRate",
+      "AllConversionValue",
+      "AllConversions",
+      "CostPerAllConversion",
+      "CrossDeviceConversions",
+      "ValuePerAllConversion"
+    ],
     "Type": "Slot",
     "DisplayName": "Top vs. Other",
     "XMLAttribute": "topVsOther",
@@ -953,6 +1246,9 @@
   "ValuePerAllConversion": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "Slot"
+    ],
     "Type": "Double",
     "DisplayName": "Value / all conv.",
     "XMLAttribute": "valueAllConv",
@@ -973,6 +1269,13 @@
   "VideoQuartile100Rate": {
     "SpecialValue": false,
     "Percentage": true,
+    "IncompatibleFields": [
+      "ClickType",
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Double",
     "DisplayName": "Video played to 100%",
     "XMLAttribute": "videoPlayedTo100",
@@ -983,6 +1286,13 @@
   "VideoQuartile25Rate": {
     "SpecialValue": false,
     "Percentage": true,
+    "IncompatibleFields": [
+      "ClickType",
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Double",
     "DisplayName": "Video played to 25%",
     "XMLAttribute": "videoPlayedTo25",
@@ -993,6 +1303,13 @@
   "VideoQuartile50Rate": {
     "SpecialValue": false,
     "Percentage": true,
+    "IncompatibleFields": [
+      "ClickType",
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Double",
     "DisplayName": "Video played to 50%",
     "XMLAttribute": "videoPlayedTo50",
@@ -1003,6 +1320,13 @@
   "VideoQuartile75Rate": {
     "SpecialValue": false,
     "Percentage": true,
+    "IncompatibleFields": [
+      "ClickType",
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Double",
     "DisplayName": "Video played to 75%",
     "XMLAttribute": "videoPlayedTo75",
@@ -1013,6 +1337,13 @@
   "VideoViewRate": {
     "SpecialValue": false,
     "Percentage": true,
+    "IncompatibleFields": [
+      "ClickType",
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Double",
     "DisplayName": "View rate",
     "XMLAttribute": "viewRate",
@@ -1023,6 +1354,13 @@
   "VideoViews": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ClickType",
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
     "Type": "Long",
     "DisplayName": "Views",
     "XMLAttribute": "views",
