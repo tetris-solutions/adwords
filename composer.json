@@ -7,7 +7,7 @@
   "require": {
     "php": ">=7.0.0",
     "nayjest/str-case-converter": "^1.0",
-    "googleads/googleads-php-lib": "15.0.0"
+    "googleads/googleads-php-lib": "17.0.0"
   },
   "authors": [
     {
