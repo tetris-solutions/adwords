@@ -316,10 +316,22 @@
         "labels"
       ]
     ],
+    "LogoImage": [
+      [
+        "ad",
+        "logoImage"
+      ]
+    ],
     "LongHeadline": [
       [
         "ad",
         "longHeadline"
+      ]
+    ],
+    "MarketingImage": [
+      [
+        "ad",
+        "marketingImage"
       ]
     ],
     "MediaId": [
@@ -360,6 +372,11 @@
       [
         "ad",
         "path2"
+      ]
+    ],
+    "PolicySummary": [
+      [
+        "policySummary"
       ]
     ],
     "ReadyToPlayOnTheWeb": [
@@ -522,6 +539,12 @@
       [
         "ad",
         "url"
+      ]
+    ],
+    "UrlData": [
+      [
+        "ad",
+        "urlData"
       ]
     ],
     "Urls": [
@@ -885,6 +908,13 @@
         "systemServingStatus"
       ]
     ],
+    "TargetSpendEnhancedCpcEnabled": [
+      [
+        "biddingStrategyConfiguration",
+        "biddingScheme",
+        "enhancedCpcEnabled"
+      ]
+    ],
     "TopOfPageCpc": [
       [
         "topOfPageCpc"
@@ -1035,6 +1065,11 @@
     ]
   },
   "AdGroupService": {
+    "AdGroupType": [
+      [
+        "adGroupType"
+      ]
+    ],
     "BaseAdGroupId": [
       [
         "baseAdGroupId"
@@ -1158,6 +1193,13 @@
         "bidSource"
       ]
     ],
+    "TargetSpendEnhancedCpcEnabled": [
+      [
+        "biddingStrategyConfiguration",
+        "biddingScheme",
+        "enhancedCpcEnabled"
+      ]
+    ],
     "TrackingUrlTemplate": [
       [
         "trackingUrlTemplate"
@@ -1202,9 +1244,19 @@
         "accountUserListStatus"
       ]
     ],
+    "ClosingReason": [
+      [
+        "closingReason"
+      ]
+    ],
     "ConversionTypes": [
       [
         "conversionTypes"
+      ]
+    ],
+    "DataUploadResult": [
+      [
+        "dataUploadResult"
       ]
     ],
     "DateSpecificListEndDate": [
@@ -1270,6 +1322,11 @@
     "Name": [
       [
         "name"
+      ]
+    ],
+    "PrepopulationStatus": [
+      [
+        "prepopulationStatus"
       ]
     ],
     "Rules": [
@@ -1374,11 +1431,6 @@
     "Status": [
       [
         "status"
-      ]
-    ],
-    "SystemStatus": [
-      [
-        "systemStatus"
       ]
     ],
     "Type": [
@@ -2165,6 +2217,13 @@
         "biddingStrategyConfiguration",
         "biddingScheme",
         "bidCeiling"
+      ]
+    ],
+    "TargetSpendEnhancedCpcEnabled": [
+      [
+        "biddingStrategyConfiguration",
+        "biddingScheme",
+        "enhancedCpcEnabled"
       ]
     ],
     "TargetSpendSpendTarget": [
