@@ -19,7 +19,7 @@
     "Filterable": true,
     "SupportsZeroImpressions": false
   },
-  "AccountTimeZoneId": {
+  "AccountTimeZone": {
     "SpecialValue": false,
     "Percentage": false,
     "Type": "String",
@@ -719,7 +719,8 @@
       "SALESFORCE": "Salesforce.com",
       "STORE_SALES_CRM": "Store sales (data partner)",
       "STORE_SALES_PAYMENT_NETWORK": "Store sales (payment network)",
-      "GOOGLE_PLAY": "Google Play"
+      "GOOGLE_PLAY": "Google Play",
+      "THIRD_PARTY_APP_ANALYTICS": "Third-party app analytics"
     },
     "IncompatibleFields": [
       "ActiveViewCpm",
@@ -736,7 +737,6 @@
       "AverageCpv",
       "Clicks",
       "Cost",
-      "CostPerConversion",
       "Ctr",
       "EngagementRate",
       "Engagements",
@@ -744,7 +744,6 @@
       "InteractionRate",
       "InteractionTypes",
       "Interactions",
-      "ValuePerConversion",
       "VideoViewRate",
       "VideoViews"
     ],

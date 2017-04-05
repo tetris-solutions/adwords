@@ -46,9 +46,19 @@ window.onload = function () {
              * @type {Element}
              */
             let el = title.nextElementSibling
+            while (el && el.querySelector('code')) {
+                deniedFields.push(contentOf(el.querySelector('code')))
 
-            while (el && el.className.includes('exw-collapsed-content')) {
-                deniedFields.push(contentOf(el))
+                el = el.nextElementSibling
+            }
+            while (el && (
+                el.className.includes('exw-collapsed-content') ||
+                el.querySelector('code')
+            )) {
+                deniedFields.push(contentOf(
+                    el.className.includes('exw-collapsed-content')
+                        ? el
+                        : el.querySelector('code')))
 
                 el = el.nextElementSibling
             }

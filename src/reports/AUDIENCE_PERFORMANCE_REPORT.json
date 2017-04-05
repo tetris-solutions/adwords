@@ -19,7 +19,7 @@
     "Filterable": true,
     "SupportsZeroImpressions": true
   },
-  "AccountTimeZoneId": {
+  "AccountTimeZone": {
     "SpecialValue": false,
     "Percentage": false,
     "Type": "String",
@@ -157,7 +157,7 @@
     "Type": "String",
     "DisplayName": "Ad group",
     "XMLAttribute": "adGroup",
-    "Behavior": "Attribute",
+    "Behavior": "Segment",
     "Filterable": true,
     "SupportsZeroImpressions": true
   },
@@ -173,7 +173,7 @@
     "Type": "AdGroupStatus",
     "DisplayName": "Ad group state",
     "XMLAttribute": "adGroupState",
-    "Behavior": "Attribute",
+    "Behavior": "Segment",
     "Filterable": true,
     "SupportsZeroImpressions": true
   },
@@ -479,6 +479,7 @@
       "BROADBAND_PLAN": "Broadband Plan",
       "WIRELESS_PLAN": "Wireless Plan",
       "VISUAL_SITELINKS": "Visual Sitelinks",
+      "PROMOTION_EXTENSION": "Promotion Extension",
       "UNKNOWN": "unknown"
     },
     "IncompatibleFields": [
@@ -491,7 +492,8 @@
       "VideoQuartile50Rate",
       "VideoQuartile75Rate",
       "VideoViewRate",
-      "VideoViews"
+      "VideoViews",
+      "ViewThroughConversions"
     ],
     "Type": "ClickType",
     "DisplayName": "Click type",
@@ -761,6 +763,22 @@
     "Filterable": true,
     "SupportsZeroImpressions": true
   },
+  "CriterionAttachmentLevel": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "Unknown",
+      "ADGROUP": "Ad group",
+      "CAMPAIGN": "Campaign",
+      "CUSTOMER": "Customer"
+    },
+    "Type": "EntityCriterionAttachmentLevel",
+    "DisplayName": "Level",
+    "XMLAttribute": "level",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
   "CrossDeviceConversions": {
     "SpecialValue": false,
     "Percentage": false,
@@ -904,7 +922,8 @@
       "SALESFORCE": "Salesforce.com",
       "STORE_SALES_CRM": "Store sales (data partner)",
       "STORE_SALES_PAYMENT_NETWORK": "Store sales (payment network)",
-      "GOOGLE_PLAY": "Google Play"
+      "GOOGLE_PLAY": "Google Play",
+      "THIRD_PARTY_APP_ANALYTICS": "Third-party app analytics"
     },
     "IncompatibleFields": [
       "ActiveViewCpm",
@@ -922,7 +941,6 @@
       "AveragePosition",
       "Clicks",
       "Cost",
-      "CostPerConversion",
       "Ctr",
       "EngagementRate",
       "Engagements",
@@ -930,7 +948,6 @@
       "InteractionRate",
       "InteractionTypes",
       "Interactions",
-      "ValuePerConversion",
       "VideoQuartile100Rate",
       "VideoQuartile25Rate",
       "VideoQuartile50Rate",
@@ -1086,20 +1103,6 @@
     "DisplayName": "Interaction Types",
     "XMLAttribute": "interactionTypes",
     "Behavior": "Metric",
-    "Filterable": true,
-    "SupportsZeroImpressions": true
-  },
-  "IsNegative": {
-    "SpecialValue": false,
-    "Percentage": false,
-    "PredicateValues": {
-      "TRUE": "true",
-      "FALSE": "false"
-    },
-    "Type": "Enum",
-    "DisplayName": "Is negative",
-    "XMLAttribute": "isNegative",
-    "Behavior": "Attribute",
     "Filterable": true,
     "SupportsZeroImpressions": true
   },
@@ -1371,6 +1374,9 @@
   "ViewThroughConversions": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ClickType"
+    ],
     "Type": "Long",
     "DisplayName": "View-through conv.",
     "XMLAttribute": "viewThroughConv",

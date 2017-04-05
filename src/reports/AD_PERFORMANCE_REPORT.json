@@ -19,7 +19,7 @@
     "Filterable": true,
     "SupportsZeroImpressions": true
   },
-  "AccountTimeZoneId": {
+  "AccountTimeZone": {
     "SpecialValue": false,
     "Percentage": false,
     "Type": "String",
@@ -35,7 +35,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Money",
     "DisplayName": "Active View avg. CPM",
@@ -50,7 +51,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Active View viewable CTR",
@@ -65,7 +67,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Active View viewable impressions",
@@ -80,7 +83,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Active View measurable impr. / impr.",
@@ -95,7 +99,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Money",
     "DisplayName": "Active View measurable cost",
@@ -110,7 +115,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Active View measurable impr.",
@@ -125,7 +131,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Active View viewable impr. / measurable impr.",
@@ -238,47 +245,14 @@
       "DYNAMIC_SEARCH_AD": "Dynamic search ad",
       "CALL_ONLY_AD": "Call only ad",
       "EXPANDED_TEXT_AD": "Expanded text ad",
-      "RESPONSIVE_DISPLAY_AD": "Responsive display ad",
+      "RESPONSIVE_DISPLAY_AD": "Responsive ad",
+      "SHOWCASE_AD": "Showcase ad",
       "UNKNOWN": "unknown"
     },
     "Type": "Type",
     "DisplayName": "Ad type",
     "XMLAttribute": "adType",
     "Behavior": "Attribute",
-    "Filterable": true,
-    "SupportsZeroImpressions": true
-  },
-  "AdvertiserExperimentSegmentationBin": {
-    "SpecialValue": false,
-    "Percentage": false,
-    "PredicateValues": {
-      "OUTSIDE_OF_EXPERIMENT": "outside experiment",
-      "CONTROL": "control",
-      "EXPERIMENT": "experiment"
-    },
-    "IncompatibleFields": [
-      "AllConversionRate",
-      "AllConversionValue",
-      "AllConversions",
-      "AveragePageviews",
-      "AverageTimeOnSite",
-      "BounceRate",
-      "ClickAssistedConversionValue",
-      "ClickAssistedConversions",
-      "ClickAssistedConversionsOverLastClickConversions",
-      "ClickType",
-      "CostPerAllConversion",
-      "CrossDeviceConversions",
-      "ImpressionAssistedConversionValue",
-      "ImpressionAssistedConversions",
-      "ImpressionAssistedConversionsOverLastClickConversions",
-      "PercentNewVisitors",
-      "ValuePerAllConversion"
-    ],
-    "Type": "AdvertiserExperimentSegmentationBin",
-    "DisplayName": "ACE split",
-    "XMLAttribute": "aCESplit",
-    "Behavior": "Segment",
     "Filterable": true,
     "SupportsZeroImpressions": true
   },
@@ -327,7 +301,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Money",
     "DisplayName": "Avg. Cost",
@@ -342,7 +317,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Money",
     "DisplayName": "Avg. CPC",
@@ -355,9 +331,11 @@
     "SpecialValue": false,
     "Percentage": false,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Avg. CPE",
@@ -372,7 +350,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Money",
     "DisplayName": "Avg. CPM",
@@ -385,9 +364,11 @@
     "SpecialValue": false,
     "Percentage": false,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Avg. CPV",
@@ -405,6 +386,7 @@
       "ConversionTrackerId",
       "ConversionTypeName",
       "Device",
+      "ExternalConversionSource",
       "Slot"
     ],
     "Type": "Double",
@@ -420,7 +402,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Avg. position",
@@ -438,6 +421,7 @@
       "ConversionTrackerId",
       "ConversionTypeName",
       "Device",
+      "ExternalConversionSource",
       "Slot"
     ],
     "Type": "Double",
@@ -476,6 +460,7 @@
       "ConversionTrackerId",
       "ConversionTypeName",
       "Device",
+      "ExternalConversionSource",
       "Slot"
     ],
     "Type": "Double",
@@ -550,6 +535,7 @@
       "ConversionTrackerId",
       "ConversionTypeName",
       "Device",
+      "ExternalConversionSource",
       "Slot"
     ],
     "Type": "Long",
@@ -568,6 +554,7 @@
       "ConversionTrackerId",
       "ConversionTypeName",
       "Device",
+      "ExternalConversionSource",
       "Slot"
     ],
     "Type": "Double",
@@ -586,6 +573,7 @@
       "ConversionTrackerId",
       "ConversionTypeName",
       "Device",
+      "ExternalConversionSource",
       "Slot"
     ],
     "Type": "Double",
@@ -601,43 +589,12 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Clicks",
     "XMLAttribute": "clicks",
-    "Behavior": "Metric",
-    "Filterable": true,
-    "SupportsZeroImpressions": true
-  },
-  "ClickSignificance": {
-    "SpecialValue": false,
-    "Percentage": false,
-    "IncompatibleFields": [
-      "AllConversionRate",
-      "AllConversionValue",
-      "AllConversions",
-      "AveragePageviews",
-      "AverageTimeOnSite",
-      "BounceRate",
-      "ClickAssistedConversionValue",
-      "ClickAssistedConversions",
-      "ClickAssistedConversionsOverLastClickConversions",
-      "ClickType",
-      "ConversionCategoryName",
-      "ConversionTrackerId",
-      "ConversionTypeName",
-      "CostPerAllConversion",
-      "CrossDeviceConversions",
-      "ImpressionAssistedConversionValue",
-      "ImpressionAssistedConversions",
-      "ImpressionAssistedConversionsOverLastClickConversions",
-      "PercentNewVisitors",
-      "ValuePerAllConversion"
-    ],
-    "Type": "SignificanceData",
-    "DisplayName": "Clicks ACE indicator",
-    "XMLAttribute": "clicksACEIndicator",
     "Behavior": "Metric",
     "Filterable": true,
     "SupportsZeroImpressions": true
@@ -676,20 +633,32 @@
       "LOCATION_FORMAT_IMAGE": "Image(s)",
       "BROADBAND_PLAN": "Broadband Plan",
       "WIRELESS_PLAN": "Wireless Plan",
+      "VISUAL_SITELINKS": "Visual Sitelinks",
+      "PROMOTION_EXTENSION": "Promotion Extension",
       "UNKNOWN": "unknown"
     },
     "IncompatibleFields": [
+      "AverageCpe",
+      "AverageCpv",
       "AveragePageviews",
       "AverageTimeOnSite",
       "BounceRate",
       "ClickAssistedConversionValue",
       "ClickAssistedConversions",
       "ClickAssistedConversionsOverLastClickConversions",
+      "EngagementRate",
       "Engagements",
       "ImpressionAssistedConversionValue",
       "ImpressionAssistedConversions",
       "ImpressionAssistedConversionsOverLastClickConversions",
-      "PercentNewVisitors"
+      "PercentNewVisitors",
+      "VideoQuartile100Rate",
+      "VideoQuartile25Rate",
+      "VideoQuartile50Rate",
+      "VideoQuartile75Rate",
+      "VideoViewRate",
+      "VideoViews",
+      "ViewThroughConversions"
     ],
     "Type": "ClickType",
     "DisplayName": "Click type",
@@ -697,6 +666,25 @@
     "Behavior": "Segment",
     "Filterable": true,
     "SupportsZeroImpressions": false
+  },
+  "CombinedApprovalStatus": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "POLICY_APPROVAL_STATUS_UNKNOWN",
+      "APPROVED": "Approved",
+      "APPROVED_LIMITED": "Approved (limited)",
+      "ELIGIBLE": "Eligible",
+      "UNDER_REVIEW": "Under review",
+      "DISAPPROVED": "Disapproved",
+      "SITE_SUSPENDED": "Site suspended"
+    },
+    "Type": "PolicyApprovalStatus",
+    "DisplayName": "Policy approval status",
+    "XMLAttribute": "policyApprovalStatus",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
   },
   "ConversionCategoryName": {
     "SpecialValue": false,
@@ -721,14 +709,9 @@
       "ClickAssistedConversionValue",
       "ClickAssistedConversions",
       "ClickAssistedConversionsOverLastClickConversions",
-      "ClickSignificance",
       "Clicks",
       "Cost",
-      "CostSignificance",
-      "CpcSignificance",
-      "CpmSignificance",
       "Ctr",
-      "CtrSignificance",
       "EngagementRate",
       "Engagements",
       "GmailForwards",
@@ -737,13 +720,11 @@
       "ImpressionAssistedConversionValue",
       "ImpressionAssistedConversions",
       "ImpressionAssistedConversionsOverLastClickConversions",
-      "ImpressionSignificance",
       "Impressions",
       "InteractionRate",
       "InteractionTypes",
       "Interactions",
       "PercentNewVisitors",
-      "PositionSignificance",
       "VideoQuartile100Rate",
       "VideoQuartile25Rate",
       "VideoQuartile50Rate",
@@ -801,14 +782,9 @@
       "ClickAssistedConversionValue",
       "ClickAssistedConversions",
       "ClickAssistedConversionsOverLastClickConversions",
-      "ClickSignificance",
       "Clicks",
       "Cost",
-      "CostSignificance",
-      "CpcSignificance",
-      "CpmSignificance",
       "Ctr",
-      "CtrSignificance",
       "EngagementRate",
       "Engagements",
       "GmailForwards",
@@ -817,13 +793,11 @@
       "ImpressionAssistedConversionValue",
       "ImpressionAssistedConversions",
       "ImpressionAssistedConversionsOverLastClickConversions",
-      "ImpressionSignificance",
       "Impressions",
       "InteractionRate",
       "InteractionTypes",
       "Interactions",
       "PercentNewVisitors",
-      "PositionSignificance",
       "VideoQuartile100Rate",
       "VideoQuartile25Rate",
       "VideoQuartile50Rate",
@@ -861,14 +835,9 @@
       "ClickAssistedConversionValue",
       "ClickAssistedConversions",
       "ClickAssistedConversionsOverLastClickConversions",
-      "ClickSignificance",
       "Clicks",
       "Cost",
-      "CostSignificance",
-      "CpcSignificance",
-      "CpmSignificance",
       "Ctr",
-      "CtrSignificance",
       "EngagementRate",
       "Engagements",
       "GmailForwards",
@@ -877,13 +846,11 @@
       "ImpressionAssistedConversionValue",
       "ImpressionAssistedConversions",
       "ImpressionAssistedConversionsOverLastClickConversions",
-      "ImpressionSignificance",
       "Impressions",
       "InteractionRate",
       "InteractionTypes",
       "Interactions",
       "PercentNewVisitors",
-      "PositionSignificance",
       "VideoQuartile100Rate",
       "VideoQuartile25Rate",
       "VideoQuartile50Rate",
@@ -914,7 +881,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Money",
     "DisplayName": "Cost",
@@ -946,98 +914,12 @@
     "Filterable": true,
     "SupportsZeroImpressions": true
   },
-  "CostSignificance": {
+  "CostPerCurrentModelAttributedConversion": {
     "SpecialValue": false,
     "Percentage": false,
-    "IncompatibleFields": [
-      "AllConversionRate",
-      "AllConversionValue",
-      "AllConversions",
-      "AveragePageviews",
-      "AverageTimeOnSite",
-      "BounceRate",
-      "ClickAssistedConversionValue",
-      "ClickAssistedConversions",
-      "ClickAssistedConversionsOverLastClickConversions",
-      "ClickType",
-      "ConversionCategoryName",
-      "ConversionTrackerId",
-      "ConversionTypeName",
-      "CostPerAllConversion",
-      "CrossDeviceConversions",
-      "ImpressionAssistedConversionValue",
-      "ImpressionAssistedConversions",
-      "ImpressionAssistedConversionsOverLastClickConversions",
-      "PercentNewVisitors",
-      "ValuePerAllConversion"
-    ],
-    "Type": "SignificanceData",
-    "DisplayName": "Cost ACE indicator",
-    "XMLAttribute": "costACEIndicator",
-    "Behavior": "Metric",
-    "Filterable": true,
-    "SupportsZeroImpressions": true
-  },
-  "CpcSignificance": {
-    "SpecialValue": false,
-    "Percentage": false,
-    "IncompatibleFields": [
-      "AllConversionRate",
-      "AllConversionValue",
-      "AllConversions",
-      "AveragePageviews",
-      "AverageTimeOnSite",
-      "BounceRate",
-      "ClickAssistedConversionValue",
-      "ClickAssistedConversions",
-      "ClickAssistedConversionsOverLastClickConversions",
-      "ClickType",
-      "ConversionCategoryName",
-      "ConversionTrackerId",
-      "ConversionTypeName",
-      "CostPerAllConversion",
-      "CrossDeviceConversions",
-      "ImpressionAssistedConversionValue",
-      "ImpressionAssistedConversions",
-      "ImpressionAssistedConversionsOverLastClickConversions",
-      "PercentNewVisitors",
-      "ValuePerAllConversion"
-    ],
-    "Type": "SignificanceData",
-    "DisplayName": "CPC ACE indicator",
-    "XMLAttribute": "cPCACEIndicator",
-    "Behavior": "Metric",
-    "Filterable": true,
-    "SupportsZeroImpressions": true
-  },
-  "CpmSignificance": {
-    "SpecialValue": false,
-    "Percentage": false,
-    "IncompatibleFields": [
-      "AllConversionRate",
-      "AllConversionValue",
-      "AllConversions",
-      "AveragePageviews",
-      "AverageTimeOnSite",
-      "BounceRate",
-      "ClickAssistedConversionValue",
-      "ClickAssistedConversions",
-      "ClickAssistedConversionsOverLastClickConversions",
-      "ClickType",
-      "ConversionCategoryName",
-      "ConversionTrackerId",
-      "ConversionTypeName",
-      "CostPerAllConversion",
-      "CrossDeviceConversions",
-      "ImpressionAssistedConversionValue",
-      "ImpressionAssistedConversions",
-      "ImpressionAssistedConversionsOverLastClickConversions",
-      "PercentNewVisitors",
-      "ValuePerAllConversion"
-    ],
-    "Type": "SignificanceData",
-    "DisplayName": "CPM ACE indicator",
-    "XMLAttribute": "cPMACEIndicator",
+    "Type": "Double",
+    "DisplayName": "Cost / conv. (current model)",
+    "XMLAttribute": "costConvCurrentModel",
     "Behavior": "Metric",
     "Filterable": true,
     "SupportsZeroImpressions": true
@@ -1163,7 +1045,8 @@
       "VERTICAL": "Vertical",
       "WEBPAGE": "Webpage",
       "YOUTUBE_CHANNEL": "YouTube Channel",
-      "YOUTUBE_VIDEO": "YouTube Video"
+      "YOUTUBE_VIDEO": "YouTube Video",
+      "CUSTOM_IN_MARKET": "Custom In-Market"
     },
     "Type": "ApiCriterionType",
     "DisplayName": "Criteria Type",
@@ -1191,7 +1074,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "CTR",
@@ -1200,34 +1084,22 @@
     "Filterable": true,
     "SupportsZeroImpressions": true
   },
-  "CtrSignificance": {
+  "CurrentModelAttributedConversions": {
     "SpecialValue": false,
     "Percentage": false,
-    "IncompatibleFields": [
-      "AllConversionRate",
-      "AllConversionValue",
-      "AllConversions",
-      "AveragePageviews",
-      "AverageTimeOnSite",
-      "BounceRate",
-      "ClickAssistedConversionValue",
-      "ClickAssistedConversions",
-      "ClickAssistedConversionsOverLastClickConversions",
-      "ClickType",
-      "ConversionCategoryName",
-      "ConversionTrackerId",
-      "ConversionTypeName",
-      "CostPerAllConversion",
-      "CrossDeviceConversions",
-      "ImpressionAssistedConversionValue",
-      "ImpressionAssistedConversions",
-      "ImpressionAssistedConversionsOverLastClickConversions",
-      "PercentNewVisitors",
-      "ValuePerAllConversion"
-    ],
-    "Type": "SignificanceData",
-    "DisplayName": "CTR ACE indicator",
-    "XMLAttribute": "cTRACEIndicator",
+    "Type": "Double",
+    "DisplayName": "Conversions (current model)",
+    "XMLAttribute": "conversionsCurrentModel",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "CurrentModelAttributedConversionValue": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Double",
+    "DisplayName": "Conv. value (current model)",
+    "XMLAttribute": "convValueCurrentModel",
     "Behavior": "Metric",
     "Filterable": true,
     "SupportsZeroImpressions": true
@@ -1353,9 +1225,11 @@
     "SpecialValue": false,
     "Percentage": true,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Engagement rate",
@@ -1371,7 +1245,8 @@
       "ClickType",
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Engagements",
@@ -1379,6 +1254,104 @@
     "Behavior": "Metric",
     "Filterable": true,
     "SupportsZeroImpressions": true
+  },
+  "EnhancedDisplayCreativeLogoImageMediaId": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Long",
+    "DisplayName": "Logo ID (responsive)",
+    "XMLAttribute": "logoIDResponsive",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "EnhancedDisplayCreativeMarketingImageMediaId": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Long",
+    "DisplayName": "Image ID (responsive)",
+    "XMLAttribute": "imageIDResponsive",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "ExternalConversionSource": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "Other",
+      "WEBPAGE": "Website",
+      "ANALYTICS": "Analytics",
+      "UPLOAD": "Import from clicks",
+      "AD_CALL_METRICS": "Calls from ads",
+      "OFFERS": "Offers",
+      "ENGAGEMENT": "Engagement ads",
+      "WEBSITE_CALL_METRICS": "Calls from website",
+      "STORE_VISITS": "Store visits",
+      "ANDROID_IN_APP": "Android in-app action",
+      "ANDROID_DOWNLOAD": "Android app install (from Google Play)",
+      "IOS_IN_APP": "iOS in-app action",
+      "IOS_FIRST_OPEN": "iOS app install (first open)",
+      "APP_UNSPECIFIED": "Mobile app",
+      "ANDROID_FIRST_OPEN": "Android app install (first open)",
+      "UPLOAD_CALLS": "Import from calls",
+      "FIREBASE": "Firebase",
+      "CLICK_TO_CALL": "Phone number clicks",
+      "SALESFORCE": "Salesforce.com",
+      "STORE_SALES_CRM": "Store sales (data partner)",
+      "STORE_SALES_PAYMENT_NETWORK": "Store sales (payment network)",
+      "GOOGLE_PLAY": "Google Play",
+      "THIRD_PARTY_APP_ANALYTICS": "Third-party app analytics"
+    },
+    "IncompatibleFields": [
+      "ActiveViewCpm",
+      "ActiveViewCtr",
+      "ActiveViewImpressions",
+      "ActiveViewMeasurability",
+      "ActiveViewMeasurableCost",
+      "ActiveViewMeasurableImpressions",
+      "ActiveViewViewability",
+      "AverageCost",
+      "AverageCpc",
+      "AverageCpe",
+      "AverageCpm",
+      "AverageCpv",
+      "AveragePageviews",
+      "AveragePosition",
+      "AverageTimeOnSite",
+      "BounceRate",
+      "ClickAssistedConversionValue",
+      "ClickAssistedConversions",
+      "ClickAssistedConversionsOverLastClickConversions",
+      "Clicks",
+      "Cost",
+      "Ctr",
+      "EngagementRate",
+      "Engagements",
+      "GmailForwards",
+      "GmailSaves",
+      "GmailSecondaryClicks",
+      "ImpressionAssistedConversionValue",
+      "ImpressionAssistedConversions",
+      "ImpressionAssistedConversionsOverLastClickConversions",
+      "Impressions",
+      "InteractionRate",
+      "InteractionTypes",
+      "Interactions",
+      "PercentNewVisitors",
+      "VideoQuartile100Rate",
+      "VideoQuartile25Rate",
+      "VideoQuartile50Rate",
+      "VideoQuartile75Rate",
+      "VideoViewRate",
+      "VideoViews"
+    ],
+    "Type": "ExternalConversionSource",
+    "DisplayName": "Conversion source",
+    "XMLAttribute": "conversionSource",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
   },
   "ExternalCustomerId": {
     "SpecialValue": false,
@@ -1396,7 +1369,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Gmail forwards",
@@ -1411,7 +1385,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Gmail saves",
@@ -1426,7 +1401,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Gmail clicks to website",
@@ -1505,6 +1481,16 @@
     "Filterable": true,
     "SupportsZeroImpressions": true
   },
+  "ImageCreativeMimeType": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Integer",
+    "DisplayName": "Image Mime Type",
+    "XMLAttribute": "imageMimeType",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
   "ImageCreativeName": {
     "SpecialValue": false,
     "Percentage": false,
@@ -1524,6 +1510,7 @@
       "ConversionTrackerId",
       "ConversionTypeName",
       "Device",
+      "ExternalConversionSource",
       "Slot"
     ],
     "Type": "Long",
@@ -1542,6 +1529,7 @@
       "ConversionTrackerId",
       "ConversionTypeName",
       "Device",
+      "ExternalConversionSource",
       "Slot"
     ],
     "Type": "Double",
@@ -1560,6 +1548,7 @@
       "ConversionTrackerId",
       "ConversionTypeName",
       "Device",
+      "ExternalConversionSource",
       "Slot"
     ],
     "Type": "Double",
@@ -1575,43 +1564,12 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Impressions",
     "XMLAttribute": "impressions",
-    "Behavior": "Metric",
-    "Filterable": true,
-    "SupportsZeroImpressions": true
-  },
-  "ImpressionSignificance": {
-    "SpecialValue": false,
-    "Percentage": false,
-    "IncompatibleFields": [
-      "AllConversionRate",
-      "AllConversionValue",
-      "AllConversions",
-      "AveragePageviews",
-      "AverageTimeOnSite",
-      "BounceRate",
-      "ClickAssistedConversionValue",
-      "ClickAssistedConversions",
-      "ClickAssistedConversionsOverLastClickConversions",
-      "ClickType",
-      "ConversionCategoryName",
-      "ConversionTrackerId",
-      "ConversionTypeName",
-      "CostPerAllConversion",
-      "CrossDeviceConversions",
-      "ImpressionAssistedConversionValue",
-      "ImpressionAssistedConversions",
-      "ImpressionAssistedConversionsOverLastClickConversions",
-      "PercentNewVisitors",
-      "ValuePerAllConversion"
-    ],
-    "Type": "SignificanceData",
-    "DisplayName": "Impressions ACE indicator",
-    "XMLAttribute": "impressionsACEIndicator",
     "Behavior": "Metric",
     "Filterable": true,
     "SupportsZeroImpressions": true
@@ -1622,7 +1580,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Interaction Rate",
@@ -1637,7 +1596,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Interactions",
@@ -1652,7 +1612,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "EnumSet",
     "DisplayName": "Interaction Types",
@@ -1768,6 +1729,7 @@
       "ConversionTrackerId",
       "ConversionTypeName",
       "Device",
+      "ExternalConversionSource",
       "Slot"
     ],
     "Type": "Double",
@@ -1777,36 +1739,14 @@
     "Filterable": true,
     "SupportsZeroImpressions": true
   },
-  "PositionSignificance": {
+  "PolicySummary": {
     "SpecialValue": false,
     "Percentage": false,
-    "IncompatibleFields": [
-      "AllConversionRate",
-      "AllConversionValue",
-      "AllConversions",
-      "AveragePageviews",
-      "AverageTimeOnSite",
-      "BounceRate",
-      "ClickAssistedConversionValue",
-      "ClickAssistedConversions",
-      "ClickAssistedConversionsOverLastClickConversions",
-      "ClickType",
-      "ConversionCategoryName",
-      "ConversionTrackerId",
-      "ConversionTypeName",
-      "CostPerAllConversion",
-      "CrossDeviceConversions",
-      "ImpressionAssistedConversionValue",
-      "ImpressionAssistedConversions",
-      "ImpressionAssistedConversionsOverLastClickConversions",
-      "PercentNewVisitors",
-      "ValuePerAllConversion"
-    ],
-    "Type": "SignificanceData",
-    "DisplayName": "Position ACE indicator",
-    "XMLAttribute": "positionACEIndicator",
-    "Behavior": "Metric",
-    "Filterable": true,
+    "Type": "AdGroupAdPolicySummary",
+    "DisplayName": "Policy",
+    "XMLAttribute": "policy",
+    "Behavior": "Attribute",
+    "Filterable": false,
     "SupportsZeroImpressions": true
   },
   "PrimaryCompanyName": {
@@ -1924,13 +1864,25 @@
     "Filterable": true,
     "SupportsZeroImpressions": true
   },
+  "ValuePerCurrentModelAttributedConversion": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Double",
+    "DisplayName": "Value / conv. (current model)",
+    "XMLAttribute": "valueConvCurrentModel",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
   "VideoQuartile100Rate": {
     "SpecialValue": false,
     "Percentage": true,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Video played to 100%",
@@ -1943,9 +1895,11 @@
     "SpecialValue": false,
     "Percentage": true,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Video played to 25%",
@@ -1958,9 +1912,11 @@
     "SpecialValue": false,
     "Percentage": true,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Video played to 50%",
@@ -1973,9 +1929,11 @@
     "SpecialValue": false,
     "Percentage": true,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Video played to 75%",
@@ -1988,9 +1946,11 @@
     "SpecialValue": false,
     "Percentage": true,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "View rate",
@@ -2003,9 +1963,11 @@
     "SpecialValue": false,
     "Percentage": false,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Views",
@@ -2017,40 +1979,14 @@
   "ViewThroughConversions": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ClickType"
+    ],
     "Type": "Long",
     "DisplayName": "View-through conv.",
     "XMLAttribute": "viewThroughConv",
     "Behavior": "Metric",
     "Filterable": true,
-    "SupportsZeroImpressions": true
-  },
-  "ViewThroughConversionsSignificance": {
-    "SpecialValue": false,
-    "Percentage": false,
-    "IncompatibleFields": [
-      "AllConversionRate",
-      "AllConversionValue",
-      "AllConversions",
-      "AveragePageviews",
-      "AverageTimeOnSite",
-      "BounceRate",
-      "ClickAssistedConversionValue",
-      "ClickAssistedConversions",
-      "ClickAssistedConversionsOverLastClickConversions",
-      "ClickType",
-      "CostPerAllConversion",
-      "CrossDeviceConversions",
-      "ImpressionAssistedConversionValue",
-      "ImpressionAssistedConversions",
-      "ImpressionAssistedConversionsOverLastClickConversions",
-      "PercentNewVisitors",
-      "ValuePerAllConversion"
-    ],
-    "Type": "SignificanceData",
-    "DisplayName": "View-through conv. ACE indicator",
-    "XMLAttribute": "viewThroughConvACEIndicator",
-    "Behavior": "Metric",
-    "Filterable": false,
     "SupportsZeroImpressions": true
   },
   "Week": {

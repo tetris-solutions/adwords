@@ -19,7 +19,7 @@
     "Filterable": true,
     "SupportsZeroImpressions": true
   },
-  "AccountTimeZoneId": {
+  "AccountTimeZone": {
     "SpecialValue": false,
     "Percentage": false,
     "Type": "String",
@@ -35,7 +35,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Money",
     "DisplayName": "Active View avg. CPM",
@@ -50,7 +51,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Active View viewable CTR",
@@ -65,7 +67,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Active View viewable impressions",
@@ -80,7 +83,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Active View measurable impr. / impr.",
@@ -95,7 +99,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Money",
     "DisplayName": "Active View measurable cost",
@@ -110,7 +115,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Active View measurable impr.",
@@ -125,7 +131,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Active View viewable impr. / measurable impr.",
@@ -217,7 +224,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Money",
     "DisplayName": "Avg. Cost",
@@ -232,7 +240,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Money",
     "DisplayName": "Avg. CPC",
@@ -245,9 +254,11 @@
     "SpecialValue": false,
     "Percentage": false,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Avg. CPE",
@@ -262,7 +273,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Money",
     "DisplayName": "Avg. CPM",
@@ -275,9 +287,11 @@
     "SpecialValue": false,
     "Percentage": false,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Avg. CPV",
@@ -292,7 +306,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Avg. position",
@@ -321,7 +336,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Clicks",
@@ -364,17 +380,25 @@
       "LOCATION_FORMAT_IMAGE": "Image(s)",
       "BROADBAND_PLAN": "Broadband Plan",
       "WIRELESS_PLAN": "Wireless Plan",
+      "VISUAL_SITELINKS": "Visual Sitelinks",
+      "PROMOTION_EXTENSION": "Promotion Extension",
       "UNKNOWN": "unknown"
     },
     "IncompatibleFields": [
+      "AverageCpe",
+      "AverageCpv",
       "ContentBudgetLostImpressionShare",
       "ContentImpressionShare",
       "ContentRankLostImpressionShare",
+      "EngagementRate",
       "Engagements",
       "SearchBudgetLostImpressionShare",
       "SearchExactMatchImpressionShare",
       "SearchImpressionShare",
-      "SearchRankLostImpressionShare"
+      "SearchRankLostImpressionShare",
+      "VideoViewRate",
+      "VideoViews",
+      "ViewThroughConversions"
     ],
     "Type": "ClickType",
     "DisplayName": "Click type",
@@ -391,6 +415,7 @@
       "ConversionCategoryName",
       "ConversionTrackerId",
       "ConversionTypeName",
+      "ExternalConversionSource",
       "Slot"
     ],
     "Type": "Double",
@@ -408,6 +433,7 @@
       "ConversionCategoryName",
       "ConversionTrackerId",
       "ConversionTypeName",
+      "ExternalConversionSource",
       "Slot"
     ],
     "Type": "Double",
@@ -425,6 +451,7 @@
       "ConversionCategoryName",
       "ConversionTrackerId",
       "ConversionTypeName",
+      "ExternalConversionSource",
       "Slot"
     ],
     "Type": "Double",
@@ -605,7 +632,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Money",
     "DisplayName": "Cost",
@@ -658,7 +686,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "CTR",
@@ -726,9 +755,11 @@
     "SpecialValue": false,
     "Percentage": true,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Engagement rate",
@@ -744,7 +775,8 @@
       "ClickType",
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Engagements",
@@ -752,6 +784,76 @@
     "Behavior": "Metric",
     "Filterable": true,
     "SupportsZeroImpressions": true
+  },
+  "ExternalConversionSource": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "Other",
+      "WEBPAGE": "Website",
+      "ANALYTICS": "Analytics",
+      "UPLOAD": "Import from clicks",
+      "AD_CALL_METRICS": "Calls from ads",
+      "OFFERS": "Offers",
+      "ENGAGEMENT": "Engagement ads",
+      "WEBSITE_CALL_METRICS": "Calls from website",
+      "STORE_VISITS": "Store visits",
+      "ANDROID_IN_APP": "Android in-app action",
+      "ANDROID_DOWNLOAD": "Android app install (from Google Play)",
+      "IOS_IN_APP": "iOS in-app action",
+      "IOS_FIRST_OPEN": "iOS app install (first open)",
+      "APP_UNSPECIFIED": "Mobile app",
+      "ANDROID_FIRST_OPEN": "Android app install (first open)",
+      "UPLOAD_CALLS": "Import from calls",
+      "FIREBASE": "Firebase",
+      "CLICK_TO_CALL": "Phone number clicks",
+      "SALESFORCE": "Salesforce.com",
+      "STORE_SALES_CRM": "Store sales (data partner)",
+      "STORE_SALES_PAYMENT_NETWORK": "Store sales (payment network)",
+      "GOOGLE_PLAY": "Google Play",
+      "THIRD_PARTY_APP_ANALYTICS": "Third-party app analytics"
+    },
+    "IncompatibleFields": [
+      "ActiveViewCpm",
+      "ActiveViewCtr",
+      "ActiveViewImpressions",
+      "ActiveViewMeasurability",
+      "ActiveViewMeasurableCost",
+      "ActiveViewMeasurableImpressions",
+      "ActiveViewViewability",
+      "AverageCost",
+      "AverageCpc",
+      "AverageCpe",
+      "AverageCpm",
+      "AverageCpv",
+      "AveragePosition",
+      "Clicks",
+      "ContentBudgetLostImpressionShare",
+      "ContentImpressionShare",
+      "ContentRankLostImpressionShare",
+      "Cost",
+      "Ctr",
+      "EngagementRate",
+      "Engagements",
+      "Impressions",
+      "InteractionRate",
+      "InteractionTypes",
+      "Interactions",
+      "InvalidClickRate",
+      "InvalidClicks",
+      "SearchBudgetLostImpressionShare",
+      "SearchExactMatchImpressionShare",
+      "SearchImpressionShare",
+      "SearchRankLostImpressionShare",
+      "VideoViewRate",
+      "VideoViews"
+    ],
+    "Type": "ExternalConversionSource",
+    "DisplayName": "Conversion source",
+    "XMLAttribute": "conversionSource",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
   },
   "ExternalCustomerId": {
     "SpecialValue": false,
@@ -782,7 +884,7 @@
     "XMLAttribute": "hourOfDay",
     "Behavior": "Segment",
     "Filterable": true,
-    "SupportsZeroImpressions": false
+    "SupportsZeroImpressions": true
   },
   "Impressions": {
     "SpecialValue": false,
@@ -790,7 +892,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Impressions",
@@ -805,7 +908,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Interaction Rate",
@@ -820,7 +924,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Interactions",
@@ -835,7 +940,8 @@
     "IncompatibleFields": [
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "EnumSet",
     "DisplayName": "Interaction Types",
@@ -851,6 +957,7 @@
       "ConversionCategoryName",
       "ConversionTrackerId",
       "ConversionTypeName",
+      "ExternalConversionSource",
       "HourOfDay",
       "Slot"
     ],
@@ -868,6 +975,7 @@
       "ConversionCategoryName",
       "ConversionTrackerId",
       "ConversionTypeName",
+      "ExternalConversionSource",
       "HourOfDay",
       "Slot"
     ],
@@ -968,6 +1076,7 @@
       "ConversionCategoryName",
       "ConversionTrackerId",
       "ConversionTypeName",
+      "ExternalConversionSource",
       "Slot"
     ],
     "Type": "Double",
@@ -985,6 +1094,7 @@
       "ConversionCategoryName",
       "ConversionTrackerId",
       "ConversionTypeName",
+      "ExternalConversionSource",
       "Slot"
     ],
     "Type": "Double",
@@ -1002,6 +1112,7 @@
       "ConversionCategoryName",
       "ConversionTrackerId",
       "ConversionTypeName",
+      "ExternalConversionSource",
       "Slot"
     ],
     "Type": "Double",
@@ -1019,6 +1130,7 @@
       "ConversionCategoryName",
       "ConversionTrackerId",
       "ConversionTypeName",
+      "ExternalConversionSource",
       "Slot"
     ],
     "Type": "Double",
@@ -1093,9 +1205,11 @@
     "SpecialValue": false,
     "Percentage": true,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "View rate",
@@ -1108,9 +1222,11 @@
     "SpecialValue": false,
     "Percentage": false,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
       "ConversionTrackerId",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Views",
@@ -1122,6 +1238,9 @@
   "ViewThroughConversions": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ClickType"
+    ],
     "Type": "Long",
     "DisplayName": "View-through conv.",
     "XMLAttribute": "viewThroughConv",

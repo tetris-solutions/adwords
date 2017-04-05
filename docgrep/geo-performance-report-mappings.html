@@ -89,7 +89,7 @@
     </tr>
     <tr>
         <td>
-            <h3 id="accounttimezoneid"><code>AccountTimeZoneId</code></h3></td>
+            <h3 id="accounttimezone"><code>AccountTimeZone</code></h3></td>
         <td>
             <p>Name of the timezone selected for the Customer account. For example: "(GMT-05:00) Eastern Time". This
                 field does not reflect the current state of daylight saving time for the timezone.</p>
@@ -164,10 +164,10 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Predicate values / display values</p>
                 <div class="devsite-table-wrapper">
-                    <table class="nested responsive exw-collapsed-content">
+                    <table class="nested responsive">
                         <tbody>
                         <tr>
                             <td><code><span>UNKNOWN</span></code></td>
@@ -324,10 +324,10 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Predicate values / display values</p>
                 <div class="devsite-table-wrapper">
-                    <table class="nested responsive exw-collapsed-content">
+                    <table class="nested responsive">
                         <tbody>
                         <tr>
                             <td><code><span>UNKNOWN</span></code></td>
@@ -386,10 +386,10 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Predicate values / display values</p>
                 <div class="devsite-table-wrapper">
-                    <table class="nested responsive exw-collapsed-content">
+                    <table class="nested responsive">
                         <tbody>
                         <tr>
                             <td><code><span>UNKNOWN</span></code></td>
@@ -452,10 +452,10 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Predicate values / display values</p>
                 <div class="devsite-table-wrapper">
-                    <table class="nested responsive exw-collapsed-content">
+                    <table class="nested responsive">
                         <tbody>
                         <tr>
                             <td><code><span>UNKNOWN</span></code></td>
@@ -535,8 +535,8 @@
             <h3 id="allconversions"><code>AllConversions</code></h3></td>
         <td>
             <p>Best estimate of the total number of conversions that AdWords drives. Includes website, cross-device, and
-                phone call conversions. This field is formatted using US locale, i.e., using comma "," for thousands and
-                dot "." for decimals.
+                phone call conversions. This field is formatted with dot (".") for decimal separator, precision of two
+                decimal positions and no thousands separator (e.g. 1000000.00).
                 To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
                 with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
                 also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
@@ -578,7 +578,9 @@
         <td>
             <h3 id="allconversionvalue"><code>AllConversionValue</code></h3></td>
         <td>
-            <p>The total value of all of your conversions, including those that are estimated.
+            <p>The total value of all of your conversions, including those that are estimated. This field is formatted
+                with dot (".") for decimal separator, precision of two decimal positions and no thousands separator
+                (e.g. 1000000.00).
                 To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
                 with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
                 also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
@@ -652,12 +654,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content"><code>ConversionCategoryName</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTrackerId</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTypeName</code></div>
-                <div class="exw-collapsed-content"><code>ExternalConversionSource</code></div>
+                <div><code>ConversionCategoryName</code></div>
+                <div><code>ConversionTrackerId</code></div>
+                <div><code>ConversionTypeName</code></div>
+                <div><code>ExternalConversionSource</code></div>
             </div>
         </td>
     </tr>
@@ -696,12 +698,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content"><code>ConversionCategoryName</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTrackerId</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTypeName</code></div>
-                <div class="exw-collapsed-content"><code>ExternalConversionSource</code></div>
+                <div><code>ConversionCategoryName</code></div>
+                <div><code>ConversionTrackerId</code></div>
+                <div><code>ConversionTypeName</code></div>
+                <div><code>ExternalConversionSource</code></div>
             </div>
         </td>
     </tr>
@@ -740,12 +742,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content"><code>ConversionCategoryName</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTrackerId</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTypeName</code></div>
-                <div class="exw-collapsed-content"><code>ExternalConversionSource</code></div>
+                <div><code>ConversionCategoryName</code></div>
+                <div><code>ConversionTrackerId</code></div>
+                <div><code>ConversionTypeName</code></div>
+                <div><code>ExternalConversionSource</code></div>
             </div>
         </td>
     </tr>
@@ -790,12 +792,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content"><code>ConversionCategoryName</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTrackerId</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTypeName</code></div>
-                <div class="exw-collapsed-content"><code>ExternalConversionSource</code></div>
+                <div><code>ConversionCategoryName</code></div>
+                <div><code>ConversionTrackerId</code></div>
+                <div><code>ConversionTypeName</code></div>
+                <div><code>ExternalConversionSource</code></div>
             </div>
         </td>
     </tr>
@@ -839,12 +841,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content"><code>ConversionCategoryName</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTrackerId</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTypeName</code></div>
-                <div class="exw-collapsed-content"><code>ExternalConversionSource</code></div>
+                <div><code>ConversionCategoryName</code></div>
+                <div><code>ConversionTrackerId</code></div>
+                <div><code>ConversionTypeName</code></div>
+                <div><code>ExternalConversionSource</code></div>
             </div>
         </td>
     </tr>
@@ -957,10 +959,10 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Predicate values / display values</p>
                 <div class="devsite-table-wrapper">
-                    <table class="nested responsive exw-collapsed-content">
+                    <table class="nested responsive">
                         <tbody>
                         <tr>
                             <td><code><span>UNKNOWN</span></code></td>
@@ -1059,12 +1061,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content"><code>ConversionCategoryName</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTrackerId</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTypeName</code></div>
-                <div class="exw-collapsed-content"><code>ExternalConversionSource</code></div>
+                <div><code>ConversionCategoryName</code></div>
+                <div><code>ConversionTrackerId</code></div>
+                <div><code>ConversionTypeName</code></div>
+                <div><code>ExternalConversionSource</code></div>
             </div>
         </td>
     </tr>
@@ -1105,22 +1107,22 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content"><code>AverageCost</code></div>
-                <div class="exw-collapsed-content"><code>AverageCpc</code></div>
-                <div class="exw-collapsed-content"><code>AverageCpm</code></div>
-                <div class="exw-collapsed-content"><code>AverageCpv</code></div>
-                <div class="exw-collapsed-content"><code>AveragePosition</code></div>
-                <div class="exw-collapsed-content"><code>Clicks</code></div>
-                <div class="exw-collapsed-content"><code>Cost</code></div>
-                <div class="exw-collapsed-content"><code>Ctr</code></div>
-                <div class="exw-collapsed-content"><code>Impressions</code></div>
-                <div class="exw-collapsed-content"><code>InteractionRate</code></div>
-                <div class="exw-collapsed-content"><code>InteractionTypes</code></div>
-                <div class="exw-collapsed-content"><code>Interactions</code></div>
-                <div class="exw-collapsed-content"><code>VideoViewRate</code></div>
-                <div class="exw-collapsed-content"><code>VideoViews</code></div>
+                <div><code>AverageCost</code></div>
+                <div><code>AverageCpc</code></div>
+                <div><code>AverageCpm</code></div>
+                <div><code>AverageCpv</code></div>
+                <div><code>AveragePosition</code></div>
+                <div><code>Clicks</code></div>
+                <div><code>Cost</code></div>
+                <div><code>Ctr</code></div>
+                <div><code>Impressions</code></div>
+                <div><code>InteractionRate</code></div>
+                <div><code>InteractionTypes</code></div>
+                <div><code>Interactions</code></div>
+                <div><code>VideoViewRate</code></div>
+                <div><code>VideoViews</code></div>
             </div>
         </td>
     </tr>
@@ -1172,7 +1174,8 @@
             <h3 id="conversions"><code>Conversions</code></h3></td>
         <td>
             <p>The number of conversions for all conversion actions that you have opted into optimization. This field is
-                formatted using US locale, i.e., using comma "," for thousands and dot "." for decimals.
+                formatted with dot (".") for decimal separator, precision of two decimal positions and no thousands
+                separator (e.g. 1000000.00).
                 To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
                 with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
                 also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
@@ -1245,22 +1248,22 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content"><code>AverageCost</code></div>
-                <div class="exw-collapsed-content"><code>AverageCpc</code></div>
-                <div class="exw-collapsed-content"><code>AverageCpm</code></div>
-                <div class="exw-collapsed-content"><code>AverageCpv</code></div>
-                <div class="exw-collapsed-content"><code>AveragePosition</code></div>
-                <div class="exw-collapsed-content"><code>Clicks</code></div>
-                <div class="exw-collapsed-content"><code>Cost</code></div>
-                <div class="exw-collapsed-content"><code>Ctr</code></div>
-                <div class="exw-collapsed-content"><code>Impressions</code></div>
-                <div class="exw-collapsed-content"><code>InteractionRate</code></div>
-                <div class="exw-collapsed-content"><code>InteractionTypes</code></div>
-                <div class="exw-collapsed-content"><code>Interactions</code></div>
-                <div class="exw-collapsed-content"><code>VideoViewRate</code></div>
-                <div class="exw-collapsed-content"><code>VideoViews</code></div>
+                <div><code>AverageCost</code></div>
+                <div><code>AverageCpc</code></div>
+                <div><code>AverageCpm</code></div>
+                <div><code>AverageCpv</code></div>
+                <div><code>AveragePosition</code></div>
+                <div><code>Clicks</code></div>
+                <div><code>Cost</code></div>
+                <div><code>Ctr</code></div>
+                <div><code>Impressions</code></div>
+                <div><code>InteractionRate</code></div>
+                <div><code>InteractionTypes</code></div>
+                <div><code>Interactions</code></div>
+                <div><code>VideoViewRate</code></div>
+                <div><code>VideoViews</code></div>
             </div>
         </td>
     </tr>
@@ -1299,22 +1302,22 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content"><code>AverageCost</code></div>
-                <div class="exw-collapsed-content"><code>AverageCpc</code></div>
-                <div class="exw-collapsed-content"><code>AverageCpm</code></div>
-                <div class="exw-collapsed-content"><code>AverageCpv</code></div>
-                <div class="exw-collapsed-content"><code>AveragePosition</code></div>
-                <div class="exw-collapsed-content"><code>Clicks</code></div>
-                <div class="exw-collapsed-content"><code>Cost</code></div>
-                <div class="exw-collapsed-content"><code>Ctr</code></div>
-                <div class="exw-collapsed-content"><code>Impressions</code></div>
-                <div class="exw-collapsed-content"><code>InteractionRate</code></div>
-                <div class="exw-collapsed-content"><code>InteractionTypes</code></div>
-                <div class="exw-collapsed-content"><code>Interactions</code></div>
-                <div class="exw-collapsed-content"><code>VideoViewRate</code></div>
-                <div class="exw-collapsed-content"><code>VideoViews</code></div>
+                <div><code>AverageCost</code></div>
+                <div><code>AverageCpc</code></div>
+                <div><code>AverageCpm</code></div>
+                <div><code>AverageCpv</code></div>
+                <div><code>AveragePosition</code></div>
+                <div><code>Clicks</code></div>
+                <div><code>Cost</code></div>
+                <div><code>Ctr</code></div>
+                <div><code>Impressions</code></div>
+                <div><code>InteractionRate</code></div>
+                <div><code>InteractionTypes</code></div>
+                <div><code>Interactions</code></div>
+                <div><code>VideoViewRate</code></div>
+                <div><code>VideoViews</code></div>
             </div>
         </td>
     </tr>
@@ -1322,7 +1325,8 @@
         <td>
             <h3 id="conversionvalue"><code>ConversionValue</code></h3></td>
         <td>
-            <p>The sum of conversion values for all conversions.
+            <p>The sum of conversion values for all conversions. This field is formatted with dot (".") for decimal
+                separator, precision of two decimal positions and no thousands separator (e.g. 1000000.00).
                 To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
                 with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
                 also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
@@ -1396,12 +1400,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content"><code>ConversionCategoryName</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTrackerId</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTypeName</code></div>
-                <div class="exw-collapsed-content"><code>ExternalConversionSource</code></div>
+                <div><code>ConversionCategoryName</code></div>
+                <div><code>ConversionTrackerId</code></div>
+                <div><code>ConversionTypeName</code></div>
+                <div><code>ExternalConversionSource</code></div>
             </div>
         </td>
     </tr>
@@ -1525,7 +1529,8 @@
         <td>
             <p>Conversions from when a customer clicks on an AdWords ad on one device, then converts on a different
                 device or browser. Cross-device conversions are already included in your AllConversions column. This
-                field is formatted using US locale, i.e., using comma "," for thousands and dot "." for decimals.
+                field is formatted with dot (".") for decimal separator, precision of two decimal positions and no
+                thousands separator (e.g. 1000000.00).
                 To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
                 with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
                 also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
@@ -1604,12 +1609,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content"><code>ConversionCategoryName</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTrackerId</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTypeName</code></div>
-                <div class="exw-collapsed-content"><code>ExternalConversionSource</code></div>
+                <div><code>ConversionCategoryName</code></div>
+                <div><code>ConversionTrackerId</code></div>
+                <div><code>ConversionTypeName</code></div>
+                <div><code>ExternalConversionSource</code></div>
             </div>
         </td>
     </tr>
@@ -1722,10 +1727,10 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Predicate values / display values</p>
                 <div class="devsite-table-wrapper">
-                    <table class="nested responsive exw-collapsed-content">
+                    <table class="nested responsive">
                         <tbody>
                         <tr>
                             <td><code><span>MONDAY</span></code></td>
@@ -1796,10 +1801,10 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Predicate values / display values</p>
                 <div class="devsite-table-wrapper">
-                    <table class="nested responsive exw-collapsed-content">
+                    <table class="nested responsive">
                         <tbody>
                         <tr>
                             <td><code><span>UNKNOWN</span></code></td>
@@ -1858,10 +1863,10 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Predicate values / display values</p>
                 <div class="devsite-table-wrapper">
-                    <table class="nested responsive exw-collapsed-content">
+                    <table class="nested responsive">
                         <tbody>
                         <tr>
                             <td><code><span>UNKNOWN</span></code></td>
@@ -1951,26 +1956,30 @@
                             <td><code><span>GOOGLE_PLAY</span></code></td>
                             <td>Google Play</td>
                         </tr>
+                        <tr>
+                            <td><code><span>THIRD_PARTY_APP_ANALYTICS</span></code></td>
+                            <td>Third-party app analytics</td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content"><code>AverageCost</code></div>
-                <div class="exw-collapsed-content"><code>AverageCpc</code></div>
-                <div class="exw-collapsed-content"><code>AverageCpm</code></div>
-                <div class="exw-collapsed-content"><code>AverageCpv</code></div>
-                <div class="exw-collapsed-content"><code>AveragePosition</code></div>
-                <div class="exw-collapsed-content"><code>Clicks</code></div>
-                <div class="exw-collapsed-content"><code>Cost</code></div>
-                <div class="exw-collapsed-content"><code>Ctr</code></div>
-                <div class="exw-collapsed-content"><code>Impressions</code></div>
-                <div class="exw-collapsed-content"><code>InteractionRate</code></div>
-                <div class="exw-collapsed-content"><code>InteractionTypes</code></div>
-                <div class="exw-collapsed-content"><code>Interactions</code></div>
-                <div class="exw-collapsed-content"><code>VideoViewRate</code></div>
-                <div class="exw-collapsed-content"><code>VideoViews</code></div>
+                <div><code>AverageCost</code></div>
+                <div><code>AverageCpc</code></div>
+                <div><code>AverageCpm</code></div>
+                <div><code>AverageCpv</code></div>
+                <div><code>AveragePosition</code></div>
+                <div><code>Clicks</code></div>
+                <div><code>Cost</code></div>
+                <div><code>Ctr</code></div>
+                <div><code>Impressions</code></div>
+                <div><code>InteractionRate</code></div>
+                <div><code>InteractionTypes</code></div>
+                <div><code>Interactions</code></div>
+                <div><code>VideoViewRate</code></div>
+                <div><code>VideoViews</code></div>
             </div>
         </td>
     </tr>
@@ -2046,12 +2055,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content"><code>ConversionCategoryName</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTrackerId</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTypeName</code></div>
-                <div class="exw-collapsed-content"><code>ExternalConversionSource</code></div>
+                <div><code>ConversionCategoryName</code></div>
+                <div><code>ConversionTrackerId</code></div>
+                <div><code>ConversionTypeName</code></div>
+                <div><code>ExternalConversionSource</code></div>
             </div>
         </td>
     </tr>
@@ -2096,12 +2105,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content"><code>ConversionCategoryName</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTrackerId</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTypeName</code></div>
-                <div class="exw-collapsed-content"><code>ExternalConversionSource</code></div>
+                <div><code>ConversionCategoryName</code></div>
+                <div><code>ConversionTrackerId</code></div>
+                <div><code>ConversionTypeName</code></div>
+                <div><code>ExternalConversionSource</code></div>
             </div>
         </td>
     </tr>
@@ -2141,12 +2150,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content"><code>ConversionCategoryName</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTrackerId</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTypeName</code></div>
-                <div class="exw-collapsed-content"><code>ExternalConversionSource</code></div>
+                <div><code>ConversionCategoryName</code></div>
+                <div><code>ConversionTrackerId</code></div>
+                <div><code>ConversionTypeName</code></div>
+                <div><code>ExternalConversionSource</code></div>
             </div>
         </td>
     </tr>
@@ -2186,12 +2195,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content"><code>ConversionCategoryName</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTrackerId</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTypeName</code></div>
-                <div class="exw-collapsed-content"><code>ExternalConversionSource</code></div>
+                <div><code>ConversionCategoryName</code></div>
+                <div><code>ConversionTrackerId</code></div>
+                <div><code>ConversionTypeName</code></div>
+                <div><code>ExternalConversionSource</code></div>
             </div>
         </td>
     </tr>
@@ -2231,10 +2240,10 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Predicate values / display values</p>
                 <div class="devsite-table-wrapper">
-                    <table class="nested responsive exw-collapsed-content">
+                    <table class="nested responsive">
                         <tbody>
                         <tr>
                             <td><code><span>TRUE</span></code></td>
@@ -2286,10 +2295,10 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Predicate values / display values</p>
                 <div class="devsite-table-wrapper">
-                    <table class="nested responsive exw-collapsed-content">
+                    <table class="nested responsive">
                         <tbody>
                         <tr>
                             <td><code><span>AREA_OF_INTEREST</span></code></td>
@@ -2421,10 +2430,10 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Predicate values / display values</p>
                 <div class="devsite-table-wrapper">
-                    <table class="nested responsive exw-collapsed-content">
+                    <table class="nested responsive">
                         <tbody>
                         <tr>
                             <td><code><span>JANUARY</span></code></td>
@@ -2639,7 +2648,8 @@
         <td>
             <h3 id="valueperallconversion"><code>ValuePerAllConversion</code></h3></td>
         <td>
-            <p>The value, on average, of all conversions.
+            <p>The value, on average, of all conversions. This field is formatted with dot (".") for decimal separator,
+                precision of two decimal positions and no thousands separator (e.g. 1000000.00).
                 To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
                 with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
                 also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
@@ -2681,7 +2691,9 @@
         <td>
             <h3 id="valueperconversion"><code>ValuePerConversion</code></h3></td>
         <td>
-            <p>The total value of your conversions divided by the total number of conversions.
+            <p>The total value of your conversions divided by the total number of conversions. This field is formatted
+                with dot (".") for decimal separator, precision of two decimal positions and no thousands separator
+                (e.g. 1000000.00).
                 To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
                 with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
                 also true for <a href="https://developers.google.com/adwords/api/docs/guides/awql">AWQL</a>:
@@ -2760,12 +2772,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content"><code>ConversionCategoryName</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTrackerId</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTypeName</code></div>
-                <div class="exw-collapsed-content"><code>ExternalConversionSource</code></div>
+                <div><code>ConversionCategoryName</code></div>
+                <div><code>ConversionTrackerId</code></div>
+                <div><code>ConversionTypeName</code></div>
+                <div><code>ExternalConversionSource</code></div>
             </div>
         </td>
     </tr>
@@ -2804,12 +2816,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="expandable"><a class="exw-control exw-collapsed">▸</a>
+            <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
-                <div class="exw-collapsed-content"><code>ConversionCategoryName</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTrackerId</code></div>
-                <div class="exw-collapsed-content"><code>ConversionTypeName</code></div>
-                <div class="exw-collapsed-content"><code>ExternalConversionSource</code></div>
+                <div><code>ConversionCategoryName</code></div>
+                <div><code>ConversionTrackerId</code></div>
+                <div><code>ConversionTypeName</code></div>
+                <div><code>ExternalConversionSource</code></div>
             </div>
         </td>
     </tr>

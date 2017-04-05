@@ -19,7 +19,7 @@
     "Filterable": true,
     "SupportsZeroImpressions": true
   },
-  "AccountTimeZoneId": {
+  "AccountTimeZone": {
     "SpecialValue": false,
     "Percentage": false,
     "Type": "String",
@@ -105,7 +105,8 @@
     "Percentage": false,
     "IncompatibleFields": [
       "ConversionCategoryName",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Avg. CPM",
@@ -118,8 +119,10 @@
     "SpecialValue": false,
     "Percentage": false,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Avg. CPV",
@@ -169,7 +172,8 @@
     "Percentage": false,
     "IncompatibleFields": [
       "ConversionCategoryName",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Clicks",
@@ -212,10 +216,21 @@
       "LOCATION_FORMAT_IMAGE": "Image(s)",
       "BROADBAND_PLAN": "Broadband Plan",
       "WIRELESS_PLAN": "Wireless Plan",
+      "VISUAL_SITELINKS": "Visual Sitelinks",
+      "PROMOTION_EXTENSION": "Promotion Extension",
       "UNKNOWN": "unknown"
     },
     "IncompatibleFields": [
-      "Engagements"
+      "AverageCpv",
+      "EngagementRate",
+      "Engagements",
+      "VideoQuartile100Rate",
+      "VideoQuartile25Rate",
+      "VideoQuartile50Rate",
+      "VideoQuartile75Rate",
+      "VideoViewRate",
+      "VideoViews",
+      "ViewThroughConversions"
     ],
     "Type": "ClickType",
     "DisplayName": "Click type",
@@ -317,7 +332,8 @@
     "Percentage": false,
     "IncompatibleFields": [
       "ConversionCategoryName",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Money",
     "DisplayName": "Cost",
@@ -366,7 +382,8 @@
     "Percentage": true,
     "IncompatibleFields": [
       "ConversionCategoryName",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "CTR",
@@ -434,8 +451,10 @@
     "SpecialValue": false,
     "Percentage": true,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Engagement rate",
@@ -450,7 +469,8 @@
     "IncompatibleFields": [
       "ClickType",
       "ConversionCategoryName",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Engagements",
@@ -458,6 +478,57 @@
     "Behavior": "Metric",
     "Filterable": true,
     "SupportsZeroImpressions": true
+  },
+  "ExternalConversionSource": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "Other",
+      "WEBPAGE": "Website",
+      "ANALYTICS": "Analytics",
+      "UPLOAD": "Import from clicks",
+      "AD_CALL_METRICS": "Calls from ads",
+      "OFFERS": "Offers",
+      "ENGAGEMENT": "Engagement ads",
+      "WEBSITE_CALL_METRICS": "Calls from website",
+      "STORE_VISITS": "Store visits",
+      "ANDROID_IN_APP": "Android in-app action",
+      "ANDROID_DOWNLOAD": "Android app install (from Google Play)",
+      "IOS_IN_APP": "iOS in-app action",
+      "IOS_FIRST_OPEN": "iOS app install (first open)",
+      "APP_UNSPECIFIED": "Mobile app",
+      "ANDROID_FIRST_OPEN": "Android app install (first open)",
+      "UPLOAD_CALLS": "Import from calls",
+      "FIREBASE": "Firebase",
+      "CLICK_TO_CALL": "Phone number clicks",
+      "SALESFORCE": "Salesforce.com",
+      "STORE_SALES_CRM": "Store sales (data partner)",
+      "STORE_SALES_PAYMENT_NETWORK": "Store sales (payment network)",
+      "GOOGLE_PLAY": "Google Play",
+      "THIRD_PARTY_APP_ANALYTICS": "Third-party app analytics"
+    },
+    "IncompatibleFields": [
+      "AverageCpm",
+      "AverageCpv",
+      "Clicks",
+      "Cost",
+      "Ctr",
+      "EngagementRate",
+      "Engagements",
+      "Impressions",
+      "VideoQuartile100Rate",
+      "VideoQuartile25Rate",
+      "VideoQuartile50Rate",
+      "VideoQuartile75Rate",
+      "VideoViewRate",
+      "VideoViews"
+    ],
+    "Type": "ExternalConversionSource",
+    "DisplayName": "Conversion source",
+    "XMLAttribute": "conversionSource",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
   },
   "ExternalCustomerId": {
     "SpecialValue": false,
@@ -474,7 +545,8 @@
     "Percentage": false,
     "IncompatibleFields": [
       "ConversionCategoryName",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Impressions",
@@ -571,8 +643,10 @@
     "SpecialValue": false,
     "Percentage": true,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Video played to 100%",
@@ -585,8 +659,10 @@
     "SpecialValue": false,
     "Percentage": true,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Video played to 25%",
@@ -599,8 +675,10 @@
     "SpecialValue": false,
     "Percentage": true,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Video played to 50%",
@@ -613,8 +691,10 @@
     "SpecialValue": false,
     "Percentage": true,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "Video played to 75%",
@@ -637,8 +717,10 @@
     "SpecialValue": false,
     "Percentage": true,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Double",
     "DisplayName": "View rate",
@@ -651,8 +733,10 @@
     "SpecialValue": false,
     "Percentage": false,
     "IncompatibleFields": [
+      "ClickType",
       "ConversionCategoryName",
-      "ConversionTypeName"
+      "ConversionTypeName",
+      "ExternalConversionSource"
     ],
     "Type": "Long",
     "DisplayName": "Views",
@@ -664,6 +748,9 @@
   "ViewThroughConversions": {
     "SpecialValue": false,
     "Percentage": false,
+    "IncompatibleFields": [
+      "ClickType"
+    ],
     "Type": "Long",
     "DisplayName": "View-through conv.",
     "XMLAttribute": "viewThroughConv",
