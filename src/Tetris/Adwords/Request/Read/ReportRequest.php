@@ -10,7 +10,7 @@ use ReportDefinition;
 use DateTime;
 use DateRange;
 use stdClass;
-use Paging;
+use Predicate;
 
 class ReportRequest extends ReadRequest
 {
@@ -46,6 +46,22 @@ class ReportRequest extends ReadRequest
         $report->reportType = $this->className;
         $report->dateRangeType = 'CUSTOM_DATE';
         $report->downloadFormat = 'XML';
+
+        $this->track([
+            'field_count' => count($this->selector->fields),
+            'predicate_count' => count($this->selector->predicates),
+//            'fields' => $this->selector->fields,
+//            'date_range' => [$this->selector->dateRange->min, $this->selector->dateRange->max],
+//            'predicates' => array_map(function (Predicate $predicate) {
+//                return [
+//                    'field' => $predicate->field,
+//                    'operator' => $predicate->operator,
+//                    'value' => is_array($predicate->values) && count_chars($predicate->values) > 10
+//                        ? '> 10 values'
+//                        : $predicate->values
+//                ];
+//            }, $this->selector->predicates)
+        ]);
 
         $downloader = new ReportUtils();
 

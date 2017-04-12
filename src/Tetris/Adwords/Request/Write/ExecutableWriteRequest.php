@@ -52,6 +52,11 @@ class ExecutableWriteRequest extends Request
 
     function execute()
     {
+        $this->track([
+//            'values' => $this->values,
+            'operator' => $this->operator
+        ]);
+
         $entityOperationClass = $this->className . 'Operation';
 
         /**

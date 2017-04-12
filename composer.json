@@ -7,12 +7,19 @@
   "require": {
     "php": ">=7.0.0",
     "nayjest/str-case-converter": "^1.0",
-    "googleads/googleads-php-lib": "17.0.0"
+    "googleads/googleads-php-lib": "17.0.0",
+    "tetris/monostash": "dev-master#v0.0.5"
   },
   "authors": [
     {
       "name": "Christian Amaral",
       "email": "darthcas@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:tetris-solutions/monostash.git"
     }
   ],
   "autoload": {

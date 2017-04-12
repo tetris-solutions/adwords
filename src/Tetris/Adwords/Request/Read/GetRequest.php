@@ -4,6 +4,7 @@ namespace Tetris\Adwords\Request\Read;
 
 use DateTime;
 use Paging;
+use Predicate;
 
 use Campaign;
 use Budget;
@@ -45,6 +46,22 @@ class GetRequest extends ReadRequest
         if (empty($this->selector->paging)) {
             $this->limit(500);
         }
+
+        $this->track([
+            'field_count' => count($this->selector->fields),
+            'predicate_count' => count($this->selector->predicates),
+//            'fields' => $this->selector->fields,
+//            'predicates' => array_map(function (Predicate $predicate) {
+//                return [
+//                    'field' => $predicate->field,
+//                    'operator' => $predicate->operator,
+//                    'value' => is_array($predicate->values) && count_chars($predicate->values) > 10
+//                        ? '> 10 values'
+//                        : $predicate->values
+//                ];
+//            }, $this->selector->predicates)
+        ]);
+
         /**
          * @var CampaignPage|BudgetPage|ManagedCustomerPage $result
          */

@@ -2,7 +2,7 @@
 
 namespace Tetris\Adwords;
 
-use Money;
+require_once __DIR__ . '/logger.php';
 
 abstract class Request
 {
@@ -26,5 +26,15 @@ abstract class Request
         return array_keys($fieldMap) !== range(0, count($fieldMap) - 1)
             ? $fieldMap
             : array_combine($fieldMap, $fieldMap);
+    }
+
+    protected function track(array $metaData)
+    {
+        global $logger;
+
+        $logger->debug("Adwords Request ~ " . get_class($this), array_merge([
+            'service_name' => $this->className,
+            'stack' => (new \Exception('None'))->getTraceAsString()
+        ], $metaData));
     }
 }
