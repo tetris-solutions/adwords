@@ -3,6 +3,6 @@ namespace Tetris\Numbers;
 
 use Tetris\MonoStash\MonoStash;
 
-$GLOBALS['logger'] = $logger = new MonoStash('adwords');
+$GLOBALS['adwordsLogger'] = $adwordsLogger = new MonoStash('adwords');
 
 

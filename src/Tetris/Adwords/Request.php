@@ -30,9 +30,9 @@ abstract class Request
 
     protected function track(array $metaData)
     {
-        global $logger;
+        global $adwordsLogger;
 
-        $logger->debug("Adwords Request ~ " . get_class($this), array_merge([
+        $adwordsLogger->debug("Adwords Request ~ " . get_class($this), array_merge([
             'service_name' => $this->className,
             'stack' => (new \Exception('None'))->getTraceAsString()
         ], $metaData));
