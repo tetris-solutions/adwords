@@ -26,7 +26,7 @@ class Client extends AdWordsUser
      */
     protected $tetrisAccount;
 
-    function __construct(string $tetrisAccount, stdClass $token)
+    function __construct(string $tetrisAccount, stdClass $token, $selectFirstCustomer = true)
     {
         parent::__construct();
         $this->tetrisAccount = $tetrisAccount;
@@ -37,13 +37,15 @@ class Client extends AdWordsUser
             'client_secret' => self::$config['CLIENT_SECRET']
         ], (array)$token));
 
-        /**
-         * @var CustomerService $customerSvc
-         */
-        $customerSvc = $this->GetService('CustomerService');
-        $this->customer = $customerSvc->getCustomers()[0];
+        if ($selectFirstCustomer) {
+            /**
+             * @var CustomerService $customerSvc
+             */
+            $customerSvc = $this->GetService('CustomerService');
+            $this->customer = $customerSvc->getCustomers()[0];
 
-        $this->SetClientCustomerId($this->customer->customerId);
+            $this->SetClientCustomerId($this->customer->customerId);
+        }
     }
 
     /**
