@@ -211,6 +211,10 @@ abstract class AdwordsObjectParser
 
     static function readFieldsFromArrayIntoAdwordsObject(string $className, array $fields)
     {
+        if ($className === 'BiddingStrategy') {
+            $className = \SharedBiddingStrategy::class;
+        }
+
         $entity = new $className();
 
         foreach ($fields as $field => $value) {
