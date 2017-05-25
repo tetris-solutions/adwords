@@ -18,6 +18,12 @@ abstract class AdwordsObjectParser
     protected static $overrideType = [
         'AverageCpv' => 'Money'
     ];
+    protected static $overrideService = [
+        'SharedBiddingStrategyService' => 'BiddingStrategyService'
+    ];
+    protected static $overrideClassName = [
+        'BiddingStrategy' => 'SharedBiddingStrategy'
+    ];
 
     private static function cast($value)
     {
@@ -92,7 +98,13 @@ abstract class AdwordsObjectParser
     {
         $mapping = self::getMappings();
         $className = get_class($object);
+
         $guessedServiceName = $className . 'Service';
+
+        if (isset(self::$overrideService[$guessedServiceName])) {
+            $guessedServiceName = self::$overrideService[$guessedServiceName];
+        }
+
 
         if (isset($mapping[$guessedServiceName][$field])) {
             foreach ($mapping[$guessedServiceName][$field] as $path) {
@@ -211,9 +223,9 @@ abstract class AdwordsObjectParser
 
     static function readFieldsFromArrayIntoAdwordsObject(string $className, array $fields)
     {
-        if ($className === 'BiddingStrategy') {
-            $className = \SharedBiddingStrategy::class;
-        }
+        $className = isset(self::$overrideClassName[$className])
+            ? self::$overrideClassName[$className]
+            : $className;
 
         $entity = new $className();
 
