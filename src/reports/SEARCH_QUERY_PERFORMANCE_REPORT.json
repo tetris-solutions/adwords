@@ -19,7 +19,7 @@
     "Filterable": true,
     "SupportsZeroImpressions": false
   },
-  "AccountTimeZoneId": {
+  "AccountTimeZone": {
     "SpecialValue": false,
     "Percentage": false,
     "Type": "String",
@@ -623,7 +623,9 @@
       "SALESFORCE": "Salesforce.com",
       "STORE_SALES_CRM": "Store sales (data partner)",
       "STORE_SALES_PAYMENT_NETWORK": "Store sales (payment network)",
-      "GOOGLE_PLAY": "Google Play"
+      "GOOGLE_PLAY": "Google Play",
+      "THIRD_PARTY_APP_ANALYTICS": "Third-party app analytics",
+      "GOOGLE_ATTRIBUTION": "Google Attribution"
     },
     "IncompatibleFields": [
       "AverageCost",
@@ -634,7 +636,6 @@
       "AveragePosition",
       "Clicks",
       "Cost",
-      "CostPerConversion",
       "Ctr",
       "EngagementRate",
       "Engagements",
@@ -642,7 +643,6 @@
       "InteractionRate",
       "InteractionTypes",
       "Interactions",
-      "ValuePerConversion",
       "VideoQuartile100Rate",
       "VideoQuartile25Rate",
       "VideoQuartile50Rate",
@@ -792,16 +792,6 @@
     "DisplayName": "Month of Year",
     "XMLAttribute": "monthOfYear",
     "Behavior": "Segment",
-    "Filterable": true,
-    "SupportsZeroImpressions": false
-  },
-  "PrimaryCompanyName": {
-    "SpecialValue": false,
-    "Percentage": false,
-    "Type": "String",
-    "DisplayName": "Company name",
-    "XMLAttribute": "companyName",
-    "Behavior": "Attribute",
     "Filterable": true,
     "SupportsZeroImpressions": false
   },

@@ -187,6 +187,12 @@
       "YOUTUBE_SEARCH": "YouTube Search",
       "YOUTUBE_WATCH": "YouTube Videos"
     },
+    "IncompatibleFields": [
+      "HistoricalCreativeQualityScore",
+      "HistoricalLandingPageQualityScore",
+      "HistoricalQualityScore",
+      "HistoricalSearchPredictedCtr"
+    ],
     "Type": "AdNetworkType1",
     "DisplayName": "Network",
     "XMLAttribute": "network",
@@ -205,6 +211,12 @@
       "YOUTUBE_SEARCH": "YouTube Search",
       "YOUTUBE_WATCH": "YouTube Videos"
     },
+    "IncompatibleFields": [
+      "HistoricalCreativeQualityScore",
+      "HistoricalLandingPageQualityScore",
+      "HistoricalQualityScore",
+      "HistoricalSearchPredictedCtr"
+    ],
     "Type": "AdNetworkType2",
     "DisplayName": "Network (with search partners)",
     "XMLAttribute": "networkWithSearchPartners",
@@ -462,8 +474,6 @@
     "SpecialValue": false,
     "Percentage": false,
     "PredicateValues": {
-      "BUDGET_OPTIMIZER": "auto",
-      "CONVERSION_OPTIMIZER": "max/target cpa",
       "MANUAL_CPC": "cpc",
       "MANUAL_CPV": "cpv",
       "MANUAL_CPM": "cpm",
@@ -673,6 +683,10 @@
       "ClickAssistedConversionsOverLastClickConversions",
       "EngagementRate",
       "Engagements",
+      "HistoricalCreativeQualityScore",
+      "HistoricalLandingPageQualityScore",
+      "HistoricalQualityScore",
+      "HistoricalSearchPredictedCtr",
       "ImpressionAssistedConversionValue",
       "ImpressionAssistedConversions",
       "ImpressionAssistedConversionsOverLastClickConversions",
@@ -726,6 +740,10 @@
       "GmailForwards",
       "GmailSaves",
       "GmailSecondaryClicks",
+      "HistoricalCreativeQualityScore",
+      "HistoricalLandingPageQualityScore",
+      "HistoricalQualityScore",
+      "HistoricalSearchPredictedCtr",
       "ImpressionAssistedConversionValue",
       "ImpressionAssistedConversions",
       "ImpressionAssistedConversionsOverLastClickConversions",
@@ -802,6 +820,10 @@
       "GmailForwards",
       "GmailSaves",
       "GmailSecondaryClicks",
+      "HistoricalCreativeQualityScore",
+      "HistoricalLandingPageQualityScore",
+      "HistoricalQualityScore",
+      "HistoricalSearchPredictedCtr",
       "ImpressionAssistedConversionValue",
       "ImpressionAssistedConversions",
       "ImpressionAssistedConversionsOverLastClickConversions",
@@ -858,6 +880,10 @@
       "GmailForwards",
       "GmailSaves",
       "GmailSecondaryClicks",
+      "HistoricalCreativeQualityScore",
+      "HistoricalLandingPageQualityScore",
+      "HistoricalQualityScore",
+      "HistoricalSearchPredictedCtr",
       "ImpressionAssistedConversionValue",
       "ImpressionAssistedConversions",
       "ImpressionAssistedConversionsOverLastClickConversions",
@@ -982,7 +1008,7 @@
     "SpecialValue": false,
     "Percentage": false,
     "PredicateValues": {
-      "UNKNOWN": "Not applicable",
+      "UNKNOWN": "--",
       "BELOW_AVERAGE": "Below average",
       "AVERAGE": "Average",
       "ABOVE_AVERAGE": "Above average"
@@ -1118,6 +1144,10 @@
       "ClickAssistedConversionValue",
       "ClickAssistedConversions",
       "ClickAssistedConversionsOverLastClickConversions",
+      "HistoricalCreativeQualityScore",
+      "HistoricalLandingPageQualityScore",
+      "HistoricalQualityScore",
+      "HistoricalSearchPredictedCtr",
       "ImpressionAssistedConversionValue",
       "ImpressionAssistedConversions",
       "ImpressionAssistedConversionsOverLastClickConversions",
@@ -1224,7 +1254,8 @@
       "STORE_SALES_CRM": "Store sales (data partner)",
       "STORE_SALES_PAYMENT_NETWORK": "Store sales (payment network)",
       "GOOGLE_PLAY": "Google Play",
-      "THIRD_PARTY_APP_ANALYTICS": "Third-party app analytics"
+      "THIRD_PARTY_APP_ANALYTICS": "Third-party app analytics",
+      "GOOGLE_ATTRIBUTION": "Google Attribution"
     },
     "IncompatibleFields": [
       "ActiveViewCpm",
@@ -1254,6 +1285,10 @@
       "GmailForwards",
       "GmailSaves",
       "GmailSecondaryClicks",
+      "HistoricalCreativeQualityScore",
+      "HistoricalLandingPageQualityScore",
+      "HistoricalQualityScore",
+      "HistoricalSearchPredictedCtr",
       "ImpressionAssistedConversionValue",
       "ImpressionAssistedConversions",
       "ImpressionAssistedConversionsOverLastClickConversions",
@@ -1398,6 +1433,108 @@
     "DisplayName": "Has Quality Score",
     "XMLAttribute": "hasQualityScore",
     "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "HistoricalCreativeQualityScore": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "--",
+      "BELOW_AVERAGE": "Below average",
+      "AVERAGE": "Average",
+      "ABOVE_AVERAGE": "Above average"
+    },
+    "IncompatibleFields": [
+      "AdNetworkType1",
+      "AdNetworkType2",
+      "ClickType",
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "Device",
+      "ExternalConversionSource",
+      "Slot"
+    ],
+    "Type": "QualityScoreBucket",
+    "DisplayName": "Ad relevance (hist.)",
+    "XMLAttribute": "adRelevanceHist",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "HistoricalLandingPageQualityScore": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "--",
+      "BELOW_AVERAGE": "Below average",
+      "AVERAGE": "Average",
+      "ABOVE_AVERAGE": "Above average"
+    },
+    "IncompatibleFields": [
+      "AdNetworkType1",
+      "AdNetworkType2",
+      "ClickType",
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "Device",
+      "ExternalConversionSource",
+      "Slot"
+    ],
+    "Type": "QualityScoreBucket",
+    "DisplayName": "Landing page experience (hist.)",
+    "XMLAttribute": "landingPageExperienceHist",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "HistoricalQualityScore": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "AdNetworkType1",
+      "AdNetworkType2",
+      "ClickType",
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "Device",
+      "ExternalConversionSource",
+      "Slot"
+    ],
+    "Type": "Integer",
+    "DisplayName": "Qual. score (hist.)",
+    "XMLAttribute": "qualScoreHist",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "HistoricalSearchPredictedCtr": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "--",
+      "BELOW_AVERAGE": "Below average",
+      "AVERAGE": "Average",
+      "ABOVE_AVERAGE": "Above average"
+    },
+    "IncompatibleFields": [
+      "AdNetworkType1",
+      "AdNetworkType2",
+      "ClickType",
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "Device",
+      "ExternalConversionSource",
+      "Slot"
+    ],
+    "Type": "QualityScoreBucket",
+    "DisplayName": "Expected clickthrough rate (hist.)",
+    "XMLAttribute": "expectedClickthroughRateHist",
+    "Behavior": "Metric",
     "Filterable": true,
     "SupportsZeroImpressions": true
   },
@@ -1638,7 +1775,7 @@
     "SpecialValue": false,
     "Percentage": false,
     "PredicateValues": {
-      "UNKNOWN": "Not applicable",
+      "UNKNOWN": "--",
       "BELOW_AVERAGE": "Below average",
       "AVERAGE": "Average",
       "ABOVE_AVERAGE": "Above average"
@@ -1646,16 +1783,6 @@
     "Type": "QualityScoreBucket",
     "DisplayName": "Landing page experience",
     "XMLAttribute": "landingPageExperience",
-    "Behavior": "Attribute",
-    "Filterable": true,
-    "SupportsZeroImpressions": true
-  },
-  "PrimaryCompanyName": {
-    "SpecialValue": false,
-    "Percentage": false,
-    "Type": "String",
-    "DisplayName": "Company name",
-    "XMLAttribute": "companyName",
     "Behavior": "Attribute",
     "Filterable": true,
     "SupportsZeroImpressions": true
@@ -1720,7 +1847,7 @@
     "SpecialValue": false,
     "Percentage": false,
     "PredicateValues": {
-      "UNKNOWN": "Not applicable",
+      "UNKNOWN": "--",
       "BELOW_AVERAGE": "Below average",
       "AVERAGE": "Average",
       "ABOVE_AVERAGE": "Above average"
@@ -1774,6 +1901,10 @@
       "ClickAssistedConversionsOverLastClickConversions",
       "CostPerAllConversion",
       "CrossDeviceConversions",
+      "HistoricalCreativeQualityScore",
+      "HistoricalLandingPageQualityScore",
+      "HistoricalQualityScore",
+      "HistoricalSearchPredictedCtr",
       "ImpressionAssistedConversionValue",
       "ImpressionAssistedConversions",
       "ImpressionAssistedConversionsOverLastClickConversions",

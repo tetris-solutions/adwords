@@ -34,21 +34,6 @@
     ]
   },
   "AdGroupAdService": {
-    "AdGroupAdDisapprovalReasons": [
-      [
-        "disapprovalReasons"
-      ]
-    ],
-    "AdGroupAdTrademarkDisapproved": [
-      [
-        "trademarkDisapproved"
-      ]
-    ],
-    "AdGroupCreativeApprovalStatus": [
-      [
-        "approvalStatus"
-      ]
-    ],
     "AdGroupId": [
       [
         "adGroupId"
@@ -523,11 +508,6 @@
         "originAdId"
       ]
     ],
-    "Trademarks": [
-      [
-        "trademarks"
-      ]
-    ],
     "UniqueName": [
       [
         "ad",
@@ -671,13 +651,6 @@
     "BidModifier": [
       [
         "bidModifier"
-      ]
-    ],
-    "BidType": [
-      [
-        "biddingStrategyConfiguration",
-        "biddingScheme",
-        "bidType"
       ]
     ],
     "BiddingStrategyId": [
@@ -1080,13 +1053,6 @@
         "baseCampaignId"
       ]
     ],
-    "BidType": [
-      [
-        "biddingStrategyConfiguration",
-        "biddingScheme",
-        "bidType"
-      ]
-    ],
     "BiddingStrategyId": [
       [
         "biddingStrategyConfiguration",
@@ -1191,6 +1157,12 @@
         "biddingStrategyConfiguration",
         "bids",
         "bidSource"
+      ]
+    ],
+    "TargetRoasOverride": [
+      [
+        "biddingStrategyConfiguration",
+        "targetRoasOverride"
       ]
     ],
     "TargetSpendEnhancedCpcEnabled": [
@@ -1535,6 +1507,33 @@
     "IsBudgetExplicitlyShared": [
       [
         "isExplicitlyShared"
+      ]
+    ]
+  },
+  "CampaignBidModifierService": {
+    "AdvertisingChannelType": [
+      [
+        "advertisingChannelType"
+      ]
+    ],
+    "BidModifier": [
+      [
+        "bidModifier"
+      ]
+    ],
+    "CampaignId": [
+      [
+        "campaignId"
+      ]
+    ],
+    "CampaignName": [
+      [
+        "campaignName"
+      ]
+    ],
+    "Criterion": [
+      [
+        "criterion"
       ]
     ]
   },
@@ -1963,6 +1962,95 @@
       ]
     ]
   },
+  "CampaignGroupPerformanceTargetService": {
+    "CampaignGroupId": [
+      [
+        "campaignGroupId"
+      ]
+    ],
+    "EfficiencyTargetType": [
+      [
+        "performanceTarget",
+        "efficiencyTargetType"
+      ]
+    ],
+    "EfficiencyTargetValue": [
+      [
+        "performanceTarget",
+        "efficiencyTargetValue"
+      ]
+    ],
+    "EndDate": [
+      [
+        "performanceTarget",
+        "endDate"
+      ]
+    ],
+    "ForecastStatus": [
+      [
+        "performanceTarget",
+        "forecastStatus"
+      ]
+    ],
+    "HasPromotedSuggestions": [
+      [
+        "performanceTarget",
+        "hasPromotedSuggestions"
+      ]
+    ],
+    "Id": [
+      [
+        "id"
+      ]
+    ],
+    "SpendTarget": [
+      [
+        "performanceTarget",
+        "spendTarget"
+      ]
+    ],
+    "SpendTargetType": [
+      [
+        "performanceTarget",
+        "spendTargetType"
+      ]
+    ],
+    "StartDate": [
+      [
+        "performanceTarget",
+        "startDate"
+      ]
+    ],
+    "VolumeGoalType": [
+      [
+        "performanceTarget",
+        "volumeGoalType"
+      ]
+    ],
+    "VolumeTargetValue": [
+      [
+        "performanceTarget",
+        "volumeTargetValue"
+      ]
+    ]
+  },
+  "CampaignGroupService": {
+    "Id": [
+      [
+        "id"
+      ]
+    ],
+    "Name": [
+      [
+        "name"
+      ]
+    ],
+    "Status": [
+      [
+        "status"
+      ]
+    ]
+  },
   "CampaignService": {
     "AdServingOptimizationStatus": [
       [
@@ -1988,20 +2076,6 @@
     "BaseCampaignId": [
       [
         "baseCampaignId"
-      ]
-    ],
-    "BidCeiling": [
-      [
-        "biddingStrategyConfiguration",
-        "biddingScheme",
-        "bidCeiling"
-      ]
-    ],
-    "BidType": [
-      [
-        "biddingStrategyConfiguration",
-        "biddingScheme",
-        "bidType"
       ]
     ],
     "BiddingStrategyId": [
@@ -2044,6 +2118,11 @@
       [
         "budget",
         "status"
+      ]
+    ],
+    "CampaignGroupId": [
+      [
+        "campaignGroupId"
       ]
     ],
     "CampaignTrialType": [
@@ -2106,13 +2185,6 @@
     "Name": [
       [
         "name"
-      ]
-    ],
-    "PricingMode": [
-      [
-        "biddingStrategyConfiguration",
-        "biddingScheme",
-        "pricingMode"
       ]
     ],
     "RejectionReasons": [

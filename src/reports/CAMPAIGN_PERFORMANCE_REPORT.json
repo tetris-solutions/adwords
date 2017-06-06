@@ -459,8 +459,6 @@
     "SpecialValue": false,
     "Percentage": false,
     "PredicateValues": {
-      "BUDGET_OPTIMIZER": "auto",
-      "CONVERSION_OPTIMIZER": "max/target cpa",
       "MANUAL_CPC": "cpc",
       "MANUAL_CPV": "cpv",
       "MANUAL_CPM": "cpm",
@@ -529,6 +527,16 @@
     "Type": "Double",
     "DisplayName": "Desktop bid adj.",
     "XMLAttribute": "desktopBidAdj",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "CampaignGroupId": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Long",
+    "DisplayName": "Campaign Group ID",
+    "XMLAttribute": "campaignGroupID",
     "Behavior": "Attribute",
     "Filterable": true,
     "SupportsZeroImpressions": true
@@ -1322,7 +1330,8 @@
       "STORE_SALES_CRM": "Store sales (data partner)",
       "STORE_SALES_PAYMENT_NETWORK": "Store sales (payment network)",
       "GOOGLE_PLAY": "Google Play",
-      "THIRD_PARTY_APP_ANALYTICS": "Third-party app analytics"
+      "THIRD_PARTY_APP_ANALYTICS": "Third-party app analytics",
+      "GOOGLE_ATTRIBUTION": "Google Attribution"
     },
     "IncompatibleFields": [
       "ActiveViewCpm",
@@ -1814,16 +1823,6 @@
     "XMLAttribute": "budgetPeriod",
     "Behavior": "Attribute",
     "Filterable": false,
-    "SupportsZeroImpressions": true
-  },
-  "PrimaryCompanyName": {
-    "SpecialValue": false,
-    "Percentage": false,
-    "Type": "String",
-    "DisplayName": "Company name",
-    "XMLAttribute": "companyName",
-    "Behavior": "Attribute",
-    "Filterable": true,
     "SupportsZeroImpressions": true
   },
   "Quarter": {

@@ -213,6 +213,7 @@
     "PredicateValues": {
       "UNKNOWN": "Unknown",
       "SEARCH_STANDARD": "Standard",
+      "SEARCH_DYNAMIC_ADS": "Search Dynamic Ads",
       "DISPLAY_STANDARD": "Display",
       "SHOPPING_PRODUCT_ADS": "Shopping - Product",
       "SHOPPING_SHOWCASE_ADS": "Shopping - Showcase"
@@ -498,8 +499,6 @@
     "SpecialValue": false,
     "Percentage": false,
     "PredicateValues": {
-      "BUDGET_OPTIMIZER": "auto",
-      "CONVERSION_OPTIMIZER": "max/target cpa",
       "MANUAL_CPC": "cpc",
       "MANUAL_CPV": "cpv",
       "MANUAL_CPM": "cpm",
@@ -1212,6 +1211,32 @@
     "Filterable": true,
     "SupportsZeroImpressions": true
   },
+  "EffectiveTargetRoas": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Double",
+    "DisplayName": "Target ROAS",
+    "XMLAttribute": "targetROAS",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "EffectiveTargetRoasSource": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "BIDDING_SOURCE_UNKNOWN",
+      "ADGROUP": "ad group",
+      "ADGROUP_BIDDING_STRATEGY": "ad group bidding strategy",
+      "CAMPAIGN_BIDDING_STRATEGY": "campaign bidding strategy"
+    },
+    "Type": "BiddingSource",
+    "DisplayName": "Target ROAS Source",
+    "XMLAttribute": "targetROASSource",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
   "EngagementRate": {
     "SpecialValue": false,
     "Percentage": true,
@@ -1300,7 +1325,8 @@
       "STORE_SALES_CRM": "Store sales (data partner)",
       "STORE_SALES_PAYMENT_NETWORK": "Store sales (payment network)",
       "GOOGLE_PLAY": "Google Play",
-      "THIRD_PARTY_APP_ANALYTICS": "Third-party app analytics"
+      "THIRD_PARTY_APP_ANALYTICS": "Third-party app analytics",
+      "GOOGLE_ATTRIBUTION": "Google Attribution"
     },
     "IncompatibleFields": [
       "ActiveViewCpm",
@@ -1698,16 +1724,6 @@
     "DisplayName": "% new sessions",
     "XMLAttribute": "newSessions",
     "Behavior": "Metric",
-    "Filterable": true,
-    "SupportsZeroImpressions": true
-  },
-  "PrimaryCompanyName": {
-    "SpecialValue": false,
-    "Percentage": false,
-    "Type": "String",
-    "DisplayName": "Company name",
-    "XMLAttribute": "companyName",
-    "Behavior": "Attribute",
     "Filterable": true,
     "SupportsZeroImpressions": true
   },

@@ -141,26 +141,6 @@
     "Filterable": true,
     "SupportsZeroImpressions": true
   },
-  "AdGroupAdDisapprovalReasons": {
-    "SpecialValue": false,
-    "Percentage": false,
-    "Type": "List",
-    "DisplayName": "Disapproval reasons",
-    "XMLAttribute": "disapprovalReasons",
-    "Behavior": "Attribute",
-    "Filterable": true,
-    "SupportsZeroImpressions": true
-  },
-  "AdGroupAdTrademarkDisapproved": {
-    "SpecialValue": false,
-    "Percentage": false,
-    "Type": "Boolean",
-    "DisplayName": "Trademark Disapproved",
-    "XMLAttribute": "trademarkDisapproved",
-    "Behavior": "Attribute",
-    "Filterable": false,
-    "SupportsZeroImpressions": true
-  },
   "AdGroupId": {
     "SpecialValue": false,
     "Percentage": false,
@@ -680,8 +660,8 @@
       "SITE_SUSPENDED": "Site suspended"
     },
     "Type": "PolicyApprovalStatus",
-    "DisplayName": "Policy approval status",
-    "XMLAttribute": "policyApprovalStatus",
+    "DisplayName": "Approval status",
+    "XMLAttribute": "approvalStatus",
     "Behavior": "Attribute",
     "Filterable": true,
     "SupportsZeroImpressions": true
@@ -921,24 +901,6 @@
     "DisplayName": "Cost / conv. (current model)",
     "XMLAttribute": "costConvCurrentModel",
     "Behavior": "Metric",
-    "Filterable": true,
-    "SupportsZeroImpressions": true
-  },
-  "CreativeApprovalStatus": {
-    "SpecialValue": false,
-    "Percentage": false,
-    "PredicateValues": {
-      "APPROVED": "approved",
-      "FAMILY_SAFE": "approved",
-      "NON_FAMILY_SAFE": "approved (non family)",
-      "PORN": "approved (adult)",
-      "UNCHECKED": "pending review",
-      "DISAPPROVED": "disapproved"
-    },
-    "Type": "ApprovalStatus",
-    "DisplayName": "Ad Approval Status",
-    "XMLAttribute": "adApprovalStatus",
-    "Behavior": "Attribute",
     "Filterable": true,
     "SupportsZeroImpressions": true
   },
@@ -1301,7 +1263,8 @@
       "STORE_SALES_CRM": "Store sales (data partner)",
       "STORE_SALES_PAYMENT_NETWORK": "Store sales (payment network)",
       "GOOGLE_PLAY": "Google Play",
-      "THIRD_PARTY_APP_ANALYTICS": "Third-party app analytics"
+      "THIRD_PARTY_APP_ANALYTICS": "Third-party app analytics",
+      "GOOGLE_ATTRIBUTION": "Google Attribution"
     },
     "IncompatibleFields": [
       "ActiveViewCpm",
@@ -1749,16 +1712,6 @@
     "Filterable": false,
     "SupportsZeroImpressions": true
   },
-  "PrimaryCompanyName": {
-    "SpecialValue": false,
-    "Percentage": false,
-    "Type": "String",
-    "DisplayName": "Company name",
-    "XMLAttribute": "companyName",
-    "Behavior": "Attribute",
-    "Filterable": true,
-    "SupportsZeroImpressions": true
-  },
   "Quarter": {
     "SpecialValue": false,
     "Percentage": false,
@@ -1829,16 +1782,6 @@
     "XMLAttribute": "adState",
     "Behavior": "Attribute",
     "Filterable": true,
-    "SupportsZeroImpressions": true
-  },
-  "Trademarks": {
-    "SpecialValue": false,
-    "Percentage": false,
-    "Type": "List",
-    "DisplayName": "Trademarks",
-    "XMLAttribute": "trademarks",
-    "Behavior": "Attribute",
-    "Filterable": false,
     "SupportsZeroImpressions": true
   },
   "ValuePerAllConversion": {

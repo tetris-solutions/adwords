@@ -8,16 +8,17 @@
 </head>
 
 <body>
-<table class="function param bad-table responsive">
+<table class="function param bad-table responsive" id="main-table">
     <thead>
     <tr>
         <th colspan="2">SEARCH_QUERY_PERFORMANCE_REPORT</th>
     </tr>
     </thead>
-    <tbody>
+    <tbody class="list">
     <tr>
-        <td>
-            <h3 id="accountcurrencycode"><code>AccountCurrencyCode</code></h3></td>
+        <td class="name">
+            <h3 id="accountcurrencycode"><code>AccountCurrencyCode</code></h3>
+        </td>
         <td>
             <p>The currency of the Customer account.</p>
             <div class="devsite-table-wrapper">
@@ -28,11 +29,11 @@
                         <td><code><span>String</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Currency</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>currency</span></code></td>
                     </tr>
                     <tr>
@@ -50,11 +51,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="accountdescriptivename"><code>AccountDescriptiveName</code></h3></td>
+        <td class="name">
+            <h3 id="accountdescriptivename"><code>AccountDescriptiveName</code></h3>
+        </td>
         <td>
             <p>The descriptive name of the Customer account.</p>
             <div class="devsite-table-wrapper">
@@ -65,11 +69,11 @@
                         <td><code><span>String</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Account</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>account</span></code></td>
                     </tr>
                     <tr>
@@ -87,11 +91,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="accounttimezone"><code>AccountTimeZone</code></h3></td>
+        <td class="name">
+            <h3 id="accounttimezone"><code>AccountTimeZone</code></h3>
+        </td>
         <td>
             <p>Name of the timezone selected for the Customer account. For example: "(GMT-05:00) Eastern Time". This
                 field does not reflect the current state of daylight saving time for the timezone.</p>
@@ -103,11 +110,11 @@
                         <td><code><span>String</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Time zone</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>timeZone</span></code></td>
                     </tr>
                     <tr>
@@ -125,11 +132,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="adformat"><code>AdFormat</code></h3></td>
+        <td class="name">
+            <h3 id="adformat"><code>AdFormat</code></h3>
+        </td>
         <td>
             <p>The underlying media format of the ad. Values can be one of the <b>formats</b> on the <a
                     href="https://developers.google.com/adwords/api/docs/appendix/templateads">Template Ads</a> page, or
@@ -144,11 +154,11 @@
                         <td><code><span>AdFormat</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Ad type</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>adType</span></code></td>
                     </tr>
                     <tr>
@@ -175,38 +185,47 @@
                             <td><code><span>UNKNOWN</span></code></td>
                             <td>unknown</td>
                         </tr>
+
                         <tr>
                             <td><code><span>TEXT</span></code></td>
                             <td>text</td>
                         </tr>
+
                         <tr>
                             <td><code><span>IMAGE</span></code></td>
                             <td>image</td>
                         </tr>
+
                         <tr>
                             <td><code><span>DYNAMIC_IMAGE</span></code></td>
                             <td>dynamic_image</td>
                         </tr>
+
                         <tr>
                             <td><code><span>FLASH</span></code></td>
                             <td>flash</td>
                         </tr>
+
                         <tr>
                             <td><code><span>VIDEO</span></code></td>
                             <td>video</td>
                         </tr>
+
                         <tr>
                             <td><code><span>HTML</span></code></td>
                             <td>html</td>
                         </tr>
+
                         <tr>
                             <td><code><span>AUDIO</span></code></td>
                             <td>audio</td>
                         </tr>
+
                         <tr>
                             <td><code><span>COMPOSITE</span></code></td>
                             <td>composite</td>
                         </tr>
+
                         <tr>
                             <td><code><span>PRINT</span></code></td>
                             <td>print</td>
@@ -215,11 +234,13 @@
                     </table>
                 </div>
             </div>
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="adgroupid"><code>AdGroupId</code></h3></td>
+        <td class="name">
+            <h3 id="adgroupid"><code>AdGroupId</code></h3>
+        </td>
         <td>
             <p>The ID of the AdGroup.</p>
             <div class="devsite-table-wrapper">
@@ -230,11 +251,11 @@
                         <td><code><span>Long</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Ad group ID</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>adGroupID</span></code></td>
                     </tr>
                     <tr>
@@ -252,11 +273,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="adgroupname"><code>AdGroupName</code></h3></td>
+        <td class="name">
+            <h3 id="adgroupname"><code>AdGroupName</code></h3>
+        </td>
         <td>
             <p>The name of the AdGroup.</p>
             <div class="devsite-table-wrapper">
@@ -267,11 +291,11 @@
                         <td><code><span>String</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Ad group</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>adGroup</span></code></td>
                     </tr>
                     <tr>
@@ -289,11 +313,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="adgroupstatus"><code>AdGroupStatus</code></h3></td>
+        <td class="name">
+            <h3 id="adgroupstatus"><code>AdGroupStatus</code></h3>
+        </td>
         <td>
             <p>Status of the ad group.</p>
             <div class="devsite-table-wrapper">
@@ -304,11 +331,11 @@
                         <td><code><span>AdGroupStatus</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Ad group state</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>adGroupState</span></code></td>
                     </tr>
                     <tr>
@@ -335,14 +362,17 @@
                             <td><code><span>UNKNOWN</span></code></td>
                             <td>unknown</td>
                         </tr>
+
                         <tr>
                             <td><code><span>ENABLED</span></code></td>
                             <td>enabled</td>
                         </tr>
+
                         <tr>
                             <td><code><span>PAUSED</span></code></td>
                             <td>paused</td>
                         </tr>
+
                         <tr>
                             <td><code><span>REMOVED</span></code></td>
                             <td>removed</td>
@@ -351,11 +381,13 @@
                     </table>
                 </div>
             </div>
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="adnetworktype1"><code>AdNetworkType1</code></h3></td>
+        <td class="name">
+            <h3 id="adnetworktype1"><code>AdNetworkType1</code></h3>
+        </td>
         <td>
             <p>First level network type.</p>
             <div class="devsite-table-wrapper">
@@ -366,11 +398,11 @@
                         <td><code><span>AdNetworkType1</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Network</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>network</span></code></td>
                     </tr>
                     <tr>
@@ -397,18 +429,22 @@
                             <td><code><span>UNKNOWN</span></code></td>
                             <td>unknown</td>
                         </tr>
+
                         <tr>
                             <td><code><span>SEARCH</span></code></td>
                             <td>Search Network</td>
                         </tr>
+
                         <tr>
                             <td><code><span>CONTENT</span></code></td>
                             <td>Display Network</td>
                         </tr>
+
                         <tr>
                             <td><code><span>YOUTUBE_SEARCH</span></code></td>
                             <td>YouTube Search</td>
                         </tr>
+
                         <tr>
                             <td><code><span>YOUTUBE_WATCH</span></code></td>
                             <td>YouTube Videos</td>
@@ -417,11 +453,13 @@
                     </table>
                 </div>
             </div>
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="adnetworktype2"><code>AdNetworkType2</code></h3></td>
+        <td class="name">
+            <h3 id="adnetworktype2"><code>AdNetworkType2</code></h3>
+        </td>
         <td>
             <p>Second level network type (includes search partners).</p>
             <div class="devsite-table-wrapper">
@@ -432,11 +470,11 @@
                         <td><code><span>AdNetworkType2</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Network (with search partners)</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>networkWithSearchPartners</span></code></td>
                     </tr>
                     <tr>
@@ -463,22 +501,27 @@
                             <td><code><span>UNKNOWN</span></code></td>
                             <td>unknown</td>
                         </tr>
+
                         <tr>
                             <td><code><span>SEARCH</span></code></td>
                             <td>Google search</td>
                         </tr>
+
                         <tr>
                             <td><code><span>SEARCH_PARTNERS</span></code></td>
                             <td>Search partners</td>
                         </tr>
+
                         <tr>
                             <td><code><span>CONTENT</span></code></td>
                             <td>Display Network</td>
                         </tr>
+
                         <tr>
                             <td><code><span>YOUTUBE_SEARCH</span></code></td>
                             <td>YouTube Search</td>
                         </tr>
+
                         <tr>
                             <td><code><span>YOUTUBE_WATCH</span></code></td>
                             <td>YouTube Videos</td>
@@ -487,11 +530,13 @@
                     </table>
                 </div>
             </div>
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="allconversionrate"><code>AllConversionRate</code></h3></td>
+        <td class="name">
+            <h3 id="allconversionrate"><code>AllConversionRate</code></h3>
+        </td>
         <td>
             <p>AllConversions divided by total clicks that can be conversion-tracked. This is how often a click on your
                 ad resulted in a conversion. Percentage returned as "x.xx%".
@@ -508,11 +553,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>All conv. rate</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>allConvRate</span></code></td>
                     </tr>
                     <tr>
@@ -530,11 +575,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="allconversions"><code>AllConversions</code></h3></td>
+        <td class="name">
+            <h3 id="allconversions"><code>AllConversions</code></h3>
+        </td>
         <td>
             <p>Best estimate of the total number of conversions that AdWords drives. Includes website, cross-device, and
                 phone call conversions. This field is formatted with dot (".") for decimal separator, precision of two
@@ -552,11 +600,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>All conv.</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>allConv</span></code></td>
                     </tr>
                     <tr>
@@ -574,11 +622,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="allconversionvalue"><code>AllConversionValue</code></h3></td>
+        <td class="name">
+            <h3 id="allconversionvalue"><code>AllConversionValue</code></h3>
+        </td>
         <td>
             <p>The total value of all of your conversions, including those that are estimated. This field is formatted
                 with dot (".") for decimal separator, precision of two decimal positions and no thousands separator
@@ -596,11 +647,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>All conv. value</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>allConvValue</span></code></td>
                     </tr>
                     <tr>
@@ -618,11 +669,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="averagecost"><code>AverageCost</code></h3></td>
+        <td class="name">
+            <h3 id="averagecost"><code>AverageCost</code></h3>
+        </td>
         <td>
             <p>The average amount you pay per interaction. This amount is the total cost of your ads divided by the
                 total number of interactions.</p>
@@ -634,11 +688,11 @@
                         <td><code><span>Money</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Avg. Cost</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>avgCost</span></code></td>
                     </tr>
                     <tr>
@@ -656,8 +710,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -666,8 +722,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="averagecpc"><code>AverageCpc</code></h3></td>
+        <td class="name">
+            <h3 id="averagecpc"><code>AverageCpc</code></h3>
+        </td>
         <td>
             <p>The total cost of all clicks divided by the total number of clicks received.</p>
             <div class="devsite-table-wrapper">
@@ -678,11 +735,11 @@
                         <td><code><span>Money</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Avg. CPC</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>avgCPC</span></code></td>
                     </tr>
                     <tr>
@@ -700,8 +757,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -710,10 +769,11 @@
         </td>
     </tr>
     <tr>
+        <td class="name">
+            <h3 id="averagecpe"><code>AverageCpe</code></h3>
+        </td>
         <td>
-            <h3 id="averagecpe"><code>AverageCpe</code></h3></td>
-        <td>
-            <p>The average amount that you’ve been charged for an ad engagement. This amount is the total cost of all ad
+            <p>The average amount that you've been charged for an ad engagement. This amount is the total cost of all ad
                 engagements divided by the total number of ad engagements.
                 To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
                 with the following operators in predicates: <code>LESS_THAN</code> or <code>GREATER_THAN</code>. This is
@@ -728,11 +788,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Avg. CPE</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>avgCPE</span></code></td>
                     </tr>
                     <tr>
@@ -750,8 +810,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -760,8 +822,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="averagecpm"><code>AverageCpm</code></h3></td>
+        <td class="name">
+            <h3 id="averagecpm"><code>AverageCpm</code></h3>
+        </td>
         <td>
             <p>Average Cost-per-thousand impressions (CPM).</p>
             <div class="devsite-table-wrapper">
@@ -772,11 +835,11 @@
                         <td><code><span>Money</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Avg. CPM</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>avgCPM</span></code></td>
                     </tr>
                     <tr>
@@ -794,8 +857,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -804,8 +869,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="averagecpv"><code>AverageCpv</code></h3></td>
+        <td class="name">
+            <h3 id="averagecpv"><code>AverageCpv</code></h3>
+        </td>
         <td>
             <p>The average amount you pay each time someone views your ad. The average CPV is defined by the total cost
                 of all ad views divided by the number of views.
@@ -822,11 +888,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Avg. CPV</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>avgCPV</span></code></td>
                     </tr>
                     <tr>
@@ -844,8 +910,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -854,8 +922,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="averageposition"><code>AveragePosition</code></h3></td>
+        <td class="name">
+            <h3 id="averageposition"><code>AveragePosition</code></h3>
+        </td>
         <td>
             <p>Your ad's position relative to those of other advertisers.
                 To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
@@ -871,11 +940,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Avg. position</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>avgPosition</span></code></td>
                     </tr>
                     <tr>
@@ -893,8 +962,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -903,8 +974,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="campaignid"><code>CampaignId</code></h3></td>
+        <td class="name">
+            <h3 id="campaignid"><code>CampaignId</code></h3>
+        </td>
         <td>
             <p>The ID of the Campaign.</p>
             <div class="devsite-table-wrapper">
@@ -915,11 +987,11 @@
                         <td><code><span>Long</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Campaign ID</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>campaignID</span></code></td>
                     </tr>
                     <tr>
@@ -937,11 +1009,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="campaignname"><code>CampaignName</code></h3></td>
+        <td class="name">
+            <h3 id="campaignname"><code>CampaignName</code></h3>
+        </td>
         <td>
             <p>The name of the Campaign.</p>
             <div class="devsite-table-wrapper">
@@ -952,11 +1027,11 @@
                         <td><code><span>String</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Campaign</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>campaign</span></code></td>
                     </tr>
                     <tr>
@@ -974,11 +1049,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="campaignstatus"><code>CampaignStatus</code></h3></td>
+        <td class="name">
+            <h3 id="campaignstatus"><code>CampaignStatus</code></h3>
+        </td>
         <td>
             <p>The status of the Campaign.</p>
             <div class="devsite-table-wrapper">
@@ -989,11 +1067,11 @@
                         <td><code><span>CampaignStatus</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Campaign state</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>campaignState</span></code></td>
                     </tr>
                     <tr>
@@ -1020,14 +1098,17 @@
                             <td><code><span>UNKNOWN</span></code></td>
                             <td>unknown</td>
                         </tr>
+
                         <tr>
                             <td><code><span>ENABLED</span></code></td>
                             <td>enabled</td>
                         </tr>
+
                         <tr>
                             <td><code><span>PAUSED</span></code></td>
                             <td>paused</td>
                         </tr>
+
                         <tr>
                             <td><code><span>REMOVED</span></code></td>
                             <td>removed</td>
@@ -1036,11 +1117,13 @@
                     </table>
                 </div>
             </div>
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="clicks"><code>Clicks</code></h3></td>
+        <td class="name">
+            <h3 id="clicks"><code>Clicks</code></h3>
+        </td>
         <td>
             <p>The number of clicks.</p>
             <div class="devsite-table-wrapper">
@@ -1051,11 +1134,11 @@
                         <td><code><span>Long</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Clicks</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>clicks</span></code></td>
                     </tr>
                     <tr>
@@ -1073,8 +1156,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -1083,8 +1168,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="conversioncategoryname"><code>ConversionCategoryName</code></h3></td>
+        <td class="name">
+            <h3 id="conversioncategoryname"><code>ConversionCategoryName</code></h3>
+        </td>
         <td>
             <p>A category that describes the action the user will take to complete a conversion. Prevents
                 zero-conversion rows from being returned. Values: "Download", "Lead", "Purchase/Sale", "Signup", "View
@@ -1097,11 +1183,11 @@
                         <td><code><span>String</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Conversion category</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>conversionCategory</span></code></td>
                     </tr>
                     <tr>
@@ -1119,8 +1205,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>AverageCost</code></div>
                 <div><code>AverageCpc</code></div>
                 <div><code>AverageCpe</code></div>
@@ -1146,8 +1234,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="conversionrate"><code>ConversionRate</code></h3></td>
+        <td class="name">
+            <h3 id="conversionrate"><code>ConversionRate</code></h3>
+        </td>
         <td>
             <p>The number of conversions divided by total clicks that can be tracked to conversions. Percentage returned
                 as "x.xx%".
@@ -1164,11 +1253,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Conv. rate</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>convRate</span></code></td>
                     </tr>
                     <tr>
@@ -1186,11 +1275,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="conversions"><code>Conversions</code></h3></td>
+        <td class="name">
+            <h3 id="conversions"><code>Conversions</code></h3>
+        </td>
         <td>
             <p>The number of conversions for all conversion actions that you have opted into optimization. This field is
                 formatted with dot (".") for decimal separator, precision of two decimal positions and no thousands
@@ -1208,11 +1300,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Conversions</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>conversions</span></code></td>
                     </tr>
                     <tr>
@@ -1230,11 +1322,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="conversiontrackerid"><code>ConversionTrackerId</code></h3></td>
+        <td class="name">
+            <h3 id="conversiontrackerid"><code>ConversionTrackerId</code></h3>
+        </td>
         <td>
             <p>ID of the conversion tracker.</p>
             <div class="devsite-table-wrapper">
@@ -1245,11 +1340,11 @@
                         <td><code><span>Long</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Conversion Tracker Id</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>conversionTrackerId</span></code></td>
                     </tr>
                     <tr>
@@ -1267,8 +1362,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>AverageCost</code></div>
                 <div><code>AverageCpc</code></div>
                 <div><code>AverageCpe</code></div>
@@ -1294,8 +1391,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="conversiontypename"><code>ConversionTypeName</code></h3></td>
+        <td class="name">
+            <h3 id="conversiontypename"><code>ConversionTypeName</code></h3>
+        </td>
         <td>
             <p>The name of the conversion type. Prevents zero-conversion rows from being returned.</p>
             <div class="devsite-table-wrapper">
@@ -1306,11 +1404,11 @@
                         <td><code><span>String</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Conversion name</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>conversionName</span></code></td>
                     </tr>
                     <tr>
@@ -1328,8 +1426,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>AverageCost</code></div>
                 <div><code>AverageCpc</code></div>
                 <div><code>AverageCpe</code></div>
@@ -1355,8 +1455,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="conversionvalue"><code>ConversionValue</code></h3></td>
+        <td class="name">
+            <h3 id="conversionvalue"><code>ConversionValue</code></h3>
+        </td>
         <td>
             <p>The sum of conversion values for all conversions. This field is formatted with dot (".") for decimal
                 separator, precision of two decimal positions and no thousands separator (e.g. 1000000.00).
@@ -1373,11 +1474,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Total conv. value</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>totalConvValue</span></code></td>
                     </tr>
                     <tr>
@@ -1395,11 +1496,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="cost"><code>Cost</code></h3></td>
+        <td class="name">
+            <h3 id="cost"><code>Cost</code></h3>
+        </td>
         <td>
             <p>The sum of your cost-per-click (CPC) and cost-per-thousand impressions (CPM) costs during this
                 period.</p>
@@ -1411,11 +1515,11 @@
                         <td><code><span>Money</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Cost</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>cost</span></code></td>
                     </tr>
                     <tr>
@@ -1433,8 +1537,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -1443,8 +1549,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="costperallconversion"><code>CostPerAllConversion</code></h3></td>
+        <td class="name">
+            <h3 id="costperallconversion"><code>CostPerAllConversion</code></h3>
+        </td>
         <td>
             <p>Total cost divided by all conversions.</p>
             <div class="devsite-table-wrapper">
@@ -1455,11 +1562,11 @@
                         <td><code><span>Money</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Cost / all conv.</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>costAllConv</span></code></td>
                     </tr>
                     <tr>
@@ -1477,11 +1584,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="costperconversion"><code>CostPerConversion</code></h3></td>
+        <td class="name">
+            <h3 id="costperconversion"><code>CostPerConversion</code></h3>
+        </td>
         <td>
             <p>The Cost attributable to conversion-tracked clicks divided by the number of conversions</p>
             <div class="devsite-table-wrapper">
@@ -1492,11 +1602,11 @@
                         <td><code><span>Money</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Cost / conv.</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>costConv</span></code></td>
                     </tr>
                     <tr>
@@ -1514,11 +1624,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="creativeid"><code>CreativeId</code></h3></td>
+        <td class="name">
+            <h3 id="creativeid"><code>CreativeId</code></h3>
+        </td>
         <td>
             <p>ID of the ad.</p>
             <div class="devsite-table-wrapper">
@@ -1529,11 +1642,11 @@
                         <td><code><span>Long</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Ad ID</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>adID</span></code></td>
                     </tr>
                     <tr>
@@ -1551,11 +1664,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="crossdeviceconversions"><code>CrossDeviceConversions</code></h3></td>
+        <td class="name">
+            <h3 id="crossdeviceconversions"><code>CrossDeviceConversions</code></h3>
+        </td>
         <td>
             <p>Conversions from when a customer clicks on an AdWords ad on one device, then converts on a different
                 device or browser. Cross-device conversions are already included in your AllConversions column. This
@@ -1574,11 +1690,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Cross-device conv.</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>crossDeviceConv</span></code></td>
                     </tr>
                     <tr>
@@ -1596,11 +1712,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="ctr"><code>Ctr</code></h3></td>
+        <td class="name">
+            <h3 id="ctr"><code>Ctr</code></h3>
+        </td>
         <td>
             <p>The number of clicks your ad receives (Clicks) divided by the number of times your ad is shown
                 (Impressions). Percentage returned as "x.xx%".
@@ -1617,11 +1736,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>CTR</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>ctr</span></code></td>
                     </tr>
                     <tr>
@@ -1639,8 +1758,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -1649,8 +1770,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="customerdescriptivename"><code>CustomerDescriptiveName</code></h3></td>
+        <td class="name">
+            <h3 id="customerdescriptivename"><code>CustomerDescriptiveName</code></h3>
+        </td>
         <td>
             <p>The descriptive name of the Customer.</p>
             <div class="devsite-table-wrapper">
@@ -1661,11 +1783,11 @@
                         <td><code><span>String</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Client name</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>clientName</span></code></td>
                     </tr>
                     <tr>
@@ -1683,11 +1805,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="date"><code>Date</code></h3></td>
+        <td class="name">
+            <h3 id="date"><code>Date</code></h3>
+        </td>
         <td>
             <p>The date formatted as yyyy-MM-dd.</p>
             <div class="devsite-table-wrapper">
@@ -1698,11 +1823,11 @@
                         <td><code><span>Date</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Day</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>day</span></code></td>
                     </tr>
                     <tr>
@@ -1720,11 +1845,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="dayofweek"><code>DayOfWeek</code></h3></td>
+        <td class="name">
+            <h3 id="dayofweek"><code>DayOfWeek</code></h3>
+        </td>
         <td>
             <p>The name of the day of the week, e.g., "Monday".</p>
             <div class="devsite-table-wrapper">
@@ -1735,11 +1863,11 @@
                         <td><code><span>DayOfWeek</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Day of week</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>dayOfWeek</span></code></td>
                     </tr>
                     <tr>
@@ -1766,26 +1894,32 @@
                             <td><code><span>MONDAY</span></code></td>
                             <td>Monday</td>
                         </tr>
+
                         <tr>
                             <td><code><span>TUESDAY</span></code></td>
                             <td>Tuesday</td>
                         </tr>
+
                         <tr>
                             <td><code><span>WEDNESDAY</span></code></td>
                             <td>Wednesday</td>
                         </tr>
+
                         <tr>
                             <td><code><span>THURSDAY</span></code></td>
                             <td>Thursday</td>
                         </tr>
+
                         <tr>
                             <td><code><span>FRIDAY</span></code></td>
                             <td>Friday</td>
                         </tr>
+
                         <tr>
                             <td><code><span>SATURDAY</span></code></td>
                             <td>Saturday</td>
                         </tr>
+
                         <tr>
                             <td><code><span>SUNDAY</span></code></td>
                             <td>Sunday</td>
@@ -1794,11 +1928,13 @@
                     </table>
                 </div>
             </div>
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="destinationurl"><code>DestinationUrl</code></h3></td>
+        <td class="name">
+            <h3 id="destinationurl"><code>DestinationUrl</code></h3>
+        </td>
         <td>
             <p>Destination URL for the impression.</p>
             <div class="devsite-table-wrapper">
@@ -1809,11 +1945,11 @@
                         <td><code><span>String</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Destination URL</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>destinationURL</span></code></td>
                     </tr>
                     <tr>
@@ -1831,11 +1967,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="device"><code>Device</code></h3></td>
+        <td class="name">
+            <h3 id="device"><code>Device</code></h3>
+        </td>
         <td>
             <p>Device type where the impression was shown.</p>
             <div class="devsite-table-wrapper">
@@ -1846,11 +1985,11 @@
                         <td><code><span>DeviceType</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Device</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>device</span></code></td>
                     </tr>
                     <tr>
@@ -1877,14 +2016,17 @@
                             <td><code><span>UNKNOWN</span></code></td>
                             <td>Other</td>
                         </tr>
+
                         <tr>
                             <td><code><span>DESKTOP</span></code></td>
                             <td>Computers</td>
                         </tr>
+
                         <tr>
                             <td><code><span>HIGH_END_MOBILE</span></code></td>
                             <td>Mobile devices with full browsers</td>
                         </tr>
+
                         <tr>
                             <td><code><span>TABLET</span></code></td>
                             <td>Tablets with full browsers</td>
@@ -1893,11 +2035,13 @@
                     </table>
                 </div>
             </div>
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="engagementrate"><code>EngagementRate</code></h3></td>
+        <td class="name">
+            <h3 id="engagementrate"><code>EngagementRate</code></h3>
+        </td>
         <td>
             <p>How often people engage with your ad after it's shown to them. This is the number of ad expansions
                 divided by the number of times your ad is shown. Percentage returned as "x.xx%".
@@ -1914,11 +2058,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Engagement rate</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>engagementRate</span></code></td>
                     </tr>
                     <tr>
@@ -1936,8 +2080,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -1946,8 +2092,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="engagements"><code>Engagements</code></h3></td>
+        <td class="name">
+            <h3 id="engagements"><code>Engagements</code></h3>
+        </td>
         <td>
             <p>The number of engagements. An engagement occurs when a viewer expands your Lightbox ad. Also, in the
                 future, other ad types may support engagement metrics.</p>
@@ -1959,11 +2106,11 @@
                         <td><code><span>Long</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Engagements</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>engagements</span></code></td>
                     </tr>
                     <tr>
@@ -1981,8 +2128,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -1991,8 +2140,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="externalconversionsource"><code>ExternalConversionSource</code></h3></td>
+        <td class="name">
+            <h3 id="externalconversionsource"><code>ExternalConversionSource</code></h3>
+        </td>
         <td>
             <p>The source of conversion such as website, import from calls.</p>
             <div class="devsite-table-wrapper">
@@ -2003,11 +2153,11 @@
                         <td><code><span>ExternalConversionSource</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Conversion source</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>conversionSource</span></code></td>
                     </tr>
                     <tr>
@@ -2034,93 +2184,120 @@
                             <td><code><span>UNKNOWN</span></code></td>
                             <td>Other</td>
                         </tr>
+
                         <tr>
                             <td><code><span>WEBPAGE</span></code></td>
                             <td>Website</td>
                         </tr>
+
                         <tr>
                             <td><code><span>ANALYTICS</span></code></td>
                             <td>Analytics</td>
                         </tr>
+
                         <tr>
                             <td><code><span>UPLOAD</span></code></td>
                             <td>Import from clicks</td>
                         </tr>
+
                         <tr>
                             <td><code><span>AD_CALL_METRICS</span></code></td>
                             <td>Calls from ads</td>
                         </tr>
+
                         <tr>
                             <td><code><span>OFFERS</span></code></td>
                             <td>Offers</td>
                         </tr>
+
                         <tr>
                             <td><code><span>ENGAGEMENT</span></code></td>
                             <td>Engagement ads</td>
                         </tr>
+
                         <tr>
                             <td><code><span>WEBSITE_CALL_METRICS</span></code></td>
                             <td>Calls from website</td>
                         </tr>
+
                         <tr>
                             <td><code><span>STORE_VISITS</span></code></td>
                             <td>Store visits</td>
                         </tr>
+
                         <tr>
                             <td><code><span>ANDROID_IN_APP</span></code></td>
                             <td>Android in-app action</td>
                         </tr>
+
                         <tr>
                             <td><code><span>ANDROID_DOWNLOAD</span></code></td>
                             <td>Android app install (from Google Play)</td>
                         </tr>
+
                         <tr>
                             <td><code><span>IOS_IN_APP</span></code></td>
                             <td>iOS in-app action</td>
                         </tr>
+
                         <tr>
                             <td><code><span>IOS_FIRST_OPEN</span></code></td>
                             <td>iOS app install (first open)</td>
                         </tr>
+
                         <tr>
                             <td><code><span>APP_UNSPECIFIED</span></code></td>
                             <td>Mobile app</td>
                         </tr>
+
                         <tr>
                             <td><code><span>ANDROID_FIRST_OPEN</span></code></td>
                             <td>Android app install (first open)</td>
                         </tr>
+
                         <tr>
                             <td><code><span>UPLOAD_CALLS</span></code></td>
                             <td>Import from calls</td>
                         </tr>
+
                         <tr>
                             <td><code><span>FIREBASE</span></code></td>
                             <td>Firebase</td>
                         </tr>
+
                         <tr>
                             <td><code><span>CLICK_TO_CALL</span></code></td>
                             <td>Phone number clicks</td>
                         </tr>
+
                         <tr>
                             <td><code><span>SALESFORCE</span></code></td>
                             <td>Salesforce.com</td>
                         </tr>
+
                         <tr>
                             <td><code><span>STORE_SALES_CRM</span></code></td>
                             <td>Store sales (data partner)</td>
                         </tr>
+
                         <tr>
                             <td><code><span>STORE_SALES_PAYMENT_NETWORK</span></code></td>
                             <td>Store sales (payment network)</td>
                         </tr>
+
                         <tr>
                             <td><code><span>GOOGLE_PLAY</span></code></td>
                             <td>Google Play</td>
                         </tr>
+
                         <tr>
                             <td><code><span>THIRD_PARTY_APP_ANALYTICS</span></code></td>
                             <td>Third-party app analytics</td>
+                        </tr>
+
+                        <tr>
+                            <td><code><span>GOOGLE_ATTRIBUTION</span></code></td>
+                            <td>Google Attribution</td>
                         </tr>
                         </tbody>
                     </table>
@@ -2128,6 +2305,7 @@
             </div>
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>AverageCost</code></div>
                 <div><code>AverageCpc</code></div>
                 <div><code>AverageCpe</code></div>
@@ -2153,8 +2331,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="externalcustomerid"><code>ExternalCustomerId</code></h3></td>
+        <td class="name">
+            <h3 id="externalcustomerid"><code>ExternalCustomerId</code></h3>
+        </td>
         <td>
             <p>The Customer ID.</p>
             <div class="devsite-table-wrapper">
@@ -2165,11 +2344,11 @@
                         <td><code><span>Long</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Customer ID</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>customerID</span></code></td>
                     </tr>
                     <tr>
@@ -2187,11 +2366,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="finalurl"><code>FinalUrl</code></h3></td>
+        <td class="name">
+            <h3 id="finalurl"><code>FinalUrl</code></h3>
+        </td>
         <td>
             <p>Final URL of the impressions.</p>
             <div class="devsite-table-wrapper">
@@ -2202,11 +2384,11 @@
                         <td><code><span>String</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Final URL</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>finalURL</span></code></td>
                     </tr>
                     <tr>
@@ -2224,11 +2406,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="impressions"><code>Impressions</code></h3></td>
+        <td class="name">
+            <h3 id="impressions"><code>Impressions</code></h3>
+        </td>
         <td>
             <p>Count of how often your ad has appeared on a search results page or website on the Google Network.</p>
             <div class="devsite-table-wrapper">
@@ -2239,11 +2424,11 @@
                         <td><code><span>Long</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Impressions</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>impressions</span></code></td>
                     </tr>
                     <tr>
@@ -2261,8 +2446,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -2271,8 +2458,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="interactionrate"><code>InteractionRate</code></h3></td>
+        <td class="name">
+            <h3 id="interactionrate"><code>InteractionRate</code></h3>
+        </td>
         <td>
             <p>How often people interact with your ad after it is shown to them. This is the number of interactions
                 divided by the number of times your ad is shown. Percentage returned as "x.xx%".
@@ -2289,11 +2477,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Interaction Rate</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>interactionRate</span></code></td>
                     </tr>
                     <tr>
@@ -2311,8 +2499,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -2321,10 +2511,11 @@
         </td>
     </tr>
     <tr>
+        <td class="name">
+            <h3 id="interactions"><code>Interactions</code></h3>
+        </td>
         <td>
-            <h3 id="interactions"><code>Interactions</code></h3></td>
-        <td>
-            <p>The number of interactions. An interaction is the main user action associated with an ad format—clicks
+            <p>The number of interactions. An interaction is the main user action associated with an ad format--clicks
                 for text and shopping ads, views for video ads, and so on.</p>
             <div class="devsite-table-wrapper">
                 <table class="nested responsive">
@@ -2334,11 +2525,11 @@
                         <td><code><span>Long</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Interactions</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>interactions</span></code></td>
                     </tr>
                     <tr>
@@ -2356,8 +2547,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -2366,8 +2559,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="interactiontypes"><code>InteractionTypes</code></h3></td>
+        <td class="name">
+            <h3 id="interactiontypes"><code>InteractionTypes</code></h3>
+        </td>
         <td>
             <p>The types of interactions that are reflected in the Interactions, InteractionRate, and AverageCost
                 columns.</p>
@@ -2379,11 +2573,11 @@
                         <td><code><span>EnumSet</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Interaction Types</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>interactionTypes</span></code></td>
                     </tr>
                     <tr>
@@ -2401,8 +2595,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -2411,8 +2607,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="keywordid"><code>KeywordId</code></h3></td>
+        <td class="name">
+            <h3 id="keywordid"><code>KeywordId</code></h3>
+        </td>
         <td>
             <p>The ID of the Keyword that triggered the ad.</p>
             <div class="devsite-table-wrapper">
@@ -2423,11 +2620,11 @@
                         <td><code><span>long</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Keyword ID</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>keywordID</span></code></td>
                     </tr>
                     <tr>
@@ -2445,11 +2642,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="keywordtextmatchingquery"><code>KeywordTextMatchingQuery</code></h3></td>
+        <td class="name">
+            <h3 id="keywordtextmatchingquery"><code>KeywordTextMatchingQuery</code></h3>
+        </td>
         <td>
             <p>Keyword that matched the query and triggered the ad.</p>
             <div class="devsite-table-wrapper">
@@ -2460,11 +2660,11 @@
                         <td><code><span>String</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Keyword</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>keyword</span></code></td>
                     </tr>
                     <tr>
@@ -2482,11 +2682,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="month"><code>Month</code></h3></td>
+        <td class="name">
+            <h3 id="month"><code>Month</code></h3>
+        </td>
         <td>
             <p>The first day of the month, formatted as yyyy-MM-dd.</p>
             <div class="devsite-table-wrapper">
@@ -2497,11 +2700,11 @@
                         <td><code><span>String</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Month</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>month</span></code></td>
                     </tr>
                     <tr>
@@ -2519,11 +2722,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="monthofyear"><code>MonthOfYear</code></h3></td>
+        <td class="name">
+            <h3 id="monthofyear"><code>MonthOfYear</code></h3>
+        </td>
         <td>
             <p>The name of the month of the year, e.g., "December".</p>
             <div class="devsite-table-wrapper">
@@ -2534,11 +2740,11 @@
                         <td><code><span>MonthOfYear</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Month of Year</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>monthOfYear</span></code></td>
                     </tr>
                     <tr>
@@ -2565,46 +2771,57 @@
                             <td><code><span>JANUARY</span></code></td>
                             <td>January</td>
                         </tr>
+
                         <tr>
                             <td><code><span>FEBRUARY</span></code></td>
                             <td>February</td>
                         </tr>
+
                         <tr>
                             <td><code><span>MARCH</span></code></td>
                             <td>March</td>
                         </tr>
+
                         <tr>
                             <td><code><span>APRIL</span></code></td>
                             <td>April</td>
                         </tr>
+
                         <tr>
                             <td><code><span>MAY</span></code></td>
                             <td>May</td>
                         </tr>
+
                         <tr>
                             <td><code><span>JUNE</span></code></td>
                             <td>June</td>
                         </tr>
+
                         <tr>
                             <td><code><span>JULY</span></code></td>
                             <td>July</td>
                         </tr>
+
                         <tr>
                             <td><code><span>AUGUST</span></code></td>
                             <td>August</td>
                         </tr>
+
                         <tr>
                             <td><code><span>SEPTEMBER</span></code></td>
                             <td>September</td>
                         </tr>
+
                         <tr>
                             <td><code><span>OCTOBER</span></code></td>
                             <td>October</td>
                         </tr>
+
                         <tr>
                             <td><code><span>NOVEMBER</span></code></td>
                             <td>November</td>
                         </tr>
+
                         <tr>
                             <td><code><span>DECEMBER</span></code></td>
                             <td>December</td>
@@ -2613,48 +2830,13 @@
                     </table>
                 </div>
             </div>
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="primarycompanyname"><code>PrimaryCompanyName</code></h3></td>
-        <td>
-            <p>Company name of the account.</p>
-            <div class="devsite-table-wrapper">
-                <table class="nested responsive">
-                    <tbody>
-                    <tr>
-                        <td>Type</td>
-                        <td><code><span>String</span></code></td>
-                    </tr>
-                    <tr>
-                        <td>Display Name</td>
-                        <td>Company name</td>
-                    </tr>
-                    <tr>
-                        <td>XML Attribute</td>
-                        <td><code><span>companyName</span></code></td>
-                    </tr>
-                    <tr>
-                        <td>Behavior</td>
-                        <td><code><span>Attribute</span></code></td>
-                    </tr>
-                    <tr>
-                        <td>Filterable</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>Supports Zero Impressions</td>
-                        <td>False</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+        <td class="name">
+            <h3 id="quarter"><code>Quarter</code></h3>
         </td>
-    </tr>
-    <tr>
-        <td>
-            <h3 id="quarter"><code>Quarter</code></h3></td>
         <td>
             <p>The first day of the quarter, formatted as yyyy-MM-dd. Uses the calendar year for quarters, e.g., the
                 second quarter of 2014 starts on 2014-04-01.</p>
@@ -2666,11 +2848,11 @@
                         <td><code><span>String</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Quarter</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>quarter</span></code></td>
                     </tr>
                     <tr>
@@ -2688,11 +2870,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="query"><code>Query</code></h3></td>
+        <td class="name">
+            <h3 id="query"><code>Query</code></h3>
+        </td>
         <td>
             <p>If the string for this attribute is longer than 128 char bytes, the returned result will NOT be a single
                 aggregated row.</p>
@@ -2704,11 +2889,11 @@
                         <td><code><span>String</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Search term</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>searchTerm</span></code></td>
                     </tr>
                     <tr>
@@ -2726,11 +2911,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="querymatchtypewithvariant"><code>QueryMatchTypeWithVariant</code></h3></td>
+        <td class="name">
+            <h3 id="querymatchtypewithvariant"><code>QueryMatchTypeWithVariant</code></h3>
+        </td>
         <td>
             <p>Match type of the keyword that triggered the ad, including variants. See
                 https://support.google.com/adwords/answer/2472708 for an explanation of close variants.</p>
@@ -2742,11 +2930,11 @@
                         <td><code><span>QueryMatchTypeWithVariant</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Match type</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>matchType</span></code></td>
                     </tr>
                     <tr>
@@ -2773,26 +2961,32 @@
                             <td><code><span>AUTO</span></code></td>
                             <td>auto</td>
                         </tr>
+
                         <tr>
                             <td><code><span>BROAD</span></code></td>
                             <td>broad</td>
                         </tr>
+
                         <tr>
                             <td><code><span>EXACT</span></code></td>
                             <td>exact</td>
                         </tr>
+
                         <tr>
                             <td><code><span>EXPANDED</span></code></td>
                             <td>broad</td>
                         </tr>
+
                         <tr>
                             <td><code><span>PHRASE</span></code></td>
                             <td>phrase</td>
                         </tr>
+
                         <tr>
                             <td><code><span>NEAR_EXACT</span></code></td>
                             <td>exact (close variant)</td>
                         </tr>
+
                         <tr>
                             <td><code><span>NEAR_PHRASE</span></code></td>
                             <td>phrase (close variant)</td>
@@ -2801,11 +2995,13 @@
                     </table>
                 </div>
             </div>
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="trackingurltemplate"><code>TrackingUrlTemplate</code></h3></td>
+        <td class="name">
+            <h3 id="trackingurltemplate"><code>TrackingUrlTemplate</code></h3>
+        </td>
         <td>
             <p>Tracking template of the main object of this row.</p>
             <div class="devsite-table-wrapper">
@@ -2816,11 +3012,11 @@
                         <td><code><span>String</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Tracking template</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>trackingTemplate</span></code></td>
                     </tr>
                     <tr>
@@ -2838,11 +3034,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="valueperallconversion"><code>ValuePerAllConversion</code></h3></td>
+        <td class="name">
+            <h3 id="valueperallconversion"><code>ValuePerAllConversion</code></h3>
+        </td>
         <td>
             <p>The value, on average, of all conversions. This field is formatted with dot (".") for decimal separator,
                 precision of two decimal positions and no thousands separator (e.g. 1000000.00).
@@ -2859,11 +3058,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Value / all conv.</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>valueAllConv</span></code></td>
                     </tr>
                     <tr>
@@ -2881,11 +3080,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="valueperconversion"><code>ValuePerConversion</code></h3></td>
+        <td class="name">
+            <h3 id="valueperconversion"><code>ValuePerConversion</code></h3>
+        </td>
         <td>
             <p>The total value of your conversions divided by the total number of conversions. This field is formatted
                 with dot (".") for decimal separator, precision of two decimal positions and no thousands separator
@@ -2903,11 +3105,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Value / conv.</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>valueConv</span></code></td>
                     </tr>
                     <tr>
@@ -2925,11 +3127,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="videoquartile100rate"><code>VideoQuartile100Rate</code></h3></td>
+        <td class="name">
+            <h3 id="videoquartile100rate"><code>VideoQuartile100Rate</code></h3>
+        </td>
         <td>
             <p>Percentage of impressions where the viewer watched all of your video. Percentage returned as "x.xx%".
                 To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
@@ -2945,11 +3150,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Video played to 100%</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>videoPlayedTo100</span></code></td>
                     </tr>
                     <tr>
@@ -2967,8 +3172,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -2977,8 +3184,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="videoquartile25rate"><code>VideoQuartile25Rate</code></h3></td>
+        <td class="name">
+            <h3 id="videoquartile25rate"><code>VideoQuartile25Rate</code></h3>
+        </td>
         <td>
             <p>Percentage of impressions where the viewer watched 25% of your video. Percentage returned as "x.xx%".
                 To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
@@ -2994,11 +3202,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Video played to 25%</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>videoPlayedTo25</span></code></td>
                     </tr>
                     <tr>
@@ -3016,8 +3224,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -3026,8 +3236,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="videoquartile50rate"><code>VideoQuartile50Rate</code></h3></td>
+        <td class="name">
+            <h3 id="videoquartile50rate"><code>VideoQuartile50Rate</code></h3>
+        </td>
         <td>
             <p>Percentage of impressions where the viewer watched 50% of your video. Percentage returned as "x.xx%".
                 To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
@@ -3043,11 +3254,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Video played to 50%</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>videoPlayedTo50</span></code></td>
                     </tr>
                     <tr>
@@ -3065,8 +3276,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -3075,8 +3288,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="videoquartile75rate"><code>VideoQuartile75Rate</code></h3></td>
+        <td class="name">
+            <h3 id="videoquartile75rate"><code>VideoQuartile75Rate</code></h3>
+        </td>
         <td>
             <p>Percentage of impressions where the viewer watched 75% of your video. Percentage returned as "x.xx%".
                 To prevent calculation accuracy issues, fields whose data type is <code>Double</code> can be used <em>only</em>
@@ -3092,11 +3306,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Video played to 75%</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>videoPlayedTo75</span></code></td>
                     </tr>
                     <tr>
@@ -3114,8 +3328,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -3124,8 +3340,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="videoviewrate"><code>VideoViewRate</code></h3></td>
+        <td class="name">
+            <h3 id="videoviewrate"><code>VideoViewRate</code></h3>
+        </td>
         <td>
             <p>The number of views your TrueView video ad receives divided by its number of impressions, including
                 thumbnail impressions for TrueView in-display ads. Percentage returned as "x.xx%".
@@ -3142,11 +3359,11 @@
                         <td><code><span>Double</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>View rate</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>viewRate</span></code></td>
                     </tr>
                     <tr>
@@ -3164,8 +3381,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -3174,8 +3393,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="videoviews"><code>VideoViews</code></h3></td>
+        <td class="name">
+            <h3 id="videoviews"><code>VideoViews</code></h3>
+        </td>
         <td>
             <p>The number of times your video ads were viewed.</p>
             <div class="devsite-table-wrapper">
@@ -3186,11 +3406,11 @@
                         <td><code><span>Long</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Views</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>views</span></code></td>
                     </tr>
                     <tr>
@@ -3208,8 +3428,10 @@
                     </tbody>
                 </table>
             </div>
+
             <div class="expandable"><a class="exw-control">▸</a>
                 <p class="showalways">Not compatible with the following fields:</p>
+
                 <div><code>ConversionCategoryName</code></div>
                 <div><code>ConversionTrackerId</code></div>
                 <div><code>ConversionTypeName</code></div>
@@ -3218,8 +3440,9 @@
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="viewthroughconversions"><code>ViewThroughConversions</code></h3></td>
+        <td class="name">
+            <h3 id="viewthroughconversions"><code>ViewThroughConversions</code></h3>
+        </td>
         <td>
             <p>The total number of view-through conversions. These happen when a customer sees a Display network ad,
                 then later completes a conversion on your site without interacting with (e.g. clicking on) another ad.
@@ -3233,11 +3456,11 @@
                         <td><code><span>Long</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>View-through conv.</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>viewThroughConv</span></code></td>
                     </tr>
                     <tr>
@@ -3255,11 +3478,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="week"><code>Week</code></h3></td>
+        <td class="name">
+            <h3 id="week"><code>Week</code></h3>
+        </td>
         <td>
             <p>The date for the Monday of the week, formatted as yyyy-MM-dd.</p>
             <div class="devsite-table-wrapper">
@@ -3270,11 +3496,11 @@
                         <td><code><span>String</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Week</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>week</span></code></td>
                     </tr>
                     <tr>
@@ -3292,11 +3518,14 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     <tr>
-        <td>
-            <h3 id="year"><code>Year</code></h3></td>
+        <td class="name">
+            <h3 id="year"><code>Year</code></h3>
+        </td>
         <td>
             <p>The year, formatted as yyyy.</p>
             <div class="devsite-table-wrapper">
@@ -3307,11 +3536,11 @@
                         <td><code><span>Integer</span></code></td>
                     </tr>
                     <tr>
-                        <td>Display Name</td>
+                        <td class="display-name">Display Name</td>
                         <td>Year</td>
                     </tr>
                     <tr>
-                        <td>XML Attribute</td>
+                        <td class="xml-attribute">XML Attribute</td>
                         <td><code><span>year</span></code></td>
                     </tr>
                     <tr>
@@ -3329,6 +3558,8 @@
                     </tbody>
                 </table>
             </div>
+
+
         </td>
     </tr>
     </tbody>

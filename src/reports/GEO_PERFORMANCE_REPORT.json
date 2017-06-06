@@ -555,7 +555,8 @@
       "STORE_SALES_CRM": "Store sales (data partner)",
       "STORE_SALES_PAYMENT_NETWORK": "Store sales (payment network)",
       "GOOGLE_PLAY": "Google Play",
-      "THIRD_PARTY_APP_ANALYTICS": "Third-party app analytics"
+      "THIRD_PARTY_APP_ANALYTICS": "Third-party app analytics",
+      "GOOGLE_ATTRIBUTION": "Google Attribution"
     },
     "IncompatibleFields": [
       "AverageCost",
@@ -737,16 +738,6 @@
     "Filterable": true,
     "SupportsZeroImpressions": false
   },
-  "PrimaryCompanyName": {
-    "SpecialValue": false,
-    "Percentage": false,
-    "Type": "String",
-    "DisplayName": "Company name",
-    "XMLAttribute": "companyName",
-    "Behavior": "Attribute",
-    "Filterable": true,
-    "SupportsZeroImpressions": false
-  },
   "Quarter": {
     "SpecialValue": false,
     "Percentage": false,
@@ -849,4 +840,4 @@
     "Filterable": true,
     "SupportsZeroImpressions": false
   }
-}
+}s
