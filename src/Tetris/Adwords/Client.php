@@ -12,7 +12,7 @@ use Tetris\Adwords\Request\Write\InsertRequest;
 
 class Client extends AdWordsUser
 {
-    const version = 'v201702';
+    const version = 'v201705';
     /**
      * @var array $config
      */
