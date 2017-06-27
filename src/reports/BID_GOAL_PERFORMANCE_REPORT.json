@@ -1,0 +1,747 @@
+{
+  "AccountDescriptiveName": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Account",
+    "XMLAttribute": "account",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "AdGroupCount": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Integer",
+    "DisplayName": "Ad Groups",
+    "XMLAttribute": "adGroups",
+    "Behavior": "Metric",
+    "Filterable": false,
+    "SupportsZeroImpressions": true
+  },
+  "AdGroupCriteriaCount": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Integer",
+    "DisplayName": "Keywords",
+    "XMLAttribute": "keywords",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "AllConversionRate": {
+    "SpecialValue": false,
+    "Percentage": true,
+    "IncompatibleFields": [
+      "HourOfDay"
+    ],
+    "Type": "Double",
+    "DisplayName": "All conv. rate",
+    "XMLAttribute": "allConvRate",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "AllConversions": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "HourOfDay"
+    ],
+    "Type": "Double",
+    "DisplayName": "All conv.",
+    "XMLAttribute": "allConv",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "AllConversionValue": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "HourOfDay"
+    ],
+    "Type": "Double",
+    "DisplayName": "All conv. value",
+    "XMLAttribute": "allConvValue",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "AverageCpc": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "ExternalConversionSource"
+    ],
+    "Type": "Money",
+    "DisplayName": "Avg. CPC",
+    "XMLAttribute": "avgCPC",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "AverageCpm": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "ExternalConversionSource"
+    ],
+    "Type": "Money",
+    "DisplayName": "Avg. CPM",
+    "XMLAttribute": "avgCPM",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "AveragePosition": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "ExternalConversionSource"
+    ],
+    "Type": "Double",
+    "DisplayName": "Avg. position",
+    "XMLAttribute": "avgPosition",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "CampaignCount": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Integer",
+    "DisplayName": "Campaigns",
+    "XMLAttribute": "campaigns",
+    "Behavior": "Metric",
+    "Filterable": false,
+    "SupportsZeroImpressions": true
+  },
+  "Clicks": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "ExternalConversionSource"
+    ],
+    "Type": "Long",
+    "DisplayName": "Clicks",
+    "XMLAttribute": "clicks",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "ConversionRate": {
+    "SpecialValue": false,
+    "Percentage": true,
+    "Type": "Double",
+    "DisplayName": "Conv. rate",
+    "XMLAttribute": "convRate",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Conversions": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Double",
+    "DisplayName": "Conversions",
+    "XMLAttribute": "conversions",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "ConversionValue": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Double",
+    "DisplayName": "Total conv. value",
+    "XMLAttribute": "totalConvValue",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Cost": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "ExternalConversionSource"
+    ],
+    "Type": "Money",
+    "DisplayName": "Cost",
+    "XMLAttribute": "cost",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "CostPerAllConversion": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "HourOfDay"
+    ],
+    "Type": "Money",
+    "DisplayName": "Cost / all conv.",
+    "XMLAttribute": "costAllConv",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "CostPerConversion": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Money",
+    "DisplayName": "Cost / conv.",
+    "XMLAttribute": "costConv",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "CrossDeviceConversions": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "HourOfDay"
+    ],
+    "Type": "Double",
+    "DisplayName": "Cross-device conv.",
+    "XMLAttribute": "crossDeviceConv",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Ctr": {
+    "SpecialValue": false,
+    "Percentage": true,
+    "IncompatibleFields": [
+      "ExternalConversionSource"
+    ],
+    "Type": "Double",
+    "DisplayName": "CTR",
+    "XMLAttribute": "ctr",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Date": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Date",
+    "DisplayName": "Day",
+    "XMLAttribute": "day",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "DayOfWeek": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "MONDAY": "Monday",
+      "TUESDAY": "Tuesday",
+      "WEDNESDAY": "Wednesday",
+      "THURSDAY": "Thursday",
+      "FRIDAY": "Friday",
+      "SATURDAY": "Saturday",
+      "SUNDAY": "Sunday"
+    },
+    "Type": "DayOfWeek",
+    "DisplayName": "Day of week",
+    "XMLAttribute": "dayOfWeek",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Device": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "Other",
+      "DESKTOP": "Computers",
+      "HIGH_END_MOBILE": "Mobile devices with full browsers",
+      "TABLET": "Tablets with full browsers"
+    },
+    "Type": "DeviceType",
+    "DisplayName": "Device",
+    "XMLAttribute": "device",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "ExternalConversionSource": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "Other",
+      "WEBPAGE": "Website",
+      "ANALYTICS": "Analytics",
+      "UPLOAD": "Import from clicks",
+      "AD_CALL_METRICS": "Calls from ads",
+      "OFFERS": "Offers",
+      "ENGAGEMENT": "Engagement ads",
+      "WEBSITE_CALL_METRICS": "Calls from website",
+      "STORE_VISITS": "Store visits",
+      "ANDROID_IN_APP": "Android in-app action",
+      "ANDROID_DOWNLOAD": "Android app install (from Google Play)",
+      "IOS_IN_APP": "iOS in-app action",
+      "IOS_FIRST_OPEN": "iOS app install (first open)",
+      "APP_UNSPECIFIED": "Mobile app",
+      "ANDROID_FIRST_OPEN": "Android app install (first open)",
+      "UPLOAD_CALLS": "Import from calls",
+      "FIREBASE": "Firebase",
+      "CLICK_TO_CALL": "Phone number clicks",
+      "SALESFORCE": "Salesforce.com",
+      "STORE_SALES_CRM": "Store sales (data partner)",
+      "STORE_SALES_PAYMENT_NETWORK": "Store sales (payment network)",
+      "GOOGLE_PLAY": "Google Play",
+      "THIRD_PARTY_APP_ANALYTICS": "Third-party app analytics",
+      "GOOGLE_ATTRIBUTION": "Google Attribution"
+    },
+    "IncompatibleFields": [
+      "AverageCpc",
+      "AverageCpm",
+      "AveragePosition",
+      "Clicks",
+      "Cost",
+      "Ctr",
+      "Impressions"
+    ],
+    "Type": "ExternalConversionSource",
+    "DisplayName": "Conversion source",
+    "XMLAttribute": "conversionSource",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "ExternalCustomerId": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Long",
+    "DisplayName": "Customer ID",
+    "XMLAttribute": "customerID",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "HourOfDay": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "AllConversionRate",
+      "AllConversionValue",
+      "AllConversions",
+      "CostPerAllConversion",
+      "CrossDeviceConversions",
+      "ValuePerAllConversion"
+    ],
+    "Type": "Integer",
+    "DisplayName": "Hour of day",
+    "XMLAttribute": "hourOfDay",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "Id": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Long",
+    "DisplayName": "Bid Strategy ID",
+    "XMLAttribute": "bidStrategyID",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Impressions": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "ExternalConversionSource"
+    ],
+    "Type": "Long",
+    "DisplayName": "Impressions",
+    "XMLAttribute": "impressions",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Month": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Month",
+    "XMLAttribute": "month",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "MonthOfYear": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "JANUARY": "January",
+      "FEBRUARY": "February",
+      "MARCH": "March",
+      "APRIL": "April",
+      "MAY": "May",
+      "JUNE": "June",
+      "JULY": "July",
+      "AUGUST": "August",
+      "SEPTEMBER": "September",
+      "OCTOBER": "October",
+      "NOVEMBER": "November",
+      "DECEMBER": "December"
+    },
+    "Type": "MonthOfYear",
+    "DisplayName": "Month of Year",
+    "XMLAttribute": "monthOfYear",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Name": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Bid Strategy Name",
+    "XMLAttribute": "bidStrategyName",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "NonRemovedAdGroupCount": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Long",
+    "DisplayName": "Non-Removed Ad Groups",
+    "XMLAttribute": "nonRemovedAdGroups",
+    "Behavior": "Metric",
+    "Filterable": false,
+    "SupportsZeroImpressions": true
+  },
+  "NonRemovedAdGroupCriteriaCount": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Long",
+    "DisplayName": "Non-Removed Keywords",
+    "XMLAttribute": "nonRemovedKeywords",
+    "Behavior": "Metric",
+    "Filterable": false,
+    "SupportsZeroImpressions": true
+  },
+  "NonRemovedCampaignCount": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Long",
+    "DisplayName": "Non-Removed Campaigns",
+    "XMLAttribute": "nonRemovedCampaigns",
+    "Behavior": "Metric",
+    "Filterable": false,
+    "SupportsZeroImpressions": true
+  },
+  "PageOnePromotedBidCeiling": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Money",
+    "DisplayName": "Bid limit (Target search page location)",
+    "XMLAttribute": "bidLimitTargetSearchPageLocation",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "PageOnePromotedBidChangesForRaisesOnly": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Boolean",
+    "DisplayName": "Bid automation (Target search page location)",
+    "XMLAttribute": "bidAutomationTargetSearchPageLocation",
+    "Behavior": "Attribute",
+    "Filterable": false,
+    "SupportsZeroImpressions": true
+  },
+  "PageOnePromotedBidModifier": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Double",
+    "DisplayName": "Bid adjustment (Target search page location)",
+    "XMLAttribute": "bidAdjustmentTargetSearchPageLocation",
+    "Behavior": "Attribute",
+    "Filterable": false,
+    "SupportsZeroImpressions": true
+  },
+  "PageOnePromotedRaiseBidWhenBudgetConstrained": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "TRUE": "true",
+      "FALSE": "false"
+    },
+    "Type": "Enum",
+    "DisplayName": "Limited budgets (Target search page location)",
+    "XMLAttribute": "limitedBudgetsTargetSearchPageLocation",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "PageOnePromotedRaiseBidWhenLowQualityScore": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "TRUE": "true",
+      "FALSE": "false"
+    },
+    "Type": "Enum",
+    "DisplayName": "Low quality keywords (Target search page location)",
+    "XMLAttribute": "lowQualityKeywordsTargetSearchPageLocation",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "PageOnePromotedStrategyGoal": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "StrategyGoal",
+    "DisplayName": "Location (Target search page location)",
+    "XMLAttribute": "locationTargetSearchPageLocation",
+    "Behavior": "Attribute",
+    "Filterable": false,
+    "SupportsZeroImpressions": true
+  },
+  "Quarter": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Quarter",
+    "XMLAttribute": "quarter",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Status": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "ENABLED": "Enabled",
+      "REMOVED": "Removed",
+      "UNKNOWN": "unknown"
+    },
+    "Type": "BiddingStrategyStatus",
+    "DisplayName": "State",
+    "XMLAttribute": "state",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "TargetCpa": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Money",
+    "DisplayName": "Target CPA",
+    "XMLAttribute": "targetCPA",
+    "Behavior": "Attribute",
+    "Filterable": false,
+    "SupportsZeroImpressions": true
+  },
+  "TargetCpaMaxCpcBidCeiling": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Money",
+    "DisplayName": "Upper Bid limit (Target CPA)",
+    "XMLAttribute": "upperBidLimitTargetCPA",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "TargetCpaMaxCpcBidFloor": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Money",
+    "DisplayName": "Lower Bid limit (Target CPA)",
+    "XMLAttribute": "lowerBidLimitTargetCPA",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "TargetOutrankShare": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Integer",
+    "DisplayName": "Target outranking share",
+    "XMLAttribute": "targetOutrankingShare",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "TargetOutrankShareBidChangesForRaisesOnly": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "TRUE": "true",
+      "FALSE": "false"
+    },
+    "Type": "Enum",
+    "DisplayName": "Bid automation (Target Outranking Share)",
+    "XMLAttribute": "bidAutomationTargetOutrankingShare",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "TargetOutrankShareCompetitorDomain": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Competitor domain (Target Outranking Share)",
+    "XMLAttribute": "competitorDomainTargetOutrankingShare",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "TargetOutrankShareMaxCpcBidCeiling": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Money",
+    "DisplayName": "Upper Max Cpc Bid limit (Target Outranking Share)",
+    "XMLAttribute": "upperMaxCpcBidLimitTargetOutrankingShare",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "TargetOutrankShareRaiseBidWhenLowQualityScore": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "TRUE": "true",
+      "FALSE": "false"
+    },
+    "Type": "Enum",
+    "DisplayName": "Low quality keywords (Target Outranking Share)",
+    "XMLAttribute": "lowQualityKeywordsTargetOutrankingShare",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "TargetRoas": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Double",
+    "DisplayName": "Target ROAS",
+    "XMLAttribute": "targetROAS",
+    "Behavior": "Attribute",
+    "Filterable": false,
+    "SupportsZeroImpressions": true
+  },
+  "TargetRoasBidCeiling": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Money",
+    "DisplayName": "Upper Bid limit (Target ROAS)",
+    "XMLAttribute": "upperBidLimitTargetROAS",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "TargetRoasBidFloor": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Money",
+    "DisplayName": "Lower Bid limit (Target ROAS)",
+    "XMLAttribute": "lowerBidLimitTargetROAS",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "TargetSpendBidCeiling": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Money",
+    "DisplayName": "Bid limit (Maximize clicks)",
+    "XMLAttribute": "bidLimitMaximizeClicks",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "TargetSpendSpendTarget": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Money",
+    "DisplayName": "Target spend (Maximize clicks)",
+    "XMLAttribute": "targetSpendMaximizeClicks",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Type": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "MANUAL_CPC": "cpc",
+      "MANUAL_CPV": "cpv",
+      "MANUAL_CPM": "cpm",
+      "PAGE_ONE_PROMOTED": "Target search page location",
+      "TARGET_SPEND": "Maximize clicks",
+      "ENHANCED_CPC": "Enhanced CPC",
+      "TARGET_CPA": "Target CPA",
+      "TARGET_ROAS": "Target ROAS",
+      "TARGET_OUTRANK_SHARE": "Target Outranking Share",
+      "NONE": "None",
+      "UNKNOWN": "unknown"
+    },
+    "Type": "BiddingStrategyType",
+    "DisplayName": "Bid Strategy Type",
+    "XMLAttribute": "bidStrategyType",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "ValuePerAllConversion": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "HourOfDay"
+    ],
+    "Type": "Double",
+    "DisplayName": "Value / all conv.",
+    "XMLAttribute": "valueAllConv",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "ValuePerConversion": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Double",
+    "DisplayName": "Value / conv.",
+    "XMLAttribute": "valueConv",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "ViewThroughConversions": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Long",
+    "DisplayName": "View-through conv.",
+    "XMLAttribute": "viewThroughConv",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Week": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Week",
+    "XMLAttribute": "week",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Year": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Integer",
+    "DisplayName": "Year",
+    "XMLAttribute": "year",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  }
+}

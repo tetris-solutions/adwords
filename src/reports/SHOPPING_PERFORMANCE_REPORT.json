@@ -1,0 +1,859 @@
+{
+  "AccountDescriptiveName": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Account",
+    "XMLAttribute": "account",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "AdGroupId": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Long",
+    "DisplayName": "Ad group ID",
+    "XMLAttribute": "adGroupID",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "AdGroupName": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Ad group",
+    "XMLAttribute": "adGroup",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "AdGroupStatus": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "ENABLED": "enabled",
+      "PAUSED": "paused",
+      "REMOVED": "removed"
+    },
+    "Type": "AdGroupStatus",
+    "DisplayName": "Ad group state",
+    "XMLAttribute": "adGroupState",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "AdNetworkType1": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "SEARCH": "Search Network",
+      "CONTENT": "Display Network",
+      "YOUTUBE_SEARCH": "YouTube Search",
+      "YOUTUBE_WATCH": "YouTube Videos"
+    },
+    "Type": "AdNetworkType1",
+    "DisplayName": "Network",
+    "XMLAttribute": "network",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "AdNetworkType2": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "SEARCH": "Google search",
+      "SEARCH_PARTNERS": "Search partners",
+      "CONTENT": "Display Network",
+      "YOUTUBE_SEARCH": "YouTube Search",
+      "YOUTUBE_WATCH": "YouTube Videos"
+    },
+    "Type": "AdNetworkType2",
+    "DisplayName": "Network (with search partners)",
+    "XMLAttribute": "networkWithSearchPartners",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "AggregatorId": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Long",
+    "DisplayName": "MCA Id",
+    "XMLAttribute": "mCAId",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "AllConversionRate": {
+    "SpecialValue": false,
+    "Percentage": true,
+    "Type": "Double",
+    "DisplayName": "All conv. rate",
+    "XMLAttribute": "allConvRate",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "AllConversions": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Double",
+    "DisplayName": "All conv.",
+    "XMLAttribute": "allConv",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "AllConversionValue": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Double",
+    "DisplayName": "All conv. value",
+    "XMLAttribute": "allConvValue",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "AverageCpc": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
+    "Type": "Money",
+    "DisplayName": "Avg. CPC",
+    "XMLAttribute": "avgCPC",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Brand": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Brand",
+    "XMLAttribute": "brand",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "CampaignId": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Long",
+    "DisplayName": "Campaign ID",
+    "XMLAttribute": "campaignID",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "CampaignName": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Campaign",
+    "XMLAttribute": "campaign",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "CampaignStatus": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "ENABLED": "enabled",
+      "PAUSED": "paused",
+      "REMOVED": "removed"
+    },
+    "Type": "CampaignStatus",
+    "DisplayName": "Campaign state",
+    "XMLAttribute": "campaignState",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "CategoryL1": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Category (1st level)",
+    "XMLAttribute": "category1stLevel",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "CategoryL2": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Category (2nd level)",
+    "XMLAttribute": "category2ndLevel",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "CategoryL3": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Category (3rd level)",
+    "XMLAttribute": "category3rdLevel",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "CategoryL4": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Category (4th level)",
+    "XMLAttribute": "category4thLevel",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "CategoryL5": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Category (5th level)",
+    "XMLAttribute": "category5thLevel",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "Channel": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "ONLINE": "Online",
+      "LOCAL": "Local Stores"
+    },
+    "Type": "ShoppingProductChannel",
+    "DisplayName": "Channel",
+    "XMLAttribute": "channel",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "ChannelExclusivity": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "SINGLE_CHANNEL": "Single Channel",
+      "MULTI_CHANNEL": "Multi-Channel"
+    },
+    "Type": "ShoppingProductChannelExclusivity",
+    "DisplayName": "Channel Exclusivity",
+    "XMLAttribute": "channelExclusivity",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "Clicks": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
+    "Type": "Long",
+    "DisplayName": "Clicks",
+    "XMLAttribute": "clicks",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "ClickType": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "URL_CLICKS": "Headline",
+      "CALLS": "Phone calls",
+      "OTHER": "Other",
+      "PRODUCT_EXTENSION_CLICKS": "Product plusbox offer",
+      "SITELINKS": "Sitelink",
+      "PRODUCT_LISTING_AD_CLICKS": "Shopping ad - Standard",
+      "GET_DIRECTIONS": "Driving direction",
+      "OFFER_PRINTS": "Print offer",
+      "BREADCRUMBS": "Breadcrumbs",
+      "CALL_TRACKING": "Manually dialed phone calls",
+      "MOBILE_CALL_TRACKING": "Mobile phone calls",
+      "LOCATION_EXPANSION": "Get location details",
+      "STORE_LOCATOR": "Show nearby locations",
+      "APP_DEEPLINK": "App engagement ad deep link",
+      "TABLE_EXTENSION": "Table Extension",
+      "VIDEO_WEBSITE_CLICKS": "Website",
+      "VIDEO_CALL_TO_ACTION_CLICKS": "Call-to-Action overlay",
+      "VIDEO_APP_STORE_CLICKS": "App store",
+      "VIDEO_CARD_ACTION_HEADLINE_CLICKS": "Cards",
+      "VIDEO_END_CAP_CLICKS": "End cap",
+      "CLICK_ON_ENGAGEMENT_AD": "Click on engagement ad",
+      "LOCATION_FORMAT_MAP": "Map",
+      "LOCATION_FORMAT_LANDING_PAGE": "Go to landing page",
+      "LOCATION_FORMAT_STORE_INFO": "Go to store info",
+      "LOCATION_FORMAT_DIRECTIONS": "Directions",
+      "LOCATION_FORMAT_CALL": "Call",
+      "LOCATION_FORMAT_TEXT": "Text",
+      "LOCATION_FORMAT_IMAGE": "Image(s)",
+      "BROADBAND_PLAN": "Broadband Plan",
+      "WIRELESS_PLAN": "Wireless Plan",
+      "VISUAL_SITELINKS": "Visual Sitelinks",
+      "PROMOTION_EXTENSION": "Promotion Extension",
+      "UNKNOWN": "unknown"
+    },
+    "IncompatibleFields": [
+      "SearchClickShare",
+      "SearchImpressionShare"
+    ],
+    "Type": "ClickType",
+    "DisplayName": "Click type",
+    "XMLAttribute": "clickType",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "ConversionCategoryName": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "AverageCpc",
+      "Clicks",
+      "Cost",
+      "Ctr",
+      "Impressions",
+      "SearchClickShare",
+      "SearchImpressionShare"
+    ],
+    "Type": "String",
+    "DisplayName": "Conversion category",
+    "XMLAttribute": "conversionCategory",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "ConversionRate": {
+    "SpecialValue": false,
+    "Percentage": true,
+    "Type": "Double",
+    "DisplayName": "Conv. rate",
+    "XMLAttribute": "convRate",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Conversions": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Double",
+    "DisplayName": "Conversions",
+    "XMLAttribute": "conversions",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "ConversionTrackerId": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "AverageCpc",
+      "Clicks",
+      "Cost",
+      "Ctr",
+      "Impressions",
+      "SearchClickShare",
+      "SearchImpressionShare"
+    ],
+    "Type": "Long",
+    "DisplayName": "Conversion Tracker Id",
+    "XMLAttribute": "conversionTrackerId",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "ConversionTypeName": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "AverageCpc",
+      "Clicks",
+      "Cost",
+      "Ctr",
+      "Impressions",
+      "SearchClickShare",
+      "SearchImpressionShare"
+    ],
+    "Type": "String",
+    "DisplayName": "Conversion name",
+    "XMLAttribute": "conversionName",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "ConversionValue": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Double",
+    "DisplayName": "Total conv. value",
+    "XMLAttribute": "totalConvValue",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Cost": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
+    "Type": "Money",
+    "DisplayName": "Cost",
+    "XMLAttribute": "cost",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "CostPerAllConversion": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Money",
+    "DisplayName": "Cost / all conv.",
+    "XMLAttribute": "costAllConv",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "CostPerConversion": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Money",
+    "DisplayName": "Cost / conv.",
+    "XMLAttribute": "costConv",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "CountryCriteriaId": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Integer",
+    "DisplayName": "Country/Territory",
+    "XMLAttribute": "countryTerritory",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "CrossDeviceConversions": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Double",
+    "DisplayName": "Cross-device conv.",
+    "XMLAttribute": "crossDeviceConv",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Ctr": {
+    "SpecialValue": false,
+    "Percentage": true,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
+    "Type": "Double",
+    "DisplayName": "CTR",
+    "XMLAttribute": "ctr",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "CustomAttribute0": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Custom label 0",
+    "XMLAttribute": "customLabel0",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "CustomAttribute1": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Custom label 1",
+    "XMLAttribute": "customLabel1",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "CustomAttribute2": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Custom label 2",
+    "XMLAttribute": "customLabel2",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "CustomAttribute3": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Custom label 3",
+    "XMLAttribute": "customLabel3",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "CustomAttribute4": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Custom label 4",
+    "XMLAttribute": "customLabel4",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "Date": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Date",
+    "DisplayName": "Day",
+    "XMLAttribute": "day",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "DayOfWeek": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "MONDAY": "Monday",
+      "TUESDAY": "Tuesday",
+      "WEDNESDAY": "Wednesday",
+      "THURSDAY": "Thursday",
+      "FRIDAY": "Friday",
+      "SATURDAY": "Saturday",
+      "SUNDAY": "Sunday"
+    },
+    "Type": "DayOfWeek",
+    "DisplayName": "Day of week",
+    "XMLAttribute": "dayOfWeek",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Device": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "Other",
+      "DESKTOP": "Computers",
+      "HIGH_END_MOBILE": "Mobile devices with full browsers",
+      "TABLET": "Tablets with full browsers"
+    },
+    "Type": "DeviceType",
+    "DisplayName": "Device",
+    "XMLAttribute": "device",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "ExternalConversionSource": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "Other",
+      "WEBPAGE": "Website",
+      "ANALYTICS": "Analytics",
+      "UPLOAD": "Import from clicks",
+      "AD_CALL_METRICS": "Calls from ads",
+      "OFFERS": "Offers",
+      "ENGAGEMENT": "Engagement ads",
+      "WEBSITE_CALL_METRICS": "Calls from website",
+      "STORE_VISITS": "Store visits",
+      "ANDROID_IN_APP": "Android in-app action",
+      "ANDROID_DOWNLOAD": "Android app install (from Google Play)",
+      "IOS_IN_APP": "iOS in-app action",
+      "IOS_FIRST_OPEN": "iOS app install (first open)",
+      "APP_UNSPECIFIED": "Mobile app",
+      "ANDROID_FIRST_OPEN": "Android app install (first open)",
+      "UPLOAD_CALLS": "Import from calls",
+      "FIREBASE": "Firebase",
+      "CLICK_TO_CALL": "Phone number clicks",
+      "SALESFORCE": "Salesforce.com",
+      "STORE_SALES_CRM": "Store sales (data partner)",
+      "STORE_SALES_PAYMENT_NETWORK": "Store sales (payment network)",
+      "GOOGLE_PLAY": "Google Play",
+      "THIRD_PARTY_APP_ANALYTICS": "Third-party app analytics",
+      "GOOGLE_ATTRIBUTION": "Google Attribution"
+    },
+    "IncompatibleFields": [
+      "AverageCpc",
+      "Clicks",
+      "Cost",
+      "Ctr",
+      "Impressions",
+      "SearchClickShare",
+      "SearchImpressionShare"
+    ],
+    "Type": "ExternalConversionSource",
+    "DisplayName": "Conversion source",
+    "XMLAttribute": "conversionSource",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "ExternalCustomerId": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Long",
+    "DisplayName": "Customer ID",
+    "XMLAttribute": "customerID",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "Impressions": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
+    "Type": "Long",
+    "DisplayName": "Impressions",
+    "XMLAttribute": "impressions",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "LanguageCriteriaId": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Integer",
+    "DisplayName": "Language",
+    "XMLAttribute": "language",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "MerchantId": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Long",
+    "DisplayName": "MC Id",
+    "XMLAttribute": "mCId",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "Month": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Month",
+    "XMLAttribute": "month",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "OfferId": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Item Id",
+    "XMLAttribute": "itemId",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "ProductCondition": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "PredicateValues": {
+      "UNKNOWN": "unknown",
+      "NEW": "New",
+      "REFURBISHED": "Refurbished",
+      "USED": "Used"
+    },
+    "Type": "ShoppingProductCondition",
+    "DisplayName": "Condition",
+    "XMLAttribute": "condition",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "ProductTypeL1": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Product type (1st level)",
+    "XMLAttribute": "productType1stLevel",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "ProductTypeL2": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Product type (2nd level)",
+    "XMLAttribute": "productType2ndLevel",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "ProductTypeL3": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Product type (3rd level)",
+    "XMLAttribute": "productType3rdLevel",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "ProductTypeL4": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Product type (4th level)",
+    "XMLAttribute": "productType4thLevel",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "ProductTypeL5": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Product type (5th level)",
+    "XMLAttribute": "productType5thLevel",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "Quarter": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Quarter",
+    "XMLAttribute": "quarter",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "SearchClickShare": {
+    "SpecialValue": true,
+    "Percentage": true,
+    "IncompatibleFields": [
+      "ClickType",
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource"
+    ],
+    "Type": "Double",
+    "DisplayName": "Click share",
+    "XMLAttribute": "clickShare",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "SearchImpressionShare": {
+    "SpecialValue": true,
+    "Percentage": true,
+    "IncompatibleFields": [
+      "ClickType",
+      "ConversionCategoryName",
+      "ConversionTrackerId",
+      "ConversionTypeName",
+      "ExternalConversionSource",
+      "StoreId"
+    ],
+    "Type": "Double",
+    "DisplayName": "Search Impr. share",
+    "XMLAttribute": "searchImprShare",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "StoreId": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "IncompatibleFields": [
+      "SearchImpressionShare"
+    ],
+    "Type": "String",
+    "DisplayName": "Store Id",
+    "XMLAttribute": "storeId",
+    "Behavior": "Attribute",
+    "Filterable": true,
+    "SupportsZeroImpressions": false
+  },
+  "ValuePerAllConversion": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Double",
+    "DisplayName": "Value / all conv.",
+    "XMLAttribute": "valueAllConv",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "ValuePerConversion": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Double",
+    "DisplayName": "Value / conv.",
+    "XMLAttribute": "valueConv",
+    "Behavior": "Metric",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Week": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "String",
+    "DisplayName": "Week",
+    "XMLAttribute": "week",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  },
+  "Year": {
+    "SpecialValue": false,
+    "Percentage": false,
+    "Type": "Integer",
+    "DisplayName": "Year",
+    "XMLAttribute": "year",
+    "Behavior": "Segment",
+    "Filterable": true,
+    "SupportsZeroImpressions": true
+  }
+}
