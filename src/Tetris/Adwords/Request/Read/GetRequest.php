@@ -3,16 +3,13 @@
 namespace Tetris\Adwords\Request\Read;
 
 use DateTime;
+use Page;
 use Paging;
 use Predicate;
 
 use Campaign;
 use Budget;
 use ManagedCustomer;
-
-use CampaignPage;
-use BudgetPage;
-use ManagedCustomerPage;
 
 use CampaignService;
 use BudgetService;
@@ -27,6 +24,18 @@ class GetRequest extends ReadRequest
      * @var CampaignService|BudgetService|ManagedCustomerService $service
      */
     private $service;
+
+    /**
+     * @var string|null
+     */
+    private $subClassName;
+
+    function subClass(string $className)
+    {
+        $this->subClassName = $className;
+
+        return $this;
+    }
 
     protected function init($serviceName = null)
     {
@@ -62,10 +71,12 @@ class GetRequest extends ReadRequest
 //            }, $this->selector->predicates)
         ]);
 
+        $getMethod = 'get' . $this->subClassName;
+
         /**
-         * @var CampaignPage|BudgetPage|ManagedCustomerPage $result
+         * @var Page $result
          */
-        $result = $this->service->get($this->selector);
+        $result = $this->service->$getMethod($this->selector);
 
         if (empty($result->entries)) {
             return [];
