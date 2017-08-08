@@ -58,17 +58,7 @@ class GetRequest extends ReadRequest
 
         $this->track([
             'field_count' => count($this->selector->fields),
-            'predicate_count' => count($this->selector->predicates),
-//            'fields' => $this->selector->fields,
-//            'predicates' => array_map(function (Predicate $predicate) {
-//                return [
-//                    'field' => $predicate->field,
-//                    'operator' => $predicate->operator,
-//                    'value' => is_array($predicate->values) && count_chars($predicate->values) > 10
-//                        ? '> 10 values'
-//                        : $predicate->values
-//                ];
-//            }, $this->selector->predicates)
+            'predicate_count' => count($this->selector->predicates)
         ]);
 
         $getMethod = 'get' . $this->subClassName;
