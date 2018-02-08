@@ -2,15 +2,18 @@
 
 namespace Tetris\Adwords;
 
-use AdWordsUser;
-use CustomerService;
-use Customer;
+use Google\AdsApi\Common\OAuth2TokenBuilder;
+use Google\AdsApi\Common\Configuration;
+use Google\AdsApi\AdWords\AdWordsSessionBuilder;
+use Google\AdsApi\AdWords\AdWordsServices;
+use Google\AdsApi\AdWords\v201705\mcm\CustomerService;
+use Google\AdsApi\AdWords\v201705\mcm\Customer;
 use stdClass;
 use Tetris\Adwords\Request\Read\TransientReadRequest;
 use Tetris\Adwords\Request\Write\UpdateRequest;
 use Tetris\Adwords\Request\Write\InsertRequest;
 
-class Client extends AdWordsUser
+class Client
 {
     const version = 'v201705';
     /**
@@ -22,30 +25,64 @@ class Client extends AdWordsUser
      */
     protected $customer;
     /**
+     * @var UserRefreshCredentials
+     */
+    protected $oauth2Info;
+    /**
+     * @var AdWordsSession
+     */
+    protected $adWordsSession;
+    /**
+     * @var AdWordsServices
+     */
+    protected $adWordsServices;
+    /**
      * @var string $tetrisAccount
      */
     protected $tetrisAccount;
 
     function __construct(string $tetrisAccount, stdClass $token, $selectFirstCustomer = true)
     {
-        parent::__construct();
         $this->tetrisAccount = $tetrisAccount;
-        $this->SetUserAgent('oDash');
-        $this->SetDeveloperToken(self::$config['DEVELOPER_TOKEN']);
-        $this->SetOAuth2Info(array_merge([
-            'client_id' => self::$config['CLIENT_ID'],
-            'client_secret' => self::$config['CLIENT_SECRET']
-        ], (array)$token));
+
+        $this->oauth2Info = (new OAuth2TokenBuilder())
+        ->from(new Configuration([]))
+        ->withClientId(self::$config['CLIENT_ID'])
+        ->withClientSecret(self::$config['CLIENT_SECRET'])
+        ->withRefreshToken($token->refresh_token)
+        ->build();
+
+        $this->adWordsSession = (new AdWordsSessionBuilder())
+        ->from(new Configuration([]))
+        ->withOAuth2Credential($this->oauth2Info)
+        ->withDeveloperToken(self::$config['DEVELOPER_TOKEN'])
+        ->withUserAgent('oDash')
+        ->build();
+
+        $this->adWordsServices = new AdWordsServices();
+        $customerSvc = $this->adWordsServices->get($this->adWordsSession, CustomerService::class);
 
         if ($selectFirstCustomer) {
             /**
              * @var CustomerService $customerSvc
              */
-            $customerSvc = $this->GetService('CustomerService');
+            $customerSvc = $this->adWordsServices->get($this->adWordsSession, CustomerService::class);
             $this->customer = $customerSvc->getCustomers()[0];
-
-            $this->SetClientCustomerId($this->customer->customerId);
+            $this->makeSession($this->customer->getCustomerId());
         }
+
+        print_r($this->customer->getCustomerId());
+        print_r($this->adWordsSession);die;
+    }
+
+    public function makeSession($customerId){ 
+        $this->adWordsSession = (new AdWordsSessionBuilder())
+        ->from(new Configuration([]))
+        ->withOAuth2Credential($this->oauth2Info)
+        ->withDeveloperToken(self::$config['DEVELOPER_TOKEN'])
+        ->withUserAgent('oDash')
+        ->withClientCustomerId($customerId)
+        ->build();
     }
 
     /**
