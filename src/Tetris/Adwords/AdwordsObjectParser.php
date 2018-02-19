@@ -4,11 +4,11 @@ namespace Tetris\Adwords;
 
 use Exception;
 use stdClass;
-use Campaign;
-use ManagedCustomer;
-use Budget;
-use Money;
-use Bid;
+use Google\AdsApi\AdWords\v201705\cm\Campaign;
+use Google\AdsApi\AdWords\v201705\mcm\ManagedCustomer;
+use Google\AdsApi\AdWords\v201705\cm\Budget;
+use Google\AdsApi\AdWords\v201705\cm\Money;
+use Google\AdsApi\AdWords\v201705\cm\Bid;
 use Nayjest\StrCaseConverter\Str;
 
 abstract class AdwordsObjectParser

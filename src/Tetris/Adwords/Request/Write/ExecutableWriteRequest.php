@@ -2,9 +2,9 @@
 
 namespace Tetris\Adwords\Request\Write;
 
-use CampaignService;
-use BudgetService;
-use ManagedCustomerService;
+use Google\AdsApi\AdWords\v201705\cm\CampaignService;
+use Google\AdsApi\AdWords\v201705\cm\BudgetService;
+use Google\AdsApi\AdWords\v201705\mcm\ManagedCustomerService;
 
 use Tetris\Adwords\AdwordsObjectParser;
 use Tetris\Adwords\Client;

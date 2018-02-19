@@ -5,9 +5,9 @@ namespace Tetris\Adwords\Request;
 use Tetris\Adwords\Request;
 use Tetris\Adwords\Request\Read\ReadInterface;
 use Tetris\Adwords\Client;
-use Selector;
-use Predicate;
-use Paging;
+use Google\AdsApi\AdWords\v201705\cm\Selector;
+use Google\AdsApi\AdWords\v201705\cm\Predicate;
+use Google\AdsApi\AdWords\v201705\cm\Paging;
 
 abstract class ReadRequest extends Request implements ReadInterface
 {
@@ -21,6 +21,11 @@ abstract class ReadRequest extends Request implements ReadInterface
      */
     protected $fieldMap;
 
+    /**
+     * @var array $fieldMap
+     */
+    protected $predicates;
+
     function __construct(Client $client, string $className, array $fieldMap, $serviceName = null)
     {
         $this->client = $client;
@@ -28,19 +33,21 @@ abstract class ReadRequest extends Request implements ReadInterface
         $this->init($serviceName);
         $this->selector = new Selector();
         $this->fieldMap = self::normalizeFieldMaps($fieldMap);
-        $this->selector->fields = array_keys($this->fieldMap);
-        $this->selector->predicates = [];
+        $this->selector->setFields(array_keys($this->fieldMap));
+        $this->predicates = [];
+        $this->selector->setPredicates($this->predicates);
     }
 
     abstract protected function init($serviceName);
 
     function where(string $field, $value, $operator = 'EQUALS'): ReadInterface
     {
-        $this->selector->predicates[] = new Predicate(
+        $this->predicates[] = new Predicate(
             $field,
             $operator,
             is_array($value) ? $value : [$value]
         );
+        $this->selector->setPredicates($this->predicates);
         return $this;
     }
 }

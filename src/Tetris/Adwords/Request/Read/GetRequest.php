@@ -3,17 +3,17 @@
 namespace Tetris\Adwords\Request\Read;
 
 use DateTime;
-use Page;
-use Paging;
-use Predicate;
+use Google\AdsApi\AdWords\v201705\cm\Page;
+use Google\AdsApi\AdWords\v201705\cm\Predicate;
+use Google\AdsApi\AdWords\v201705\cm\Paging;
 
-use Campaign;
-use Budget;
-use ManagedCustomer;
+use Google\AdsApi\AdWords\v201705\cm\Campaign;
+use Google\AdsApi\AdWords\v201705\cm\Budget;
+use Google\AdsApi\AdWords\v201705\mcm\ManagedCustomer;
 
-use CampaignService;
-use BudgetService;
-use ManagedCustomerService;
+use Google\AdsApi\AdWords\v201705\cm\CampaignService;
+use Google\AdsApi\AdWords\v201705\cm\BudgetService;
+use Google\AdsApi\AdWords\v201705\mcm\ManagedCustomerService;
 
 use Tetris\Adwords\Request\ReadRequest;
 use Tetris\Adwords\AdwordsObjectParser;
@@ -39,26 +39,26 @@ class GetRequest extends ReadRequest
 
     protected function init($serviceName = null)
     {
-        $this->service = $this->client->GetService(
+        $this->service = $this->client->getAdWordsServices(
             isset($serviceName) ? $serviceName : $this->className . 'Service'
         );
     }
 
     function limit(int $count, $offset = 0): ReadInterface
     {
-        $this->selector->paging = new Paging($offset, $count);
+        $this->selector->setPaging(new Paging($offset, $count));
         return $this;
     }
 
     private function fetch(bool $keepSourceObject): array
     {
-        if (empty($this->selector->paging)) {
+        if (empty($this->selector->getPaging())) {
             $this->limit(500);
         }
 
         $this->track([
-            'field_count' => count($this->selector->fields),
-            'predicate_count' => count($this->selector->predicates)
+            'field_count' => count($this->selector->getFields()),
+            'predicate_count' => count($this->selector->getPredicates())
         ]);
 
         $getMethod = 'get' . $this->subClassName;

@@ -70,11 +70,11 @@ class Client
             $this->customer = $customerSvc->getCustomers()[0];
             $this->makeSession($this->customer->getCustomerId());
         }
-
-        print_r($this->customer->getCustomerId());
-        print_r($this->adWordsSession);die;
     }
 
+    /**
+     * @param string $customerId
+     */
     public function makeSession($customerId){ 
         $this->adWordsSession = (new AdWordsSessionBuilder())
         ->from(new Configuration([]))
@@ -83,6 +83,14 @@ class Client
         ->withUserAgent('oDash')
         ->withClientCustomerId($customerId)
         ->build();
+    }
+    public function getSession()
+    {
+        return $this->adWordsSession;
+    }
+    public function getAdWordsServices($service)
+    {
+        return $this->adWordsServices->get($this->adWordsSession, get_class($service));
     }
 
     /**
