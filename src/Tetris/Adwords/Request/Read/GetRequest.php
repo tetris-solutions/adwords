@@ -68,7 +68,7 @@ class GetRequest extends ReadRequest
          */
         $result = $this->service->$getMethod($this->selector);
 
-        if (empty($result->entries)) {
+        if (empty($result->getEntries())) {
             return [];
         }
 
@@ -77,7 +77,7 @@ class GetRequest extends ReadRequest
         /**
          * @var ManagedCustomer|Campaign|Budget $adwordsObject
          */
-        foreach ($result->entries as $adwordsObject) {
+        foreach ($result->getEntries() as $adwordsObject) {
             $ls[] = AdwordsObjectParser::readFieldsFromAdwordsObject($this->fieldMap, $adwordsObject, $keepSourceObject);
         }
 

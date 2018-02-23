@@ -8,10 +8,12 @@ use Google\AdsApi\AdWords\AdWordsSessionBuilder;
 use Google\AdsApi\AdWords\AdWordsServices;
 use Google\AdsApi\AdWords\v201705\mcm\CustomerService;
 use Google\AdsApi\AdWords\v201705\mcm\Customer;
+
 use stdClass;
 use Tetris\Adwords\Request\Read\TransientReadRequest;
 use Tetris\Adwords\Request\Write\UpdateRequest;
 use Tetris\Adwords\Request\Write\InsertRequest;
+use Tetris\Adwords\AdWordsServicesList;
 
 class Client
 {
@@ -90,7 +92,7 @@ class Client
     }
     public function getAdWordsServices($service)
     {
-        return $this->adWordsServices->get($this->adWordsSession, get_class($service));
+        return $this->adWordsServices->get($this->adWordsSession, AdwordsServicesList::get($service));
     }
 
     /**

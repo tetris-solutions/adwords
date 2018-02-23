@@ -2070,7 +2070,8 @@
     "Amount": [
       [
         "budget",
-        "amount"
+        "amount",
+        "microAmount"
       ]
     ],
     "BaseCampaignId": [

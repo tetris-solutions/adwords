@@ -61,20 +61,41 @@ abstract class AdwordsObjectParser
     {
         $pointer = $object;
 
-        foreach ($path as $index => $part) {
-            if (!isset($pointer->{$part})) {
+        //check if there is array inside array
+        $realPath = is_scalar($path[0]) ? $path : $path[0];
+
+        foreach ($realPath as $index => $part) { 
+
+            //if the propriety exists as getter, get it
+            if(method_exists ( $pointer , "get".ucfirst($part) )){
+                $pointer = call_user_func_array(array($pointer, "get".ucfirst($part)), array());
+            }else{
                 return;
             }
 
-            $pointer = $pointer->{$part};
-            $isLastPart = $index === count($path) - 1;
+            if (!isset($pointer)) {
+                return;
+            }
 
-            if (is_array($pointer) && !$isLastPart) {
-                $remainingPath = array_slice($path, $index + 1);
+            //if $pointer is an array of objects, parse it, infer all of the proprieties of each object and get then
+            if ((is_array($pointer))) {
 
+                $newPointer = [];
                 foreach ($pointer as $item) {
-                    self::insertValue($remainingPath, $item, $values);
+                    //infer all of the getter proprieties
+                    $method_names = preg_grep('/^get/', get_class_methods($item));
+                    $itemProps = [];
+                    //for each propriety get it as a substring of the getter name
+                    foreach ($method_names as $method) {
+                        $proprietyName = lcfirst(substr($method, 3));
+                        $itemProps[$proprietyName] = call_user_func_array(array($item, $method), array());
+                        /*if(!is_scalar($itemProps[$proprietyName])){
+                            print_r($itemProps[$proprietyName]);
+                        }*/
+                    }
+                    $newPointer[] = $itemProps;
                 }
+                $pointer = $newPointer;    
             }
         }
 
@@ -99,16 +120,17 @@ abstract class AdwordsObjectParser
         $mapping = self::getMappings();
         $className = get_class($object);
 
-        $guessedServiceName = $className . 'Service';
+        $pos = strrpos($className, '\\');
+        $parsedClassName = $pos === false ? $className : substr($className, $pos + 1);
+        $guessedServiceName = $parsedClassName . 'Service';
 
         if (isset(self::$overrideService[$guessedServiceName])) {
             $guessedServiceName = self::$overrideService[$guessedServiceName];
         }
 
-
         if (isset($mapping[$guessedServiceName][$field])) {
             foreach ($mapping[$guessedServiceName][$field] as $path) {
-                try {
+                try {         
                     return self::getValueFromPath($mapping[$guessedServiceName][$field], $object);
                 } catch (\Throwable $e) {
                 }
@@ -131,40 +153,6 @@ abstract class AdwordsObjectParser
         throw new \Exception("Could not find field '{$field}' in a instance of {$className}");
     }
 
-    private static function normalizeAdwordsObject($input)
-    {
-        if (is_scalar($input)) {
-            return $input;
-        }
-
-        if (is_array($input)) {
-            $parsedArray = [];
-
-            foreach ($input as $index => $value) {
-                $parsedArray[$index] = self::normalizeAdwordsObject(
-                    self::cast($value)
-                );
-            }
-
-            return $parsedArray;
-        }
-
-        if (is_object($input)) {
-            $parsedObject = new stdClass;
-            $ls = get_object_vars($input);
-
-            foreach ($ls as $key => $value) {
-                $parsedObject->{$key} = self::normalizeAdwordsObject(
-                    self::cast($value)
-                );
-            }
-
-            return $parsedObject;
-        }
-
-        return NULL;
-    }
-
     /**
      * @param array $fieldMap
      * @param ManagedCustomer|Campaign|Budget $adwordsObject
@@ -173,11 +161,11 @@ abstract class AdwordsObjectParser
     static function readFieldsFromAdwordsObject(array $fieldMap, $adwordsObject, $keepSourceObject = FALSE)
     {
         $array = [];
-        $input = self::normalizeAdwordsObject($adwordsObject);
+        $input = $adwordsObject;
 
         foreach ($fieldMap as $adwordsKey => $userKey) {
             try {
-                $array[$userKey] = self::getField($input, $adwordsKey);
+                $array[$userKey] = self::parseSpecialValues($userKey, self::getField($input, $adwordsKey));
             } catch (\Throwable $e) {
                 $array[$userKey] = NULL;
             }
@@ -190,6 +178,17 @@ abstract class AdwordsObjectParser
         }
 
         return $result;
+    }
+
+    static function parseSpecialValues($key, $value)
+    {
+        if($key == 'amount'){
+            return $value / (10 ** 6);
+        }else if($key == 'id'){
+            return (string)$value;
+        }else{
+            return $value;
+        }
     }
 
     static function normalizeReportObject($reportName, $fields, $inputObject)
