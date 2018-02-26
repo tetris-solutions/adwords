@@ -77,29 +77,50 @@ abstract class AdwordsObjectParser
                 return;
             }
 
-            //if $pointer is an array of objects, parse it, infer all of the proprieties of each object and get then
-            if ((is_array($pointer))) {
-
-                $newPointer = [];
-                foreach ($pointer as $item) {
-                    //infer all of the getter proprieties
-                    $method_names = preg_grep('/^get/', get_class_methods($item));
-                    $itemProps = [];
-                    //for each propriety get it as a substring of the getter name
-                    foreach ($method_names as $method) {
-                        $proprietyName = lcfirst(substr($method, 3));
-                        $itemProps[$proprietyName] = call_user_func_array(array($item, $method), array());
-                        /*if(!is_scalar($itemProps[$proprietyName])){
-                            print_r($itemProps[$proprietyName]);
-                        }*/
-                    }
-                    $newPointer[] = $itemProps;
-                }
-                $pointer = $newPointer;    
-            }
+            $pointer = self::parseAdwordsObjectsArray($pointer); 
         }
 
         $values[] = $pointer;
+    }
+
+    private static function parseAdwordsObjectsArray($pointer, $parseNewObject = FALSE)
+    {
+        if (is_array($pointer)) {
+            //if $pointer is an array of objects, parse it, infer all of the proprieties of each object and get then
+            $newPointer = [];
+            foreach ($pointer as $item) {
+
+                if(is_object($item)){
+                    $newPointer[] = self::getItemProps($item);
+                }else{
+                    $newPointer[] = $item;
+                }
+                
+            }
+            return $newPointer;
+        
+        }else if(is_object($pointer) && $parseNewObject){
+            //this is an object returned from one of the new objects, so it is also "unknow". Lets grab all of its proprieties
+            return self::getItemProps($pointer);
+
+        }else{
+            //nothing to do here, return the same value
+            return $pointer;
+        }
+    }
+
+    private static function getItemProps($item)
+    {
+        $itemProps = [];
+        //infer all of the getter proprieties
+        $method_names = preg_grep('/^get/', get_class_methods($item));
+        //for each propriety get it as a substring of the getter name
+        foreach ($method_names as $method) {
+            $proprietyName = lcfirst(substr($method, 3));
+            $itemProps[$proprietyName] = call_user_func_array(array($item, $method), array());
+            $itemProps[$proprietyName] = self::parseAdwordsObjectsArray($itemProps[$proprietyName], TRUE);
+        }
+        return $itemProps;
     }
 
     private static function getValueFromPath(array $path, $object)
@@ -184,7 +205,7 @@ abstract class AdwordsObjectParser
     {
         if($key == 'amount'){
             return $value / (10 ** 6);
-        }else if($key == 'id'){
+        }else if(strpos($key, 'id') !== FALSE){
             return (string)$value;
         }else{
             return $value;
