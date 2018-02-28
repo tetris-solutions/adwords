@@ -699,7 +699,8 @@
       [
         "biddingStrategyConfiguration",
         "bids",
-        "bid"
+        "bid",
+        "microAmount"
       ]
     ],
     "CpcBidSource": [
@@ -713,7 +714,8 @@
       [
         "biddingStrategyConfiguration",
         "bids",
-        "bid"
+        "bid",
+        "microAmount"
       ]
     ],
     "CpmBidSource": [
@@ -1096,14 +1098,16 @@
       [
         "biddingStrategyConfiguration",
         "bids",
-        "bid"
+        "bid",
+        "microAmount"
       ]
     ],
     "CpmBid": [
       [
         "biddingStrategyConfiguration",
         "bids",
-        "bid"
+        "bid",
+        "microAmount"
       ]
     ],
     "EnhancedCpcEnabled": [
@@ -1149,7 +1153,8 @@
       [
         "biddingStrategyConfiguration",
         "bids",
-        "bid"
+        "bid",
+        "microAmount"
       ]
     ],
     "TargetCpaBidSource": [
@@ -2236,14 +2241,16 @@
       [
         "biddingStrategyConfiguration",
         "biddingScheme",
-        "maxCpcBidCeiling"
+        "maxCpcBidCeiling",
+        "microAmount"
       ]
     ],
     "TargetCpaMaxCpcBidFloor": [
       [
         "biddingStrategyConfiguration",
         "biddingScheme",
-        "maxCpcBidFloor"
+        "maxCpcBidFloor",
+        "microAmount"
       ]
     ],
     "TargetGoogleSearch": [
@@ -2269,14 +2276,16 @@
       [
         "biddingStrategyConfiguration",
         "biddingScheme",
-        "bidCeiling"
+        "bidCeiling",
+        "microAmount"
       ]
     ],
     "TargetRoasBidFloor": [
       [
         "biddingStrategyConfiguration",
         "biddingScheme",
-        "bidFloor"
+        "bidFloor",
+        "microAmount"
       ]
     ],
     "TargetSearchNetwork": [
@@ -2289,7 +2298,8 @@
       [
         "biddingStrategyConfiguration",
         "biddingScheme",
-        "bidCeiling"
+        "bidCeiling",
+        "microAmount"
       ]
     ],
     "TargetSpendEnhancedCpcEnabled": [

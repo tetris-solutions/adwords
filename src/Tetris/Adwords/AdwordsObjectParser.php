@@ -66,9 +66,24 @@ abstract class AdwordsObjectParser
 
         foreach ($realPath as $index => $part) { 
 
+            $isLastPart = $index === count($realPath) - 1;
+
+            if (is_array($pointer)) {
+                
+                $remainingPath = array_slice($realPath, $index);
+
+                foreach ($pointer as $item) {
+                    self::insertValue($remainingPath, $item, $values);
+                }
+            }
+
             //if the propriety exists as getter, get it
             if(method_exists ( $pointer , "get".ucfirst($part) )){
+                $pointerClass = get_class($pointer);
                 $pointer = call_user_func_array(array($pointer, "get".ucfirst($part)), array());
+                if($pointerClass == Money::class){
+                    $pointer = $pointer / (10 ** 6);
+                }
             }else{
                 return;
             }
@@ -77,13 +92,13 @@ abstract class AdwordsObjectParser
                 return;
             }
 
-            $pointer = self::parseAdwordsObjectsArray($pointer); 
+            if($isLastPart)$pointer = self::parseAdwordsObjectsArray($pointer); 
         }
 
         $values[] = $pointer;
     }
 
-    private static function parseAdwordsObjectsArray($pointer, $parseNewObject = FALSE)
+    private static function parseAdwordsObjectsArray($pointer)
     {
         if (is_array($pointer)) {
             //if $pointer is an array of objects, parse it, infer all of the proprieties of each object and get then
@@ -99,7 +114,7 @@ abstract class AdwordsObjectParser
             }
             return $newPointer;
         
-        }else if(is_object($pointer) && $parseNewObject){
+        }else if(is_object($pointer)){
             //this is an object returned from one of the new objects, so it is also "unknow". Lets grab all of its proprieties
             return self::getItemProps($pointer);
 
@@ -118,7 +133,7 @@ abstract class AdwordsObjectParser
         foreach ($method_names as $method) {
             $proprietyName = lcfirst(substr($method, 3));
             $itemProps[$proprietyName] = call_user_func_array(array($item, $method), array());
-            $itemProps[$proprietyName] = self::parseAdwordsObjectsArray($itemProps[$proprietyName], TRUE);
+            $itemProps[$proprietyName] = self::parseAdwordsObjectsArray($itemProps[$proprietyName]);
         }
         return $itemProps;
     }
@@ -186,7 +201,7 @@ abstract class AdwordsObjectParser
 
         foreach ($fieldMap as $adwordsKey => $userKey) {
             try {
-                $array[$userKey] = self::parseSpecialValues($userKey, self::getField($input, $adwordsKey));
+                $array[$userKey] = self::getField($input, $adwordsKey);
             } catch (\Throwable $e) {
                 $array[$userKey] = NULL;
             }
@@ -199,17 +214,6 @@ abstract class AdwordsObjectParser
         }
 
         return $result;
-    }
-
-    static function parseSpecialValues($key, $value)
-    {
-        if($key == 'amount'){
-            return $value / (10 ** 6);
-        }else if(strpos($key, 'id') !== FALSE){
-            return (string)$value;
-        }else{
-            return $value;
-        }
     }
 
     static function normalizeReportObject($reportName, $fields, $inputObject)
