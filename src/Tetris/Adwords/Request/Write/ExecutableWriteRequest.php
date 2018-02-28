@@ -29,11 +29,12 @@ class ExecutableWriteRequest extends Request
 
     function __construct(Client $client, string $operator, string $className, array $values, $serviceName = null)
     {
+        print_r("gergerger");die;
         $this->client = $client;
         $this->className = $className;
         $this->values = $values;
         $this->operator = $operator;
-        $this->service = $this->client->GetService(
+        $this->service = $this->client->getAdWordsServices(
             isset($serviceName) ? $serviceName : $this->className . 'Service'
         );
     }
