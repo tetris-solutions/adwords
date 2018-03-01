@@ -4,6 +4,7 @@ namespace Tetris\Adwords\Request\Write;
 
 use Tetris\Adwords\Request\WriteRequest;
 use Tetris\Adwords\Client;
+use Google\AdsApi\AdWords\v201705\cm\Operator;
 
 class InsertRequest extends WriteRequest
 {
@@ -15,6 +16,6 @@ class InsertRequest extends WriteRequest
 
     function into(string $className, $serviceName = null): ExecutableWriteRequest
     {
-        return new ExecutableWriteRequest($this->client, 'ADD', $className, $this->values, $serviceName);
+        return new ExecutableWriteRequest($this->client, Operator::ADD, $className, $this->values, $serviceName);
     }
 }

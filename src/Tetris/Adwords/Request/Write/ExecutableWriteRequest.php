@@ -29,7 +29,6 @@ class ExecutableWriteRequest extends Request
 
     function __construct(Client $client, string $operator, string $className, array $values, $serviceName = null)
     {
-        print_r("gergerger");die;
         $this->client = $client;
         $this->className = $className;
         $this->values = $values;
@@ -47,7 +46,7 @@ class ExecutableWriteRequest extends Request
 
         return AdwordsObjectParser::readFieldsFromAdwordsObject(
             self::normalizeFieldMaps($fieldMap),
-            $this->result->value[0]
+            $this->result->getValue()[0]
         );
     }
 
@@ -57,14 +56,17 @@ class ExecutableWriteRequest extends Request
             'operator' => $this->operator
         ]);
 
-        $entityOperationClass = $this->className . 'Operation';
+        $entityOperationClass = '\Google\AdsApi\AdWords\v201705\cm\\' . $this->className . 'Operation';
 
         /**
          * @var \CampaignOperation|\BudgetOperation
          */
         $operation = new $entityOperationClass();
-        $operation->operand = AdwordsObjectParser::readFieldsFromArrayIntoAdwordsObject($this->className, $this->values);
-        $operation->operator = $this->operator;
+
+        $entity = AdwordsObjectParser::readFieldsFromArrayIntoAdwordsObject($this->className, $this->values);
+
+        $operation->setOperand($entity);
+        $operation->setOperator($this->operator);
 
         $this->result = $this->service->mutate([$operation]);
     }

@@ -3,6 +3,7 @@ namespace Tetris\Adwords\Request\Write;
 
 use Tetris\Adwords\Request\WriteRequest;
 use Tetris\Adwords\Client;
+use Google\AdsApi\AdWords\v201705\cm\Operator;
 
 class UpdateRequest extends WriteRequest
 {
@@ -20,6 +21,6 @@ class UpdateRequest extends WriteRequest
 
     function set(array $values): ExecutableWriteRequest
     {
-        return new ExecutableWriteRequest($this->client, 'SET', $this->className, $values, $this->serviceName);
+        return new ExecutableWriteRequest($this->client, Operator::SET, $this->className, $values, $this->serviceName);
     }
 }

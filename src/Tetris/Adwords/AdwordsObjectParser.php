@@ -248,26 +248,30 @@ abstract class AdwordsObjectParser
     static function readFieldsFromArrayIntoAdwordsObject(string $className, array $fields)
     {
         $className = isset(self::$overrideClassName[$className])
-            ? self::$overrideClassName[$className]
-            : $className;
+            ? '\Google\AdsApi\AdWords\v201705\cm\\' . self::$overrideClassName[$className]
+            : '\Google\AdsApi\AdWords\v201705\cm\\' . $className;
 
-        $entity = new $className();
+        try {
+            $entity = new $className();
+        } catch (\Throwable $e) {
+            $entity = new stdClass();
+        }
 
         foreach ($fields as $field => $value) {
-            $field = lcfirst(Str::toCamelCase($field));
+            $field = ucfirst(Str::toCamelCase($field));
 
-            if (!property_exists($entity, $field)) continue;
+            if (!method_exists($entity, "set".$field)) continue;
 
             switch ($field) {
                 case 'budget':
-                    $entity->budget = new Budget($value);
+                    $entity->setBudget = new Budget($value);
                     break;
                 case 'amount':
                     $micro = intval(floor($value * 100) * 10 ** 4);
-                    $entity->amount = new Money($micro);
+                    $entity->setAmount = new Money(null,$micro);
                     break;
                 default:
-                    $entity->{$field} = $value;
+                    call_user_func_array(array($entity, "set".$field), array($value));
                     break;
             }
         }
