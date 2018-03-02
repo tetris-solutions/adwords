@@ -26,6 +26,7 @@ use Google\AdsApi\AdWords\v201705\cm\CampaignGroupService;
 use Google\AdsApi\AdWords\v201705\cm\CampaignService;
 use Google\AdsApi\AdWords\v201705\cm\CampaignSharedSetService;
 use Google\AdsApi\AdWords\v201705\cm\ConversionTrackerService;
+use Google\AdsApi\AdWords\v201705\cm\ConstantDataService;
 use Google\AdsApi\AdWords\v201705\cm\CustomerExtensionSettingService;
 use Google\AdsApi\AdWords\v201705\mcm\CustomerService;
 use Google\AdsApi\AdWords\v201705\ch\CustomerSyncService;
@@ -75,6 +76,7 @@ class AdwordsServicesList
     	"CampaignGroupService" => CampaignGroupService::class,
     	"CampaignService" => CampaignService::class,
     	"CampaignSharedSetService" => CampaignSharedSetService::class,
+        "ConstantDataService" => ConstantDataService::class,
     	"ConversionTrackerService" => ConversionTrackerService::class,
     	"CustomerExtensionSettingService" => CustomerExtensionSettingService::class,
     	"CustomerFeedService" => CustomerFeedService::class,

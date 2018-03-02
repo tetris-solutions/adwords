@@ -258,17 +258,18 @@ abstract class AdwordsObjectParser
         }
 
         foreach ($fields as $field => $value) {
+
             $field = ucfirst(Str::toCamelCase($field));
 
             if (!method_exists($entity, "set".$field)) continue;
 
-            switch ($field) {
+            switch (strtolower($field)) {
                 case 'budget':
-                    $entity->setBudget = new Budget($value);
+                    $entity->setBudget(new Budget($value));
                     break;
                 case 'amount':
                     $micro = intval(floor($value * 100) * 10 ** 4);
-                    $entity->setAmount = new Money(null,$micro);
+                    $entity->setAmount(new Money(null,$micro));
                     break;
                 default:
                     call_user_func_array(array($entity, "set".$field), array($value));
