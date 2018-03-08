@@ -1481,7 +1481,8 @@
   "BudgetService": {
     "Amount": [
       [
-        "amount"
+        "amount",
+        "microAmount"
       ]
     ],
     "BudgetId": [

@@ -28,11 +28,11 @@ abstract class AdwordsObjectParser
     private static function cast($value)
     {
         if ($value instanceof Money) {
-            return intval($value->microAmount) / (10 ** 6);
+            return intval($value->getMicroAmount()) / (10 ** 6);
         }
 
         if ($value instanceof Bid) {
-            return self::cast($value->amount);
+            return self::cast($value->getAmount());
         }
 
         return $value;
