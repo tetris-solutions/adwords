@@ -4,9 +4,9 @@ namespace Tetris\Adwords\Request;
 
 use Tetris\Adwords\Request;
 
-use Google\AdsApi\AdWords\v201705\cm\CampaignService;
-use Google\AdsApi\AdWords\v201705\cm\BudgetService;
-use Google\AdsApi\AdWords\v201705\mcm\ManagedCustomerService;
+use Google\AdsApi\AdWords\v201710\cm\CampaignService;
+use Google\AdsApi\AdWords\v201710\cm\BudgetService;
+use Google\AdsApi\AdWords\v201710\mcm\ManagedCustomerService;
 
 abstract class WriteRequest extends Request
 {

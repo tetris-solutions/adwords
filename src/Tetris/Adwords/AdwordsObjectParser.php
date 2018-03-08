@@ -4,11 +4,11 @@ namespace Tetris\Adwords;
 
 use Exception;
 use stdClass;
-use Google\AdsApi\AdWords\v201705\cm\Campaign;
-use Google\AdsApi\AdWords\v201705\mcm\ManagedCustomer;
-use Google\AdsApi\AdWords\v201705\cm\Budget;
-use Google\AdsApi\AdWords\v201705\cm\Money;
-use Google\AdsApi\AdWords\v201705\cm\Bid;
+use Google\AdsApi\AdWords\v201710\cm\Campaign;
+use Google\AdsApi\AdWords\v201710\mcm\ManagedCustomer;
+use Google\AdsApi\AdWords\v201710\cm\Budget;
+use Google\AdsApi\AdWords\v201710\cm\Money;
+use Google\AdsApi\AdWords\v201710\cm\Bid;
 use Nayjest\StrCaseConverter\Str;
 
 abstract class AdwordsObjectParser
@@ -248,8 +248,8 @@ abstract class AdwordsObjectParser
     static function readFieldsFromArrayIntoAdwordsObject(string $className, array $fields)
     {
         $className = isset(self::$overrideClassName[$className])
-            ? '\Google\AdsApi\AdWords\v201705\cm\\' . self::$overrideClassName[$className]
-            : '\Google\AdsApi\AdWords\v201705\cm\\' . $className;
+            ? '\Google\AdsApi\AdWords\v201710\cm\\' . self::$overrideClassName[$className]
+            : '\Google\AdsApi\AdWords\v201710\cm\\' . $className;
 
         try {
             $entity = new $className();

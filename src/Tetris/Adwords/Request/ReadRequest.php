@@ -5,9 +5,9 @@ namespace Tetris\Adwords\Request;
 use Tetris\Adwords\Request;
 use Tetris\Adwords\Request\Read\ReadInterface;
 use Tetris\Adwords\Client;
-use Google\AdsApi\AdWords\v201705\cm\Selector;
-use Google\AdsApi\AdWords\v201705\cm\Predicate;
-use Google\AdsApi\AdWords\v201705\cm\Paging;
+use Google\AdsApi\AdWords\v201710\cm\Selector;
+use Google\AdsApi\AdWords\v201710\cm\Predicate;
+use Google\AdsApi\AdWords\v201710\cm\Paging;
 
 abstract class ReadRequest extends Request implements ReadInterface
 {

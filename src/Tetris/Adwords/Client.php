@@ -6,8 +6,8 @@ use Google\AdsApi\Common\OAuth2TokenBuilder;
 use Google\AdsApi\Common\Configuration;
 use Google\AdsApi\AdWords\AdWordsSessionBuilder;
 use Google\AdsApi\AdWords\AdWordsServices;
-use Google\AdsApi\AdWords\v201705\mcm\CustomerService;
-use Google\AdsApi\AdWords\v201705\mcm\Customer;
+use Google\AdsApi\AdWords\v201710\mcm\CustomerService;
+use Google\AdsApi\AdWords\v201710\mcm\Customer;
 
 use stdClass;
 use Tetris\Adwords\Request\Read\TransientReadRequest;
@@ -17,7 +17,7 @@ use Tetris\Adwords\AdWordsServicesList;
 
 class Client
 {
-    const version = 'v201705';
+    const version = 'v201710';
     /**
      * @var array $config
      */
