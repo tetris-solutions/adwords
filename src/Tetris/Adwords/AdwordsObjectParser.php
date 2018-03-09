@@ -201,7 +201,8 @@ abstract class AdwordsObjectParser
 
         foreach ($fieldMap as $adwordsKey => $userKey) {
             try {
-                $array[$userKey] = self::getField($input, $adwordsKey);
+                $array[$userKey] = self::parseSpecialValues($userKey, self::getField($input, $adwordsKey));
+
             } catch (\Throwable $e) {
                 $array[$userKey] = NULL;
             }
@@ -215,6 +216,16 @@ abstract class AdwordsObjectParser
 
         return $result;
     }
+
+    static function parseSpecialValues($key, $value)
+    {
+        if(strtolower(substr($key, -2)) == 'id'){
+            return (string)$value;
+        }else{
+            return $value;
+        }
+    }
+
 
     static function normalizeReportObject($reportName, $fields, $inputObject)
     {
