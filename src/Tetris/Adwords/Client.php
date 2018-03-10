@@ -13,7 +13,7 @@ use stdClass;
 use Tetris\Adwords\Request\Read\TransientReadRequest;
 use Tetris\Adwords\Request\Write\UpdateRequest;
 use Tetris\Adwords\Request\Write\InsertRequest;
-use Tetris\Adwords\AdWordsServicesList;
+use Tetris\Adwords\AdwordsServicesList;
 
 class Client
 {
