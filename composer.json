@@ -5,9 +5,9 @@
   "type": "library",
   "license": "MIT",
   "require": {
-    "php": ">=7.0.0",
+    "php": ">=7.1.0",
     "nayjest/str-case-converter": "^1.0",
-    "googleads/googleads-php-lib": "^32.1.0",
+    "googleads/googleads-php-lib": "^36.0.0",
     "tetris/monostash": "dev-master#v0.0.5"
   },
   "authors": [

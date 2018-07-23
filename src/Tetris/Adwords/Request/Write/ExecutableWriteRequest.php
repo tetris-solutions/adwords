@@ -2,9 +2,9 @@
 
 namespace Tetris\Adwords\Request\Write;
 
-use Google\AdsApi\AdWords\v201710\cm\CampaignService;
-use Google\AdsApi\AdWords\v201710\cm\BudgetService;
-use Google\AdsApi\AdWords\v201710\mcm\ManagedCustomerService;
+use Google\AdsApi\AdWords\v201806\cm\CampaignService;
+use Google\AdsApi\AdWords\v201806\cm\BudgetService;
+use Google\AdsApi\AdWords\v201806\mcm\ManagedCustomerService;
 
 use Tetris\Adwords\AdwordsObjectParser;
 use Tetris\Adwords\Client;
@@ -56,7 +56,7 @@ class ExecutableWriteRequest extends Request
             'operator' => $this->operator
         ]);
 
-        $entityOperationClass = '\Google\AdsApi\AdWords\v201710\cm\\' . $this->className . 'Operation';
+        $entityOperationClass = '\Google\AdsApi\AdWords\v201806\cm\\' . $this->className . 'Operation';
 
         /**
          * @var \CampaignOperation|\BudgetOperation

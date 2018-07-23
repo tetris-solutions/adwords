@@ -3,7 +3,7 @@ namespace Tetris\Adwords\Request\Write;
 
 use Tetris\Adwords\Request\WriteRequest;
 use Tetris\Adwords\Client;
-use Google\AdsApi\AdWords\v201710\cm\Operator;
+use Google\AdsApi\AdWords\v201806\cm\Operator;
 
 class UpdateRequest extends WriteRequest
 {
