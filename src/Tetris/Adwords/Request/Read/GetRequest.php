@@ -6,6 +6,8 @@ use DateTime;
 use Google\AdsApi\AdWords\v201806\cm\Page;
 use Google\AdsApi\AdWords\v201806\cm\Predicate;
 use Google\AdsApi\AdWords\v201806\cm\Paging;
+use Google\AdsApi\AdWords\v201806\cm\OrderBy;
+use Google\AdsApi\AdWords\v201806\cm\SortOrder;
 
 use Google\AdsApi\AdWords\v201806\cm\Campaign;
 use Google\AdsApi\AdWords\v201806\cm\Budget;
@@ -44,6 +46,12 @@ class GetRequest extends ReadRequest
         );
     }
 
+    function order(OrderBy $orderParams): ReadInterface
+    {
+        $this->selector->setOrdering([$orderParams]);
+        return $this;
+    }
+
     function limit(int $count, $offset = 0): ReadInterface
     {
         $this->selector->setPaging(new Paging($offset, $count));
@@ -53,8 +61,10 @@ class GetRequest extends ReadRequest
     private function fetch(bool $keepSourceObject): array
     {
         if (empty($this->selector->getPaging())) {
-            $this->limit(500);
+            $this->limit(1500);
         }
+
+        $this->order(new OrderBy('Id', SortOrder::DESCENDING));
 
         $this->track([
             'field_count' => count($this->selector->getFields()),
