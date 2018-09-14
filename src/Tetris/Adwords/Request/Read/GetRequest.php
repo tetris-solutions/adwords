@@ -64,7 +64,10 @@ class GetRequest extends ReadRequest
             $this->limit(1500);
         }
 
-        $this->order(new OrderBy('Id', SortOrder::DESCENDING));
+        //se temos algum critério de ID, ordenamos pelo id
+        if(stripos($this->selector->getFields()[0], 'id') !== false){
+            $this->order(new OrderBy($this->selector->getFields()[0], SortOrder::DESCENDING));
+        }
 
         $this->track([
             'field_count' => count($this->selector->getFields()),
