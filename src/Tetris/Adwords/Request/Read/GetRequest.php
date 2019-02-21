@@ -3,19 +3,19 @@
 namespace Tetris\Adwords\Request\Read;
 
 use DateTime;
-use Google\AdsApi\AdWords\v201806\cm\Page;
-use Google\AdsApi\AdWords\v201806\cm\Predicate;
-use Google\AdsApi\AdWords\v201806\cm\Paging;
-use Google\AdsApi\AdWords\v201806\cm\OrderBy;
-use Google\AdsApi\AdWords\v201806\cm\SortOrder;
+use Google\AdsApi\AdWords\v201809\cm\Page;
+use Google\AdsApi\AdWords\v201809\cm\Predicate;
+use Google\AdsApi\AdWords\v201809\cm\Paging;
+use Google\AdsApi\AdWords\v201809\cm\OrderBy;
+use Google\AdsApi\AdWords\v201809\cm\SortOrder;
 
-use Google\AdsApi\AdWords\v201806\cm\Campaign;
-use Google\AdsApi\AdWords\v201806\cm\Budget;
-use Google\AdsApi\AdWords\v201806\mcm\ManagedCustomer;
+use Google\AdsApi\AdWords\v201809\cm\Campaign;
+use Google\AdsApi\AdWords\v201809\cm\Budget;
+use Google\AdsApi\AdWords\v201809\mcm\ManagedCustomer;
 
-use Google\AdsApi\AdWords\v201806\cm\CampaignService;
-use Google\AdsApi\AdWords\v201806\cm\BudgetService;
-use Google\AdsApi\AdWords\v201806\mcm\ManagedCustomerService;
+use Google\AdsApi\AdWords\v201809\cm\CampaignService;
+use Google\AdsApi\AdWords\v201809\cm\BudgetService;
+use Google\AdsApi\AdWords\v201809\mcm\ManagedCustomerService;
 
 use Tetris\Adwords\Request\ReadRequest;
 use Tetris\Adwords\AdwordsObjectParser;

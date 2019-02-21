@@ -5,12 +5,12 @@ namespace Tetris\Adwords\Request\Read;
 use Tetris\Adwords\Exceptions\NullReportException;
 use Tetris\Adwords\AdwordsObjectParser;
 use Tetris\Adwords\Request\ReadRequest;
-use Google\AdsApi\AdWords\Reporting\v201806\ReportDownloader;
-use Google\AdsApi\AdWords\Reporting\v201806\ReportDefinition;
+use Google\AdsApi\AdWords\Reporting\v201809\ReportDownloader;
+use Google\AdsApi\AdWords\Reporting\v201809\ReportDefinition;
 use DateTime;
-use Google\AdsApi\AdWords\v201806\cm\DateRange;
+use Google\AdsApi\AdWords\v201809\cm\DateRange;
 use stdClass;
-use Google\AdsApi\AdWords\v201806\cm\Predicate;
+use Google\AdsApi\AdWords\v201809\cm\Predicate;
 
 class ReportRequest extends ReadRequest
 {

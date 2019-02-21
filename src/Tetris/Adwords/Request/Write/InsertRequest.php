@@ -4,7 +4,7 @@ namespace Tetris\Adwords\Request\Write;
 
 use Tetris\Adwords\Request\WriteRequest;
 use Tetris\Adwords\Client;
-use Google\AdsApi\AdWords\v201806\cm\Operator;
+use Google\AdsApi\AdWords\v201809\cm\Operator;
 
 class InsertRequest extends WriteRequest
 {
