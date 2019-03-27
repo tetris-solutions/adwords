@@ -64,7 +64,7 @@ class GetRequest extends ReadRequest
             $this->limit(1500);
         }
 
-        //se temos algum critério de ID, ordenamos pelo id
+        //se temos algum critério de ID, ordenamos pelo id;
         if(stripos($this->selector->getFields()[0], 'id') !== false){
             $this->order(new OrderBy($this->selector->getFields()[0], SortOrder::DESCENDING));
         }
