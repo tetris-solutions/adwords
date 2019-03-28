@@ -212,6 +212,12 @@
         "displayUrl"
       ]
     ],
+    "ExpandedTextAdDescription2": [
+      [
+        "ad",
+        "description2"
+      ]
+    ],
     "ExpandingDirections": [
       [
         "ad",
@@ -248,6 +254,12 @@
       [
         "ad",
         "headlinePart2"
+      ]
+    ],
+    "ExpandedTextAdHeadlinePart3": [
+      [
+        "ad",
+        "headlinePart3"
       ]
     ],
     "Height": [
@@ -748,9 +760,9 @@
         "criterionUse"
       ]
     ],
-    "DestinationUrl": [
+    "CreativeFinalUrls": [
       [
-        "destinationUrl"
+        "finalUrls"
       ]
     ],
     "DisapprovalReasons": [
