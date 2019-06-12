@@ -399,6 +399,22 @@
         "referenceId"
       ]
     ],
+    "ResponsiveSearchAdDescriptions": [
+      [
+        "ad",
+        "descriptions",
+        "asset",
+        "assetText"
+      ]
+    ],
+    "ResponsiveSearchAdHeadlines": [
+      [
+        "ad",
+        "headlines",
+        "asset",
+        "assetText"
+      ]
+    ],
     "RichMediaAdCertifiedVendorFormatId": [
       [
         "ad",
